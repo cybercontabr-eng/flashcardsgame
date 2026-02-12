@@ -26,13 +26,15 @@
                 FlashcardsGame
             </a>
             <nav class="nav-links">
-                <a href="#ia">Inteligência Artificial</a>
-                <a href="#dados">Resultados</a>
-                <a href="#game">Gamificação</a>
-                <a href="gerador.html" target="_blank" style="color: var(--accent); font-weight: 700;">
-                    <span class="material-icons-round" style="font-size: 16px; vertical-align: middle;">build</span> Gerador CSV
+                <a href="#tutorial" class="nav-link">O que é?</a>
+                <a href="#ia" class="nav-link">IA</a>
+                <a href="#dados" class="nav-link">Resultados</a>
+                <a href="#features" class="nav-link">Android & Web</a>
+                <a href="gerador.html" target="_blank" class="nav-link" style="color: var(--accent);">
+                    <span class="material-icons-round" style="font-size: 16px; vertical-align: middle; margin-right: 4px;">build</span>
+                    Gerador CSV
                 </a>
-                <a href="/#/login" class="btn btn-glass" style="padding: 8px 20px; margin-left: 20px;">Entrar</a>
+                <a href="/#/login" class="btn btn-glass" style="padding: 8px 24px; margin-left: 10px;">Entrar</a>
             </nav>
         </div>
     </header>
@@ -45,107 +47,146 @@
             <h1>Aprenda jogando. <br><span class="text-gradient">Lembre para sempre.</span></h1>
             <p>O único app que transforma matérias maçantes em batalhas épicas. Ideal para concursos, vestibulares e neurodivergentes.</p>
             
-            <div class="flashcard-demo" title="Clique ou passe o mouse para virar">
-                <div class="flashcard-inner">
-                    <div class="flashcard-front">
-                        <span style="color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase; margin-bottom: 10px;">Direito Penal • Difícil</span>
-                        <h3 style="font-size: 1.2rem; color: white;">O que diferencia o Homicídio Qualificado do Simples?</h3>
-                        <span style="margin-top: 20px; font-size: 0.8rem; color: var(--accent); opacity: 0.8;">(Passe o mouse para ver)</span>
-                    </div>
-                    <div class="flashcard-back">
-                        <span class="material-icons-round" style="font-size: 40px; margin-bottom: 10px;">check_circle</span>
-                        <p style="font-size: 1rem;">O Qualificado possui circunstâncias que aumentam a gravidade (ex: motivo torpe, traição), alterando a pena base.</p>
-                    </div>
-                </div>
-            </div>
-
             <div style="display: flex; gap: 16px; justify-content: center; margin-top: 20px;">
-                <a href="/#/register" class="btn btn-primary">Começar Jornada</a>
-                <a href="#ia" class="btn btn-glass">Ver a IA em Ação</a>
+                <a href="/#/register" class="btn btn-primary">Começar Grátis</a>
+                <a href="#tutorial" class="btn btn-glass">Como Funciona?</a>
             </div>
         </div>
 
         <div class="marquee-container">
             <div class="marquee-content">
-                <span class="tag-item"><span class="material-icons-round">gavel</span> Direito Constitucional</span>
-                <span class="tag-item"><span class="material-icons-round">medication</span> Medicina & Anatomia</span>
-                <span class="tag-item"><span class="material-icons-round">code</span> Programação Python</span>
-                <span class="tag-item"><span class="material-icons-round">translate</span> Inglês & Espanhol</span>
-                <span class="tag-item"><span class="material-icons-round">account_balance</span> Concurso Receita Federal</span>
-                <span class="tag-item"><span class="material-icons-round">military_tech</span> Carreira Militar</span>
-                <span class="tag-item"><span class="material-icons-round">psychology</span> Neuropsicologia</span>
-                <span class="tag-item"><span class="material-icons-round">school</span> OAB 1ª Fase</span>
-                <span class="tag-item"><span class="material-icons-round">local_hospital</span> Residência Médica</span>
-                 <span class="tag-item"><span class="material-icons-round">gavel</span> Direito Penal</span>
-                 <span class="tag-item"><span class="material-icons-round">code</span> JavaScript</span>
+                <span class="tag-item"><span class="material-icons-round">school</span> Ensino Médio</span>
+                <span class="tag-item"><span class="material-icons-round">edit_note</span> Enem & Vestibular</span>
+                <span class="tag-item"><span class="material-icons-round">gavel</span> Magistratura</span>
+                <span class="tag-item"><span class="material-icons-round">balance</span> Ministério Público (MP)</span>
+                <span class="tag-item"><span class="material-icons-round">account_balance</span> Procuradorias</span>
+                <span class="tag-item"><span class="material-icons-round">traffic</span> Lei Seca</span>
+                <span class="tag-item"><span class="material-icons-round">medication</span> Medicina</span>
+                <span class="tag-item"><span class="material-icons-round">code</span> Programação</span>
+                <span class="tag-item"><span class="material-icons-round">translate</span> Idiomas</span>
+                <span class="tag-item"><span class="material-icons-round">security</span> Concursos Policiais</span>
+                <span class="tag-item"><span class="material-icons-round">psychology</span> Psicologia</span>
+                <span class="tag-item"><span class="material-icons-round">school</span> OAB</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="tutorial" class="section-padding">
+        <div class="container tutorial-layout">
+            <div data-aos="fade-right">
+                <h2 style="font-size: 2.5rem; color: white; margin-bottom: 20px;">O poder do Flashcard</h2>
+                <p style="color: var(--text-muted); margin-bottom: 20px; font-size: 1.1rem;">
+                    Flashcard é um cartão com uma <strong>pergunta na frente</strong> e a <strong>resposta no verso</strong>.
+                </p>
+                <ul style="color: var(--text-muted); margin-bottom: 30px; display: flex; flex-direction: column; gap: 10px;">
+                    <li style="display: flex; gap: 10px;"><span class="material-icons-round" style="color: var(--accent);">check</span> Você lê a pergunta.</li>
+                    <li style="display: flex; gap: 10px;"><span class="material-icons-round" style="color: var(--accent);">check</span> Tenta lembrar a resposta (força o cérebro).</li>
+                    <li style="display: flex; gap: 10px;"><span class="material-icons-round" style="color: var(--accent);">check</span> Vira o cartão e confere.</li>
+                </ul>
+                <p style="font-size: 0.9rem; color: white;">👇 <strong>Teste agora ao lado!</strong> Clique no cartão.</p>
+            </div>
+
+            <div class="card-playground" data-aos="zoom-in">
+                <div class="card-inner" onclick="flipCard(this)">
+                    <div class="card-face">
+                        <span style="color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase; margin-bottom: 10px;">Direito Administrativo</span>
+                        <h3 id="card-question" style="font-size: 1.3rem; color: white;">Quais são os princípios expressos da Administração Pública (LIMPE)?</h3>
+                        <span style="margin-top: 20px; font-size: 0.8rem; color: var(--accent); opacity: 0.8;">(Clique para virar)</span>
+                    </div>
+                    <div class="card-face back">
+                        <span class="material-icons-round" style="font-size: 40px; margin-bottom: 10px;">lightbulb</span>
+                        <p id="card-answer" style="font-size: 1.1rem;">Legalidade, Impessoalidade, Moralidade, Publicidade e Eficiência.</p>
+                    </div>
+                </div>
+                
+                <div id="controls" class="playground-controls">
+                    <button class="btn-control" style="background: var(--danger);" onclick="nextCard()" title="Errei">
+                        <span class="material-icons-round">close</span>
+                    </button>
+                    <button class="btn-control" style="background: var(--success);" onclick="nextCard()" title="Acertei">
+                        <span class="material-icons-round">check</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="section-padding" style="background: rgba(255,255,255,0.02);">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up">
+                <h2 style="font-size: 2.5rem; color: white;">Liberdade Total</h2>
+                <p style="color: var(--text-muted);">Um ecossistema completo para você estudar onde e como quiser.</p>
+            </div>
+
+            <div class="ecosystem-grid">
+                <div class="eco-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="eco-icon material-icons-round">devices</div>
+                    <h3 style="color: white; margin-bottom: 8px;">Web & Android</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Comece no PC, termine no celular. Sincronização automática na nuvem.</p>
+                </div>
+                
+                <div class="eco-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="eco-icon material-icons-round">file_upload</div>
+                    <h3 style="color: white; margin-bottom: 8px;">Importação Fácil</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Traga seus decks do <strong>Anki (.apkg)</strong> ou planilhas Excel/CSV em segundos.</p>
+                </div>
+
+                <div class="eco-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="eco-icon material-icons-round">share</div>
+                    <h3 style="color: white; margin-bottom: 8px;">Compartilhe</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Envie seus baralhos para amigos ou estude em grupo com um link.</p>
+                </div>
+
+                <div class="eco-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="eco-icon material-icons-round">savings</div>
+                    <h3 style="color: white; margin-bottom: 8px;">Preço Justo</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Uso gratuito generoso. Premium com o <strong>melhor preço do mercado</strong>.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="ia" class="section-padding">
         <div class="container">
-            <div class="text-center" style="margin-bottom: 60px;" data-aos="fade-up">
-                <h2 style="font-size: 2.5rem; color: white;">Você pede, a IA cria.</h2>
-                <p style="color: var(--text-muted);">Esqueça horas criando cartões manualmente. Nosso algoritmo gera baralhos perfeitos em segundos.</p>
+            <div class="text-center" style="margin-bottom: 60px;">
+                <h2 style="font-size: 2.5rem; color: white;">Preguiça de criar? Use a IA.</h2>
+                <p style="color: var(--text-muted);">Nosso algoritmo cria baralhos perfeitos em segundos.</p>
             </div>
-
-            <div class="chat-interface" data-aos="zoom-in-up">
-                <div class="chat-msg user-msg">
-                    Quero aprender sobre Crimes contra a Vida, Código Penal. Crie 3 cards nível difícil.
-                </div>
+            <div class="chat-interface" data-aos="zoom-in">
+                <div class="chat-msg user-msg">Crie cards sobre Lei Seca.</div>
                 <div class="chat-msg ai-msg">
-                    <span class="material-icons-round" style="font-size: 14px; vertical-align: middle;">auto_awesome</span> 
-                    Entendido! Gerando baralho personalizado com foco em doutrina e jurisprudência...
+                    <span class="material-icons-round" style="font-size: 14px;">bolt</span> Gerando...
                 </div>
                 <div class="chat-msg ai-msg" style="background: rgba(99, 102, 241, 0.2); border: 1px solid var(--primary);">
-                    <strong>Card 01:</strong> Qual a diferença jurídica entre Homicídio Privilegiado e Qualificado?<br>
-                    <em style="opacity: 0.7; font-size: 0.8rem;">(Toque para revelar a resposta)</em>
+                    <strong>Card 01:</strong> Qual o limite de álcool no sangue segundo o CTB?<br>
+                    <em>(Toque para revelar: Zero absoluto)</em>
                 </div>
-                <div class="typing" style="color: var(--text-muted); margin-left: 10px;">FlashAI está digitando...</div>
             </div>
         </div>
     </section>
 
     <section id="dados" class="section-padding">
         <div class="container">
-            <div class="text-center" data-aos="fade-up">
-                <span class="material-icons-round" style="font-size: 3rem; color: var(--accent); margin-bottom: 10px;">analytics</span>
-                <h2 style="font-size: 2.5rem; color: white;">Resultados Comprovados</h2>
-                <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">
-                    A gamificação é a ferramenta mais poderosa para aprovação em alta performance.
-                </p>
+            <div class="text-center">
+                <h2 style="font-size: 2.5rem; color: white; margin-bottom: 40px;">Resultados Reais</h2>
             </div>
-
             <div class="stats-grid">
-                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="stat-card" data-aos="fade-up">
                     <div class="stat-number">+89%</div>
-                    <div class="stat-label">Em Desempenho</div>
-                    <p class="stat-desc">
-                        Estudos mostram que a gamificação aumenta drasticamente a retenção para vestibulares e concursos.
-                    </p>
-                    <a href="https://axonpark.com/how-effective-is-gamification-in-education-10-case-studies-and-examples/" target="_blank" class="stat-source">
-                        Fonte: Axon Park / AmplifAI
-                    </a>
+                    <div class="stat-label">Desempenho</div>
+                    <p class="stat-desc">Gamificação aumenta retenção em provas.</p>
+                    <div class="stat-source">Fonte: Axon Park</div>
                 </div>
-
-                <div class="stat-card" data-aos="fade-up" data-aos-delay="200" style="border-color: var(--primary);">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="stat-number">TDAH</div>
-                    <div class="stat-label">& Autismo (TEA)</div>
-                    <p class="stat-desc">
-                        Feedback imediato e estrutura gamificada são essenciais para o foco de neuroatípicos. Melhora comprovada em atenção sustentada.
-                    </p>
-                    <a href="https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2025.1668260/full" target="_blank" class="stat-source">
-                        Fonte: Frontiers in Education
-                    </a>
+                    <div class="stat-label">& Autismo</div>
+                    <p class="stat-desc">Estrutura de jogo melhora o foco sustentado.</p>
+                    <div class="stat-source">Fonte: Frontiers in Ed.</div>
                 </div>
-
-                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="stat-number">90%</div>
-                    <div class="stat-label">De Retenção Ativa</div>
-                    <p class="stat-desc">
-                        Enquanto aulas expositivas retêm apenas 20%, o "Active Recall" dos flashcards garante memória de longo prazo.
-                    </p>
-                    <div class="stat-source">Fonte: Federation of American Scientists</div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number">Cloud</div>
+                    <div class="stat-label">Sync</div>
+                    <p class="stat-desc">Seus dados salvos e seguros na nuvem.</p>
                 </div>
             </div>
         </div>
@@ -153,86 +194,73 @@
 
     <section id="game" class="section-padding" style="background: linear-gradient(180deg, rgba(245, 158, 11, 0.05) 0%, rgba(11, 15, 25, 0) 100%);">
         <div class="container">
-            <div style="text-align: center; margin-bottom: 50px;" data-aos="zoom-in">
-                <span class="material-icons-round" style="font-size: 4rem; color: var(--secondary); text-shadow: 0 0 20px rgba(245, 158, 11, 0.4);">emoji_events</span>
-                <h2 style="font-size: 3rem; color: white; margin-top: 10px;">Torne-se uma Lenda</h2>
-                <p style="color: var(--text-muted);">Não estude apenas para passar. Estude para entrar no Hall da Fama.</p>
+            <div class="text-center" style="margin-bottom: 50px;">
+                <span class="material-icons-round" style="font-size: 3rem; color: var(--secondary);">emoji_events</span>
+                <h2 style="font-size: 3rem; color: white;">Hall da Fama</h2>
             </div>
-
             <div class="rank-grid">
-                <div class="rank-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="rank-card" data-aos="fade-up">
                     <div class="rank-header">
                         <div class="rank-avatar">⚡</div>
                         <div>
-                            <h3 style="color: white; font-size: 1.4rem;">Rank Zeus</h3>
-                            <span style="color: var(--secondary); font-weight: 700;">Nível 99 • Divindade</span>
+                            <h3 style="color: white;">Zeus</h3>
+                            <span style="color: var(--secondary);">Nível 99</span>
                         </div>
                     </div>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px;">
-                        Reservado para quem completou 10.000 cartões com 95% de precisão.
-                    </p>
-                    <div style="background: rgba(255,255,255,0.1); border-radius: 12px; padding: 15px;">
-                        <span style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 8px;">Conquistas Desbloqueadas:</span>
-                        <div class="rank-badges">
-                            <div class="badge-icon" title="Mestre do Foco">👑</div>
-                            <div class="badge-icon" title="Onisciente">👁️</div>
-                            <div class="badge-icon" title="1 Ano de Ofensiva">🔥</div>
-                        </div>
-                    </div>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">10.000 cards dominados.</p>
                 </div>
-
-                <div class="rank-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="rank-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="rank-header">
-                        <div class="rank-avatar" style="background: linear-gradient(135deg, #14B8A6, #0F766E); border-color: #99F6E4; box-shadow: 0 0 20px rgba(20, 184, 166, 0.3);">🦉</div>
+                        <div class="rank-avatar" style="background: linear-gradient(135deg, #14B8A6, #0F766E);">🦉</div>
                         <div>
-                            <h3 style="color: white; font-size: 1.4rem;">Rank Atena</h3>
-                            <span style="color: var(--accent); font-weight: 700;">Nível 50 • Sábio</span>
+                            <h3 style="color: white;">Atena</h3>
+                            <span style="color: var(--accent);">Nível 50</span>
                         </div>
                     </div>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px;">
-                        Estrategista dos estudos. Domina 5+ matérias diferentes simultaneamente.
-                    </p>
-                    <div style="background: rgba(255,255,255,0.1); border-radius: 12px; padding: 15px;">
-                        <span style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 8px;">Troféus de Batalha:</span>
-                        <div class="rank-badges">
-                            <div class="badge-icon" style="color: var(--accent);" title="Poliglota">🗣️</div>
-                            <div class="badge-icon" style="color: var(--accent);" title="Bibliotecário">📚</div>
-                        </div>
-                    </div>
-                </div>
-
-                 <div class="rank-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="rank-header">
-                        <div class="rank-avatar" style="background: linear-gradient(135deg, #EF4444, #991B1B); border-color: #FECACA; box-shadow: 0 0 20px rgba(239, 68, 68, 0.3);">⚔️</div>
-                        <div>
-                            <h3 style="color: white; font-size: 1.4rem;">Rank Ares</h3>
-                            <span style="color: #F87171; font-weight: 700;">Nível 25 • Guerreiro</span>
-                        </div>
-                    </div>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px;">
-                        Imbatível em maratonas de simulados e provas de resistência.
-                    </p>
-                    <div style="background: rgba(255,255,255,0.1); border-radius: 12px; padding: 15px;">
-                        <span style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 8px;">Medalhas de Guerra:</span>
-                        <div class="rank-badges">
-                            <div class="badge-icon" style="color: #F87171;" title="Maratonista">🏃</div>
-                            <div class="badge-icon" style="color: #F87171;" title="Precisão Mortal">🎯</div>
-                        </div>
-                    </div>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Mestra da sabedoria.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer style="border-top: 1px solid var(--border-glass); padding: 60px 0; margin-top: 60px; text-align: center;">
+    <footer style="border-top: 1px solid var(--border-glass); padding: 40px 0; margin-top: 60px; text-align: center;">
         <div class="container">
-            <p style="color: var(--text-muted);">
-                &copy; 2024 FlashcardsGame. Feito para mentes brilhantes.
-            </p>
+            <p style="color: var(--text-muted);">&copy; 2024 FlashcardsGame.</p>
         </div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init({ duration: 800, offset: 100 });</script>
+    <script>
+        AOS.init({ duration: 800, offset: 100 });
+
+        // Script simples para o Tutorial de Flashcard
+        const questions = [
+            { q: "Quais os princípios da Adm. Pública (LIMPE)?", a: "Legalidade, Impessoalidade, Moralidade, Publicidade e Eficiência." },
+            { q: "Qual a capital da Austrália?", a: "Camberra (não é Sydney!)." },
+            { q: "Quanto é 2³?", a: "8 (2 x 2 x 2)." }
+        ];
+        let currentIdx = 0;
+
+        function flipCard(element) {
+            element.classList.add('flipped');
+            document.getElementById('controls').classList.add('visible');
+        }
+
+        function nextCard() {
+            const cardInner = document.querySelector('.card-inner');
+            const controls = document.getElementById('controls');
+            
+            // Desvira
+            cardInner.classList.remove('flipped');
+            controls.classList.remove('visible');
+
+            // Troca o conteúdo depois de desvirar (delay de 300ms)
+            setTimeout(() => {
+                currentIdx = (currentIdx + 1) % questions.length;
+                document.getElementById('card-question').innerText = questions[currentIdx].q;
+                document.getElementById('card-answer').innerText = questions[currentIdx].a;
+            }, 300);
+        }
+    </script>
 </body>
 </html>
