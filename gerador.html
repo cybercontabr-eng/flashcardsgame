@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de CSV - FlashcardsGame</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #F8FAFC;">
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">
+                <span class="material-icons-round">arrow_back</span>
+                Voltar ao Site
+            </a>
+            <span style="font-weight: 700; color: var(--dark);">Ferramenta Web</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="generator-box">
+            <div class="text-center" style="margin-bottom: 30px;">
+                <h1 style="color: var(--primary);">Criador de Baralhos Massivos</h1>
+                <p>Gere um arquivo CSV compatível com nosso app usando o Google Gemini.</p>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">1. Sobre o que são os flashcards?</label>
+                <input type="text" id="topic" class="form-input" placeholder="Ex: Artigo 5º da Constituição, Verbos em Inglês, Anatomia Óssea...">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">2. Quantos cards você quer?</label>
+                <input type="number" id="qty" class="form-input" value="10" min="1" max="50">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">3. Cole seu conteúdo base (Texto, Resumo, Artigos de Lei):</label>
+                <textarea id="content" class="form-textarea" rows="6" placeholder="Cole aqui o texto que a IA deve usar como base..."></textarea>
+            </div>
+
+            <button onclick="generatePrompt()" class="btn btn-primary" style="width: 100%;">
+                <span class="material-icons-round">auto_awesome</span>
+                Gerar Prompt Mágico
+            </button>
+
+            <div id="resultArea" class="generated-area">
+                <h3 style="margin-bottom: 10px; font-size: 1rem;">4. Copie este comando:</h3>
+                <textarea id="promptOutput" class="form-textarea" rows="8" readonly style="background: white; font-size: 0.9rem; color: #475569;"></textarea>
+                
+                <div style="margin-top: 20px; text-align: center;">
+                    <a href="https://gemini.google.com/app" target="_blank" class="btn btn-secondary">
+                        Abrir Google Gemini
+                        <span class="material-icons-round">open_in_new</span>
+                    </a>
+                    <p style="margin-top: 10px; font-size: 0.85rem; color: var(--gray);">
+                        Cole o comando lá. Salve a resposta como .csv e importe no FlashcardsGame!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function generatePrompt() {
+            const topic = document.getElementById('topic').value;
+            const qty = document.getElementById('qty').value;
+            const content = document.getElementById('content').value;
+
+            // O Prompt Engenheirado
+            const prompt = `Aja como um professor especialista em ${topic}. 
+Crie ${qty} flashcards baseados no texto abaixo.
+IMPORTANTE: A saída deve ser estritamente em formato CSV (Comma Separated Values), onde a primeira coluna é a "Pergunta" e a segunda coluna é a "Resposta".
+Use ponto-e-vírgula (;) como separador. Não use cabeçalhos. Não coloque numeração.
+
+Texto Base:
+"${content}"`;
+
+            document.getElementById('promptOutput').value = prompt;
+            document.getElementById('resultArea').style.display = 'block';
+            
+            // Scroll suave até o resultado
+            document.getElementById('resultArea').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
