@@ -3,208 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlashcardsGame - Estude Jogando</title>
-    <meta name="description" content="O App que transforma seus estudos em jogo. Use IA para criar cards, ganhe XP e domine qualquer matéria.">
+    <title>FlashcardsGame - Estude como um Mestre</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <div class="background-glow">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
     <header>
         <div class="container nav-wrapper">
             <a href="#" class="logo">
-                <span class="material-icons-round" style="color:var(--primary); font-size: 32px;">style</span>
+                <span class="material-icons-round" style="color:var(--primary);">style</span>
                 FlashcardsGame
             </a>
             <nav class="nav-links">
-                <a href="#ia">IA Generator</a>
-                <a href="#metodo">Ciência</a>
-                <a href="#game">Gamificação</a>
-                <a href="gerador.html" target="_blank" style="color: var(--primary); font-weight: 700;">
-                    <span class="material-icons-round" style="font-size:16px; vertical-align:middle;">build</span>
-                    Criar Planilha CSV
+                <a href="#ia">Inteligência Artificial</a>
+                <a href="#dados">Dados & Ciência</a>
+                <a href="#rank">Ranking</a>
+                <a href="gerador.html" target="_blank" style="color: var(--accent); font-weight: 600;">
+                    <span class="material-icons-round" style="font-size: 16px; vertical-align: middle;">build</span> Gerador CSV
                 </a>
-                <a href="/#/login" class="btn btn-primary" style="padding: 10px 24px;">Entrar</a>
+                <a href="/#/login" class="btn btn-glass" style="padding: 8px 20px; margin-left: 20px;">Login</a>
             </nav>
         </div>
     </header>
 
     <section class="hero">
+        <div class="container" data-aos="fade-up">
+            <div style="margin-bottom: 20px; display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px; background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.3); border-radius: 30px; color: #818CF8; font-size: 0.85rem;">
+                <span class="material-icons-round" style="font-size: 16px;">auto_awesome</span> Versão 2.0 com IA
+            </div>
+            <h1>A evolução do estudo <br><span class="text-gradient">gamificado.</span></h1>
+            <p>O único app que une a neurociência da Repetição Espaçada com mecânicas de RPG competitivas.</p>
+            
+            <div style="display: flex; gap: 16px; justify-content: center; margin-top: 40px;">
+                <a href="/#/register" class="btn btn-primary">Jogar Agora</a>
+                <a href="#dados" class="btn btn-glass">Ver Estatísticas</a>
+            </div>
+        </div>
+
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span class="tag-item"><span class="material-icons-round">gavel</span> Direito Constitucional</span>
+                <span class="tag-item"><span class="material-icons-round">medication</span> Farmacologia</span>
+                <span class="tag-item"><span class="material-icons-round">code</span> Python & Dart</span>
+                <span class="tag-item"><span class="material-icons-round">translate</span> Inglês Fluente</span>
+                <span class="tag-item"><span class="material-icons-round">history_edu</span> História da Arte</span>
+                <span class="tag-item"><span class="material-icons-round">calculate</span> Cálculo II</span>
+                <span class="tag-item"><span class="material-icons-round">psychology</span> Neurociência</span>
+                <span class="tag-item"><span class="material-icons-round">gavel</span> Direito Penal</span>
+                <span class="tag-item"><span class="material-icons-round">medication</span> Anatomia</span>
+                <span class="tag-item"><span class="material-icons-round">code</span> React & Node</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="ia" class="section-padding">
         <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
-                <div data-aos="fade-right">
-                    <span class="hero-tag">Versão 2.0 com IA</span>
-                    <h1>Transforme textos chatos em <br><span style="color: var(--primary);">Desafios Épicos</span>.</h1>
-                    <p style="font-size: 1.2rem; color: var(--gray); margin-bottom: 30px;">
-                        Você escolhe o tema, a IA cria o jogo. Suba de nível, conquiste medalhas e passe no concurso ou faculdade se divertindo.
-                    </p>
-                    <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-                        <a href="/#/register" class="btn btn-primary">
-                            <span class="material-icons-round">android</span>
-                            Baixar para Android
-                        </a>
-                        <a href="/#/web" class="btn btn-outline">
-                            Acessar Web App
-                        </a>
-                    </div>
+            <div class="text-center" style="margin-bottom: 60px;">
+                <h2 style="font-size: 2.5rem; color: white;">Você pede, a IA cria.</h2>
+                <p style="color: var(--text-muted);">Esqueça horas criando cartões manualmente.</p>
+            </div>
+            <div class="chat-interface" data-aos="zoom-in-up">
+                <div class="chat-msg user-msg">Crie cards difíceis sobre Crimes contra a Vida.</div>
+                <div class="chat-msg ai-msg">
+                    <span class="material-icons-round" style="font-size: 14px;">bolt</span> Gerando baralho...
                 </div>
-                <div data-aos="zoom-in">
-                    <img src="https://placehold.co/600x500/EEE/7C3AED?text=FlashcardsGame+Mobile+Preview" style="border-radius: 24px; box-shadow: 0 20px 50px -10px rgba(124, 58, 237, 0.3); border: 4px solid white;" alt="App Preview">
+                <div class="chat-msg ai-msg" style="background: rgba(99, 102, 241, 0.2); border: 1px solid var(--primary);">
+                    <strong>Card 01:</strong> Qual a diferença entre Homicídio Privilegiado e Qualificado?
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="ia" class="section-padding" style="background: var(--white);">
+    <section id="dados" class="section-padding">
         <div class="container">
-            <div class="text-center" style="max-width: 700px; margin: 0 auto 50px;">
-                <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 16px;">IA sob seu comando</h2>
-                <p style="color: var(--gray); font-size: 1.1rem;">Não perca tempo digitando. Você diz o que quer, e nosso algoritmo entrega o baralho pronto.</p>
+            <div class="text-center" data-aos="fade-up">
+                <span class="material-icons-round" style="font-size: 3rem; color: var(--accent); margin-bottom: 10px;">analytics</span>
+                <h2 style="font-size: 2.5rem; color: white;">Contra fatos não há argumentos</h2>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
-                <div class="ai-demo" data-aos="fade-up">
-                    <p><span style="color: #64748B;">// Você digita:</span></p>
-                    <p style="color: white; margin-bottom: 20px;">"Quero 20 flashcards sobre Direito Penal, foco em Crimes Contra a Vida."</p>
-                    
-                    <p><span style="color: #64748B;">// A IA gera instantaneamente:</span></p>
-                    <p style="color: #34D399;">> Card 01: O que é Homicídio Qualificado?</p>
-                    <p style="color: #34D399;">> Card 02: Diferença entre Dolo e Culpa...</p>
-                    <p style="color: #34D399; animation: blink 1s infinite;">> Card 03: Gerando...</p>
-                </div>
-                <div data-aos="fade-left">
-                    <h3>Simples assim.</h3>
-                    <ul style="margin-top: 20px; font-size: 1.1rem; display: flex; flex-direction: column; gap: 16px;">
-                        <li style="display: flex; gap: 10px;"><span class="material-icons-round" style="color: var(--secondary);">bolt</span>Geração em segundos</li>
-                        <li style="display: flex; gap: 10px;"><span class="material-icons-round" style="color: var(--secondary);">filter_list</span>Filtro por dificuldade</li>
-                        <li style="display: flex; gap: 10px;"><span class="material-icons-round" style="color: var(--secondary);">history_edu</span>Cobre qualquer matéria</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="metodo" class="section-padding" style="background: #F8FAFC;">
-        <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
-                <div data-aos="fade-right">
-                    <div class="chart-container">
-                        <svg viewBox="0 0 400 200" style="width: 100%; height: auto;">
-                            <line x1="20" y1="180" x2="380" y2="180" stroke="#CBD5E1" stroke-width="2"/>
-                            <line x1="20" y1="20" x2="20" y2="180" stroke="#CBD5E1" stroke-width="2"/>
-                            <path d="M20,20 Q100,160 380,175" fill="none" stroke="#EF4444" stroke-width="3" stroke-dasharray="5,5"/>
-                            <path d="M20,20 Q60,30 80,20 Q120,30 140,20 Q200,30 380,20" fill="none" stroke="#10B981" stroke-width="4"/>
-                            <circle cx="80" cy="20" r="4" fill="#10B981"/>
-                            <circle cx="140" cy="20" r="4" fill="#10B981"/>
-                        </svg>
-                        <div style="display: flex; justify-content: space-between; padding: 10px 20px 0;">
-                            <span style="color: #EF4444; font-size: 0.8rem; font-weight: bold;">Estudo Comum</span>
-                            <span style="color: #10B981; font-size: 0.8rem; font-weight: bold;">Com FlashcardsGame</span>
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="fade-left">
-                    <h2 style="font-size: 2.5rem; font-weight: 800;">Ciência Comprovada</h2>
-                    <blockquote style="font-style: italic; color: var(--gray); border-left: 4px solid var(--primary); padding-left: 20px; margin: 20px 0;">
-                        "Estudos mostram que o método de 'Active Recall' (lembrar ativamente) melhora drasticamente o foco e a retenção de longo prazo."
-                    </blockquote>
-                    <p style="margin-bottom: 20px;">
-                        Veja o que a mídia diz sobre o método:
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number">+89,4%</div>
+                    <div class="stat-label">Desempenho</div>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px;">
+                        Alunos gamificados superam os de aulas expositivas.
                     </p>
-                    <a href="https://www.cnnbrasil.com.br/educacao/flashcards-metodo-simples-melhora-foco-e-retencao-de-conteudos/" target="_blank" class="btn btn-outline" style="border-radius: 8px; font-size: 0.9rem;">
-                        Ler matéria na <strong style="margin-left: 4px; color: #CC0000;">CNN Brasil</strong>
+                    <a href="https://www.cnnbrasil.com.br/lifestyle/gamificacao-na-educacao/" target="_blank" class="stat-source">
+                        Fonte: CNN Brasil
                     </a>
                 </div>
+
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number">75%</div>
+                    <div class="stat-label">Engajamento</div>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px;">
+                        Dos alunos preferem aprender jogando.
+                    </p>
+                    <a href="https://internationalschooling.org/pt/blog/gamification-in-education" target="_blank" class="stat-source">
+                        Fonte: Int. Schooling
+                    </a>
+                </div>
+
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number">$58 Bi</div>
+                    <div class="stat-label">Mercado 2028</div>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px;">
+                        O setor de educação que mais cresce no mundo.
+                    </p>
+                    <div class="stat-source">Projeção Global</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="game" class="section-padding game-section">
+    <section id="rank" class="section-padding">
         <div class="container">
-            <div class="text-center" data-aos="zoom-in">
-                <span class="material-icons-round" style="font-size: 3rem; color: var(--secondary);">emoji_events</span>
-                <h2 style="font-size: 3rem; font-weight: 900; margin-bottom: 10px;">Hall da Fama</h2>
-                <p style="margin-bottom: 50px; font-size: 1.2rem; opacity: 0.9;">Junte-se à elite dos estudantes. Conquiste seu lugar no topo.</p>
-            </div>
-
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
-                
-                <div class="game-card" data-aos="flip-up" data-aos-delay="100">
-                    <div style="width: 80px; height: 80px; background: white; border-radius: 50%; margin: 0 auto 16px; overflow: hidden; border: 4px solid var(--secondary);">
-                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="Avatar">
-                    </div>
-                    <h3 style="color: var(--secondary);">Mestre do Flashcard</h3>
-                    <p style="font-size: 0.9rem; opacity: 0.8;">Nível 42 • Concurseiro</p>
-                    <div class="badge-grid">
-                        <span class="game-badge" title="100 dias seguidos">🔥</span>
-                        <span class="game-badge" title="1000 cards criados">🃏</span>
-                        <span class="game-badge" title="Elite">👑</span>
+            <h2 style="font-size: 2.5rem; color: white; margin-bottom: 40px;">Hall da Fama</h2>
+            
+            <div class="rank-grid">
+                <div class="rank-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="rank-avatar">👑</div>
+                    <div style="flex: 1;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <h3>Mestre_OAB</h3>
+                            <span style="color: #FDB931; font-weight: bold;">Lvl 42</span>
+                        </div>
+                        <p style="color:var(--text-muted); font-size:0.9rem;">Foco: Penal</p>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 95%;"></div></div>
                     </div>
                 </div>
-
-                <div class="game-card" data-aos="flip-up" data-aos-delay="200">
-                    <div style="width: 80px; height: 80px; background: white; border-radius: 50%; margin: 0 auto 16px; overflow: hidden; border: 4px solid #10B981;">
-                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Annie" alt="Avatar">
-                    </div>
-                    <h3 style="color: #10B981;">Sabedoria Ancestral</h3>
-                    <p style="font-size: 0.9rem; opacity: 0.8;">Nível 38 • Medicina</p>
-                    <div class="badge-grid">
-                        <span class="game-badge" title="500 revisões perfeitas">🧠</span>
-                        <span class="game-badge" title="Madrugador">🌙</span>
+                <div class="rank-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="rank-avatar" style="background: linear-gradient(45deg, #C0C0C0, #E0E0E0); font-size: 24px; box-shadow:none;">⚔️</div>
+                    <div style="flex: 1;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <h3>Dra.Ana</h3>
+                            <span style="color: white; font-weight: bold;">Lvl 38</span>
+                        </div>
+                        <p style="color:var(--text-muted); font-size:0.9rem;">Foco: Medicina</p>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 70%; background: var(--secondary);"></div></div>
                     </div>
                 </div>
-
-                <div class="game-card" style="background: white; color: var(--dark);" data-aos="flip-up" data-aos-delay="300">
-                    <h3>Suas Conquistas</h3>
-                    <ul style="text-align: left; margin-top: 20px; font-size: 0.95rem;">
-                        <li style="border-bottom: 1px solid #eee; padding: 8px 0;">
-                            <span style="color: var(--secondary);">★</span> 10 XP por acerto
-                        </li>
-                        <li style="border-bottom: 1px solid #eee; padding: 8px 0;">
-                            <span style="color: var(--secondary);">★</span> Bônus de Ofensiva diária
-                        </li>
-                        <li style="padding: 8px 0;">
-                            <span style="color: var(--secondary);">★</span> Loja de Itens Virtuais
-                        </li>
-                    </ul>
-                    <a href="/#/register" class="btn btn-primary" style="width: 100%; margin-top: 15px;">Começar Jornada</a>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <section class="section-padding">
-        <div class="container text-center">
-            <h2 style="font-size: 2.5rem; margin-bottom: 40px; font-weight: 800;">Indispensável para o topo</h2>
-            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
-                <span class="hero-tag" style="font-size: 1rem; padding: 10px 20px;">⚖️ OAB e Direito</span>
-                <span class="hero-tag" style="font-size: 1rem; padding: 10px 20px;">🩺 Medicina</span>
-                <span class="hero-tag" style="font-size: 1rem; padding: 10px 20px;">🇺🇸 Idiomas</span>
-                <span class="hero-tag" style="font-size: 1rem; padding: 10px 20px;">💻 Programação</span>
-                <span class="hero-tag" style="font-size: 1rem; padding: 10px 20px;">🚓 Concursos Policiais</span>
-                <span class="hero-tag" style="font-size: 1rem; padding: 10px 20px;">📚 Vestibular/ENEM</span>
-                <span class="hero-tag" style="font-size: 1rem; padding: 10px 20px; background: transparent; border: 2px solid var(--gray-light); color: var(--gray);">...e muito mais</span>
-            </div>
-        </div>
-    </section>
-
-    <footer style="background: var(--dark); color: var(--gray); padding: 40px 0; text-align: center;">
+    <footer style="border-top: 1px solid var(--border-glass); padding: 60px 0; margin-top: 60px; text-align: center;">
         <div class="container">
-            <p>&copy; 2024 FlashcardsGame. Todos os direitos reservados.</p>
-            <br>
-            <p style="font-size: 0.9rem;">
-                Dica: Quer criar baralhos massivos via Excel? <a href="gerador.html" style="color: var(--primary-light); text-decoration: underline;">Use nosso Gerador de CSV</a>.
+            <p style="color: var(--text-muted);">
+                &copy; 2024 FlashcardsGame. Todos os direitos reservados.
             </p>
         </div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
+    <script>AOS.init({ duration: 800, offset: 100 });</script>
 </body>
 </html>
