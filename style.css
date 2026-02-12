@@ -1,4 +1,4 @@
-/* --- style.css (Versão Final: FlashcardsGame Ultimate) --- */
+/* --- style.css (Versão Final: FlashcardsGame Ultimate Completo) --- */
 :root {
     --primary: #6366F1;       /* Indigo Vibrante */
     --primary-glow: rgba(99, 102, 241, 0.4);
@@ -80,7 +80,7 @@ header {
 .nav-wrapper { display: flex; justify-content: space-between; align-items: center; height: 80px; }
 .logo { font-size: 1.5rem; font-weight: 700; color: white; display: flex; align-items: center; gap: 8px; letter-spacing: -0.5px; }
 
-/* Novo estilo de Menu (Sem linha embaixo) */
+/* Menu Pílula (Sem linhas) */
 .nav-links { display: flex; gap: 8px; align-items: center; }
 .nav-link { 
     color: var(--text-muted); font-size: 0.9rem; padding: 8px 16px; 
@@ -90,12 +90,12 @@ header {
     color: white; background: rgba(255, 255, 255, 0.1); 
 }
 
-/* --- Hero & Flashcard 3D --- */
+/* --- Hero --- */
 .hero { padding: 160px 0 60px; display: flex; flex-direction: column; align-items: center; text-align: center; }
 .hero h1 { font-size: 4rem; line-height: 1.1; font-weight: 800; letter-spacing: -2px; margin-bottom: 24px; }
 .hero p { font-size: 1.25rem; color: var(--text-muted); max-width: 600px; margin: 0 auto 40px; }
 
-/* --- Section: O Que é Flashcard (Tutorial) --- */
+/* --- Section: O Que é Flashcard (Tutorial Interativo) --- */
 .tutorial-layout {
     display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
 }
@@ -129,7 +129,7 @@ header {
 
 /* --- Section: Features & Ecosystem --- */
 .ecosystem-grid {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px; margin-top: 40px;
 }
 .eco-card {
@@ -189,19 +189,26 @@ header {
     display: flex; align-items: center; justify-content: center; gap: 6px;
 }
 
-/* --- Gamification Ranks --- */
+/* --- Gamification Ranks (Estilo Épico) --- */
 .rank-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 60px; }
 .rank-card {
     background: linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%);
-    border: 1px solid var(--border-glass); border-radius: 24px; padding: 30px; transition: 0.3s;
+    border: 1px solid var(--border-glass); border-radius: 24px; padding: 30px;
+    transition: 0.3s; position: relative; overflow: hidden;
 }
 .rank-card:hover { border-color: var(--secondary); transform: translateY(-5px); }
 .rank-header { display: flex; align-items: center; gap: 20px; margin-bottom: 20px; }
 .rank-avatar {
-    width: 60px; height: 60px; border-radius: 50%;
+    width: 70px; height: 70px; border-radius: 50%;
     background: linear-gradient(135deg, #F59E0B, #B45309);
-    display: flex; align-items: center; justify-content: center; font-size: 30px;
+    display: flex; align-items: center; justify-content: center; font-size: 32px;
     box-shadow: 0 0 20px rgba(245, 158, 11, 0.3); border: 2px solid #FEF3C7;
+}
+.rank-badges { display: flex; gap: 8px; margin-top: 15px; }
+.badge-icon {
+    width: 36px; height: 36px; background: rgba(0,0,0,0.3); border-radius: 8px;
+    display: flex; align-items: center; justify-content: center; font-size: 18px;
+    border: 1px solid var(--border-glass); color: var(--secondary);
 }
 
 /* --- Gerador --- */
