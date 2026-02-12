@@ -1,4 +1,4 @@
-/* --- style.css (Versão Final: FlashcardsGame Ultimate Completo) --- */
+/* --- style.css (Versão Final: FlashcardsGame Ultimate com Logo Fix) --- */
 :root {
     --primary: #6366F1;       /* Indigo Vibrante */
     --primary-glow: rgba(99, 102, 241, 0.4);
@@ -77,10 +77,32 @@ header {
     background: rgba(11, 15, 25, 0.8); backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border-glass);
 }
-.nav-wrapper { display: flex; justify-content: space-between; align-items: center; height: 80px; }
-.logo { font-size: 1.5rem; font-weight: 700; color: white; display: flex; align-items: center; gap: 8px; letter-spacing: -0.5px; }
 
-/* Menu Pílula (Sem linhas) */
+/* Flexbox para separar Logo (esquerda) e Menu (direita) */
+.nav-wrapper { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    height: 80px; 
+}
+
+/* --- LOGO FIX (CORREÇÃO AQUI) --- */
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 45px;       /* Altura fixa impede que fique gigante */
+    width: auto;        /* Largura automática mantém proporção */
+    max-width: 200px;   /* Limite de segurança */
+    object-fit: contain;
+    display: block;
+}
+
+/* Menu Pílula */
 .nav-links { display: flex; gap: 8px; align-items: center; }
 .nav-link { 
     color: var(--text-muted); font-size: 0.9rem; padding: 8px 16px; 
@@ -188,8 +210,10 @@ header {
     font-size: 0.75rem; color: var(--text-muted); font-style: italic; opacity: 0.7;
     display: flex; align-items: center; justify-content: center; gap: 6px;
 }
+.stat-source a { color: var(--text-muted); text-decoration: underline; }
+.stat-source a:hover { color: white; }
 
-/* --- Gamification Ranks (Estilo Épico) --- */
+/* --- Gamification Ranks --- */
 .rank-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 60px; }
 .rank-card {
     background: linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%);
