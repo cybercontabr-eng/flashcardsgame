@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flashcards AI - Aprenda 10x mais rápido</title>
-    <meta name="description" content="O App definitivo para Concursos, Vestibulares e Faculdade. Use IA para criar flashcards e gamificação para manter o foco.">
+    <title>FlashAI - Domine qualquer matéria com IA e Gamificação</title>
+    <meta name="description" content="O App definitivo para Concursos, Vestibulares e Faculdade. Crie flashcards com IA, estude com repetição espaçada e ganhe recompensas.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
 </head>
@@ -18,167 +20,297 @@
     <header>
         <div class="container nav-wrapper">
             <a href="#" class="logo">
-                <span class="material-icons-round" style="color:var(--secondary)">bolt</span>
+                <span class="material-icons-round" style="color:var(--primary); font-size: 32px;">auto_awesome</span>
                 FlashAI
             </a>
-            <nav style="display: flex; gap: 16px; align-items: center;">
-                <a href="#funcionalidades" style="display: none; @media(min-width:768px){display:block;} color: var(--gray);">Recursos</a>
-                <a href="/#/login" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">
+            
+            <nav class="nav-links-desktop">
+                <a href="#recursos" class="nav-link">Recursos</a>
+                <a href="#metodo" class="nav-link">O Método</a>
+                <a href="#premium" class="nav-link">Premium</a>
+                <a href="/#/login" class="btn btn-primary" style="padding: 10px 24px; font-size: 0.9rem;">
                     Acessar App
                 </a>
             </nav>
+
+            <button class="mobile-toggle">
+                <span class="material-icons-round" style="font-size: 32px;">menu</span>
+            </button>
         </div>
     </header>
 
+    <div class="mobile-overlay"></div>
+    <div class="mobile-menu">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px;">
+             <span class="logo">FlashAI</span>
+             <button class="mobile-toggle-close" style="background:none; border:none; cursor:pointer;">
+                <span class="material-icons-round" style="font-size: 32px;">close</span>
+             </button>
+        </div>
+        <a href="#recursos" class="nav-link mobile-link">Recursos</a>
+        <a href="#metodo" class="nav-link mobile-link">O Método</a>
+        <a href="#premium" class="nav-link mobile-link">Premium</a>
+        <a href="/#/login" class="btn btn-primary mobile-link" style="width: 100%; margin-top: 20px;">Acessar App</a>
+    </div>
+
+
     <section class="hero">
         <div class="container hero-grid">
-            <div class="hero-content">
-                <span class="hero-tag">Novo: Geração via Inteligência Artificial</span>
-                <h1>Estude menos, <br>lembre <span>para sempre</span>.</h1>
-                <p>A união perfeita entre a ciência da Repetição Espaçada e a diversão da Gamificação. Ideal para quem precisa passar em provas difíceis.</p>
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <div class="hero-tag">
+                    <span class="material-icons-round" style="font-size: 18px;">rocket_launch</span>
+                    IA + Neurociência v2.0
+                </div>
+                <h1>Estude 10x melhor, <br>lembre <span class="text-gradient">para sempre</span>.</h1>
+                <p>A união revolucionária entre a geração automática via Inteligência Artificial, a ciência da Repetição Espaçada e o vício da Gamificação.</p>
                 
                 <div style="display: flex; gap: 16px; flex-wrap: wrap;" class="hero-actions">
                     <a href="/#/register" class="btn btn-primary">
-                        Começar Grátis
+                        Começar Grátis agora
                         <span class="material-icons-round">arrow_forward</span>
                     </a>
                     <a href="#como-funciona" class="btn btn-outline">
-                        Ver vídeo demo
+                        <span class="material-icons-round">play_circle</span>
+                        Ver como funciona
                     </a>
                 </div>
                 
-                <div style="margin-top: 30px; font-size: 0.9rem; color: var(--gray); display: flex; align-items: center; gap: 8px;">
-                    <span class="material-icons-round" style="color: #10B981;">check_circle</span>
-                    Disponível para Web e Android
+                <div style="margin-top: 40px; font-size: 0.95rem; color: var(--gray); display: flex; align-items: center; gap: 24px;">
+                    <div style="display:flex; align-items:center; gap:8px;">
+                        <span class="material-icons-round" style="color: var(--accent);">check_circle</span> Web & Android
+                    </div>
+                    <div style="display:flex; align-items:center; gap:8px;">
+                         <span class="material-icons-round" style="color: var(--accent);">check_circle</span> Sincronização Cloud
+                    </div>
                 </div>
             </div>
             
-            <div class="hero-image">
-                <img src="https://placehold.co/600x400/EEE/4F46E5?text=Preview+do+App+no+Celular" alt="App Preview">
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <img src="https://placehold.co/600x750/EEE/6366F1?text=App+Screen+Mockup" alt="FlashAI App Interface">
             </div>
         </div>
     </section>
 
-    <section id="funcionalidades" class="section-padding">
+    <section id="recursos" class="section-padding">
         <div class="container">
-            <div style="text-align: center; max-width: 700px; margin: 0 auto;">
-                <h2 style="font-size: 2.5rem; margin-bottom: 16px;">Tecnologia a favor da sua aprovação</h2>
-                <p style="color: var(--gray);">Deixe as planilhas chatas de lado. Nosso sistema faz o trabalho pesado para você focar apenas em responder.</p>
+            <div style="text-align: center; max-width: 800px; margin: 0 auto 60px;" data-aos="fade-up">
+                <h2 class="section-title" style="font-size: 3rem; margin-bottom: 24px; font-weight: 800;">Sua máquina de aprovação</h2>
+                <p style="color: var(--gray); font-size: 1.2rem;">Automatize a parte chata da criação de material e foque no que importa: aprender ativamente.</p>
             </div>
 
             <div class="features-grid">
-                <div class="feature-card">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="icon-box icon-ai">
-                        <span class="material-icons-round">auto_awesome</span>
+                        <span class="material-icons-round">psychology</span>
                     </div>
-                    <h3>Criação via IA</h3>
-                    <p>Cole um texto jurídico, um artigo ou resumo e nossa Inteligência Artificial cria os flashcards (Perguntas e Respostas) automaticamente para você.</p>
+                    <h3>Criação Instantânea com IA</h3>
+                    <p>Cole qualquer texto, artigo de lei ou resumo PDF. Nossa IA gera centenas de perguntas e respostas focadas nos pontos chave em segundos.</p>
                 </div>
 
-                <div class="feature-card">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="icon-box icon-web">
-                        <span class="material-icons-round">cloud_upload</span>
+                        <span class="material-icons-round">move_to_inbox</span>
                     </div>
-                    <h3>Migração Fácil</h3>
-                    <p>Já usa o Anki? Importe seus baralhos `.apkg` ou planilhas do Excel em segundos e continue de onde parou sem perder o progresso.</p>
+                    <h3>Migração sem Dores</h3>
+                    <p>Traga seus baralhos do Anki (.apkg) ou planilhas Excel. Mudar para uma plataforma moderna nunca foi tão fácil.</p>
                 </div>
 
-                <div class="feature-card">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="icon-box icon-game">
-                        <span class="material-icons-round">devices</span>
+                        <span class="material-icons-round">devices_other</span>
                     </div>
-                    <h3>Sincronização Cloud</h3>
-                    <p>Comece no computador, revise no ônibus pelo Android. Seus dados estão sempre salvos na nuvem em tempo real.</p>
+                    <h3>Estude em Qualquer Lugar</h3>
+                    <p>Comece a revisão no PC e termine no celular no caminho de casa. Tudo sincronizado em tempo real na nuvem.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="section-padding gamification">
-        <div class="container">
-            <span class="material-icons-round" style="font-size: 3rem; color: var(--secondary); margin-bottom: 20px;">emoji_events</span>
-            <h2>Vicie em Estudar</h2>
-            <p>Transformamos o estudo maçante em um jogo de RPG. Ganhe XP, suba de nível e colete moedas virtuais a cada revisão concluída.</p>
+        <div class="gamification-bg"></div> <div class="container" style="position: relative; z-index: 2;">
+            <span class="material-icons-round floating-icon" style="font-size: 5rem; color: var(--secondary); margin-bottom: 24px; text-shadow: 0 0 30px rgba(251, 191, 36, 0.5);">emoji_events</span>
             
-            <div class="stats-container">
-                <div class="stat-item">
-                    <span class="stat-number">XP</span>
-                    <span>Sistema de Níveis</span>
+            <div data-aos="zoom-in">
+                <h2>Vicie no processo de evoluir</h2>
+                <p>Transformamos o estudo maçante em um RPG viciante. Ganhe XP, suba no ranking global e desbloqueie conquistas a cada revisão.</p>
+            </div>
+            
+            <div class="stats-container" style="margin-top: 60px;">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <span class="stat-number counter" data-target="1500">0</span>
+                    <span class="stat-label">XP Médio/Dia</span>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number">$$</span>
-                    <span>Moedas Virtuais</span>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <span class="stat-number counter" data-target="450">0</span>
+                    <span class="stat-label">Moedas Coletadas</span>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number">🔥</span>
-                    <span>Ofensiva Diária</span>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <span class="stat-number" style="color: #F87171;">🔥 <span class="counter" data-target="32">0</span> dias</span>
+                    <span class="stat-label">Ofensiva Atual</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section-padding science-section">
-        <div class="container science-content">
-            <span class="badge">Baseado em Ciência</span>
-            <h2>Por que Flashcards funcionam?</h2>
-            <p style="margin-top: 20px; font-size: 1.1rem; color: var(--gray);">
-                Não é mágica, é neurociência. Utilizamos o algoritmo de <strong>Repetição Espaçada (SRS)</strong> combinado com o <strong>Active Recall</strong> (Evocação Ativa).
-            </p>
-            <p style="margin-top: 20px; color: var(--gray);">
-                Ao forçar seu cérebro a buscar a resposta antes de vê-la, você fortalece as conexões neurais. O algoritmo agende as revisões para o momento exato em que você está prestes a esquecer, garantindo memória de longo prazo com o mínimo de esforço.
-            </p>
+    <section id="metodo" class="section-padding science-section">
+        <div class="container science-layout">
+            <div class="science-content" data-aos="fade-right">
+                <span class="badge">Baseado em Evidências</span>
+                <h2 style="font-size: 3rem; margin-bottom: 32px; font-weight: 800;">Por que você <span style="color: var(--primary);">realmente</span> aprende?</h2>
+                <p style="font-size: 1.2rem; color: var(--gray); margin-bottom: 24px;">
+                    Ler e grifar não funciona. O FlashAI utiliza o <strong>Active Recall</strong> (Evocação Ativa), forçando seu cérebro a buscar a informação, o que fortalece as conexões neurais.
+                </p>
+                <p style="font-size: 1.1rem; color: var(--gray);">
+                    Combinado com nosso algoritmo SRS (Repetição Espaçada), o app calcula o momento exato em que você está prestes a esquecer e agende a revisão, garantindo a memória de longo prazo com o mínimo esforço possível.
+                </p>
+                 <div style="margin-top: 32px;">
+                    <a href="#" class="btn btn-outline" style="padding: 12px 24px;">Ler o estudo científico</a>
+                 </div>
+            </div>
+            
+             <div class="science-image" data-aos="zoom-in-left" data-aos-delay="200">
+                <img src="https://placehold.co/500x400/E0E7FF/6366F1?text=Gráfico+da+Curva+do+Esquecimento" alt="Gráfico SRS" style="border-radius: 24px; box-shadow: var(--shadow-lg);">
+            </div>
         </div>
     </section>
 
     <section class="section-padding">
         <div class="container">
-            <h2 style="text-align: center; margin-bottom: 40px;">Indispensável para:</h2>
+            <div style="text-align: center; margin-bottom: 60px;" data-aos="fade-up">
+                <h2 style="font-size: 3rem; font-weight: 800;">Indispensável para quem busca o topo</h2>
+            </div>
             <div class="audience-grid">
-                <div class="audience-item">
-                    <span class="material-icons-round" style="font-size: 40px; color: var(--primary);">gavel</span>
-                    <h3>Concursos</h3>
-                    <p style="font-size: 0.9rem; margin-top: 8px;">Memorize leis, prazos e artigos para OAB, MP e Magistratura.</p>
+                <div class="audience-item" data-aos="fade-up" data-aos-delay="100">
+                    <span class="material-icons-round audience-icon">balance</span>
+                    <h3>Concursos Públicos</h3>
+                    <p>Memorize leis secas, prazos e jurisprudência para OAB, Tribunais e Carreiras Policiais.</p>
                 </div>
-                <div class="audience-item">
-                    <span class="material-icons-round" style="font-size: 40px; color: var(--primary);">school</span>
-                    <h3>Vestibular/ENEM</h3>
-                    <p style="font-size: 0.9rem; margin-top: 8px;">Domine fórmulas de física, datas históricas e vocabulário.</p>
+                <div class="audience-item" data-aos="fade-up" data-aos-delay="200">
+                    <span class="material-icons-round audience-icon">edit_note</span>
+                    <h3>Vestibular & ENEM</h3>
+                    <p>Domine fórmulas, datas históricas, tabela periódica e vocabulário essencial.</p>
                 </div>
-                <div class="audience-item">
-                    <span class="material-icons-round" style="font-size: 40px; color: var(--primary);">medical_services</span>
-                    <h3>Universitários</h3>
-                    <p style="font-size: 0.9rem; margin-top: 8px;">Perfeito para estudantes de medicina (anatomia/farmacologia).</p>
+                <div class="audience-item" data-aos="fade-up" data-aos-delay="300">
+                    <span class="material-icons-round audience-icon">local_hospital</span>
+                    <h3>Saúde & Medicina</h3>
+                    <p>A ferramenta favorita para anatomia, farmacologia e ciclos clínicos complexos.</p>
                 </div>
-                <div class="audience-item">
-                    <span class="material-icons-round" style="font-size: 40px; color: var(--primary);">translate</span>
-                    <h3>Idiomas</h3>
-                    <p style="font-size: 0.9rem; margin-top: 8px;">Acelere a fluência aprendendo 20+ novas palavras por dia.</p>
+                <div class="audience-item" data-aos="fade-up" data-aos-delay="400">
+                    <span class="material-icons-round audience-icon">translate</span>
+                    <h3>Poliglotas</h3>
+                    <p>Acelere a fluência aprendendo 30+ novas palavras e frases por dia com contexto.</p>
                 </div>
             </div>
 
-            <div class="pro-banner">
-                <h2>Seja PRO e desbloqueie tudo</h2>
-                <p style="margin-bottom: 30px; font-size: 1.1rem; opacity: 0.9;">Geração de cartões ilimitada com IA, estatísticas avançadas, sem anúncios e suporte prioritário.</p>
-                <a href="/#/pro" class="btn btn-secondary" style="background: white; color: var(--primary);">
-                    Quero ser Premium
-                </a>
+            <div id="premium" class="pro-banner" data-aos="flip-up" data-aos-duration="1200" style="margin-bottom: -140px; position: relative; z-index: 10;">
+                <div class="pro-content">
+                    <span style="background: rgba(255,255,255,0.2); padding: 4px 12px; border-radius: 20px; font-size: 0.9rem; font-weight: 700; margin-bottom: 16px; display: inline-block;">OFERTA DE LANÇAMENTO</span>
+                    <h2>Desbloqueie seu potencial máximo</h2>
+                    <p style="margin-bottom: 40px; font-size: 1.25rem; opacity: 0.95; max-width: 700px; margin-left: auto; margin-right: auto;">Geração ilimitada com IA, estatísticas detalhadas de desempenho, modo escuro, sem anúncios e suporte prioritário.</p>
+                    
+                    <a href="/#/pro" class="btn btn-primary btn-pulse" style="background: white; color: var(--primary-dark); font-size: 1.1rem; padding: 18px 40px;">
+                        <span class="material-icons-round">diamond</span>
+                        Quero ser Premium
+                    </a>
+                    <p style="margin-top: 16px; font-size: 0.9rem; opacity: 0.8;">Garantia de 7 dias ou seu dinheiro de volta.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <div style="margin-bottom: 20px;">
-                <strong>FlashAI</strong> &copy; 2024
+        <div class="container" style="padding-top: 160px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; margin-bottom: 40px;">
+                 <a href="#" class="logo" style="font-size: 1.5rem;">
+                    <span class="material-icons-round" style="color:var(--primary);">auto_awesome</span>
+                    FlashAI
+                </a>
+                 <div style="display: flex; gap: 24px; font-size: 0.95rem; font-weight: 500;">
+                    <a href="#" style="color: var(--dark);">Termos</a>
+                    <a href="#" style="color: var(--dark);">Privacidade</a>
+                    <a href="#" style="color: var(--dark);">Contato</a>
+                </div>
             </div>
-            <div style="display: flex; justify-content: center; gap: 20px; font-size: 0.9rem;">
-                <a href="#">Termos de Uso</a>
-                <a href="#">Privacidade</a>
-                <a href="#">Contato</a>
+            <div style="text-align: center; font-size: 0.9rem; border-top: 1px solid var(--gray-light); padding-top: 32px;">
+                Feito com <span style="color: #F87171;">❤</span> para estudantes ambiciosos. <br>
+                © 2024 FlashAI Inc.
             </div>
         </div>
     </footer>
 
-    <script src="main.dart.js" defer></script> 
-</body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicializa as animações de scroll
+        AOS.init({
+            once: true, // A animação só acontece uma vez ao descer
+            offset: 150, // Começa a animar um pouco antes do elemento aparecer totalmente
+            duration: 800, // Duração padrão das animações
+            easing: 'ease-in-out-cubic'
+        });
+    </script>
+
+    <script>
+        // --- Lógica do Menu Mobile ---
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const mobileClose = document.querySelector('.mobile-toggle-close');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const mobileOverlay = document.querySelector('.mobile-overlay');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('active');
+            mobileOverlay.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : ''; // Trava o scroll do corpo
+        }
+
+        mobileToggle.addEventListener('click', toggleMenu);
+        mobileClose.addEventListener('click', toggleMenu);
+        mobileOverlay.addEventListener('click', toggleMenu);
+        // Fecha o menu ao clicar em um link
+        mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
+
+
+        // --- Lógica dos Contadores Animados (Gamificação) ---
+        // Este script faz os números subirem de 0 até o valor final quando a seção aparece
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200; // Quanto menor, mais rápido
+
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    // Calcula o incremento para que todos terminem ao mesmo tempo
+                    const inc = target / speed;
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + inc);
+                        setTimeout(updateCount, 1);
+                    } else {
+                        counter.innerText = target;
+                         // Adiciona um "+" ou "K" se necessário no final
+                         if(target > 1000) counter.innerText += "+";
+                    }
+                };
+                updateCount();
+            });
+        };
+
+        // Usa o IntersectionObserver para disparar a contagem só quando a seção de gamificação aparecer na tela
+        let hasAnimated = false;
+        const gamificationSection = document.querySelector('.gamification');
+        
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting && !hasAnimated) {
+                animateCounters();
+                hasAnimated = true; // Garante que só roda uma vez
+            }
+        }, { threshold: 0.5 }); // Dispara quando 50% da seção estiver visível
+
+        if(gamificationSection) {
+            observer.observe(gamificationSection);
+        }
+    </script>
+
+    </body>
 </html>
