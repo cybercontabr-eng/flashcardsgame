@@ -67,7 +67,7 @@ body {
 .btn {
     display: inline-flex; align-items: center; justify-content: center;
     padding: 12px 28px; border-radius: 50px; font-weight: 700; cursor: pointer; transition: 0.3s;
-    border: 1px solid transparent; font-size: 0.95rem; text-decoration: none;
+    border: 1px solid transparent; font-size: 0.95rem; text-decoration: none !important;
 }
 .btn-primary {
     background: white; color: var(--bg-dark);
@@ -95,14 +95,29 @@ header {
     border-bottom: 1px solid var(--border-glass);
 }
 .nav-wrapper { display: flex; justify-content: space-between; align-items: center; height: 80px; }
-.logo { display: flex; align-items: center; height: 100%; text-decoration: none; }
+.logo { display: flex; align-items: center; height: 100%; text-decoration: none !important; }
 .logo img { height: 45px; width: auto; max-width: 200px; object-fit: contain; display: block; }
-.nav-links { display: flex; gap: 8px; align-items: center; }
+
+/* NOVO VISUAL DO MENU (Sem linhas, Estilo Pílula) */
+.nav-links { display: flex; gap: 12px; align-items: center; }
 .nav-link { 
-    color: var(--text-muted); font-size: 0.9rem; padding: 8px 16px; 
-    border-radius: 20px; transition: 0.3s; font-weight: 500;
+    color: var(--text-muted); 
+    font-size: 0.9rem; 
+    padding: 8px 18px; 
+    border-radius: 30px; 
+    transition: all 0.3s ease; 
+    font-weight: 600;
+    text-decoration: none !important; /* Remove linha ridícula */
+    background: rgba(255, 255, 255, 0.02); /* Fundo de botão sutil */
+    border: 1px solid transparent;
 }
-.nav-link:hover { color: white; background: rgba(255, 255, 255, 0.05); }
+.nav-link:hover { 
+    color: white; 
+    background: rgba(99, 102, 241, 0.1); /* Brilho roxo ao passar o mouse */
+    border-color: rgba(99, 102, 241, 0.3);
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.2);
+    transform: translateY(-2px);
+}
 
 /* --- Hero --- */
 .hero { padding: 160px 0 60px; display: flex; flex-direction: column; align-items: center; text-align: center; }
@@ -163,6 +178,9 @@ header {
 .stat-number { font-size: 3rem; font-weight: 900; margin-bottom: 8px; background: linear-gradient(135deg, var(--accent) 0%, #34D399 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .stat-label { font-size: 1.1rem; color: white; font-weight: 600; margin-bottom: 8px; }
 .stat-desc { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 15px; }
+.stat-source { font-size: 0.75rem; color: var(--text-muted); font-style: italic; opacity: 0.7; display: flex; align-items: center; justify-content: center; gap: 6px; }
+.stat-source a { color: var(--text-muted); text-decoration: underline; }
+.stat-source a:hover { color: white; }
 
 /* --- Gamification Ranks --- */
 .rank-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 60px; }
@@ -211,7 +229,7 @@ header {
     background: var(--bg-card); border: 1px solid var(--border-glass);
     padding: 30px; border-radius: 20px; transition: 0.3s;
 }
-.review-card:hover { transform: translateY(-5px); border-color: var(--primary); }
+.review-card:hover { transform: translateY(-5px); border-color: var(--primary); box-shadow: 0 10px 30px var(--primary-glow); }
 .stars { color: #FBBF24; margin-bottom: 12px; font-size: 1.2rem; }
 .review-text { font-style: italic; color: var(--text-main); margin-bottom: 20px; font-size: 0.95rem; line-height: 1.5; }
 .reviewer { display: flex; align-items: center; gap: 12px; }
