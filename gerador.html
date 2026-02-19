@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de CSV - FlashcardsGame</title>
+    <title>Gerador de CSV IA - FlashcardsGame</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -18,68 +18,90 @@
     <header>
         <div class="container nav-wrapper">
             <a href="index.html" class="logo">
-                <span class="material-icons-round">arrow_back</span>
-                Voltar
+                <img src="logo.png" alt="FlashcardsGame Logo">
             </a>
-            <span style="font-weight: 600; color: var(--text-muted);">Ferramenta Web</span>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">
+                    <span class="material-icons-round" style="vertical-align: middle; margin-right: 4px;">arrow_back</span>
+                    Voltar ao Site Principal
+                </a>
+            </nav>
         </div>
     </header>
 
     <div class="container">
         <div class="glass-box">
             <div class="text-center" style="margin-bottom: 40px;">
-                <h1 style="color: white; font-size: 2rem;">Gerador de Prompt Gemini</h1>
-                <p style="color: var(--text-muted);">Crie planilhas de estudo massivas em segundos.</p>
+                <span class="material-icons-round" style="font-size: 40px; color: var(--accent);">build</span>
+                <h1 style="color: white; font-size: 2.5rem; margin-top: 10px;">Gerador de Prompt Inteligente</h1>
+                <p style="color: var(--text-muted); font-size: 1.1rem;">Crie planilhas de estudo massivas prontas para importar no FlashcardsGame.</p>
             </div>
 
             <div style="margin-bottom: 24px;">
-                <label class="form-label">1. Tópico de Estudo</label>
-                <input type="text" id="topic" class="form-input" placeholder="Ex: Anatomia, Direito Civil, Inglês...">
+                <label class="form-label">1. Sobre o que você quer estudar?</label>
+                <input type="text" id="topic" class="form-input" placeholder="Ex: Anatomia Óssea, Artigo 5º da CF, Verbos em Inglês...">
             </div>
 
             <div style="margin-bottom: 24px;">
-                <label class="form-label">2. Quantidade de Cards</label>
-                <input type="number" id="qty" class="form-input" value="10">
+                <label class="form-label">2. Quantos Flashcards deseja gerar?</label>
+                <input type="number" id="qty" class="form-input" value="10" min="1" max="100">
             </div>
 
             <div style="margin-bottom: 24px;">
-                <label class="form-label">3. Conteúdo Base (Cole aqui)</label>
-                <textarea id="content" class="form-textarea" rows="5" placeholder="Cole o texto ou artigo de lei aqui..."></textarea>
+                <label class="form-label">3. Cole seu material base (Opcional)</label>
+                <textarea id="content" class="form-textarea" rows="5" placeholder="Cole aqui um PDF, artigo de lei, resumo ou texto da internet..."></textarea>
             </div>
 
-            <button onclick="generatePrompt()" class="btn btn-primary" style="width: 100%;">
-                <span class="material-icons-round" style="margin-right:8px">auto_awesome</span> Gerar Prompt
+            <button onclick="generatePrompt()" class="btn btn-primary" style="width: 100%; padding: 16px; font-size: 1.1rem;">
+                <span class="material-icons-round" style="margin-right:8px">auto_awesome</span> Gerar Comando Mágico
             </button>
 
-            <div id="resultArea" style="margin-top: 30px; display: none;">
-                <p class="form-label" style="color: var(--accent);">Prompt Gerado (Copie e cole no Gemini):</p>
-                <textarea id="promptOutput" class="form-textarea" rows="6" readonly style="background: rgba(20, 184, 166, 0.1); border-color: var(--accent);"></textarea>
+            <div id="resultArea" style="margin-top: 40px; display: none; background: rgba(0,0,0,0.3); padding: 20px; border-radius: 16px; border: 1px solid var(--accent);">
+                <p class="form-label" style="color: var(--accent);"><span class="material-icons-round" style="font-size: 18px; vertical-align: middle;">content_copy</span> Prompt Gerado (Copie e cole na IA de sua preferência):</p>
                 
-                <div class="text-center">
+                <textarea id="promptOutput" class="form-textarea" rows="8" readonly style="background: rgba(20, 184, 166, 0.05); border-color: var(--accent); cursor: text;"></textarea>
+                
+                <div class="text-center" style="margin-top: 20px; display: flex; gap: 16px; justify-content: center;">
                     <a href="https://gemini.google.com/app" target="_blank" class="btn btn-glass">
-                        Abrir Google Gemini <span class="material-icons-round" style="margin-left:8px; font-size:16px;">open_in_new</span>
+                        Abrir Google Gemini <span class="material-icons-round" style="margin-left:8px; font-size:18px;">open_in_new</span>
+                    </a>
+                    <a href="https://chat.openai.com/" target="_blank" class="btn btn-glass">
+                        Abrir ChatGPT <span class="material-icons-round" style="margin-left:8px; font-size:18px;">open_in_new</span>
                     </a>
                 </div>
+                <p style="text-align: center; color: var(--text-muted); font-size: 0.85rem; margin-top: 15px;">
+                    Dica: Salve a resposta da IA como arquivo `.csv` e importe direto no app!
+                </p>
             </div>
         </div>
     </div>
 
     <script>
         function generatePrompt() {
-            const topic = document.getElementById('topic').value;
-            const qty = document.getElementById('qty').value;
+            const topic = document.getElementById('topic').value || 'um assunto aleatório';
+            const qty = document.getElementById('qty').value || '10';
             const content = document.getElementById('content').value;
 
-            const prompt = `Aja como um professor especialista em ${topic}. 
-Crie ${qty} flashcards baseados no texto abaixo.
-IMPORTANTE: A saída deve ser estritamente em formato CSV, onde a primeira coluna é a "Pergunta" e a segunda é a "Resposta".
-Use ponto-e-vírgula (;) como separador.
+            let baseText = "";
+            if (content.trim() !== "") {
+                baseText = `\nUse ESTRITAMENTE o texto base abaixo para criar as perguntas e respostas:\nTexto Base:\n"${content}"\n`;
+            }
 
-Texto Base:
-"${content}"`;
+            const prompt = `Atue como um professor especialista focado em aprovação.
+Sua tarefa é criar ${qty} flashcards difíceis e focados em retenção de memória sobre o tema: ${topic}.
+${baseText}
+REGRAS OBRIGATÓRIAS DE FORMATAÇÃO:
+1. A saída deve ser ESTRITAMENTE em formato CSV (Valores Separados por Vírgula).
+2. Não use cabeçalhos (sem 'Pergunta, Resposta').
+3. Use apenas o Ponto e Vírgula (;) como separador entre a pergunta e a resposta.
+4. Não coloque numeração nas perguntas.
+5. Não responda com introduções ou conclusões, entregue APENAS as linhas do CSV.`;
 
             document.getElementById('promptOutput').value = prompt;
             document.getElementById('resultArea').style.display = 'block';
+            
+            // Rola a página para baixo suavemente
+            document.getElementById('resultArea').scrollIntoView({ behavior: 'smooth' });
         }
     </script>
 </body>
