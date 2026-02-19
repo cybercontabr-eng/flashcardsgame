@@ -8,6 +8,510 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+    <style>
+        /* --- CONFIGURAÇÕES GERAIS E VARIÁVEIS --- */
+        :root {
+            --bg-dark: #020617;       /* Preto Profundo */
+            --bg-card: rgba(30, 41, 59, 0.4); /* Vidro Escuro */
+            --primary: #8b5cf6;       /* Roxo Neon */
+            --primary-dark: #6d28d9;
+            --accent: #06b6d4;        /* Ciano Cyberpunk */
+            --gold: #fbbf24;          /* Ouro Gamer */
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --success: #34d399;
+            --radius: 16px;
+            --font-display: 'Outfit', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            /* Efeito de Grid no Background */
+            background-image: 
+                radial-gradient(circle at 50% 0%, #1e1b4b 0%, transparent 50%),
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 100% 100%, 40px 40px, 40px 40px;
+            background-position: top center, center center, center center;
+        }
+
+        /* Títulos */
+        h1, h2, h3 { font-family: var(--font-display); }
+
+        /* Gradiente de Texto */
+        .text-gradient {
+            background: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .text-gold { color: var(--gold); text-shadow: 0 0 10px rgba(251, 191, 36, 0.3); }
+
+        a { text-decoration: none; transition: all 0.3s ease; }
+        ul { list-style: none; }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* --- BOTÕES COM EFEITOS --- */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 32px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-family: var(--font-display);
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            gap: 10px;
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            z-index: 1;
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, var(--primary-dark), var(--primary));
+            color: white;
+            box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Efeito de brilho passando no botão */
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: 0.5s;
+            z-index: -1;
+        }
+        .btn-primary:hover::before { left: 100%; }
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 30px rgba(139, 92, 246, 0.6);
+        }
+
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-main);
+            backdrop-filter: blur(5px);
+        }
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--accent);
+            color: var(--accent);
+            box-shadow: 0 0 15px rgba(6, 182, 212, 0.2);
+        }
+
+        /* --- HEADER GLASS --- */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(2, 6, 23, 0.7);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 16px 0;
+        }
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .logo span { color: var(--primary); }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            padding: 120px 0 100px;
+            text-align: center;
+            position: relative;
+        }
+        
+        /* Animação suave de entrada */
+        .animate-up {
+            animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+
+        @keyframes fadeUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto 48px;
+        }
+
+        /* --- CARDS (GLASSMORPHISM) --- */
+        .section-padding { padding: 100px 0; }
+        
+        .feature-card {
+            background: var(--bg-card);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 32px;
+            border-radius: var(--radius);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Glow no hover do card */
+        .feature-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(139, 92, 246, 0.3);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+        .feature-card::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at center, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+            opacity: 0;
+            transition: 0.4s;
+        }
+        .feature-card:hover::after { opacity: 1; }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+        }
+
+        .icon-box {
+            font-size: 40px;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--accent), var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* --- PRO SECTION --- */
+        .pro-section {
+            background: linear-gradient(180deg, transparent 0%, rgba(109, 40, 217, 0.05) 50%, transparent 100%);
+            position: relative;
+        }
+        
+        .pro-badge {
+            display: inline-block;
+            background: linear-gradient(90deg, #F59E0B, #D97706);
+            color: black;
+            font-weight: 800;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
+            letter-spacing: 1px;
+        }
+
+        .stat-box {
+            background: rgba(16, 185, 129, 0.05);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            color: var(--success);
+            padding: 20px 32px;
+            border-radius: var(--radius);
+            display: inline-block;
+            margin: 30px 0;
+            font-weight: 600;
+            backdrop-filter: blur(5px);
+        }
+        .stat-number { font-size: 1.8rem; font-weight: 800; margin: 0 4px; }
+
+        .pro-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .pro-list li {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #e2e8f0;
+            padding: 12px;
+            border-radius: 8px;
+            transition: 0.2s;
+        }
+        .pro-list li:hover { background: rgba(255,255,255,0.03); }
+        .pro-list li .material-icons-round { color: var(--gold); }
+
+        /* --- PROMO BANNER --- */
+        .promo-banner {
+            position: relative;
+            background: linear-gradient(110deg, #be185d 0%, #7c3aed 100%);
+            border-radius: var(--radius);
+            padding: 40px;
+            margin-top: 80px;
+            text-align: center;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.2);
+            box-shadow: 0 20px 50px rgba(190, 24, 93, 0.3);
+        }
+        
+        /* Efeito Scanline no banner */
+        .promo-banner::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(rgba(255,255,255,0) 40%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 60%);
+            background-size: 100% 3px;
+            animation: scan 4s linear infinite;
+            opacity: 0.3;
+            pointer-events: none;
+        }
+        @keyframes scan { 0% { transform: translateY(-100%); } 100% { transform: translateY(100%); } }
+
+        /* --- DEPOIMENTOS --- */
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            margin-top: 40px;
+        }
+        .review-card {
+            background: var(--bg-card);
+            backdrop-filter: blur(10px);
+            padding: 24px;
+            border-radius: var(--radius);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+        .review-card p { font-style: italic; color: #cbd5e1; margin-bottom: 20px; }
+        .stars { color: var(--gold); margin-bottom: 16px; letter-spacing: -2px; }
+        .user-name {
+            font-weight: 700;
+            color: var(--accent);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .user-name::before {
+            content: '';
+            display: inline-block;
+            width: 24px; height: 24px;
+            background: var(--bg-dark);
+            border-radius: 50%;
+            border: 2px solid var(--accent);
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background: #020617;
+            padding: 60px 0 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
+            color: var(--text-muted);
+        }
+        .footer-links a:hover { color: var(--primary); }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .hero-actions { flex-direction: column; width: 100%; }
+            .btn { width: 100%; }
+            .pro-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">
+                <span class="material-icons-round" style="color: var(--primary); margin-right: 5px;">videogame_asset</span>
+                Flashcards<span>Game</span>
+            </a>
+            <nav>
+                <a href="https://login.flashcardsgame.com.br/" class="btn btn-outline" style="padding: 10px 24px;">
+                    Login
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="animate-up">Gamifique seus estudos <br>e <span class="text-gradient">evolua de nível</span></h1>
+            <p class="animate-up delay-1">A plataforma definitiva para quem quer aprender de verdade. Importe do Anki, use IA e domine qualquer assunto.</p>
+            
+            <div class="hero-actions animate-up delay-2">
+                <a href="https://login.flashcardsgame.com.br/" class="btn btn-primary">
+                    COMEÇAR AGORA
+                </a>
+                <a href="#funcionalidades" class="btn btn-outline">
+                    VER RECURSOS
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="funcionalidades" class="section-padding">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-box material-icons-round">upload_file</div>
+                    <h3>Importação Anki & CSV</h3>
+                    <p>Migração perfeita. Traga seus decks existentes (.apkg) ou planilhas num piscar de olhos.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box material-icons-round">auto_awesome</div>
+                    <h3>Interface Gamer</h3>
+                    <p>Dark mode nativo, sem distrações, projetado para longas sessões de "grind" nos estudos.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box material-icons-round">cloud_sync</div>
+                    <h3>Cloud Save</h3>
+                    <p>Progresso salvo na nuvem automaticamente. Comece no PC, termine no Mobile.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding pro-section">
+        <div class="container">
+            <div class="text-center">
+                <span class="pro-badge">SEASON PASS / PRO</span>
+                <h2 style="font-size: 2.5rem; margin-bottom: 16px;">Seja <span class="text-gold">LENDÁRIO</span></h2>
+                <p style="color: var(--text-muted);">Buffs exclusivos para maximizar seu aprendizado.</p>
+            
+                <div class="stat-box">
+                    <span class="material-icons-round" style="vertical-align: middle; margin-right: 8px;">trending_up</span>
+                    Usuários PRO têm <span class="stat-number">40%</span> mais XP de aprovação.
+                </div>
+            </div>
+
+            <div class="pro-grid">
+                <ul class="pro-list">
+                    <li><span class="material-icons-round">devices</span> Acesso total Web e Mobile</li>
+                    <li><span class="material-icons-round">all_inclusive</span> Decks e Cards Infinitos</li>
+                    <li><span class="material-icons-round text-gradient">psychology</span> <strong>IA Generativa:</strong> Decks automáticos</li>
+                    <li><span class="material-icons-round">visibility_off</span> Image Occlusion (Oclusão de Imagem)</li>
+                    <li><span class="material-icons-round">image</span> Suporte a Imagens e Áudio</li>
+                </ul>
+
+                <ul class="pro-list">
+                    <li><span class="material-icons-round">emoji_events</span> <strong>Personagens Lendários Exclusivos</strong></li>
+                    <li><span class="material-icons-round">support_agent</span> Suporte 24h Prioritário</li>
+                    <li><span class="material-icons-round">feedback</span> Canal de Sugestões VIP</li>
+                    <li><span class="material-icons-round">block</span> Zero Anúncios (Ad-Free)</li>
+                    <li><span class="material-icons-round">update</span> Updates Antecipados (Beta)</li>
+                </ul>
+            </div>
+
+            <div class="promo-banner">
+                <h3 style="font-size: 1.8rem; margin-bottom: 8px;">OFERTA POR TEMPO LIMITADO!</h3>
+                <p style="margin-bottom: 24px; color: rgba(255,255,255,0.9);">Garanta o preço especial e todos os itens PRO agora mesmo.</p>
+                <a href="https://login.flashcardsgame.com.br/" class="btn" style="background: white; color: #db2777; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
+                    GARANTIR OFERTA AGORA
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: 10px;">Quem joga, aprova</h2>
+            <p class="text-center" style="color: var(--text-muted); margin-bottom: 50px;">Feedback real da nossa comunidade.</p>
+
+            <div class="review-grid">
+                <div class="review-card">
+                    <div class="stars material-icons-round">star star star star star</div>
+                    <p>"O FlashcardsGame mudou meu game! A IA criando cards pra mim foi um 'cheat code' pra OAB. Passei de primeira."</p>
+                    <span class="user-name">Lucas M. <span style="font-weight:400; color: #64748b; margin-left: auto; font-size: 0.8rem;">Direito</span></span>
+                </div>
+                <div class="review-card">
+                    <div class="stars material-icons-round">star star star star star</div>
+                    <p>"A oclusão de imagem é perfeita para anatomia. E o dark mode não cansa a vista no grind da madrugada."</p>
+                    <span class="user-name">Fernanda S. <span style="font-weight:400; color: #64748b; margin-left: auto; font-size: 0.8rem;">Medicina</span></span>
+                </div>
+                <div class="review-card">
+                    <div class="stars material-icons-round">star star star star star</div>
+                    <p>"Migrei do Anki pelos personagens e a interface. O sistema de evolução me mantém viciado em estudar."</p>
+                    <span class="user-name">Rafael K. <span style="font-weight:400; color: #64748b; margin-left: auto; font-size: 0.8rem;">Concursos</span></span>
+                </div>
+                <div class="review-card">
+                    <div class="stars material-icons-round">star star star star star</div>
+                    <p>"Melhor investimento. O app roda liso no celular e a sincronia é instantânea. Recomendo demais!"</p>
+                    <span class="user-name">Beatriz A. <span style="font-weight:400; color: #64748b; margin-left: auto; font-size: 0.8rem;">Vestibular</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; color: white; margin-bottom: 16px;">
+                Flashcards<span style="color: var(--primary);">Game</span>
+            </div>
+            <p>&copy; 2024 Todos os direitos reservados.</p>
+            <div style="margin-top: 24px; display: flex; justify-content: center; gap: 24px;">
+                <a href="#" style="color: var(--text-muted);">Termos</a>
+                <a href="#" style="color: var(--text-muted);">Privacidade</a>
+                <a href="#" style="color: var(--text-muted);">Suporte</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.dart.js" defer></script> 
+</body>
+</html><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashcardsGame - Gamifique seus Estudos</title>
+    <meta name="description" content="A revolução nos estudos. Use IA, Flashcards com Oclusão e personagens lendários para evoluir 40% mais rápido.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
@@ -444,3 +948,4 @@
 
 </body>
 </html>
+
