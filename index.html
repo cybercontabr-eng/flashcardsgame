@@ -21,15 +21,24 @@
 
     <header>
         <div class="container nav-wrapper">
+            
             <a href="#" class="logo">
                 <img src="logo.png" alt="FlashcardsGame Logo">
+                <span class="logo-text">FlashcardsGame</span>
             </a>
 
             <nav class="nav-links">
                 <a href="#tutorial" class="nav-link">O que é?</a>
                 <a href="#ia" class="nav-link">IA</a>
                 <a href="#dados" class="nav-link">Resultados</a>
+                
+                <a href="gerador.html" target="_blank" class="nav-link" style="color: var(--accent);">
+                    <span class="material-icons-round" style="font-size: 16px; vertical-align: middle; margin-right: 4px;">build</span>
+                    Gerador IA
+                </a>
+
                 <a href="#pro" class="nav-link" style="color: var(--secondary); border: 1px solid rgba(245, 158, 11, 0.3); background: rgba(245, 158, 11, 0.05);">💎 Premium</a>
+                
                 <a href="https://login.flashcardsgame.com.br/" class="btn btn-primary" style="padding: 8px 24px; margin-left: 10px;">Entrar</a>
             </nav>
         </div>
@@ -128,7 +137,7 @@
                  <div class="eco-card" data-aos="fade-up" data-aos-delay="250">
                     <div class="eco-icon material-icons-round" style="color: var(--accent);">build</div>
                     <h3 style="color: white; margin-bottom: 8px;">Gerador Web IA</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-muted);">Use nossa <a href="gerador.html" style="color: var(--accent);">ferramenta do site</a> para criar planilhas CSV massivas via Inteligência Artificial.</p>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Use nossa <a href="gerador.html" style="color: var(--accent);">ferramenta do site</a> para criar CSVs massivos via IA.</p>
                 </div>
                 <div class="eco-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="eco-icon material-icons-round">share</div>
@@ -314,6 +323,7 @@
     <script>
         AOS.init({ duration: 800, offset: 50 });
 
+        // Tutorial
         const questions = [
             { q: "Quais os princípios da Adm. Pública (LIMPE)?", a: "Legalidade, Impessoalidade, Moralidade, Publicidade e Eficiência." },
             { q: "Qual a capital da Austrália?", a: "Camberra (não é Sydney!)." },
