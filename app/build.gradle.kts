@@ -59,6 +59,8 @@ android {
     }
     packaging {
         resources.excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        // bibliotecas nativas compactadas: APK ~10 MB menor (o Android extrai na instalação)
+        jniLibs.useLegacyPackaging = true
     }
 }
 
