@@ -132,6 +132,7 @@ class RecordingService : LifecycleService(), OcrPipeline.Callback {
     private var segmentStartElapsed = 0L
     private var recordedBeforeSegmentMs = 0L
     private var lastDurationNs = 0L
+    private var lastSegmentDurMs = 0L
     private var lastLiveUpdate = 0L
     private var audioForSession = false
     private var audioFallbackUsed = false
@@ -224,6 +225,7 @@ class RecordingService : LifecycleService(), OcrPipeline.Callback {
         stopReason = null
         segmentIndex = 0
         recordedBeforeSegmentMs = 0
+        lastSegmentDurMs = 0
         sessionStamp = SimpleDateFormat("yyyyMMdd_HHmmss", Locale.US).format(Date())
         sessionStartWall = System.currentTimeMillis()
         keywordsAtStart = Keywords.flow.value
@@ -238,7 +240,9 @@ class RecordingService : LifecycleService(), OcrPipeline.Callback {
         }
         acquireWakeLock()
         registerMonitors()
-        pipeline = OcrPipeline(prefs, this)
+        val pl = OcrPipeline(prefs, this)
+        pipeline = pl
+        analysisExecutor.execute { pl.warmUp() }
         bindCamera { startSegment() }
         main.removeCallbacks(tickRunnable)
         main.postDelayed(tickRunnable, 1000)
@@ -504,6 +508,7 @@ class RecordingService : LifecycleService(), OcrPipeline.Callback {
         main.removeCallbacks(rolloverRunnable)
         health.onRecordingStopped()
         recordedBeforeSegmentMs += durMs
+        lastSegmentDurMs = durMs
         Live.update { it.copy(recording = false, recordedMs = recordedBeforeSegmentMs) }
 
         val reason = stopReason
@@ -797,14 +802,15 @@ class RecordingService : LifecycleService(), OcrPipeline.Callback {
     // ---------------------------------------------------------------- registros
 
     private fun newDetection(kind: Detection.Kind, label: String, snippet: String, now: Long): Detection {
-        val segOffset = if (recording != null) (now - segmentStartElapsed).coerceAtLeast(0) else 0L
+        val rec = recording != null
+        val segOffset = if (rec) (now - segmentStartElapsed).coerceAtLeast(0) else lastSegmentDurMs
         return Detection(
             id = ++detectionSeq,
             kind = kind,
             label = label,
             snippet = snippet,
             wallTimeMs = System.currentTimeMillis(),
-            sessionOffsetMs = recordedBeforeSegmentMs + segOffset,
+            sessionOffsetMs = recordedBeforeSegmentMs + if (rec) segOffset else 0L,
             segment = segmentIndex,
             segmentOffsetMs = segOffset,
         )

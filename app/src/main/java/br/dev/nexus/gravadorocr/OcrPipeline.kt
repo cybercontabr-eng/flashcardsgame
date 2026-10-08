@@ -96,6 +96,16 @@ class OcrPipeline(private val prefs: Prefs, private val callback: Callback) {
         }
     }
 
+    /** Carrega o modelo de OCR antes do primeiro quadro (a primeira leitura é a mais lenta). */
+    @WorkerThread
+    fun warmUp() {
+        if (closed) return
+        runCatching {
+            val blank = Bitmap.createBitmap(64, 64, Bitmap.Config.ARGB_8888)
+            Tasks.await(recognizer.process(InputImage.fromBitmap(blank, 0)), 60, TimeUnit.SECONDS)
+        }.onFailure { Log.w(TAG, "Aquecimento do OCR falhou: ${it.message}") }
+    }
+
     fun close() {
         closed = true
         runCatching { recognizer.close() }

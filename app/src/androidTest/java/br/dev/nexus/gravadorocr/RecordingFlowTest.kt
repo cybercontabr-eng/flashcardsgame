@@ -48,6 +48,7 @@ class RecordingFlowTest {
             useFront = false
             ocrSpeed = 1
             toleranceIndex = 1
+            cooldownSec = 30
         }
         Keywords.set(ctx, listOf("botijão de gás"))
         scenario = ActivityScenario.launch(MainActivity::class.java)
@@ -126,14 +127,15 @@ class RecordingFlowTest {
         val svc = RecordingService.current
         assertNotNull(svc)
         val page = TestUtils.renderText(listOf("ENTREGA AGENDADA", "BOTIJÃO DE GÁS P13", "QTD 2"))
-        // como na câmera real, a mesma imagem chega em vários quadros seguidos
-        repeat(4) {
+        // como na câmera real, a mesma imagem chega em vários quadros seguidos até ser lida
+        // (no emulador o primeiro OCR pode levar dezenas de segundos)
+        val deadline = android.os.SystemClock.elapsedRealtime() + 150_000
+        fun found() = Live.detections.value.any { it.kind == Detection.Kind.FOUND && it.label == "botijão de gás" }
+        while (!found() && android.os.SystemClock.elapsedRealtime() < deadline) {
             svc!!.debugProcessFrame(page)
-            Thread.sleep(700)
+            Thread.sleep(1_500)
         }
-        TestUtils.waitUntil(90_000, "detecção de 'botijão de gás'") {
-            Live.detections.value.any { it.kind == Detection.Kind.FOUND && it.label == "botijão de gás" }
-        }
+        assertTrue("deveria detectar 'botijão de gás' | status=${Live.status.value}", found())
         TestUtils.waitUntil(20_000, "foto da detecção salva") {
             Live.detections.value.any { it.kind == Detection.Kind.FOUND && it.snapshotUri != null }
         }
