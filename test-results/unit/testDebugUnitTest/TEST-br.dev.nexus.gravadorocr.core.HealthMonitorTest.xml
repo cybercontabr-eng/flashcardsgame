@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.dev.nexus.gravadorocr.core.HealthMonitorTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-08T05:45:12.378Z" hostname="runnervmmprz5" time="0.002">
+  <properties/>
+  <testcase name="coveredCamera" classname="br.dev.nexus.gravadorocr.core.HealthMonitorTest" time="0.001"/>
+  <testcase name="ocrStallAndResume" classname="br.dev.nexus.gravadorocr.core.HealthMonitorTest" time="0.0"/>
+  <testcase name="storageWarnings" classname="br.dev.nexus.gravadorocr.core.HealthMonitorTest" time="0.001"/>
+  <testcase name="noAlarmsWhenNotRecording" classname="br.dev.nexus.gravadorocr.core.HealthMonitorTest" time="0.0"/>
+  <testcase name="batteryWarnings" classname="br.dev.nexus.gravadorocr.core.HealthMonitorTest" time="0.0"/>
+  <testcase name="detectsStalledRecordingOnce" classname="br.dev.nexus.gravadorocr.core.HealthMonitorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

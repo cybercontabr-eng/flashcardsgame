@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.dev.nexus.gravadorocr.core.SrtAndLogTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-08T05:45:12.428Z" hostname="runnervmmprz5" time="0.057">
+  <properties/>
+  <testcase name="srtTimeFormat" classname="br.dev.nexus.gravadorocr.core.SrtAndLogTest" time="0.002"/>
+  <testcase name="clockFormat" classname="br.dev.nexus.gravadorocr.core.SrtAndLogTest" time="0.001"/>
+  <testcase name="srtForSegment" classname="br.dev.nexus.gravadorocr.core.SrtAndLogTest" time="0.021"/>
+  <testcase name="sessionLogContainsEverything" classname="br.dev.nexus.gravadorocr.core.SrtAndLogTest" time="0.033"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

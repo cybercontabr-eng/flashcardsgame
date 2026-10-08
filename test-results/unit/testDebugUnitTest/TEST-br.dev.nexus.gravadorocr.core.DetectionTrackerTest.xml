@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.dev.nexus.gravadorocr.core.DetectionTrackerTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-08T05:45:12.348Z" hostname="runnervmmprz5" time="0.027">
+  <properties/>
+  <testcase name="partialAsksToHoldWithCooldown" classname="br.dev.nexus.gravadorocr.core.DetectionTrackerTest" time="0.018"/>
+  <testcase name="exactMatchAlertsImmediatelyOnlyOnceWhileVisible" classname="br.dev.nexus.gravadorocr.core.DetectionTrackerTest" time="0.005"/>
+  <testcase name="fuzzyNeedsConfirmationAndAsksToHold" classname="br.dev.nexus.gravadorocr.core.DetectionTrackerTest" time="0.0"/>
+  <testcase name="noHoldRightAfterFound" classname="br.dev.nexus.gravadorocr.core.DetectionTrackerTest" time="0.001"/>
+  <testcase name="fuzzyTooFarApartIsNotConfirmed" classname="br.dev.nexus.gravadorocr.core.DetectionTrackerTest" time="0.0"/>
+  <testcase name="alertsAgainAfterDisappearing" classname="br.dev.nexus.gravadorocr.core.DetectionTrackerTest" time="0.001"/>
+  <testcase name="slowPhoneConfirmsOnConsecutiveFrames" classname="br.dev.nexus.gravadorocr.core.DetectionTrackerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

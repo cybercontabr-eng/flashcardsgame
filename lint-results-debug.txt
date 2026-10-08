@@ -1,0 +1,462 @@
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/java/br/dev/nexus/gravadorocr/RecordingService.kt:204: Warning: Field requires API level 30 (current min is 29): android.content.pm.ServiceInfo#FOREGROUND_SERVICE_TYPE_CAMERA [InlinedApi]
+        var t = ServiceInfo.FOREGROUND_SERVICE_TYPE_CAMERA
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/java/br/dev/nexus/gravadorocr/RecordingService.kt:205: Warning: Field requires API level 30 (current min is 29): android.content.pm.ServiceInfo#FOREGROUND_SERVICE_TYPE_MICROPHONE [InlinedApi]
+        if (audioForSession) t = t or ServiceInfo.FOREGROUND_SERVICE_TYPE_MICROPHONE
+                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "InlinedApi":
+   This check scans through all the Android API field references in the
+   application and flags certain constants, such as static final integers and
+   Strings, which were introduced in later versions. These will actually be
+   copied into the class files rather than being referenced, which means that
+   the value is available even when running on older devices. In some cases
+   that's fine, and in other cases it can result in a runtime crash or
+   incorrect behavior. It depends on the context, so consider the code
+   carefully and decide whether it's safe and can be suppressed or whether the
+   code needs to be guarded.
+
+   If you really want to use this API and don't need to support older devices
+   just set the minSdkVersion in your build.gradle or AndroidManifest.xml
+   files.
+
+   If your code is deliberately accessing newer APIs, and you have ensured
+   (e.g. with conditional execution) that this code will only ever be called
+   on a supported platform, then you can annotate your class or method with
+   the @TargetApi annotation specifying the local minimum SDK to apply, such
+   as @TargetApi(11), such that this check considers 11 rather than your
+   manifest file's minimum SDK as the required API level.
+
+/home/runner/work/flashcardsgame/flashcardsgame/app/build.gradle.kts:13: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+        targetSdk = 35
+        ~~~~~~~~~~~~~~
+
+   Explanation for issues of type "OldTargetApi":
+   When your application runs on a version of Android that is more recent than
+   your targetSdkVersion specifies that it has been tested with, various
+   compatibility modes kick in. This ensures that your application continues
+   to work, but it may look out of place. For example, if the targetSdkVersion
+   is less than 14, your app may get an option button in the UI.
+
+   To fix this issue, set the targetSdkVersion to the highest available value.
+   Then test your app to make sure everything works correctly. You may want to
+   consult the compatibility notes to see what changes apply to each version
+   you are adding support for:
+   https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+   as well as follow this guide:
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+/home/runner/work/flashcardsgame/flashcardsgame/app/build.gradle.kts:69: Warning: A newer version of androidx.core:core-ktx than 1.13.1 is available: 1.19.1 [GradleDependency]
+    implementation("androidx.core:core-ktx:1.13.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/build.gradle.kts:70: Warning: A newer version of androidx.appcompat:appcompat than 1.7.0 is available: 1.8.0 [GradleDependency]
+    implementation("androidx.appcompat:appcompat:1.7.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/build.gradle.kts:71: Warning: A newer version of androidx.activity:activity-ktx than 1.9.3 is available: 1.13.0 [GradleDependency]
+    implementation("androidx.activity:activity-ktx:1.9.3")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/build.gradle.kts:72: Warning: A newer version of com.google.android.material:material than 1.12.0 is available: 1.14.0 [GradleDependency]
+    implementation("com.google.android.material:material:1.12.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/build.gradle.kts:73: Warning: A newer version of androidx.recyclerview:recyclerview than 1.3.2 is available: 1.4.0 [GradleDependency]
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/build.gradle.kts:74: Warning: A newer version of androidx.lifecycle:lifecycle-service than 2.8.7 is available: 2.11.0 [GradleDependency]
+    implementation("androidx.lifecycle:lifecycle-service:2.8.7")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/build.gradle.kts:75: Warning: A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.8.7 is available: 2.11.0 [GradleDependency]
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/build.gradle.kts:78: Warning: A newer version of androidx.camera:camera-core than 1.4.1 is available: 1.6.2 [GradleDependency]
+    implementation("androidx.camera:camera-core:$camerax")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/build.gradle.kts:79: Warning: A newer version of androidx.camera:camera-camera2 than 1.4.1 is available: 1.6.2 [GradleDependency]
+    implementation("androidx.camera:camera-camera2:$camerax")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/build.gradle.kts:80: Warning: A newer version of androidx.camera:camera-lifecycle than 1.4.1 is available: 1.6.2 [GradleDependency]
+    implementation("androidx.camera:camera-lifecycle:$camerax")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/build.gradle.kts:81: Warning: A newer version of androidx.camera:camera-video than 1.4.1 is available: 1.6.2 [GradleDependency]
+    implementation("androidx.camera:camera-video:$camerax")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/build.gradle.kts:89: Warning: A newer version of androidx.test:runner than 1.6.2 is available: 1.7.0 [GradleDependency]
+    androidTestImplementation("androidx.test:runner:1.6.2")
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/build.gradle.kts:90: Warning: A newer version of androidx.test:rules than 1.6.1 is available: 1.7.0 [GradleDependency]
+    androidTestImplementation("androidx.test:rules:1.6.1")
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/build.gradle.kts:91: Warning: A newer version of androidx.test:core-ktx than 1.6.1 is available: 1.7.0 [GradleDependency]
+    androidTestImplementation("androidx.test:core-ktx:1.6.1")
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/build.gradle.kts:92: Warning: A newer version of androidx.test.ext:junit than 1.2.1 is available: 1.3.0 [GradleDependency]
+    androidTestImplementation("androidx.test.ext:junit:1.2.1")
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+/home/runner/work/flashcardsgame/flashcardsgame/app/build.gradle.kts:35: Warning: Missing x86_64 ABI support for ChromeOS [ChromeOsAbiSupport]
+            ndk { abiFilters += listOf("arm64-v8a", "armeabi-v7a") }
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ChromeOsAbiSupport":
+   To properly support ChromeOS, your Android application should have an x86
+   and/or x86_64 binary as part of the build configuration. To fix the issue,
+   ensure your files are properly optimized for ARM; the binary translator
+   will then ensure compatibility with x86. Alternatively, add an abiSplit for
+   x86 within your build.gradle file and create the required x86
+   dependencies.
+
+   https://developer.android.com/ndk/guides/abis
+
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/AndroidManifest.xml:26: Warning: The attribute android:allowBackup is deprecated from Android 12 and higher and may be removed in future versions. Consider adding the attribute android:dataExtractionRules specifying an @xml resource which configures cloud backups and device transfers on Android 12 and higher. [DataExtractionRules]
+        android:allowBackup="false"
+                             ~~~~~
+
+   Explanation for issues of type "DataExtractionRules":
+   Before Android 12, the attributes android:allowBackup and
+   android:fullBackupContent were used to configure all forms of backup,
+   including cloud backups, device-to-device transfers and adb backup.
+
+   In Android 12 and higher, these attributes have been deprecated and will
+   only apply to cloud backups. You should instead use the attribute
+   android:dataExtractionRules, specifying an @xml resource that configures
+   which files to back up, for cloud backups and for device-to-device
+   transfers, separately. If your minSdkVersion supports older versions,
+   you'll still want to specify an android:fullBackupContent resource if the
+   default behavior is not right for your app.
+
+   https://developer.android.com/about/versions/12/backup-restore#xml-changes
+   https://goo.gle/DataExtractionRules
+
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/java/br/dev/nexus/gravadorocr/DetectionAdapter.kt:33: Warning: It will always be more efficient to use more specific change events if you can. Rely on notifyDataSetChanged as a last resort. [NotifyDataSetChanged]
+        notifyDataSetChanged()
+        ~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "NotifyDataSetChanged":
+   The RecyclerView adapter's onNotifyDataSetChanged method does not specify
+   what about the data set has changed, forcing any observers to assume that
+   all existing items and structure may no longer be valid. `LayoutManager`s
+   will be forced to fully rebind and relayout all visible views.
+
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/mipmap-anydpi-v26: Warning: This folder configuration (v26) is unnecessary; minSdkVersion is 29. Merge all the resources in this folder into mipmap-anydpi. [ObsoleteSdkInt]
+
+   Explanation for issues of type "ObsoleteSdkInt":
+   This check flags version checks that are not necessary, because the
+   minSdkVersion (or surrounding known API level) is already at least as high
+   as the version checked for.
+
+   Similarly, it also looks for resources in -vNN folders, such as values-v14
+   where the version qualifier is less than or equal to the minSdkVersion,
+   where the contents should be merged into the best folder.
+
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_main.xml:7: Warning: Possible overdraw: Root element paints background @color/bg with a theme that also paints a background (inferred theme is @style/Theme.GravadorOCR) [Overdraw]
+    android:background="@color/bg">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:6: Warning: Possible overdraw: Root element paints background @color/bg with a theme that also paints a background (inferred theme is @style/Theme.GravadorOCR) [Overdraw]
+    android:background="@color/bg">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "Overdraw":
+   If you set a background drawable on a root view, then you should use a
+   custom theme where the theme background is null. Otherwise, the theme
+   background will be painted first, only to have your custom background
+   completely cover it; this is called "overdraw".
+
+   NOTE: This detector relies on figuring out which layouts are associated
+   with which activities based on scanning the Java code, and it's currently
+   doing that using an inexact pattern matching algorithm. Therefore, it can
+   incorrectly conclude which activity the layout is associated with and then
+   wrongly complain that a background-theme is hidden.
+
+   If you want your custom background on multiple pages, then you should
+   consider making a custom theme with your custom background and just using
+   that theme instead of a root element background.
+
+   Of course it's possible that your custom drawable is translucent and you
+   want it to be mixed with the background. However, you will get better
+   performance if you pre-mix the background with your drawable and use that
+   resulting image or color as a custom theme background instead.
+
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_main.xml:75: Warning: Buttons in button bars should be borderless; use style="?android:attr/buttonBarButtonStyle" (and ?android:attr/buttonBarStyle on the parent) [ButtonStyle]
+                    <Button
+                     ~~~~~~
+
+   Explanation for issues of type "ButtonStyle":
+   Button bars typically use a borderless style for the buttons. Set the
+   style="?android:attr/buttonBarButtonStyle" attribute on each of the
+   buttons, and set style="?android:attr/buttonBarStyle" on the parent layout
+
+   https://d.android.com/r/studio-ui/designer/material/dialogs
+
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/java/br/dev/nexus/gravadorocr/DetectionAdapter.kt:47: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                b.title.text = "$time  •  ${d.label}"
+                               ~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/java/br/dev/nexus/gravadorocr/DetectionAdapter.kt:49: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                b.subtitle.text = "Lido: \"${d.snippet}\"  (parte ${d.segment})"
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/java/br/dev/nexus/gravadorocr/DetectionAdapter.kt:49: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                b.subtitle.text = "Lido: \"${d.snippet}\"  (parte ${d.segment})"
+                                   ~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/java/br/dev/nexus/gravadorocr/DetectionAdapter.kt:49: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                b.subtitle.text = "Lido: \"${d.snippet}\"  (parte ${d.segment})"
+                                                         ~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/java/br/dev/nexus/gravadorocr/DetectionAdapter.kt:52: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                b.title.text = "$time  •  Marcação"
+                               ~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/java/br/dev/nexus/gravadorocr/DetectionAdapter.kt:52: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                b.title.text = "$time  •  Marcação"
+                                     ~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/java/br/dev/nexus/gravadorocr/DetectionAdapter.kt:54: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                b.subtitle.text = "Parte ${d.segment}"
+                                  ~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/java/br/dev/nexus/gravadorocr/DetectionAdapter.kt:54: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                b.subtitle.text = "Parte ${d.segment}"
+                                   ~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/java/br/dev/nexus/gravadorocr/DetectionAdapter.kt:57: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                b.title.text = "$time  •  Aviso"
+                               ~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/java/br/dev/nexus/gravadorocr/DetectionAdapter.kt:57: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                b.title.text = "$time  •  Aviso"
+                                     ~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/java/br/dev/nexus/gravadorocr/MainActivity.kt:135: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                    Live.lastText.collect { b.lastText.text = "Texto lido: " + it.ifBlank { "—" } }
+                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/java/br/dev/nexus/gravadorocr/MainActivity.kt:135: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                    Live.lastText.collect { b.lastText.text = "Texto lido: " + it.ifBlank { "—" } }
+                                                               ~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/java/br/dev/nexus/gravadorocr/MainActivity.kt:185: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            b.btnRecord.text = "PARAR GRAVAÇÃO"
+                                ~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/java/br/dev/nexus/gravadorocr/MainActivity.kt:189: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            b.btnRecord.text = "INICIAR GRAVAÇÃO"
+                                ~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/java/br/dev/nexus/gravadorocr/SettingsActivity.kt:71: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        b.version.text = "Versão ${BuildConfig.VERSION_NAME}"
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/java/br/dev/nexus/gravadorocr/SettingsActivity.kt:71: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        b.version.text = "Versão ${BuildConfig.VERSION_NAME}"
+                          ~~~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_main.xml:33: Warning: Hardcoded string "Gravador OCR", should use @string resource [HardcodedText]
+                    android:text="Gravador OCR"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_main.xml:43: Warning: Hardcoded string "PARADO", should use @string resource [HardcodedText]
+                    android:text="PARADO"
+                    ~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_main.xml:64: Warning: Hardcoded string "A GRAVAÇÃO PAROU", should use @string resource [HardcodedText]
+                    android:text="A GRAVAÇÃO PAROU"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_main.xml:81: Warning: Hardcoded string "Tentar de novo", should use @string resource [HardcodedText]
+                        android:text="Tentar de novo" />
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_main.xml:89: Warning: Hardcoded string "Silenciar", should use @string resource [HardcodedText]
+                        android:text="Silenciar"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_main.xml:106: Warning: Hardcoded string "Imagem da câmera", should use @string resource [HardcodedText]
+                    android:contentDescription="Imagem da câmera"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_main.xml:115: Warning: Hardcoded string "A imagem da câmera aparece aqui durante a gravação.nPode apagar a tela ou trocar de app: a gravação continua.", should use @string resource [HardcodedText]
+                    android:text="A imagem da câmera aparece aqui durante a gravação.\nPode apagar a tela ou trocar de app: a gravação continua."
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_main.xml:128: Warning: Hardcoded string "Segure firme…", should use @string resource [HardcodedText]
+                    android:text="Segure firme…"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_main.xml:141: Warning: Hardcoded string "Texto lido: —", should use @string resource [HardcodedText]
+                android:text="Texto lido: —"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_main.xml:150: Warning: Hardcoded string "Palavras-chave (pode mudar durante a gravação)", should use @string resource [HardcodedText]
+                android:text="Palavras-chave (pode mudar durante a gravação)"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_main.xml:167: Warning: Hardcoded string "Palavra ou frase (ex.: botijão de gás)", should use @string resource [HardcodedText]
+                    android:hint="Palavra ou frase (ex.: botijão de gás)"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_main.xml:180: Warning: Hardcoded string "Adicionar", should use @string resource [HardcodedText]
+                    android:text="Adicionar" />
+                    ~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_main.xml:199: Warning: Hardcoded string "+ Qualquer placa", should use @string resource [HardcodedText]
+                        android:text="+ Qualquer placa" />
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_main.xml:207: Warning: Hardcoded string "+ Qualquer CPF", should use @string resource [HardcodedText]
+                        android:text="+ Qualquer CPF" />
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_main.xml:214: Warning: Hardcoded string "+ Qualquer CNPJ", should use @string resource [HardcodedText]
+                        android:text="+ Qualquer CNPJ" />
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_main.xml:229: Warning: Hardcoded string "Nenhuma palavra-chave. O app só grava.", should use @string resource [HardcodedText]
+                android:text="Nenhuma palavra-chave. O app só grava."
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_main.xml:240: Warning: Hardcoded string "INICIAR GRAVAÇÃO", should use @string resource [HardcodedText]
+                android:text="INICIAR GRAVAÇÃO"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_main.xml:258: Warning: Hardcoded string "Tela preta", should use @string resource [HardcodedText]
+                    android:text="Tela preta" />
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_main.xml:267: Warning: Hardcoded string "Marcar", should use @string resource [HardcodedText]
+                    android:text="Marcar" />
+                    ~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_main.xml:275: Warning: Hardcoded string "Ajustes", should use @string resource [HardcodedText]
+                    android:text="Ajustes" />
+                    ~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_main.xml:300: Warning: Hardcoded string "Detecções desta gravação", should use @string resource [HardcodedText]
+                android:text="Detecções desta gravação"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_main.xml:310: Warning: Hardcoded string "Nada ainda. Quando uma palavra aparecer na câmera, ela entra aqui com foto e horário.", should use @string resource [HardcodedText]
+                android:text="Nada ainda. Quando uma palavra aparecer na câmera, ela entra aqui com foto e horário."
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_main.xml:325: Warning: Hardcoded string "Vídeos: Movies/GravadorOCR • Fotos: Pictures/GravadorOCR • Relatório e legendas (.srt): Download/GravadorOCR", should use @string resource [HardcodedText]
+                android:text="Vídeos: Movies/GravadorOCR • Fotos: Pictures/GravadorOCR • Relatório e legendas (.srt): Download/GravadorOCR"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_main.xml:347: Warning: Hardcoded string "● gravandonsegure o dedo 2 s para sair", should use @string resource [HardcodedText]
+            android:text="● gravando\nsegure o dedo 2 s para sair"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:18: Warning: Hardcoded string "Ajustes", should use @string resource [HardcodedText]
+            android:text="Ajustes"
+            ~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:24: Warning: Hardcoded string "Leitura das palavras", should use @string resource [HardcodedText]
+        <TextView style="@style/SectionTitle" android:text="Leitura das palavras" />
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:30: Warning: Hardcoded string "Exata — só a palavra certinha (menos alarme falso)", should use @string resource [HardcodedText]
+            <RadioButton android:id="@+id/tolExact" style="@style/Opt" android:text="Exata — só a palavra certinha (menos alarme falso)" />
+                                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:31: Warning: Hardcoded string "Normal — aceita 1 letra lida errado (recomendado)", should use @string resource [HardcodedText]
+            <RadioButton android:id="@+id/tolNormal" style="@style/Opt" android:text="Normal — aceita 1 letra lida errado (recomendado)" />
+                                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:32: Warning: Hardcoded string "Tolerante — acha mais, mas pode errar", should use @string resource [HardcodedText]
+            <RadioButton android:id="@+id/tolLoose" style="@style/Opt" android:text="Tolerante — acha mais, mas pode errar" />
+                                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:35: Warning: Hardcoded string "Velocidade da leitura (gasta mais bateria quanto mais rápido)", should use @string resource [HardcodedText]
+        <TextView style="@style/SectionSub" android:text="Velocidade da leitura (gasta mais bateria quanto mais rápido)" />
+                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:40: Warning: Hardcoded string "Economia — 1 leitura por segundo", should use @string resource [HardcodedText]
+            <RadioButton android:id="@+id/ocrEco" style="@style/Opt" android:text="Economia — 1 leitura por segundo" />
+                                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:41: Warning: Hardcoded string "Normal — ~3 leituras por segundo", should use @string resource [HardcodedText]
+            <RadioButton android:id="@+id/ocrNormal" style="@style/Opt" android:text="Normal — ~3 leituras por segundo" />
+                                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:42: Warning: Hardcoded string "Máxima — o mais rápido possível", should use @string resource [HardcodedText]
+            <RadioButton android:id="@+id/ocrMax" style="@style/Opt" android:text="Máxima — o mais rápido possível" />
+                                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:45: Warning: Hardcoded string "Repetir o aviso da mesma palavra", should use @string resource [HardcodedText]
+        <TextView style="@style/SectionSub" android:text="Repetir o aviso da mesma palavra" />
+                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:50: Warning: Hardcoded string "Se sumir e voltar depois de 5 s", should use @string resource [HardcodedText]
+            <RadioButton android:id="@+id/cd5" style="@style/Opt" android:text="Se sumir e voltar depois de 5 s" />
+                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:51: Warning: Hardcoded string "Se sumir e voltar depois de 10 s", should use @string resource [HardcodedText]
+            <RadioButton android:id="@+id/cd10" style="@style/Opt" android:text="Se sumir e voltar depois de 10 s" />
+                                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:52: Warning: Hardcoded string "Se sumir e voltar depois de 30 s", should use @string resource [HardcodedText]
+            <RadioButton android:id="@+id/cd30" style="@style/Opt" android:text="Se sumir e voltar depois de 30 s" />
+                                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:56: Warning: Hardcoded string "Como avisar", should use @string resource [HardcodedText]
+        <TextView style="@style/SectionTitle" android:text="Como avisar" />
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:57: Warning: Hardcoded string "Apito (sai no fone, se conectado)", should use @string resource [HardcodedText]
+        <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/swBeep" style="@style/Sw" android:text="Apito (sai no fone, se conectado)" />
+                                                                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:58: Warning: Hardcoded string "Vibração", should use @string resource [HardcodedText]
+        <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/swVibrate" style="@style/Sw" android:text="Vibração" />
+                                                                                                                 ~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:59: Warning: Hardcoded string "Voz falando a palavra encontrada", should use @string resource [HardcodedText]
+        <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/swVoice" style="@style/Sw" android:text="Voz falando a palavra encontrada" />
+                                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:60: Warning: Hardcoded string "Vibração curta “segure firme” quando quase leu", should use @string resource [HardcodedText]
+        <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/swHold" style="@style/Sw" android:text="Vibração curta “segure firme” quando quase leu" />
+                                                                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:61: Warning: Hardcoded string "Salvar foto do momento da detecção", should use @string resource [HardcodedText]
+        <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/swSnap" style="@style/Sw" android:text="Salvar foto do momento da detecção" />
+                                                                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:69: Warning: Hardcoded string "Testar aviso", should use @string resource [HardcodedText]
+            android:text="Testar aviso" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:72: Warning: Hardcoded string "Segurança da gravação", should use @string resource [HardcodedText]
+        <TextView style="@style/SectionTitle" android:text="Segurança da gravação" />
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:73: Warning: Hardcoded string "Se a gravação parar, tentar retomar sozinho (e avisar)", should use @string resource [HardcodedText]
+        <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/swAutoRestart" style="@style/Sw" android:text="Se a gravação parar, tentar retomar sozinho (e avisar)" />
+                                                                                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:74: Warning: Hardcoded string "Avisar se a câmera ficar tapada/escura", should use @string resource [HardcodedText]
+        <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/swDark" style="@style/Sw" android:text="Avisar se a câmera ficar tapada/escura" />
+                                                                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:76: Warning: Hardcoded string "Dividir o vídeo em partes (se algo der errado, só a última parte corre risco)", should use @string resource [HardcodedText]
+        <TextView style="@style/SectionSub" android:text="Dividir o vídeo em partes (se algo der errado, só a última parte corre risco)" />
+                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:81: Warning: Hardcoded string "A cada 5 minutos", should use @string resource [HardcodedText]
+            <RadioButton android:id="@+id/seg5" style="@style/Opt" android:text="A cada 5 minutos" />
+                                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:82: Warning: Hardcoded string "A cada 10 minutos (recomendado)", should use @string resource [HardcodedText]
+            <RadioButton android:id="@+id/seg10" style="@style/Opt" android:text="A cada 10 minutos (recomendado)" />
+                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:83: Warning: Hardcoded string "A cada 30 minutos", should use @string resource [HardcodedText]
+            <RadioButton android:id="@+id/seg30" style="@style/Opt" android:text="A cada 30 minutos" />
+                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:84: Warning: Hardcoded string "Não dividir", should use @string resource [HardcodedText]
+            <RadioButton android:id="@+id/segOff" style="@style/Opt" android:text="Não dividir" />
+                                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:93: Warning: Hardcoded string "Tirar o app da economia de bateria", should use @string resource [HardcodedText]
+            android:text="Tirar o app da economia de bateria" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:95: Warning: Hardcoded string "Recomendado: alguns celulares (Xiaomi, Samsung, Motorola) fecham apps em segundo plano. Escolha “Sem restrições” para o Gravador OCR.", should use @string resource [HardcodedText]
+        <TextView style="@style/SectionSub" android:text="Recomendado: alguns celulares (Xiaomi, Samsung, Motorola) fecham apps em segundo plano. Escolha “Sem restrições” para o Gravador OCR." />
+                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:98: Warning: Hardcoded string "Vídeo (vale para a próxima gravação)", should use @string resource [HardcodedText]
+        <TextView style="@style/SectionTitle" android:text="Vídeo (vale para a próxima gravação)" />
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:103: Warning: Hardcoded string "480p — ocupa pouco (~11 MB/min)", should use @string resource [HardcodedText]
+            <RadioButton android:id="@+id/qSd" style="@style/Opt" android:text="480p — ocupa pouco (~11 MB/min)" />
+                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:104: Warning: Hardcoded string "720p — equilíbrio (~30 MB/min)", should use @string resource [HardcodedText]
+            <RadioButton android:id="@+id/qHd" style="@style/Opt" android:text="720p — equilíbrio (~30 MB/min)" />
+                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:105: Warning: Hardcoded string "1080p — melhor imagem (~60 MB/min)", should use @string resource [HardcodedText]
+            <RadioButton android:id="@+id/qFhd" style="@style/Opt" android:text="1080p — melhor imagem (~60 MB/min)" />
+                                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:107: Warning: Hardcoded string "Gravar áudio", should use @string resource [HardcodedText]
+        <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/swAudio" style="@style/Sw" android:text="Gravar áudio" />
+                                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:108: Warning: Hardcoded string "Usar câmera frontal (selfie)", should use @string resource [HardcodedText]
+        <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/swFront" style="@style/Sw" android:text="Usar câmera frontal (selfie)" />
+                                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/activity_settings.xml:114: Warning: Hardcoded string "Arquivos: vídeos em Movies/GravadorOCR, fotos em Pictures/GravadorOCR, relatório .txt e legendas .srt em Download/GravadorOCR.nO OCR funciona sem internet.", should use @string resource [HardcodedText]
+            android:text="Arquivos: vídeos em Movies/GravadorOCR, fotos em Pictures/GravadorOCR, relatório .txt e legendas .srt em Download/GravadorOCR.\nO OCR funciona sem internet."
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/flashcardsgame/flashcardsgame/app/src/main/res/layout/item_detection.xml:16: Warning: Hardcoded string "Foto do momento", should use @string resource [HardcodedText]
+        android:contentDescription="Foto do momento"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+0 errors, 103 warnings
