@@ -323,11 +323,13 @@ class RecordingService : LifecycleService(), OcrPipeline.Callback {
             2 -> 8_000_000
             else -> 4_000_000
         }
+        // Ordem: qualidade escolhida + OCR -> 720p + OCR -> 480p + OCR -> só vídeo (sem OCR).
         val attempts = listOf(
             Triple(wanted, Size(1280, 720), true),
+            Triple(Quality.HD, Size(1280, 720), true),
             Triple(Quality.SD, Size(640, 480), true),
             Triple(wanted, Size(640, 480), false),
-        )
+        ).distinct()
         var lastError: Exception? = null
         for ((quality, analysisSize, withOcr) in attempts) {
             try {
@@ -358,6 +360,7 @@ class RecordingService : LifecycleService(), OcrPipeline.Callback {
                 videoCapture = vc
                 camera = cam
                 ocrAvailable = withOcr
+                Log.i(TAG, "Câmera configurada: vídeo=$quality análise=$analysisSize ocr=$withOcr")
                 cam.cameraInfo.cameraState.observe(this) { st -> onCameraState(st) }
                 if (!withOcr) addWarning("Este aparelho não aguenta gravar e ler texto ao mesmo tempo: gravando sem OCR.")
                 return

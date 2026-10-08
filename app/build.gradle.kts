@@ -31,6 +31,8 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
+            // celulares reais são ARM; x86 fica só nos builds de teste (emulador)
+            ndk { abiFilters += listOf("arm64-v8a", "armeabi-v7a") }
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
             val release = signingConfigs.getByName("release")
             if (release.storeFile != null) signingConfig = release

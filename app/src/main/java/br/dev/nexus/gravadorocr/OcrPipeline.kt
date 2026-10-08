@@ -52,6 +52,7 @@ class OcrPipeline(private val prefs: Prefs, private val callback: Callback) {
         }
         if (closed) return
         val tokens = text?.let { OcrText.tokens(it) } ?: emptyList()
+        if (tokens.isNotEmpty() && Log.isLoggable(TAG, Log.DEBUG)) Log.d(TAG, "Lido: ${text?.text?.replace('\n', '|')}")
 
         val tol = prefs.tolerance
         val m = matcher?.takeIf { matcherTolerance == tol } ?: KeywordMatcher(tol).also {
@@ -62,6 +63,7 @@ class OcrPipeline(private val prefs: Prefs, private val callback: Callback) {
         val results = if (specs.isEmpty()) emptyList() else m.match(tokens, specs)
         tracker.cooldownMs = prefs.cooldownSec * 1000L
         val events = tracker.update(results, now)
+        if (results.isNotEmpty()) Log.i(TAG, "Resultados: ${results.joinToString { "${it.spec.label}=${it.kind}/d${it.distance}" }} eventos=${events.size}")
 
         if (Live.uiVisible) {
             runCatching { Live.frame.value = FrameUtils.monitor(upright, tokens, results) }

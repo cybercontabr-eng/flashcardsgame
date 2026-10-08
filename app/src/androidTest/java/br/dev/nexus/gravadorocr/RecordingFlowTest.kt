@@ -88,6 +88,7 @@ class RecordingFlowTest {
         assertTrue("ainda deveria estar gravando: $st", st.recording)
         assertNull("não deveria ter alarme: ${st.alarm}", st.alarm)
         assertTrue("tempo gravado deveria avançar: ${st.recordedMs}", st.recordedMs >= 4_000)
+        assertTrue("o OCR deveria estar rodando junto com o vídeo (ocrFps=${st.ocrFps}, aviso=${st.warning})", st.ocrFps > 0f)
         stopAndWait()
         val segs = Live.status.value.savedSegments
         Log.i(TestUtils.TAG, "Partes: $segs")
@@ -119,7 +120,11 @@ class RecordingFlowTest {
         val svc = RecordingService.current
         assertNotNull(svc)
         val page = TestUtils.renderText(listOf("ENTREGA AGENDADA", "BOTIJÃO DE GÁS P13", "QTD 2"))
-        svc!!.debugProcessFrame(page)
+        // como na câmera real, a mesma imagem chega em vários quadros seguidos
+        repeat(4) {
+            svc!!.debugProcessFrame(page)
+            Thread.sleep(700)
+        }
         TestUtils.waitUntil(30_000, "detecção de 'botijão de gás'") {
             Live.detections.value.any { it.kind == Detection.Kind.FOUND && it.label == "botijão de gás" }
         }
@@ -130,7 +135,7 @@ class RecordingFlowTest {
         val size = ctx.contentResolver.openFileDescriptor(android.net.Uri.parse(det.snapshotUri), "r")?.use { it.statSize } ?: -1
         assertTrue("foto vazia", size > 1_000)
         // a mesma palavra logo em seguida não deve gerar novo alerta (evita apitar sem parar)
-        svc.debugProcessFrame(page)
+        svc!!.debugProcessFrame(page)
         Thread.sleep(3_000)
         assertEquals(1, Live.detections.value.count { it.kind == Detection.Kind.FOUND })
         stopAndWait()
@@ -170,6 +175,7 @@ class RecordingFlowTest {
         TestUtils.waitUntil(30_000, "voltar a gravar após 'Tentar de novo'") {
             Live.status.value.recording && Live.status.value.alarm == null
         }
+        Thread.sleep(3_000)
         stopAndWait()
         assertTrue(Live.status.value.savedSegments.size >= 2)
     }
