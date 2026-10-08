@@ -69,21 +69,23 @@ object FrameUtils {
         return out
     }
 
-    /** Foto do momento da detecção, com a palavra marcada em vermelho e legenda. */
+    /** Foto do momento da detecção: faixa com horário/palavra em cima e a palavra marcada em vermelho. */
     fun annotate(src: Bitmap, result: MatchResult, caption: String): Bitmap {
-        val out = src.copy(Bitmap.Config.ARGB_8888, true)
+        val textSize = maxOf(22f, src.width / 28f)
+        val bar = (textSize * 1.8f).toInt()
+        val out = Bitmap.createBitmap(src.width, src.height + bar, Bitmap.Config.ARGB_8888)
         val c = Canvas(out)
-        val stroke = maxOf(4f, out.width / 160f)
+        c.drawColor(Color.BLACK)
+        c.drawBitmap(src, 0f, bar.toFloat(), null)
+        val stroke = maxOf(4f, src.width / 160f)
         val hit = Paint().apply { style = Paint.Style.STROKE; strokeWidth = stroke; color = Color.rgb(255, 40, 40) }
         for (b in result.boxes) {
             val r = rect(b, 1f)
+            r.offset(0f, bar.toFloat())
             r.inset(-stroke, -stroke)
             c.drawRect(r, hit)
         }
-        val textSize = maxOf(22f, out.width / 28f)
-        val bg = Paint().apply { color = Color.argb(190, 0, 0, 0) }
         val tp = Paint(Paint.ANTI_ALIAS_FLAG).apply { color = Color.WHITE; this.textSize = textSize }
-        c.drawRect(0f, 0f, out.width.toFloat(), textSize * 1.8f, bg)
         c.drawText(caption, textSize * 0.5f, textSize * 1.25f, tp)
         return out
     }
