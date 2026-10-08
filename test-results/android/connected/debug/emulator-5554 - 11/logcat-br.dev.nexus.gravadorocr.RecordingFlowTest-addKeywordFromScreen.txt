@@ -1,0 +1,66 @@
+10-08 05:50:32.920  5069  5125 I TestRunner: started: addKeywordFromScreen(br.dev.nexus.gravadorocr.RecordingFlowTest)
+10-08 05:50:32.923   499  7470 D EGL_emulation: eglCreateContext: 0x760c61ec96e0: maj 3 min 0 rcv 3
+10-08 05:50:32.924   499  7470 D EGL_emulation: eglMakeCurrent: 0x760c61ec96e0: ver 3 0 (tinfo 0x760c01eb5e30) (first time)
+10-08 05:50:32.928  5069  5125 I UiAutomationPermGranter: Permission: android.permission.CAMERA is already granted!
+10-08 05:50:32.928  5069  5125 I UiAutomationPermGranter: Permission: android.permission.RECORD_AUDIO is already granted!
+10-08 05:50:32.956  5069  5125 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+10-08 05:50:32.958  2050  2257 W LocationOracle: No location history returned by ContextManager
+10-08 05:50:32.964   499   543 D EventSequenceValidator: Transition from ACTIVITY_CANCELLED to INTENT_STARTED
+10-08 05:50:33.007   421   421 I perfetto: ing_service_impl.cc:758 Configured tracing session 7, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:1, uid:1071 session name: ""
+10-08 05:50:33.007   420   420 I perfetto: probes_producer.cc:230  Ftrace setup (target_buf=7)
+10-08 05:50:33.057   750   763 I ndroid.systemu: NativeAlloc concurrent copying GC freed 25161(1293KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 7726KB/15MB, paused 34us total 379.439ms
+10-08 05:50:33.101  1715  3359 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 173ms, 0 inserts 0 updates 0 deletes
+10-08 05:50:33.166   499   543 W system_server: Long monitor contention with owner Binder:499_14 (1957) at void com.android.server.wm.TaskChangeNotificationController.forAllLocalListeners(com.android.server.wm.TaskChangeNotificationController$TaskStackConsumer, android.os.Message)(TaskChangeNotificationController.java:351) waiters=0 in void com.android.server.wm.TaskChangeNotificationController.forAllRemoteListeners(com.android.server.wm.TaskChangeNotificationController$TaskStackConsumer, android.os.Message) for 202ms
+10-08 05:50:33.168   499   543 D EventSequenceValidator: Transition from INTENT_STARTED to ACTIVITY_LAUNCHED
+10-08 05:50:33.218   353   353 E Layer   : [Surface(name=Task=11)/@0xea4bb49 - animation-leash#0] No local sync point found
+10-08 05:50:33.218   353   353 E Layer   : [Surface(name=Task=1)/@0xc887f98 - animation-leash#0] No local sync point found
+10-08 05:50:33.334   420   420 I perfetto: ftrace_procfs.cc:176    enabled ftrace
+10-08 05:50:33.419   353   353 E Layer   : [Surface(name=Task=11)/@0xea4bb49 - animation-leash#0] No local sync point found
+10-08 05:50:33.419   353   353 E Layer   : [Surface(name=Task=1)/@0xc887f98 - animation-leash#0] No local sync point found
+10-08 05:50:33.601   499   543 W system_server: Long monitor contention with owner Binder:499_7 (848) at void com.android.server.wm.ActivityTaskManagerService.activityPaused(android.os.IBinder)(ActivityTaskManagerService.java:1848) waiters=0 in boolean com.android.server.wm.WindowProcessController.hasActivitiesOrRecentTasks() for 188ms
+10-08 05:50:33.602   499   544 W system_server: Long monitor contention with owner Binder:499_7 (848) at void com.android.server.wm.ActivityTaskManagerService.activityPaused(android.os.IBinder)(ActivityTaskManagerService.java:1848) waiters=2 in void com.android.server.wm.WindowAnimator.lambda$new$1$WindowAnimator(long) for 182ms
+10-08 05:50:33.665  5069  5069 D LifecycleMonitor: Lifecycle status change: br.dev.nexus.gravadorocr.MainActivity@45fe40e in: PRE_ON_CREATE
+10-08 05:50:33.665  5069  5069 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+10-08 05:50:33.711  2050  2256 W ThreadPoolDumper: Task n[ServiceTransaction[SessionController#handleGenericClientEvent]] was queued for 1095ms before starting on executor EventBus
+10-08 05:50:33.732  2050  2401 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/sharedminusonemodule/shared/SharedMinusOneData.pb.tmp
+10-08 05:50:33.857  2050  2050 I BgTaskExecutorImpl: Starting EXCLUSIVE background task TNG_MINUS_ONE_SYNC.
+10-08 05:50:33.910  2050  3167 I PBSessionCacheImpl: Deleted sessionId[9017786786226760] from persistence.
+10-08 05:50:33.944  5069  5069 D LifecycleMonitor: Lifecycle status change: br.dev.nexus.gravadorocr.MainActivity@45fe40e in: CREATED
+10-08 05:50:33.944  5069  5069 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=br.dev.nexus.gravadorocr.MainActivity@45fe40e
+10-08 05:50:33.946  5069  5069 D LifecycleMonitor: Lifecycle status change: br.dev.nexus.gravadorocr.MainActivity@45fe40e in: STARTED
+10-08 05:50:33.946  5069  5069 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=br.dev.nexus.gravadorocr.MainActivity@45fe40e
+10-08 05:50:33.953  5069  5069 D LifecycleMonitor: Lifecycle status change: br.dev.nexus.gravadorocr.MainActivity@45fe40e in: RESUMED
+10-08 05:50:33.954  5069  5069 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=br.dev.nexus.gravadorocr.MainActivity@45fe40e
+10-08 05:50:33.964  2050  2256 W SearchServiceCore: Abort, client detached.
+10-08 05:50:33.964  2050  2256 I chatty  : uid=10123(com.google.android.googlequicksearchbox) EventBus0 identical 1 line
+10-08 05:50:34.005  2050  2256 W SearchServiceCore: Abort, client detached.
+10-08 05:50:34.022  2050  2256 I TngMinusOneSync: Syncing TNG:-1
+10-08 05:50:34.092   499   548 D ArtManagerInternalImpl: /data/misc/iorapd/br.dev.nexus.gravadorocr/1/br.dev.nexus.gravadorocr.MainActivity/compiled_traces/compiled_trace.pb doesn't exist
+10-08 05:50:34.093   499   548 I ActivityTaskManager: Displayed br.dev.nexus.gravadorocr/.MainActivity: +1s126ms
+10-08 05:50:34.099   499   543 D EventSequenceValidator: Transition from ACTIVITY_LAUNCHED to ACTIVITY_FINISHED
+10-08 05:50:34.140   499  1957 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+10-08 05:50:34.140   499  1957 I chatty  : uid=1000(system) Binder:499_14 identical 1 line
+10-08 05:50:34.140   499  1957 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+10-08 05:50:34.144   384   467 D AudioFlinger: mixer(0x7d1420fae040) throttle end: throttle time(8)
+10-08 05:50:34.183  1585  1585 I ShortcutsDataManager: ShortcutsDataManager.onContentChanged():89 onContentChanged()
+10-08 05:50:34.264  1585  1585 I ShortcutsDataManager: AbstractContentDataManager.startImportContentTask():208 startImportContentTask()
+10-08 05:50:34.265  1585  1972 I ShortcutsDataManager: AbstractContentDataManager$ImportContentTask.doInBackground():222 doInBackground()
+10-08 05:50:34.265  1585  1972 I PersonalDictionaryDataHandler: PersonalDictionaryDataHandler.beginProcess():111 LanguageTags = [en-US]
+10-08 05:50:34.443   499   543 D EventSequenceValidator: Transition from ACTIVITY_FINISHED to INTENT_STARTED
+10-08 05:50:34.448  5069  5069 D LifecycleMonitor: Lifecycle status change: br.dev.nexus.gravadorocr.MainActivity@45fe40e in: PAUSED
+10-08 05:50:34.448  5069  5069 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=br.dev.nexus.gravadorocr.MainActivity@45fe40e
+10-08 05:50:34.473   499   543 D EventSequenceValidator: Transition from INTENT_STARTED to ACTIVITY_LAUNCHED
+10-08 05:50:34.607   499  2699 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+10-08 05:50:34.664   499   543 D EventSequenceValidator: Transition from ACTIVITY_LAUNCHED to ACTIVITY_FINISHED
+10-08 05:50:34.667   499   548 D ArtManagerInternalImpl: /data/misc/iorapd/br.dev.nexus.gravadorocr.test/0/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity/compiled_traces/compiled_trace.pb doesn't exist
+10-08 05:50:34.676   499   548 I ActivityTaskManager: Displayed br.dev.nexus.gravadorocr.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity: +165ms
+10-08 05:50:34.777  1585  1972 I ShortcutsDataManager: AbstractContentDataManager.importRecords():312 importRecords() : Success : Count = 0
+10-08 05:50:34.787   975   988 I s.nexuslaunche: NativeAlloc concurrent copying GC freed 12293(637KB) AllocSpace objects, 2(104KB) LOS objects, 49% free, 3880KB/7760KB, paused 27us total 161.326ms
+10-08 05:50:34.789   975   990 W System  : A resource failed to call release.
+10-08 05:50:34.789   975   990 I chatty  : uid=10152(com.google.android.apps.nexuslauncher) FinalizerDaemon identical 1 line
+10-08 05:50:34.789   975   990 W System  : A resource failed to call release.
+10-08 05:50:34.876  5069  5069 D LifecycleMonitor: Lifecycle status change: br.dev.nexus.gravadorocr.MainActivity@45fe40e in: STOPPED
+10-08 05:50:34.877  5069  5069 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=br.dev.nexus.gravadorocr.MainActivity@45fe40e
+10-08 05:50:34.878  5069  5069 D LifecycleMonitor: Lifecycle status change: br.dev.nexus.gravadorocr.MainActivity@45fe40e in: DESTROYED
+10-08 05:50:34.878  5069  5069 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+10-08 05:50:34.886  5069  5125 I TestRunner: finished: addKeywordFromScreen(br.dev.nexus.gravadorocr.RecordingFlowTest)

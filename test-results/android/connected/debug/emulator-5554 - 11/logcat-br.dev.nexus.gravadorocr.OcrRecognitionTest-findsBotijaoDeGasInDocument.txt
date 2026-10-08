@@ -1,0 +1,546 @@
+10-08 05:48:40.913  5069  5125 I TestRunner: started: findsBotijaoDeGasInDocument(br.dev.nexus.gravadorocr.OcrRecognitionTest)
+10-08 05:48:40.916  5302  5337 W ConnectionTracker: Exception thrown while unbinding
+10-08 05:48:40.916  5302  5337 W ConnectionTracker: java.lang.IllegalArgumentException: Service not registered: lbw@2955709
+10-08 05:48:40.916  5302  5337 W ConnectionTracker: 	at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1757)
+10-08 05:48:40.916  5302  5337 W ConnectionTracker: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1874)
+10-08 05:48:40.916  5302  5337 W ConnectionTracker: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:792)
+10-08 05:48:40.916  5302  5337 W ConnectionTracker: 	at kcy.b(PG:30)
+10-08 05:48:40.916  5302  5337 W ConnectionTracker: 	at kcy.a(PG:26)
+10-08 05:48:40.916  5302  5337 W ConnectionTracker: 	at lbx.q(PG:48)
+10-08 05:48:40.916  5302  5337 W ConnectionTracker: 	at lbi.a(PG:5)
+10-08 05:48:40.916  5302  5337 W ConnectionTracker: 	at ksz.run(PG:5)
+10-08 05:48:40.916  5302  5337 W ConnectionTracker: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+10-08 05:48:40.916  5302  5337 W ConnectionTracker: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-08 05:48:40.916  5302  5337 W ConnectionTracker: 	at kyl.run(PG:26)
+10-08 05:48:40.919  5069  5128 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-08 05:48:40.921  5458  5486 I droid.apps.doc: The ClassLoaderContext is a special shared library.
+10-08 05:48:40.922  5069  5128 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-08 05:48:40.928  5069  5131 D DecoupledTextDelegate: Start loading thick OCR module.
+10-08 05:48:40.928  5069  5131 I DynamiteModule: Considering local module com.google.mlkit.dynamite.text.latin:10000 and remote module com.google.mlkit.dynamite.text.latin:0
+10-08 05:48:40.928  5069  5131 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.text.latin
+10-08 05:48:40.928  5069  5131 I native  : I0000 00:00:1791438520.928953    5131 asset_manager_util.cc:61] Created global reference to asset manager.
+10-08 05:48:40.939  5069  5631 I native  : I0000 00:00:1791438520.939708    5631 text_detector_thread_pool_context.cc:38] Compute manager max in flight region detector overwrite: 1
+10-08 05:48:40.939  5069  5630 I native  : I0000 00:00:1791438520.939910    5630 text_classifier.cc:32] Creating classifier TfliteTextClassifier
+10-08 05:48:40.940  5069  5631 I native  : I0000 00:00:1791438520.940461    5631 common_util.h:41] Resizing Thread Pool: ocr_det_0 to 3
+10-08 05:48:40.945  1189  1189 I GeofencerStateMachine: sendQueryLocationOptIn
+10-08 05:48:40.945  5069  5630 I native  : I0000 00:00:1791438520.940472    5630 common_util.h:41] Resizing Thread Pool: ocr_segm to 3
+10-08 05:48:40.948  5069  5630 I native  : I0000 00:00:1791438520.948228    5630 tflite_lstm_client_base.cc:371] Resizing interpreter pool to 4
+10-08 05:48:40.949  1189  1189 I GeofencerStateMachine: sendQueryLocationOptIn
+10-08 05:48:40.950  5069  5630 I native  : I0000 00:00:1791438520.950240    5630 multi_pass_line_recognition_mutator.cc:342] Preloading recognizers.
+10-08 05:48:40.950  5069  5553 I native  : I0000 00:00:1791438520.950308    5553 tflite_model_pooled_runner.cc:625] Loading mlkit-google-ocr-models/gocr/gocr_models/line_recognition_legacy_mobile/Latn_ctc/optical/conv_model.fb
+10-08 05:48:40.950  5069  5553 I native  : I0000 00:00:1791438520.950561    5553 tflite_model_pooled_runner.cc:636] Loading mlkit-google-ocr-models/gocr/gocr_models/line_recognition_legacy_mobile/Latn_ctc/optical/lstm_model.fb
+10-08 05:48:40.952  5069  5553 I native  : I0000 00:00:1791438520.952371    5553 tflite_model_pooled_runner.cc:836] Resizing interpreter pool to 4
+10-08 05:48:40.953  5069  5553 I native  : I0000 00:00:1791438520.953577    5553 mobile_langid_v2.cc:58] MobileLangID V2 initialized.
+10-08 05:48:40.953  5069  5553 I native  : I0000 00:00:1791438520.953611    5553 multi_pass_line_recognition_mutator.cc:364] Finished preloading a recognizer for "Latn"
+10-08 05:48:40.957  5069  5630 I native  : I0000 00:00:1791438520.957489    5630 multi_pass_line_recognition_mutator.cc:398] Finished preloading recognizers.
+10-08 05:48:40.960  1189  1189 I GeofencerStateMachine: sendQueryLocationOptIn
+10-08 05:48:40.968  5069  5630 I native  : I0000 00:00:1791438520.968434    5630 tflite_model_pooled_runner.cc:625] Loading mlkit-google-ocr-models/gocr/layout/line_splitting_custom_ops/model.tflite
+10-08 05:48:40.968  5069  5630 I native  : I0000 00:00:1791438520.968711    5630 tflite_model_pooled_runner.cc:836] Resizing interpreter pool to 1
+10-08 05:48:40.969  5069  5630 I native  : I0000 00:00:1791438520.968992    5630 tflite_model_pooled_runner.cc:625] Loading mlkit-google-ocr-models/gocr/layout/line_clustering_custom_ops/model.tflite
+10-08 05:48:40.969  5069  5630 I native  : I0000 00:00:1791438520.969223    5630 tflite_model_pooled_runner.cc:836] Resizing interpreter pool to 1
+10-08 05:48:40.971  1189  1189 I GeofencerStateMachine: sendQueryLocationOptIn
+10-08 05:48:40.980  5069  5631 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:40.984  1189  1189 I GeofencerStateMachine: sendQueryLocationOptIn
+10-08 05:48:40.985  5069  5631 I native  : I0000 00:00:1791438520.985610    5631 tflite_detector_client_with_shape_cache.cc:105] Caching size: 10
+10-08 05:48:40.988  5458  5486 I droid.apps.doc: The ClassLoaderContext is a special shared library.
+10-08 05:48:40.991  1189  1189 I GeofencerStateMachine: sendQueryLocationOptIn
+10-08 05:48:40.992  5458  5486 D nativeloader: classloader namespace configured for unbundled product apk. library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64
+10-08 05:48:40.996  1189  1189 I GeofencerStateMachine: sendQueryLocationOptIn
+10-08 05:48:41.002  1189  1189 I GeofencerStateMachine: sendQueryLocationOptIn
+10-08 05:48:41.003  5069  5131 D PipelineManager: Start process bitmap
+10-08 05:48:41.007  1189  1189 I GeofencerStateMachine: sendQueryLocationOptIn
+10-08 05:48:41.010  1189  1189 I chatty  : uid=10121 com.google.android.gms.persistent identical 1 line
+10-08 05:48:41.014  1189  1189 I GeofencerStateMachine: sendQueryLocationOptIn
+10-08 05:48:41.028  5069  5630 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: Could not register for notifications with InnerTube:
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: rff: java.util.concurrent.ExecutionException: qjl: Precondition check failed.
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: 	at rex.b(PG:18)
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: 	at uqp.f(PG:65)
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: 	at uqp.g(PG:134)
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: 	at uqp.b(PG:99)
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: 	at uqn.run(Unknown Source:1)
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: 	at ywx.run(Unknown Source:1)
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: 	at pqt.run(PG:13)
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: 	at java.lang.Thread.run(Thread.java:923)
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: Caused by: java.util.concurrent.ExecutionException: qjl: Precondition check failed.
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: 	at zsp.a(PG:135)
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: 	at zsp.get(PG:91)
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: 	at rex.b(PG:17)
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: 	... 11 more
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: Caused by: qjl: Precondition check failed.
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: 	at rdu.b(PG:106)
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: 	at pyo.a(PG:61)
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: 	at pxo.run(Unknown Source:17)
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: 	... 4 more
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: Caused by: bjj
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: 	at pxo.run(Unknown Source:13)
+10-08 05:48:41.120  5302  5547 W YouTubeMusic: 	... 4 more
+10-08 05:48:41.159  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_birthdaydoodle_jar__name to integer.
+10-08 05:48:41.159  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_call_jar__name to integer.
+10-08 05:48:41.159  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_canvas_jar__name to integer.
+10-08 05:48:41.159  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_chkpkg_jar__name to integer.
+10-08 05:48:41.159  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_crashtest_jar__name to integer.
+10-08 05:48:41.159  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_dining_jar__name to integer.
+10-08 05:48:41.160  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_doodle_notifications_jar__name to integer.
+10-08 05:48:41.160  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_imageviewer_jar__name to integer.
+10-08 05:48:41.180  5176  5192 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10112; state: DISABLED
+10-08 05:48:41.196  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_ipa_jar__name to integer.
+10-08 05:48:41.196  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_jslocation_jar__name to integer.
+10-08 05:48:41.196  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_localintent_jar__name to integer.
+10-08 05:48:41.196  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_messaging_jar__name to integer.
+10-08 05:48:41.196  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_nativesrp_activity_jar__name to integer.
+10-08 05:48:41.196  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_nativesrp_presenter_jar__name to integer.
+10-08 05:48:41.196  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_nowcontent_jar__name to integer.
+10-08 05:48:41.196  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_recents_activity_jar__name to integer.
+10-08 05:48:41.196  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_save_jar__name to integer.
+10-08 05:48:41.196  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_searchresults_activity_jar__name to integer.
+10-08 05:48:41.196  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_test_jar__name to integer.
+10-08 05:48:41.196  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_weather_jar__name to integer.
+10-08 05:48:41.196  2050  2264 W PhenotypeToGsaConfigs: Can't format flag bindle_flags__bloblobber_blob to integer.
+10-08 05:48:41.196  2050  2264 W PhenotypeToGsaConfigs: Can't format flag bindle_flags__velour_jar to integer.
+10-08 05:48:41.246  1189  1204 I .gms.persisten: Background young concurrent copying GC freed 229144(10187KB) AllocSpace objects, 16(720KB) LOS objects, 25% free, 16MB/22MB, paused 20us total 257.932ms
+10-08 05:48:41.315  5458  5486 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 286 native methods...
+10-08 05:48:41.415  1422  5590 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:41.416  1422  5590 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:41.417  1422  5002 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:41.418  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:41.418  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:41.418  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:41.424  1189  5425 I PTCommittedOperation: Receive new configuration for com.google.android.gms.auth_api_phone
+10-08 05:48:41.516  2050  2401 I EngineIdGenerator: Refusing EXCLUSIVE task 24, it is already pending. Try again in 338 seconds.
+10-08 05:48:41.517  2050  2401 I ModelDownloadListener: Schdedule model download
+10-08 05:48:41.518  2050  2399 I FedAssExpListener: Fed-ass not supported for signed out users.
+10-08 05:48:41.518  2050  2399 I FedAssExpListener: Successfully processed experiments changed.
+10-08 05:48:41.519  2050  2050 I BgTaskExecutorImpl: Starting EXCLUSIVE background task UPDATE_HOTWORD_MODELS.
+10-08 05:48:41.529  2050  2497 I ModelDownloadController: requestHotwordModelUpdate modelType-2 modelLocale-en-US
+10-08 05:48:41.529  2050  2497 I ModelDownloadController: shouldDownloadModel: modelLocale is en-US
+10-08 05:48:41.530  2050  2497 I ModelDownloadController: We already downloaded model from given location.
+10-08 05:48:41.530  2050  2497 I ModelDownloadController: Model download not requested.
+10-08 05:48:41.556  2552  3075 I CarrierServices: [88] eav.a: Received Provisioning Event: [Bugle information (100)]
+10-08 05:48:41.556  2552  3075 I CarrierServices: [88] eav.a: JibeService is running, passing event to provisioning engine.
+10-08 05:48:41.556  2552  3075 I CarrierServices: [88] dqc.a: Handling Provisioning Event: [Bugle information (100)]
+10-08 05:48:41.556  2552  3075 I CarrierServices: [88] dsd.a: RcsAvailabilityManager: Calculating Rcs Availability
+10-08 05:48:41.559  2050  2401 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+10-08 05:48:41.575  2050  2067 I earchbox:searc: Background concurrent copying GC freed 182624(7767KB) AllocSpace objects, 30(1836KB) LOS objects, 49% free, 11MB/22MB, paused 22.633ms total 423.357ms
+10-08 05:48:41.585  2050  2401 W CorpusConfigHelper: Invalid input from icing corpus JSON flag.
+10-08 05:48:41.585  2050  2401 W CorpusConfigHelper: android.util.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 123 column 2
+10-08 05:48:41.585  2050  2401 W CorpusConfigHelper: 	at android.util.JsonReader.syntaxError(JsonReader.java:1162)
+10-08 05:48:41.585  2050  2401 W CorpusConfigHelper: 	at android.util.JsonReader.checkLenient(JsonReader.java:840)
+10-08 05:48:41.585  2050  2401 W CorpusConfigHelper: 	at android.util.JsonReader.nextInArray(JsonReader.java:615)
+10-08 05:48:41.585  2050  2401 W CorpusConfigHelper: 	at android.util.JsonReader.peek(JsonReader.java:345)
+10-08 05:48:41.585  2050  2401 W CorpusConfigHelper: 	at android.util.JsonReader.hasNext(JsonReader.java:321)
+10-08 05:48:41.585  2050  2401 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.k.a(SourceFile:25)
+10-08 05:48:41.585  2050  2401 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.j.a(SourceFile:1)
+10-08 05:48:41.585  2050  2401 W CorpusConfigHelper: 	at com.google.android.apps.gsa.search.core.i.i.run(Unknown Source:2)
+10-08 05:48:41.585  2050  2401 W CorpusConfigHelper: 	at com.google.android.libraries.gsa.l.a.l.call(Unknown Source:2)
+10-08 05:48:41.585  2050  2401 W CorpusConfigHelper: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-08 05:48:41.585  2050  2401 W CorpusConfigHelper: 	at com.google.apps.tiktok.concurrent.aq.run(SourceFile:1)
+10-08 05:48:41.585  2050  2401 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-08 05:48:41.585  2050  2401 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-08 05:48:41.585  2050  2401 W CorpusConfigHelper: 	at com.google.apps.tiktok.concurrent.f.run(Unknown Source:3)
+10-08 05:48:41.585  2050  2401 W CorpusConfigHelper: 	at java.lang.Thread.run(Thread.java:923)
+10-08 05:48:41.606  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:41.606  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:41.607  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:41.631  1422  5590 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:41.634  1422  5589 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:41.635  1422  5588 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:41.637  1189  5647 I PTCommittedOperation: Receive new configuration for com.google.android.gms.auth_api_proxy
+10-08 05:48:41.696   288   288 I Zygote  : Process 4632 exited due to signal 9 (Killed)
+10-08 05:48:41.706  1422  1692 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32 [CONTEXT service_id=21 ]
+10-08 05:48:41.708  1422  2505 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33 [CONTEXT service_id=21 ]
+10-08 05:48:41.728   499   551 I libprocessgroup: Successfully killed process cgroup uid 10141 pid 4632 in 43ms
+10-08 05:48:41.732  1422  2943 W Icing   : No valid account for uploading user actions [CONTEXT service_id=21 ]
+10-08 05:48:41.737  2552  3075 I CarrierServices: [88] dtf.b: Bugle has minimum required RCS permissions: true
+10-08 05:48:41.753  1422  2943 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0 [CONTEXT service_id=21 ]
+10-08 05:48:41.764  1422  2943 W Icing   : No valid account for uploading user actions [CONTEXT service_id=21 ]
+10-08 05:48:41.784  2552  3075 I CarrierServices: [88] dtf.a: Rcs is enabled from user settings: true
+10-08 05:48:41.789  1422  2943 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0 [CONTEXT service_id=21 ]
+10-08 05:48:41.816  2552  3075 I CarrierServices: [88] dtf.c: Bugle is default SMS app: true
+10-08 05:48:41.830  2552  3075 W CarrierServices: [88] dvk.a: No config URL. RCS will be disabled!
+10-08 05:48:41.831  2552  3075 I CarrierServices: [88] ekb.b: Checking if using CarrierServices.apk is possible. Enabled: true, isAtLeastM: true, runningInsideBugle: false
+10-08 05:48:41.853  2552  3075 I CarrierServices: [88] chn.h: BindingManager: binding and reset P/H Flag stay same
+10-08 05:48:41.853  2552  3075 I CarrierServices: [88] dsd.a: RcsAvailabilityManager: Rcs Availability still DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+10-08 05:48:41.879  5176  5653 I FirebaseCrash: Sending crashes
+10-08 05:48:41.920  5069  5630 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:41.943  2050  2497 I BgTaskExecutorImpl: Starting EXCLUSIVE background task FETCH_CONFIGS_FROM_PHENOTYPE.
+10-08 05:48:41.954  1422  5586 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:41.954  1422  2341 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:41.955  1189  5418 I PTCommittedOperation: Receive new configuration for com.google.android.gms.reminders
+10-08 05:48:41.956  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:41.956  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:41.957  1422  3337 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:41.957  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:42.354  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:42.354  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:42.355  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:42.361  1189  5646 I PTCommittedOperation: Receive new configuration for com.google.android.client_error_logging
+10-08 05:48:42.362  1422  3337 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:42.363  1422  3137 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:42.363  1422  5584 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:42.388  1189  1204 I .gms.persisten: Background young concurrent copying GC freed 152144(7117KB) AllocSpace objects, 52(3076KB) LOS objects, 30% free, 15MB/22MB, paused 19.662ms total 274.600ms
+10-08 05:48:42.451  5458  5486 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+10-08 05:48:42.606  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_birthdaydoodle_jar__name to integer.
+10-08 05:48:42.606  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_call_jar__name to integer.
+10-08 05:48:42.606  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_canvas_jar__name to integer.
+10-08 05:48:42.606  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_chkpkg_jar__name to integer.
+10-08 05:48:42.606  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_crashtest_jar__name to integer.
+10-08 05:48:42.607  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_dining_jar__name to integer.
+10-08 05:48:42.607  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_doodle_notifications_jar__name to integer.
+10-08 05:48:42.607  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_imageviewer_jar__name to integer.
+10-08 05:48:42.607  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_ipa_jar__name to integer.
+10-08 05:48:42.607  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_jslocation_jar__name to integer.
+10-08 05:48:42.607  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_localintent_jar__name to integer.
+10-08 05:48:42.607  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_messaging_jar__name to integer.
+10-08 05:48:42.607  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_nativesrp_activity_jar__name to integer.
+10-08 05:48:42.607  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_nativesrp_presenter_jar__name to integer.
+10-08 05:48:42.607  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_nowcontent_jar__name to integer.
+10-08 05:48:42.607  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_recents_activity_jar__name to integer.
+10-08 05:48:42.607  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_save_jar__name to integer.
+10-08 05:48:42.607  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_searchresults_activity_jar__name to integer.
+10-08 05:48:42.607  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_test_jar__name to integer.
+10-08 05:48:42.607  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_weather_jar__name to integer.
+10-08 05:48:42.607  2050  2257 W PhenotypeToGsaConfigs: Can't format flag bindle_flags__bloblobber_blob to integer.
+10-08 05:48:42.607  2050  2257 W PhenotypeToGsaConfigs: Can't format flag bindle_flags__velour_jar to integer.
+10-08 05:48:42.613  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:42.613  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:42.614  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:42.619  1422  5584 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:42.620  1422  5587 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:42.620  1422  5586 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:42.623  1189  5623 I PTCommittedOperation: Receive new configuration for com.google.android.gms.romanesco
+10-08 05:48:42.652  5069  5630 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:42.697  1422  5644 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:42.698  1422  5590 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:42.701  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:42.701  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:42.702  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:42.703  1189  5650 I PTCommittedOperation: Receive new configuration for com.google.android.gms.platformconfigurator
+10-08 05:48:42.847  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:42.847  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:42.847  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:42.852  1422  5590 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:42.853  1422  5590 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:42.855  1422  5584 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:42.869  1189  5648 I PTCommittedOperation: Receive new configuration for com.google.android.gms.accountsettings
+10-08 05:48:43.000  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:43.000  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:43.001  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:43.001  5094  5174 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10135; state: ENABLED
+10-08 05:48:43.004  1422  5590 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:43.005  1422  5590 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:43.006  1422  5591 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:43.018  1189  5628 I PTCommittedOperation: Receive new configuration for com.google.android.gms.backup
+10-08 05:48:43.049  2050  2401 I EngineIdGenerator: Refusing EXCLUSIVE task 24, it is already pending. Try again in 337 seconds.
+10-08 05:48:43.060  2050  2401 I ModelDownloadListener: Schdedule model download
+10-08 05:48:43.064  2050  2264 I FedAssExpListener: Fed-ass not supported for signed out users.
+10-08 05:48:43.072  2050  2264 I FedAssExpListener: Successfully processed experiments changed.
+10-08 05:48:43.084  2050  2401 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+10-08 05:48:43.084  2050  2050 I BgTaskExecutorImpl: Starting EXCLUSIVE background task UPDATE_HOTWORD_MODELS.
+10-08 05:48:43.086  2050  2497 I ModelDownloadController: requestHotwordModelUpdate modelType-2 modelLocale-en-US
+10-08 05:48:43.086  2050  2497 I ModelDownloadController: shouldDownloadModel: modelLocale is en-US
+10-08 05:48:43.087  2050  2497 I ModelDownloadController: We already downloaded model from given location.
+10-08 05:48:43.087  2050  2497 I ModelDownloadController: Model download not requested.
+10-08 05:48:43.108  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:43.108  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:43.108  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:43.113  1422  5591 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:43.114  1422  5591 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:43.114  1422  5591 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:43.129  2050  2401 W CorpusConfigHelper: Invalid input from icing corpus JSON flag.
+10-08 05:48:43.129  2050  2401 W CorpusConfigHelper: android.util.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 123 column 2
+10-08 05:48:43.129  2050  2401 W CorpusConfigHelper: 	at android.util.JsonReader.syntaxError(JsonReader.java:1162)
+10-08 05:48:43.129  2050  2401 W CorpusConfigHelper: 	at android.util.JsonReader.checkLenient(JsonReader.java:840)
+10-08 05:48:43.129  2050  2401 W CorpusConfigHelper: 	at android.util.JsonReader.nextInArray(JsonReader.java:615)
+10-08 05:48:43.129  2050  2401 W CorpusConfigHelper: 	at android.util.JsonReader.peek(JsonReader.java:345)
+10-08 05:48:43.129  2050  2401 W CorpusConfigHelper: 	at android.util.JsonReader.hasNext(JsonReader.java:321)
+10-08 05:48:43.129  2050  2401 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.k.a(SourceFile:25)
+10-08 05:48:43.129  2050  2401 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.j.a(SourceFile:1)
+10-08 05:48:43.129  2050  2401 W CorpusConfigHelper: 	at com.google.android.apps.gsa.search.core.i.i.run(Unknown Source:2)
+10-08 05:48:43.129  2050  2401 W CorpusConfigHelper: 	at com.google.android.libraries.gsa.l.a.l.call(Unknown Source:2)
+10-08 05:48:43.129  2050  2401 W CorpusConfigHelper: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-08 05:48:43.129  2050  2401 W CorpusConfigHelper: 	at com.google.apps.tiktok.concurrent.aq.run(SourceFile:1)
+10-08 05:48:43.129  2050  2401 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-08 05:48:43.129  2050  2401 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-08 05:48:43.129  2050  2401 W CorpusConfigHelper: 	at com.google.apps.tiktok.concurrent.f.run(Unknown Source:3)
+10-08 05:48:43.129  2050  2401 W CorpusConfigHelper: 	at java.lang.Thread.run(Thread.java:923)
+10-08 05:48:43.134  1189  5628 I PTCommittedOperation: Receive new configuration for com.google.android.gms.beacon
+10-08 05:48:43.136  1189  1204 I .gms.persisten: Background concurrent copying GC freed 314867(12MB) AllocSpace objects, 24(1860KB) LOS objects, 49% free, 10MB/20MB, paused 26us total 314.684ms
+10-08 05:48:43.243  1422  1692 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32 [CONTEXT service_id=21 ]
+10-08 05:48:43.245  1422  2505 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33 [CONTEXT service_id=21 ]
+10-08 05:48:43.251  1422  2943 W Icing   : No valid account for uploading user actions [CONTEXT service_id=21 ]
+10-08 05:48:43.288  5246  5370 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10122; state: DISABLED
+10-08 05:48:43.289  1422  2943 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0 [CONTEXT service_id=21 ]
+10-08 05:48:43.299  1422  2943 W Icing   : No valid account for uploading user actions [CONTEXT service_id=21 ]
+10-08 05:48:43.359  1422  2943 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0 [CONTEXT service_id=21 ]
+10-08 05:48:43.397  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:43.397  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:43.398  1422  5002 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:43.399  1422  5657 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:43.401  1422  5582 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:43.401  2050  3007 W GmsClient: mServiceBroker is null, client disconnected
+10-08 05:48:43.402  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:43.406  1189  5647 I PTCommittedOperation: Receive new configuration for com.google.android.gms.auth_account
+10-08 05:48:43.485  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:43.485  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:43.486  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:43.489  1422  5661 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:43.490  1422  5591 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:43.491  1422  5661 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:43.494  1189  5425 I PTCommittedOperation: Receive new configuration for com.google.android.gms.family
+10-08 05:48:43.557  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:43.557  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:43.559  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:43.571  1422  5661 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:43.572  1422  3337 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:43.572  1422  5586 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:43.578  1189  5425 I PTCommittedOperation: Receive new configuration for com.google.android.gms.smart_profile
+10-08 05:48:43.616  5069  5630 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:43.696  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:43.696  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:43.696  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:43.703  1422  5002 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:43.704  1422  2837 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:43.704  1422  5645 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:43.721  1189  5418 I PTCommittedOperation: Receive new configuration for com.google.android.location
+10-08 05:48:43.786  1422  5002 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:43.787  1422  5586 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:43.789  1422  5645 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:43.793   499   509 I system_server: Background young concurrent copying GC freed 520937(20MB) AllocSpace objects, 30(1728KB) LOS objects, 49% free, 22MB/45MB, paused 26us total 108.334ms
+10-08 05:48:43.796  1189  5649 I PTCommittedOperation: Receive new configuration for com.google.android.gms.growth
+10-08 05:48:43.801  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:43.801  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:43.802  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:43.887  1422  5586 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:43.888  1422  5586 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:43.889  1422  5002 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:43.892  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:43.892  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:43.892  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:43.895  1189  5646 I PTCommittedOperation: Receive new configuration for com.google.android.gms.notifications
+10-08 05:48:43.982  1422  5590 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:43.983  1422  5590 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:43.984  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:43.984  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:43.984  1422  5586 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:43.985  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:43.986  1189  5650 I PTCommittedOperation: Receive new configuration for com.google.android.gms.nearby
+10-08 05:48:43.997  1422  5002 I NearbySharing: Runtime state initialization complete. Sharing is disabled. [CONTEXT service_id=194 ]
+10-08 05:48:44.016  1189  1189 I NearbySharing: ReceiveSurfaceService created [CONTEXT service_id=194 ]
+10-08 05:48:44.017  1189  1189 I NearbySharing: ReceiveSurfaceService started [CONTEXT service_id=194 ]
+10-08 05:48:44.017  1189  1189 I NearbySharing: ReceiveSurfaceService destroyed [CONTEXT service_id=194 ]
+10-08 05:48:44.021  1189  2355 I NearbyMediums: BluetoothAdapter's name was not set by Nearby Connections, ignoring call to restore device name [CONTEXT service_id=54 ]
+10-08 05:48:44.052  1189  5425 I NetRec  : [604] akje.a: onConfigChanged()
+10-08 05:48:44.053  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:44.053  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:44.054  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:44.056  1189  5425 I NetRec  : [604] akje.a: Cancelling all NetRec GCM tasks
+10-08 05:48:44.061  1422  3137 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:44.063  1422  3336 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:44.064  1422  5591 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:44.079  1189  5425 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:44.079  1189  5425 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:44.079  1189  5425 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:44.082  1189  5425 I NetRec  : [604] ClearDatabaseService.onHandleIntent: Clearing score cache
+10-08 05:48:44.110  1189  5650 I PTCommittedOperation: Receive new configuration for com.google.android.gms.netrec
+10-08 05:48:44.114  1422  5585 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:44.114  1422  5585 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:44.116  1422  5657 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:44.123  1189  5650 I PTCommittedOperation: Receive new configuration for com.google.android.gms.tapandpay
+10-08 05:48:44.173  1422  2837 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:44.175  1422  3340 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:44.175  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:44.175  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:44.175  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:44.176  1422  5591 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:44.183  1189  5019 I PTCommittedOperation: Receive new configuration for com.google.android.gms.photos
+10-08 05:48:44.315  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:44.315  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:44.316  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:44.341  1422  5591 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:44.342  1422  5002 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:44.343  1422  5645 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:44.345  1189  5019 I PTCommittedOperation: Receive new configuration for com.google.android.gms.places
+10-08 05:48:44.405  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:44.405  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:44.406  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:44.416  1189  5019 I PTCommittedOperation: Receive new configuration for com.google.android.gms.signin
+10-08 05:48:44.418  1422  3137 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:44.419  1422  3137 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:44.420  1422  5582 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:44.483  1189  5019 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:44.483  1189  5019 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:44.483  1189  5019 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:44.496  1422  2341 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:44.497  1422  2341 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:44.498  1422  5657 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:44.535  1189  5425 I PTCommittedOperation: Receive new configuration for com.google.android.gms.auth.proximity
+10-08 05:48:44.574  5069  5630 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:44.579  1189  5019 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:44.579  1189  5019 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:44.579  1189  5019 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:44.602  1422  5586 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:44.603  1422  3337 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:44.605  1422  5589 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:44.606  1422  5586 I SystemUpdate: [Installation,ReceiverIntentOperation] Received intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:44.611  1422  3137 I SystemUpdate: [Execution,InstallationEventIntentOperation] Handling event of type 2.
+10-08 05:48:44.613  1422  5645 I SystemUpdate: [Execution,InstallationIntentOperation] Received intent: Intent { act=com.google.android.gms.update.INSTALL_UPDATE cat=[targeted_intent_op_prefix:.update.execution.InstallationIntentOperation] cmp=com.google.android.gms/.chimera.GmsIntentOperationService }.
+10-08 05:48:44.614  1422  5645 I SystemUpdate: [Execution,ExecutionManager] Action finished-execution executed for 0.00 seconds.
+10-08 05:48:44.713  1189  5649 I PTCommittedOperation: Receive new configuration for com.google.android.gms.update
+10-08 05:48:44.782  1189  5019 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:44.782  1189  5019 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:44.782  1189  5019 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:44.803  1189  5648 I PTCommittedOperation: Receive new configuration for com.google.android.gms.auth_authzen
+10-08 05:48:44.809  1422  3137 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:44.810  1422  5002 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:44.811  1422  5657 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:44.889  1189  5019 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:44.889  1189  5019 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:44.890  1189  5019 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:44.895  1422  5587 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:44.899  1422  5587 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:44.900  1422  5588 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:44.917  1189  5426 I PTCommittedOperation: Receive new configuration for com.google.android.gms.vision
+10-08 05:48:44.957  1189  5019 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:44.957  1189  5019 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:44.957  1189  5019 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:44.964  1189  1204 I .gms.persisten: Background young concurrent copying GC freed 207425(8529KB) AllocSpace objects, 5(308KB) LOS objects, 34% free, 13MB/20MB, paused 886us total 409.549ms
+10-08 05:48:44.971  1422  5588 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:44.972  1422  4697 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:44.972  1422  4697 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:44.993  1189  5647 I PTCommittedOperation: Receive new configuration for com.google.android.gms.wallet
+10-08 05:48:45.045   731   731 V AvrcpMediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-08 05:48:45.045   731   731 D AvrcpMediaPlayerList: Name of package changed: com.google.android.gms
+10-08 05:48:45.046   499   626 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-08 05:48:45.053  1087  1087 D CarrierSvcBindHelper: No carrier app for: 0
+10-08 05:48:45.106   772   804 I PermissionControllerServiceImpl: Updating user sensitive for uid 10121
+10-08 05:48:45.128  1422  5661 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:45.129  1422  5591 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:45.129  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:45.129  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:45.130  1422  5586 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:45.131  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:45.145  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:45.145  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:45.145  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:45.160  1189  1189 I GeofencerStateMachine: sendQueryLocationOptIn
+10-08 05:48:45.178  1189  5649 I PTCommittedOperation: Receive new configuration for com.google.android.gms.tron.metrics
+10-08 05:48:45.180  1422  5586 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:45.181  1422  5586 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:45.182  1422  3137 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:45.198  1189  1189 I GeofencerStateMachine: sendQueryLocationOptIn
+10-08 05:48:45.213  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:45.213  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:45.213  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:45.213  1189  5623 I PTCommittedOperation: Receive new configuration for com.google.android.gms.wearable
+10-08 05:48:45.217  1422  5591 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:45.221  1422  3137 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:45.223  1422  5670 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:45.238  1422  2505 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=AppsCorpus serviceId=36 [CONTEXT service_id=21 ]
+10-08 05:48:45.242  1422  1660 I Icing   : updateResources: need to parse abvr{com.google.android.gms} [CONTEXT service_id=21 ]
+10-08 05:48:45.293  1189  5418 I PTCommittedOperation: Receive new configuration for com.google.android.gms.walletp2p.v2
+10-08 05:48:45.295  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:45.295  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:45.296  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:45.304  1189  5646 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package:com.google.android.gms flg=0x45000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-08 05:48:45.343  1189  5673 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-08 05:48:45.352  1422  5586 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:45.353  1422  5586 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:45.353  1422  5589 I PhoneskyRecoveryLogs: Experiments updated. Start recovery checks.
+10-08 05:48:45.354  1422  5670 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:45.408  1534  2376 I Dialer  : OmtpVvmCarrierCfgHlpr - OmtpEvent:CONFIG_STATUS_SMS_TIME_OUT
+10-08 05:48:45.408  1534  1534 I Dialer  : RetryPolicy - discarding deferred status: configuration_state=4
+10-08 05:48:45.409  1534  1534 I Dialer  : VvmTaskExecutor - no more tasks, stopping service if no task are added in 5000 millis
+10-08 05:48:45.441  1189  5650 I PTCommittedOperation: Receive new configuration for com.google.android.gms.phonesky_recovery
+10-08 05:48:45.448  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:45.448  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:45.448  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:45.461  1189  1481 I GCoreUlr: WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction android.location.PROVIDERS_CHANGED
+10-08 05:48:45.462  1189  1481 I GCoreUlr: WorldUpdater:android.location.PROVIDERS_CHANGED: Ensuring that reporting is stopped because of reasons: (no Google accounts)
+10-08 05:48:45.462  1189  1481 I GCoreUlr: Unbound from all signal providers.
+10-08 05:48:45.477  1189  2384 I NearbyDiscovery: Show notifications: 0 total, no changes since last shown, no-op. [CONTEXT service_id=49 ]
+10-08 05:48:45.484  1422  5582 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:45.485  1422  5584 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:45.486  1422  3336 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:45.489  1534  1534 I Dialer  : VvmTaskReceiver - task received
+10-08 05:48:45.489  1534  1534 I Dialer  : VvmTaskReceiver - TaskExecutor already running
+10-08 05:48:45.489  1534  1534 I Dialer  : Task.createTask - create task:com.android.voicemail.impl.ActivationTask
+10-08 05:48:45.489  1534  1534 I Dialer  : RetryPolicy - retry #1 for com.android.voicemail.impl.ActivationTask@b4258f6 queued, executing in 5000
+10-08 05:48:45.489  1534  1534 I Dialer  : VvmTaskExecutor - com.android.voicemail.impl.ActivationTask@b4258f6 added
+10-08 05:48:45.489  1534  1534 I Dialer  : VvmTaskExecutor - minimal wait time:5000
+10-08 05:48:45.489  1534  1534 I Dialer  : VvmTaskExecutor - sleep for 5000 millis
+10-08 05:48:45.505  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:45.505  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:45.506  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:45.528  1189  1481 I GCoreUlr: DispatchingService ignoring Intent { act=android.net.wifi.WIFI_STATE_CHANGED flg=0x4000010 (has extras) } because ULR inactive
+10-08 05:48:45.534  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:45.534  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:45.536  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:45.539  1189  4887 I GCoreUlr: WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction android.location.PROVIDERS_CHANGED
+10-08 05:48:45.545  1189  4887 I GCoreUlr: WorldUpdater:android.location.PROVIDERS_CHANGED: Ensuring that reporting is stopped because of reasons: (no Google accounts)
+10-08 05:48:45.555  1189  5628 I PTCommittedOperation: Receive new configuration for com.google.android.gms.icing.mdd
+10-08 05:48:45.572  1189  4887 I GCoreUlr: Unbound from all signal providers.
+10-08 05:48:45.603  1422  1660 W Icing   : No valid account for uploading user actions [CONTEXT service_id=21 ]
+10-08 05:48:45.608  1189  5649 I PTCommittedOperation: Receive new configuration for com.google.android.gms.icing.mdh
+10-08 05:48:45.613  1189  1189 I GCoreUlr: Unbound from all signal providers.
+10-08 05:48:45.613  1189  1189 I GCoreUlr: Stopping handler for UlrDispSvcFast
+10-08 05:48:45.618  1189  5623 I PTCommittedOperation: Receive new configuration for com.google.android.gms.herrevad
+10-08 05:48:45.620  1189  5623 I Herrevad: [632] abjt.a: updateListenState
+10-08 05:48:45.637  1422  5589 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:45.638  1422  5584 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:45.640  1422  5582 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:45.641  1422  5589 I MobileDataHub: Scheduling periodic tasks
+10-08 05:48:45.641  1422  5589 W MobileDataHub: [Service] appsupload-periodic periodic task disabled
+10-08 05:48:45.647  1422  2837 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:45.648  1422  3137 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:45.649  1422  5644 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:45.668  1422  1660 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0 [CONTEXT service_id=21 ]
+10-08 05:48:45.710  1422  5589 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:45.711  1422  5589 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:45.712  1422  5582 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:45.714  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:45.714  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:45.714  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:45.718  1189  5020 I PTCommittedOperation: Receive new configuration for com.google.android.gms.firebase.auth
+10-08 05:48:45.779  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:45.779  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:45.779  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:45.783  1422  5682 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:45.784  1422  3137 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:45.785  1422  5645 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:45.786  1189  5647 I PTCommittedOperation: Receive new configuration for com.google.android.gms.ads
+10-08 05:48:45.880  1189  1463 I BeaconBle: Client requested scan, settings=BleSettings [scanMode=LOW_LATENCY, callbackType=ALL_MATCHES, reportDelayMillis=0, 5 filters, 1 clients, callingClientName=Nearby] [CONTEXT service_id=111 ]
+10-08 05:48:45.890  1189  1463 I BeaconBle: 'L' hardware scan: 5 filters, scanMode=2, reportdelay=0, callback type=1, #clients=1, workSource=WorkSource{10121 com.google.android.gms} [CONTEXT service_id=111 ]
+10-08 05:48:45.891  1189  1463 I BeaconBle: Starting scan on OS scanner. BT state: 12 [CONTEXT service_id=111 ]
+10-08 05:48:45.891  1189  1463 D BluetoothAdapter: isLeEnabled(): ON
+10-08 05:48:45.892   731  1261 I bt_stack: [INFO:gatt_api.cc(947)] GATT_Register 082a4628-5265-3d64-2e16-10c26389eed8
+10-08 05:48:45.892   731  1261 I bt_stack: [INFO:gatt_api.cc(967)] allocated gatt_if=5
+10-08 05:48:45.892  1189  3453 D BluetoothLeScanner: onScannerRegistered() - status=0 scannerId=5 mScannerId=0
+10-08 05:48:45.893  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:45.893  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:45.895  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:45.905  1189  5647 I PTCommittedOperation: Receive new configuration for com.google.android.gms.car
+10-08 05:48:45.909  1422  3137 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:45.911  1422  3137 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:45.911  1422  5645 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:46.015  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:46.015  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:46.015  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:46.019  1422  5669 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:46.019  1422  5669 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:46.021  1189  5019 I PTCommittedOperation: Receive new configuration for com.google.android.gms.gcm
+10-08 05:48:46.024  1422  5661 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:46.047  1422  3137 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:46.048  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:46.048  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:46.050  1422  3336 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:46.050  1189  5020 I PTCommittedOperation: Receive new configuration for com.google.android.gms.ipa
+10-08 05:48:46.051  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:46.052  1422  3336 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:46.083  5069  5131 D PipelineManager: OCR process succeeded via visionkit pipeline.
+10-08 05:48:46.090  5069  5125 I GravadorOcrTest: OCR leu: NOTA DE ENTREGA 4521|BOTIJĀO DE GÁS P13|VALOR R$ 120,00
+10-08 05:48:46.092  5069  5125 I TestRunner: finished: findsBotijaoDeGasInDocument(br.dev.nexus.gravadorocr.OcrRecognitionTest)

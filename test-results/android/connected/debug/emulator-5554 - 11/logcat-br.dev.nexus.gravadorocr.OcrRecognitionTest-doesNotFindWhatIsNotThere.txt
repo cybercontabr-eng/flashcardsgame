@@ -1,0 +1,379 @@
+10-08 05:48:36.808  5069  5125 I TestRunner: started: doesNotFindWhatIsNotThere(br.dev.nexus.gravadorocr.OcrRecognitionTest)
+10-08 05:48:36.813  5069  5130 W GooglePlayServicesUtil: Google Play services out of date for br.dev.nexus.gravadorocr.  Requires 203400000 but found 201817023
+10-08 05:48:36.814  5069  5131 D DecoupledTextDelegate: Start loading thick OCR module.
+10-08 05:48:36.814  5069  5131 I DynamiteModule: Considering local module com.google.mlkit.dynamite.text.latin:10000 and remote module com.google.mlkit.dynamite.text.latin:0
+10-08 05:48:36.814  5069  5131 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.text.latin
+10-08 05:48:36.815  5069  5131 I native  : I0000 00:00:1791438516.815328    5131 asset_manager_util.cc:61] Created global reference to asset manager.
+10-08 05:48:36.823  5069  5130 W GoogleApiManager: The service for com.google.android.gms.common.internal.service.zap is not available: ConnectionResult{statusCode=SERVICE_VERSION_UPDATE_REQUIRED, resolution=null, message=null}
+10-08 05:48:36.824  5069  5128 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-08 05:48:36.827  5069  5561 I native  : I0000 00:00:1791438516.827929    5561 text_detector_thread_pool_context.cc:38] Compute manager max in flight region detector overwrite: 1
+10-08 05:48:36.828  5069  5561 I native  : I0000 00:00:1791438516.828253    5561 common_util.h:41] Resizing Thread Pool: ocr_det_0 to 3
+10-08 05:48:36.828  5069  5128 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-08 05:48:36.832  5069  5560 I native  : I0000 00:00:1791438516.832218    5560 text_classifier.cc:32] Creating classifier TfliteTextClassifier
+10-08 05:48:36.832  5069  5560 I native  : I0000 00:00:1791438516.832322    5560 common_util.h:41] Resizing Thread Pool: ocr_segm to 3
+10-08 05:48:36.834  5069  5560 I native  : I0000 00:00:1791438516.834183    5560 tflite_lstm_client_base.cc:371] Resizing interpreter pool to 4
+10-08 05:48:36.835  5069  5560 I native  : I0000 00:00:1791438516.835255    5560 multi_pass_line_recognition_mutator.cc:342] Preloading recognizers.
+10-08 05:48:36.835  5069  5151 I native  : I0000 00:00:1791438516.835395    5151 tflite_model_pooled_runner.cc:625] Loading mlkit-google-ocr-models/gocr/gocr_models/line_recognition_legacy_mobile/Latn_ctc/optical/conv_model.fb
+10-08 05:48:36.835  5069  5151 I native  : I0000 00:00:1791438516.835787    5151 tflite_model_pooled_runner.cc:636] Loading mlkit-google-ocr-models/gocr/gocr_models/line_recognition_legacy_mobile/Latn_ctc/optical/lstm_model.fb
+10-08 05:48:36.838  5069  5151 I native  : I0000 00:00:1791438516.838097    5151 tflite_model_pooled_runner.cc:836] Resizing interpreter pool to 4
+10-08 05:48:36.839  5069  5151 I native  : I0000 00:00:1791438516.839529    5151 mobile_langid_v2.cc:58] MobileLangID V2 initialized.
+10-08 05:48:36.839  5069  5151 I native  : I0000 00:00:1791438516.839570    5151 multi_pass_line_recognition_mutator.cc:364] Finished preloading a recognizer for "Latn"
+10-08 05:48:36.846  5069  5560 I native  : I0000 00:00:1791438516.846418    5560 multi_pass_line_recognition_mutator.cc:398] Finished preloading recognizers.
+10-08 05:48:36.846  5069  5560 I native  : I0000 00:00:1791438516.846564    5560 tflite_model_pooled_runner.cc:625] Loading mlkit-google-ocr-models/gocr/layout/line_splitting_custom_ops/model.tflite
+10-08 05:48:36.847  1189  2355 W GLSUser : [AppCertManager] Failed to get security token.
+10-08 05:48:36.847  1189  2355 W GLSUser : java.io.IOException: Invalid scope
+10-08 05:48:36.847  1189  2355 W GLSUser : 	at adac.b(:com.google.android.gms@201817023@20.18.17 (040800-311416286):23)
+10-08 05:48:36.847  1189  2355 W GLSUser : 	at adac.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):18)
+10-08 05:48:36.847  1189  2355 W GLSUser : 	at adac.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):11)
+10-08 05:48:36.847  1189  2355 W GLSUser : 	at huk.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):16)
+10-08 05:48:36.847  1189  2355 W GLSUser : 	at hui.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):41)
+10-08 05:48:36.847  1189  2355 W GLSUser : 	at hud.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):0)
+10-08 05:48:36.847  1189  2355 W GLSUser : 	at hug.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):10)
+10-08 05:48:36.847  1189  2355 W GLSUser : 	at fzn.call(:com.google.android.gms@201817023@20.18.17 (040800-311416286):5)
+10-08 05:48:36.847  1189  2355 W GLSUser : 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-08 05:48:36.847  1189  2355 W GLSUser : 	at sji.b(:com.google.android.gms@201817023@20.18.17 (040800-311416286):12)
+10-08 05:48:36.847  1189  2355 W GLSUser : 	at sji.run(:com.google.android.gms@201817023@20.18.17 (040800-311416286):7)
+10-08 05:48:36.847  1189  2355 W GLSUser : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-08 05:48:36.847  1189  2355 W GLSUser : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-08 05:48:36.847  1189  2355 W GLSUser : 	at spj.run(:com.google.android.gms@201817023@20.18.17 (040800-311416286):0)
+10-08 05:48:36.847  1189  2355 W GLSUser : 	at java.lang.Thread.run(Thread.java:923)
+10-08 05:48:36.848  5069  5561 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: Could not register for notifications with InnerTube:
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: rff: java.util.concurrent.ExecutionException: qjl: Precondition check failed.
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: 	at rex.b(PG:18)
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: 	at uqp.f(PG:65)
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: 	at uqp.g(PG:134)
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: 	at uqp.b(PG:99)
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: 	at uqn.run(Unknown Source:1)
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: 	at ywx.run(Unknown Source:1)
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: 	at pqt.run(PG:13)
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: 	at java.lang.Thread.run(Thread.java:923)
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: Caused by: java.util.concurrent.ExecutionException: qjl: Precondition check failed.
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: 	at zsp.a(PG:135)
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: 	at zsp.get(PG:91)
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: 	at rex.b(PG:17)
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: 	... 11 more
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: Caused by: qjl: Precondition check failed.
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: 	at rdu.b(PG:106)
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: 	at pyo.a(PG:61)
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: 	at pxo.run(Unknown Source:17)
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: 	... 4 more
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: Caused by: bjj
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: 	at pxo.run(Unknown Source:13)
+10-08 05:48:36.862  5302  5547 W YouTubeMusic: 	... 4 more
+10-08 05:48:36.868  5069  5560 I native  : I0000 00:00:1791438516.868475    5560 tflite_model_pooled_runner.cc:836] Resizing interpreter pool to 1
+10-08 05:48:36.869  5069  5561 I native  : I0000 00:00:1791438516.869884    5561 tflite_detector_client_with_shape_cache.cc:105] Caching size: 10
+10-08 05:48:36.870  5069  5560 I native  : I0000 00:00:1791438516.869892    5560 tflite_model_pooled_runner.cc:625] Loading mlkit-google-ocr-models/gocr/layout/line_clustering_custom_ops/model.tflite
+10-08 05:48:36.870  5069  5560 I native  : I0000 00:00:1791438516.870461    5560 tflite_model_pooled_runner.cc:836] Resizing interpreter pool to 1
+10-08 05:48:36.640  3092  3092 W Binder:3092_9: type=1400 audit(0.0:73): avc: denied { read } for name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=8455 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-08 05:48:36.879  5069  5131 D PipelineManager: Start process bitmap
+10-08 05:48:36.885  5069  5128 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-08 05:48:36.888  5069  5128 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-08 05:48:36.908  5069  5561 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:36.934  2050  2498 I BgTaskExecutorImpl: Starting EXCLUSIVE background task FETCH_CONFIGS_FROM_PHENOTYPE.
+10-08 05:48:36.978  1189  2355 I Auth    : [ReflectiveChannelBinder] Successfully bound channel!
+10-08 05:48:36.981  3508  3508 W GrowthKit: Failed to get phenotypeManager in PhenotypeBroadcastReceiver
+10-08 05:48:36.981  3508  3508 W GrowthKit: java.lang.NullPointerException: Unable to get GrowthKit Component from host app: com.google.android.calendar
+10-08 05:48:36.981  3508  3508 W GrowthKit: 	at cal.ott.a(PG:12)
+10-08 05:48:36.981  3508  3508 W GrowthKit: 	at com.google.android.libraries.internal.growth.growthkit.internal.experiments.impl.PhenotypeBroadcastReceiver.onReceive(PG:3)
+10-08 05:48:36.981  3508  3508 W GrowthKit: 	at android.app.ActivityThread.handleReceiver(ActivityThread.java:4032)
+10-08 05:48:36.981  3508  3508 W GrowthKit: 	at android.app.ActivityThread.access$1400(ActivityThread.java:237)
+10-08 05:48:36.981  3508  3508 W GrowthKit: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1924)
+10-08 05:48:36.981  3508  3508 W GrowthKit: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-08 05:48:36.981  3508  3508 W GrowthKit: 	at android.os.Looper.loop(Looper.java:223)
+10-08 05:48:36.981  3508  3508 W GrowthKit: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+10-08 05:48:36.981  3508  3508 W GrowthKit: 	at java.lang.reflect.Method.invoke(Native Method)
+10-08 05:48:36.981  3508  3508 W GrowthKit: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+10-08 05:48:36.981  3508  3508 W GrowthKit: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+10-08 05:48:36.988  3508  3508 W Notifications: [ChimeBroadcastReceiver] BroadcastReceiver stopped
+10-08 05:48:36.988  3508  3508 W Notifications: java.lang.IllegalStateException: Unable to get ChimeComponent from host app. Did you mean for your application to extend GeneratedComponentManager or HasComponent or to use jcga.libraries.notifications.injection.Chime#set(ChimeComponent)?
+10-08 05:48:36.988  3508  3508 W Notifications: 	at cal.pwl.a(PG:7)
+10-08 05:48:36.988  3508  3508 W Notifications: 	at cal.pun.onReceive(PG:8)
+10-08 05:48:36.988  3508  3508 W Notifications: 	at android.app.ActivityThread.handleReceiver(ActivityThread.java:4032)
+10-08 05:48:36.988  3508  3508 W Notifications: 	at android.app.ActivityThread.access$1400(ActivityThread.java:237)
+10-08 05:48:36.988  3508  3508 W Notifications: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1924)
+10-08 05:48:36.988  3508  3508 W Notifications: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-08 05:48:36.988  3508  3508 W Notifications: 	at android.os.Looper.loop(Looper.java:223)
+10-08 05:48:36.988  3508  3508 W Notifications: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+10-08 05:48:36.988  3508  3508 W Notifications: 	at java.lang.reflect.Method.invoke(Native Method)
+10-08 05:48:36.988  3508  3508 W Notifications: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+10-08 05:48:36.988  3508  3508 W Notifications: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+10-08 05:48:37.048  1422  1485 I Vision  : Supported ABIS: [x86_64, x86, arm64-v8a, armeabi-v7a, armeabi]
+10-08 05:48:37.051  1189  2355 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-08 05:48:37.051  1189  2355 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@201817023@20.18.17 (040800-311416286):2)
+10-08 05:48:37.051  1189  2355 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@201817023@20.18.17 (040800-311416286):0)
+10-08 05:48:37.099  1422  3340 E MS_DownloadManager: Unsupported Matchstick Download Type:
+10-08 05:48:37.099  1422  3340 E MS_DownloadManager: Failed to get download uri for unsupported Matchstick download type:
+10-08 05:48:37.110  2013  5417 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/params_expdate_c45e5b7.dat via provider delete
+10-08 05:48:37.112  1715  1737 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/params_expdate_c45e5b7.dat: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/params_expdate_c45e5b7.dat
+10-08 05:48:37.115  1715  1737 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 3ms, 0 inserts 0 updates 0 deletes
+10-08 05:48:37.168  1422  3340 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 05:48:37.170  1422  3340 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:37.182  1422  3137 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-08 05:48:37.182  1189  5020 I PTCommittedOperation: Receive new configuration for com.google.android.gms.people
+10-08 05:48:37.214  1189  2355 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-08 05:48:37.214  1189  2355 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@201817023@20.18.17 (040800-311416286):2)
+10-08 05:48:37.214  1189  2355 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@201817023@20.18.17 (040800-311416286):0)
+10-08 05:48:37.229  1189  2610 W NetworkScheduler: The Firebase Job Dispatcher and GmsTaskScheduler are deprecated for apps targeting API 30 or newer. Application com.google.android.apps.maps has targetSdkVersion 30. Please migrate to the WorkManager or JobScheduler.
+10-08 05:48:37.229  1189  2610 W NetworkScheduler: Running in whitelist mode. Ignoring task: com.google.android.apps.maps/com.google.android.apps.gmm.shared.cache.glide.GlideDiskCacheExpirationService{u=0 tag="glide.cache.periodic" trigger=window{period=86400s,flex=900s,earliest=82079s,latest=86399s} requirements=[NET_CONNECTED] attributes=[PERSISTED,RECURRING] scheduled=0s last_run=N/A jid=N/A status=UNKNOWN retries=0 client_lib=MANCHEGO_GCM-202210000}
+10-08 05:48:37.236  1422  5002 I Vision  : Requesting optional module download of ocr.
+10-08 05:48:37.241  1189  1469 I ChmraDebugLogger: [53] +vision.ocr:-1
+10-08 05:48:37.250  1422  5002 I Vision  : Checking for download completion for 135756 -- ocr
+10-08 05:48:37.253  1422  5002 I Vision  : Requesting optional module download of ocr.
+10-08 05:48:37.258  1422  5002 I Vision  : Checking for download completion for 135765 -- ocr
+10-08 05:48:37.259  1422  5002 I Vision  : Requesting optional module download of ocr.
+10-08 05:48:37.259  1422  5002 I Vision  : Checking for download completion for 135767 -- ocr
+10-08 05:48:37.377  1715  2937 I MediaProvider: Scanned internal due to REASON_MOUNTED, found 232 items in 41099ms, 228 inserts 4 updates 0 deletes
+10-08 05:48:37.405  1189  2355 W GLSUser : [AppCertManager] IOException while requesting key:
+10-08 05:48:37.405  1189  2355 W GLSUser : java.io.IOException: Invalid device key response.
+10-08 05:48:37.405  1189  2355 W GLSUser : 	at huk.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):46)
+10-08 05:48:37.405  1189  2355 W GLSUser : 	at hui.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):41)
+10-08 05:48:37.405  1189  2355 W GLSUser : 	at hud.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):0)
+10-08 05:48:37.405  1189  2355 W GLSUser : 	at hug.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):10)
+10-08 05:48:37.405  1189  2355 W GLSUser : 	at fzn.call(:com.google.android.gms@201817023@20.18.17 (040800-311416286):5)
+10-08 05:48:37.405  1189  2355 W GLSUser : 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-08 05:48:37.405  1189  2355 W GLSUser : 	at sji.b(:com.google.android.gms@201817023@20.18.17 (040800-311416286):12)
+10-08 05:48:37.405  1189  2355 W GLSUser : 	at sji.run(:com.google.android.gms@201817023@20.18.17 (040800-311416286):7)
+10-08 05:48:37.405  1189  2355 W GLSUser : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-08 05:48:37.405  1189  2355 W GLSUser : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-08 05:48:37.405  1189  2355 W GLSUser : 	at spj.run(:com.google.android.gms@201817023@20.18.17 (040800-311416286):0)
+10-08 05:48:37.405  1189  2355 W GLSUser : 	at java.lang.Thread.run(Thread.java:923)
+10-08 05:48:37.451  1189  1463 I BeaconBle: Client requested scan, settings=BleSettings [scanMode=ZERO_POWER, callbackType=ALL_MATCHES, reportDelayMillis=0, 5 filters, 1 clients, callingClientName=Nearby] [CONTEXT service_id=111 ]
+10-08 05:48:37.453  1189  1463 I BeaconBle: Stopping scan on delegate scanner. BT state: 12 [CONTEXT service_id=111 ]
+10-08 05:48:37.453  1189  1463 D BluetoothAdapter: isLeEnabled(): ON
+10-08 05:48:37.476  1189  1463 I BeaconBle: Resetting - new scanner available: true [CONTEXT service_id=111 ]
+10-08 05:48:37.476  1189  1463 I BeaconBle: ZERO_POWER is disabled. [CONTEXT service_id=111 ]
+10-08 05:48:37.476  1189  1463 I BeaconBle: 'L' hardware scan: scan stopped, no powered clients [CONTEXT service_id=111 ]
+10-08 05:48:37.485  1189  2610 W NetworkScheduler: The Firebase Job Dispatcher and GmsTaskScheduler are deprecated for apps targeting API 30 or newer. Application com.google.android.apps.maps has targetSdkVersion 30. Please migrate to the WorkManager or JobScheduler.
+10-08 05:48:37.485  1189  2610 W NetworkScheduler: Running in whitelist mode. Ignoring task: com.google.android.apps.maps/com.google.android.apps.gmm.passiveassist.model.PassiveAssistDataStoreExpirationService{u=0 tag="PASSIVE_ASSIST.CLEAR_EXPIRED_DATA" trigger=window{period=259200s,flex=21600s,earliest=237599s,latest=259199s} requirements=[NET_ANY] attributes=[PERSISTED,RECURRING] scheduled=0s last_run=N/A jid=N/A status=UNKNOWN retries=0 client_lib=MANCHEGO_GCM-202210000}
+10-08 05:48:37.486  4751  5058 W YouTube : Could not register for notifications with InnerTube:
+10-08 05:48:37.486  4751  5058 W YouTube : abwi: java.util.concurrent.ExecutionException: aacl: Precondition check failed.
+10-08 05:48:37.486  4751  5058 W YouTube : 	at abwa.b(PG:18)
+10-08 05:48:37.486  4751  5058 W YouTube : 	at aicr.f(PG:65)
+10-08 05:48:37.486  4751  5058 W YouTube : 	at aicr.g(PG:133)
+10-08 05:48:37.486  4751  5058 W YouTube : 	at aicr.b(PG:99)
+10-08 05:48:37.486  4751  5058 W YouTube : 	at ahyh.run(Unknown Source:1)
+10-08 05:48:37.486  4751  5058 W YouTube : 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+10-08 05:48:37.486  4751  5058 W YouTube : 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-08 05:48:37.486  4751  5058 W YouTube : 	at aosv.run(Unknown Source:1)
+10-08 05:48:37.486  4751  5058 W YouTube : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-08 05:48:37.486  4751  5058 W YouTube : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-08 05:48:37.486  4751  5058 W YouTube : 	at zdm.run(PG:13)
+10-08 05:48:37.486  4751  5058 W YouTube : 	at java.lang.Thread.run(Thread.java:923)
+10-08 05:48:37.486  4751  5058 W YouTube : Caused by: java.util.concurrent.ExecutionException: aacl: Precondition check failed.
+10-08 05:48:37.486  4751  5058 W YouTube : 	at apmr.a(PG:135)
+10-08 05:48:37.486  4751  5058 W YouTube : 	at apmr.get(PG:89)
+10-08 05:48:37.486  4751  5058 W YouTube : 	at abwa.b(PG:17)
+10-08 05:48:37.486  4751  5058 W YouTube : 	... 11 more
+10-08 05:48:37.486  4751  5058 W YouTube : Caused by: aacl: Precondition check failed.
+10-08 05:48:37.486  4751  5058 W YouTube : 	at abuo.c(PG:106)
+10-08 05:48:37.486  4751  5058 W YouTube : 	at znq.a(PG:62)
+10-08 05:48:37.486  4751  5058 W YouTube : 	at zmp.run(Unknown Source:18)
+10-08 05:48:37.486  4751  5058 W YouTube : 	... 4 more
+10-08 05:48:37.486  4751  5058 W YouTube : Caused by: btc
+10-08 05:48:37.486  4751  5058 W YouTube : 	at zmp.run(Unknown Source:6)
+10-08 05:48:37.486  4751  5058 W YouTube : 	... 4 more
+10-08 05:48:37.528  1715  2937 I MediaProvider: Using lower FS for /product/media/audio/ringtones/Ring_Synth_04.ogg
+10-08 05:48:37.536  5094  5175 W ConnectionTracker: Exception thrown while unbinding
+10-08 05:48:37.536  5094  5175 W ConnectionTracker: java.lang.IllegalArgumentException: Service not registered: lm@d182cf3
+10-08 05:48:37.536  5094  5175 W ConnectionTracker: 	at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1757)
+10-08 05:48:37.536  5094  5175 W ConnectionTracker: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1874)
+10-08 05:48:37.536  5094  5175 W ConnectionTracker: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:792)
+10-08 05:48:37.536  5094  5175 W ConnectionTracker: 	at ce.b(:com.google.android.gms.dynamite_measurementdynamite@201817056@20.18.17 (040800-0):1)
+10-08 05:48:37.536  5094  5175 W ConnectionTracker: 	at ce.a(:com.google.android.gms.dynamite_measurementdynamite@201817056@20.18.17 (040800-0):5)
+10-08 05:48:37.536  5094  5175 W ConnectionTracker: 	at ln.A(:com.google.android.gms.dynamite_measurementdynamite@201817056@20.18.17 (040800-0):10)
+10-08 05:48:37.536  5094  5175 W ConnectionTracker: 	at ky.a(:com.google.android.gms.dynamite_measurementdynamite@201817056@20.18.17 (040800-0):3)
+10-08 05:48:37.536  5094  5175 W ConnectionTracker: 	at dy.run(:com.google.android.gms.dynamite_measurementdynamite@201817056@20.18.17 (040800-0):2)
+10-08 05:48:37.536  5094  5175 W ConnectionTracker: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+10-08 05:48:37.536  5094  5175 W ConnectionTracker: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-08 05:48:37.536  5094  5175 W ConnectionTracker: 	at iw.run(:com.google.android.gms.dynamite_measurementdynamite@201817056@20.18.17 (040800-0):15)
+10-08 05:48:37.566  5302  5362 E GoogleTagManager: Unsupported Value Escaping: 3
+10-08 05:48:37.601  1189  1204 I .gms.persisten: Background concurrent copying GC freed 264335(10MB) AllocSpace objects, 13(728KB) LOS objects, 49% free, 11MB/22MB, paused 499us total 416.192ms
+10-08 05:48:37.616  1715  2937 I MediaProvider: Using lower FS for /product/media/audio/notifications/pixiedust.ogg
+10-08 05:48:37.646  5302  5362 E GoogleTagManager: Unsupported Value Escaping: 3
+10-08 05:48:37.647  5302  5362 E GoogleTagManager: Unsupported Value Escaping: 3
+10-08 05:48:37.740  1715  2937 I MediaProvider: Using lower FS for /product/media/audio/alarms/Alarm_Classic.ogg
+10-08 05:48:37.797  5069  5561 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:37.933  1715  3752 E StorageManager: Failed to set extended attributes for /storage/emulated/0/Android to set project id.: Permission denied
+10-08 05:48:37.933  1715  3752 W MediaProvider: Failed to update quota type for /storage/emulated/0/Android
+10-08 05:48:37.933  1715  3752 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/Android
+10-08 05:48:37.933  1715  3752 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2512)
+10-08 05:48:37.933  1715  3752 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:585)
+10-08 05:48:37.933  1715  3752 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:560)
+10-08 05:48:37.933  1715  3752 W MediaProvider: 	at com.android.providers.media.MediaProvider.access$800(MediaProvider.java:222)
+10-08 05:48:37.933  1715  3752 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onInsert$0(MediaProvider.java:611)
+10-08 05:48:37.933  1715  3752 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onInsert$0$MediaProvider$3(Unknown Source:0)
+10-08 05:48:37.933  1715  3752 W MediaProvider: 	at com.android.providers.media.-$$Lambda$MediaProvider$3$OA4Hj-5lam3D4oprnbu7ZpL-f_E.run(Unknown Source:10)
+10-08 05:48:37.933  1715  3752 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:938)
+10-08 05:48:37.933  1715  3752 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-08 05:48:37.933  1715  3752 W MediaProvider: 	at android.os.Looper.loop(Looper.java:223)
+10-08 05:48:37.933  1715  3752 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-08 05:48:37.934  1715  3752 E StorageManager: Failed to set extended attributes for /storage/emulated/0/Android/media to set project id.: Permission denied
+10-08 05:48:37.934  1715  3752 W MediaProvider: Failed to update quota type for /storage/emulated/0/Android/media
+10-08 05:48:37.934  1715  3752 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/Android/media
+10-08 05:48:37.934  1715  3752 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2512)
+10-08 05:48:37.934  1715  3752 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:585)
+10-08 05:48:37.934  1715  3752 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:560)
+10-08 05:48:37.934  1715  3752 W MediaProvider: 	at com.android.providers.media.MediaProvider.access$800(MediaProvider.java:222)
+10-08 05:48:37.934  1715  3752 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onInsert$0(MediaProvider.java:611)
+10-08 05:48:37.934  1715  3752 W MediaProvider: 	at com.android.providers.media.MediaProvider$3.lambda$onInsert$0$MediaProvider$3(Unknown Source:0)
+10-08 05:48:37.934  1715  3752 W MediaProvider: 	at com.android.providers.media.-$$Lambda$MediaProvider$3$OA4Hj-5lam3D4oprnbu7ZpL-f_E.run(Unknown Source:10)
+10-08 05:48:37.934  1715  3752 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:938)
+10-08 05:48:37.934  1715  3752 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-08 05:48:37.934  1715  3752 W MediaProvider: 	at android.os.Looper.loop(Looper.java:223)
+10-08 05:48:37.934  1715  3752 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-08 05:48:38.007  2050  2399 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_birthdaydoodle_jar__name to integer.
+10-08 05:48:38.007  2050  2399 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_call_jar__name to integer.
+10-08 05:48:38.007  2050  2399 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_canvas_jar__name to integer.
+10-08 05:48:38.007  2050  2399 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_chkpkg_jar__name to integer.
+10-08 05:48:38.007  2050  2399 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_crashtest_jar__name to integer.
+10-08 05:48:38.007  2050  2399 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_dining_jar__name to integer.
+10-08 05:48:38.007  2050  2399 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_doodle_notifications_jar__name to integer.
+10-08 05:48:38.007  2050  2399 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_imageviewer_jar__name to integer.
+10-08 05:48:38.007  2050  2399 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_ipa_jar__name to integer.
+10-08 05:48:38.007  2050  2399 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_jslocation_jar__name to integer.
+10-08 05:48:38.007  2050  2399 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_localintent_jar__name to integer.
+10-08 05:48:38.007  2050  2399 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_messaging_jar__name to integer.
+10-08 05:48:38.007  2050  2399 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_nativesrp_activity_jar__name to integer.
+10-08 05:48:38.007  2050  2399 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_nativesrp_presenter_jar__name to integer.
+10-08 05:48:38.007  2050  2399 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_nowcontent_jar__name to integer.
+10-08 05:48:38.007  2050  2399 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_recents_activity_jar__name to integer.
+10-08 05:48:38.007  2050  2399 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_save_jar__name to integer.
+10-08 05:48:38.007  2050  2399 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_searchresults_activity_jar__name to integer.
+10-08 05:48:38.007  2050  2399 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_test_jar__name to integer.
+10-08 05:48:38.007  2050  2399 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_weather_jar__name to integer.
+10-08 05:48:38.007  2050  2399 W PhenotypeToGsaConfigs: Can't format flag bindle_flags__bloblobber_blob to integer.
+10-08 05:48:38.007  2050  2399 W PhenotypeToGsaConfigs: Can't format flag bindle_flags__velour_jar to integer.
+10-08 05:48:38.080  1715  2937 I MediaProvider: Scanned external_primary due to REASON_MOUNTED, found 16 items in 313ms, 4 inserts 0 updates 0 deletes
+10-08 05:48:38.085  1189  3037 I NetworkScheduler: ignoring stale queue check message
+10-08 05:48:38.096  1189  2152 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-08 05:48:38.096  1189  2152 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@201817023@20.18.17 (040800-311416286):2)
+10-08 05:48:38.096  1189  2152 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@201817023@20.18.17 (040800-311416286):0)
+10-08 05:48:38.099  1715  2937 I MediaProvider: End Intent { act=android.intent.action.MEDIA_MOUNTED dat=file:///storage/emulated/0 flg=0x5000010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
+10-08 05:48:38.111  1715  2937 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_MOUNTED dat=file:///storage/emulated/0 flg=0x5000010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
+10-08 05:48:38.125  1715  2937 W ModernMediaScanner: Failed to visit /system/media: java.nio.file.NoSuchFileException: /system/media
+10-08 05:48:38.125  1715  2937 I MediaProvider: Scanned internal due to REASON_MOUNTED, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+10-08 05:48:38.149  1189  2152 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-08 05:48:38.149  1189  2152 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@201817023@20.18.17 (040800-311416286):2)
+10-08 05:48:38.149  1189  2152 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@201817023@20.18.17 (040800-311416286):0)
+10-08 05:48:38.178  1715  2937 W ModernMediaScanner: Failed to visit /oem/media: java.nio.file.NoSuchFileException: /oem/media
+10-08 05:48:38.178  1715  2937 I MediaProvider: Scanned internal due to REASON_MOUNTED, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: Could not register for notifications with InnerTube:
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: rff: java.util.concurrent.ExecutionException: qjl: Precondition check failed.
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: 	at rex.b(PG:18)
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: 	at uqp.f(PG:65)
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: 	at uqp.g(PG:134)
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: 	at uqp.b(PG:99)
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: 	at uqn.run(Unknown Source:1)
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: 	at ywx.run(Unknown Source:1)
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: 	at pqt.run(PG:13)
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: 	at java.lang.Thread.run(Thread.java:923)
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: Caused by: java.util.concurrent.ExecutionException: qjl: Precondition check failed.
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: 	at zsp.a(PG:135)
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: 	at zsp.get(PG:91)
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: 	at rex.b(PG:17)
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: 	... 11 more
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: Caused by: qjl: Precondition check failed.
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: 	at rdu.b(PG:106)
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: 	at pyo.a(PG:61)
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: 	at pxo.run(Unknown Source:17)
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: 	... 4 more
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: Caused by: bjj
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: 	at pxo.run(Unknown Source:13)
+10-08 05:48:38.228  5302  5547 W YouTubeMusic: 	... 4 more
+10-08 05:48:38.284  5302  5320 I s.youtube.musi: Waiting for a blocking GC ProfileSaver
+10-08 05:48:38.380  2050  2401 I EngineIdGenerator: Refusing EXCLUSIVE task 24, it is already pending. Try again in 342 seconds.
+10-08 05:48:38.381  2050  2401 I ModelDownloadListener: Schdedule model download
+10-08 05:48:38.381  2050  2257 I FedAssExpListener: Fed-ass not supported for signed out users.
+10-08 05:48:38.381  2050  2257 I FedAssExpListener: Successfully processed experiments changed.
+10-08 05:48:38.386  5302  5320 I s.youtube.musi: WaitForGcToComplete blocked ProfileSaver on ClassLinker for 101.920ms
+10-08 05:48:38.392  2050  2050 I BgTaskExecutorImpl: Starting EXCLUSIVE background task UPDATE_HOTWORD_MODELS.
+10-08 05:48:38.416  2050  2497 I ModelDownloadController: requestHotwordModelUpdate modelType-2 modelLocale-en-US
+10-08 05:48:38.416  2050  2497 I ModelDownloadController: shouldDownloadModel: modelLocale is en-US
+10-08 05:48:38.416  2050  2497 I ModelDownloadController: We already downloaded model from given location.
+10-08 05:48:38.416  2050  2497 I ModelDownloadController: Model download not requested.
+10-08 05:48:38.432  2050  2401 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+10-08 05:48:38.445  2050  2401 W CorpusConfigHelper: Invalid input from icing corpus JSON flag.
+10-08 05:48:38.445  2050  2401 W CorpusConfigHelper: android.util.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 123 column 2
+10-08 05:48:38.445  2050  2401 W CorpusConfigHelper: 	at android.util.JsonReader.syntaxError(JsonReader.java:1162)
+10-08 05:48:38.445  2050  2401 W CorpusConfigHelper: 	at android.util.JsonReader.checkLenient(JsonReader.java:840)
+10-08 05:48:38.445  2050  2401 W CorpusConfigHelper: 	at android.util.JsonReader.nextInArray(JsonReader.java:615)
+10-08 05:48:38.445  2050  2401 W CorpusConfigHelper: 	at android.util.JsonReader.peek(JsonReader.java:345)
+10-08 05:48:38.445  2050  2401 W CorpusConfigHelper: 	at android.util.JsonReader.hasNext(JsonReader.java:321)
+10-08 05:48:38.445  2050  2401 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.k.a(SourceFile:25)
+10-08 05:48:38.445  2050  2401 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.j.a(SourceFile:1)
+10-08 05:48:38.445  2050  2401 W CorpusConfigHelper: 	at com.google.android.apps.gsa.search.core.i.i.run(Unknown Source:2)
+10-08 05:48:38.445  2050  2401 W CorpusConfigHelper: 	at com.google.android.libraries.gsa.l.a.l.call(Unknown Source:2)
+10-08 05:48:38.445  2050  2401 W CorpusConfigHelper: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-08 05:48:38.445  2050  2401 W CorpusConfigHelper: 	at com.google.apps.tiktok.concurrent.aq.run(SourceFile:1)
+10-08 05:48:38.445  2050  2401 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-08 05:48:38.445  2050  2401 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-08 05:48:38.445  2050  2401 W CorpusConfigHelper: 	at com.google.apps.tiktok.concurrent.f.run(Unknown Source:3)
+10-08 05:48:38.445  2050  2401 W CorpusConfigHelper: 	at java.lang.Thread.run(Thread.java:923)
+10-08 05:48:38.471  5069  5561 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:38.515  1422  2505 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32 [CONTEXT service_id=21 ]
+10-08 05:48:38.518  1422  1692 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33 [CONTEXT service_id=21 ]
+10-08 05:48:38.528  1422  1697 W Icing   : No valid account for uploading user actions [CONTEXT service_id=21 ]
+10-08 05:48:38.549  1422  1697 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0 [CONTEXT service_id=21 ]
+10-08 05:48:38.570  1422  1697 W Icing   : No valid account for uploading user actions [CONTEXT service_id=21 ]
+10-08 05:48:38.628  1422  1697 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0 [CONTEXT service_id=21 ]
+10-08 05:48:39.131  5069  5561 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:39.597  1189  2357 E angh    : Phenotype API error. Event # caox@b3c727b7, EventCode: 5 [CONTEXT service_id=51 ]
+10-08 05:48:39.597  1189  2357 E angh    : anfl: 29501: Stale snapshot (change count changed - expected 3  but was 2)
+10-08 05:48:39.597  1189  2357 E angh    : 	at angk.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):13)
+10-08 05:48:39.597  1189  2357 E angh    : 	at angj.b(:com.google.android.gms@201817023@20.18.17 (040800-311416286):2)
+10-08 05:48:39.597  1189  2357 E angh    : 	at angh.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):90)
+10-08 05:48:39.597  1189  2357 E angh    : 	at angh.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):77)
+10-08 05:48:39.597  1189  2357 E angh    : 	at zus.run(:com.google.android.gms@201817023@20.18.17 (040800-311416286):10)
+10-08 05:48:39.597  1189  2357 E angh    : 	at blot.run(:com.google.android.gms@201817023@20.18.17 (040800-311416286):2)
+10-08 05:48:39.597  1189  2357 E angh    : 	at sji.b(:com.google.android.gms@201817023@20.18.17 (040800-311416286):12)
+10-08 05:48:39.597  1189  2357 E angh    : 	at sji.run(:com.google.android.gms@201817023@20.18.17 (040800-311416286):8)
+10-08 05:48:39.597  1189  2357 E angh    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-08 05:48:39.597  1189  2357 E angh    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-08 05:48:39.597  1189  2357 E angh    : 	at spj.run(:com.google.android.gms@201817023@20.18.17 (040800-311416286):0)
+10-08 05:48:39.597  1189  2357 E angh    : 	at java.lang.Thread.run(Thread.java:923)
+10-08 05:48:39.597  1189  2357 E AsyncOperation: serviceID=51, operation=CommitToConfigurationOperationCall
+10-08 05:48:39.597  1189  2357 E AsyncOperation: OperationException[Status{statusCode=Stale snapshot (change count changed - expected 3  but was 2), resolution=null}]
+10-08 05:48:39.597  1189  2357 E AsyncOperation: 	at angh.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):92)
+10-08 05:48:39.597  1189  2357 E AsyncOperation: 	at angh.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):77)
+10-08 05:48:39.597  1189  2357 E AsyncOperation: 	at zus.run(:com.google.android.gms@201817023@20.18.17 (040800-311416286):10)
+10-08 05:48:39.597  1189  2357 E AsyncOperation: 	at blot.run(:com.google.android.gms@201817023@20.18.17 (040800-311416286):2)
+10-08 05:48:39.597  1189  2357 E AsyncOperation: 	at sji.b(:com.google.android.gms@201817023@20.18.17 (040800-311416286):12)
+10-08 05:48:39.597  1189  2357 E AsyncOperation: 	at sji.run(:com.google.android.gms@201817023@20.18.17 (040800-311416286):8)
+10-08 05:48:39.597  1189  2357 E AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-08 05:48:39.597  1189  2357 E AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-08 05:48:39.597  1189  2357 E AsyncOperation: 	at spj.run(:com.google.android.gms@201817023@20.18.17 (040800-311416286):0)
+10-08 05:48:39.597  1189  2357 E AsyncOperation: 	at java.lang.Thread.run(Thread.java:923)
+10-08 05:48:39.744  5069  5561 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:40.068  1585  1585 I PhenotypeModule: PhenotypeModule.receiveBroadcast():356 onReceive() urgent = false
+10-08 05:48:40.068  1585  1585 I PhenotypeModule: PhenotypeModule.maybeFetchAndUpdate():167 maybeFetchAndUpdate: forceRefresh=false
+10-08 05:48:40.143  2050  2050 I BgTaskExecutorImpl: Starting EXCLUSIVE background task FETCH_CONFIGS_FROM_PHENOTYPE.
+10-08 05:48:40.148  2050  2050 W n       : Received update for unknown package com.google.android.libraries.notifications#com.google.android.googlequicksearchbox
+10-08 05:48:40.175  1189  5019 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:40.175  1189  5019 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:40.175  1189  5019 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:40.292  1715  1733 I FuseDaemon: Background concurrent copying GC freed 57911(3577KB) AllocSpace objects, 37(740KB) LOS objects, 49% free, 2396KB/4793KB, paused 47us total 254.344ms
+10-08 05:48:40.314  1585  1969 I PhenotypeModule: PhenotypeModule.handlePhenotypeConfigurationUpdates():332 Latency of updating configurations from phenotype (experiment v4): 0
+10-08 05:48:40.314  1585  1969 I PhenotypeModule: PhenotypeModule.handlePhenotypeConfigurationUpdates():257 Latency of updating configurations from phenotype (ExperimentV4): 0
+10-08 05:48:40.318  1585  1969 I PhenotypeModule: PhenotypeModule.lambda$fetchAndUpdate$3():215 fetchAndUpdate() : Success, hasFlags=true, flagCount=447, lastFetchStatus=October 8, 5:48 AM {reason=2, isFullFetch=false, success=true, isEmpty=false, isDelta=false, updatedFlagsCount=0, deletedFlagsCount=0, totalTime=246}
+10-08 05:48:40.463  1189  2152 I anhw    : Scheduling Phenotype for a PhenotypeSyncImmediately(13, com.google.android.gms) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-08 05:48:40.654  5458  5486 W DynamiteModule: Local module descriptor class for providerinstaller not found.
+10-08 05:48:40.675  1189  5020 I anjv    : updateFromConfigurations using legacy put method [CONTEXT service_id=204 ]
+10-08 05:48:40.772  2782  2882 I BuglePhenotype: onReceive for bugle package [CONTEXT package_name="com.google.android.apps.messaging" ]
+10-08 05:48:40.777  2782  2782 W ConfigurationUpdatedRec: Received update for unknown package com.google.android.apps.messaging
+10-08 05:48:40.808  1189  2336 W ProviderHelper: Unknown dynamite feature providerinstaller
+10-08 05:48:40.864  5458  5486 W ProviderInstaller: Failed to load providerinstaller module: No acceptable module found. Local version is 0 and remote version is 0.
+10-08 05:48:40.898  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:40.898  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:40.903  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:40.909  5069  5131 D PipelineManager: OCR process succeeded via visionkit pipeline.
+10-08 05:48:40.911  5069  5125 I GravadorOcrTest: OCR leu: GASOLINA COMUM|POSTO CENTRAL
+10-08 05:48:40.912  5069  5125 I TestRunner: finished: doesNotFindWhatIsNotThere(br.dev.nexus.gravadorocr.OcrRecognitionTest)

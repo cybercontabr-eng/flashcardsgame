@@ -1,0 +1,23 @@
+/sdcard/Download/GravadorOCR:
+total 40
+-rwx------ 1 u0_a159 u0_a159 582 2026-10-08 05:50 GravadorOCR_20261008_054855_relatorio.txt
+-rwx------ 1 u0_a159 u0_a159 359 2026-10-08 05:50 GravadorOCR_20261008_055022_relatorio.txt
+-rwx------ 1 u0_a159 u0_a159 333 2026-10-08 05:50 GravadorOCR_20261008_055036_relatorio.txt
+-rwx------ 1 u0_a159 u0_a159 390 2026-10-08 05:51 GravadorOCR_20261008_055050_relatorio.txt
+-rwx------ 1 u0_a159 u0_a159 492 2026-10-08 05:52 GravadorOCR_20261008_055103_relatorio.txt
+
+/sdcard/Movies/GravadorOCR:
+total 4164
+-rwx------ 1 u0_a159 u0_a159 1839945 2026-10-08 05:50 GravadorOCR_20261008_054855_p01.mp4
+-rwx------ 1 u0_a159 u0_a159  166880 2026-10-08 05:50 GravadorOCR_20261008_055022_p01.mp4
+-rwx------ 1 u0_a159 u0_a159   40109 2026-10-08 05:50 GravadorOCR_20261008_055022_p02.mp4
+-rwx------ 1 u0_a159 u0_a159  162573 2026-10-08 05:50 GravadorOCR_20261008_055036_p01.mp4
+-rwx------ 1 u0_a159 u0_a159  128983 2026-10-08 05:50 GravadorOCR_20261008_055036_p02.mp4
+-rwx------ 1 u0_a159 u0_a159   48528 2026-10-08 05:50 GravadorOCR_20261008_055036_p03.mp4
+-rwx------ 1 u0_a159 u0_a159  167053 2026-10-08 05:50 GravadorOCR_20261008_055050_p01.mp4
+-rwx------ 1 u0_a159 u0_a159  153896 2026-10-08 05:51 GravadorOCR_20261008_055050_p02.mp4
+-rwx------ 1 u0_a159 u0_a159 1475402 2026-10-08 05:52 GravadorOCR_20261008_055103_p01.mp4
+
+/sdcard/Pictures/GravadorOCR:
+total 60
+-rwx------ 1 u0_a159 u0_a159 55254 2026-10-08 05:50 OCR_20261008_054855_4_botijao-de-gas.jpg

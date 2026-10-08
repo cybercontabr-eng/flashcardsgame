@@ -1,0 +1,1158 @@
+10-08 05:48:29.380  5069  5125 I TestRunner: started: phraseSplitAcrossTwoLines(br.dev.nexus.gravadorocr.OcrRecognitionTest)
+10-08 05:48:29.385  1422  2505 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=null serviceId=30 [CONTEXT service_id=21 ]
+10-08 05:48:29.395  1422  2424 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0 [CONTEXT service_id=21 ]
+10-08 05:48:29.440  5069  5131 D DecoupledTextDelegate: Start loading thick OCR module.
+10-08 05:48:29.440  5069  5131 I DynamiteModule: Considering local module com.google.mlkit.dynamite.text.latin:10000 and remote module com.google.mlkit.dynamite.text.latin:0
+10-08 05:48:29.440  5069  5131 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.text.latin
+10-08 05:48:29.469  1422  2424 W Icing   : No valid account for uploading user actions [CONTEXT service_id=21 ]
+10-08 05:48:29.494  5069  5130 W GooglePlayServicesUtil: Google Play services out of date for br.dev.nexus.gravadorocr.  Requires 203400000 but found 201817023
+10-08 05:48:29.495  5069  5130 W GoogleApiManager: The service for com.google.android.gms.common.internal.service.zap is not available: ConnectionResult{statusCode=SERVICE_VERSION_UPDATE_REQUIRED, resolution=null, message=null}
+10-08 05:48:29.506  1422  2424 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0 [CONTEXT service_id=21 ]
+10-08 05:48:29.513  5069  5134 I native  : I0000 00:00:1791438509.513376    5134 asset_manager_util.cc:61] Created global reference to asset manager.
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: Failed to apply ContentProviderOperation(type=insert uri=content://media/internal/file values={instance_id=null, compilation=null, disc_number=0, duration=12956, is_ringtone=1, album_artist=null, resolution=null, orientation=null, artist=pdx, author=null, height=null, is_drm=0, is_audiobook=0, date_modified=1721854889, writer=null, composer=null, datetaken=null, mime_type=audio/ogg, is_notification=0, bitrate=96000, cd_track_number=0, xmp=[], year=null, _data=/product/media/audio/ringtones/URSAMINOR.ogg, _size=144112, album=Unknown, genre=Unknown, is_alarm=0, title=Ursa Minor, track=0, width=null, is_music=0, document_id=null, is_podcast=0, capture_framerate=null, num_tracks=1, original_document_id=null, media_type=2} exceptionAllowed)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:938)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:790)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:88)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.util.DatabaseUtils.executeInsert(DatabaseUtils.java:457)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.util.SQLiteQueryBuilder.insert(SQLiteQueryBuilder.java:597)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$insert$1(SQLiteQueryBuilder.java:561)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$insert$1$SQLiteQueryBuilder(Unknown Source:0)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$YklJ51_aF7j8568p4VYgJs-CWNI.apply(Unknown Source:6)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:564)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.util.SQLiteQueryBuilder.insert(SQLiteQueryBuilder.java:560)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.lambda$insertAllowingUpsert$14(MediaProvider.java:3076)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.lambda$insertAllowingUpsert$14$MediaProvider(Unknown Source:0)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.-$$Lambda$MediaProvider$FjHWs2-fjgG761OzVFzdTX4EWZg.apply(Unknown Source:13)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:564)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.insertAllowingUpsert(MediaProvider.java:3066)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.insertFile(MediaProvider.java:3048)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.insertInternal(MediaProvider.java:3486)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.insert(MediaProvider.java:3208)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at android.content.ContentProviderOperation.applyInternal(ContentProviderOperation.java:375)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at android.content.ContentProviderOperation.apply(ContentProviderOperation.java:347)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at android.content.ContentProvider.applyBatch(ContentProvider.java:2422)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.applyBatch(MediaProvider.java:3538)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at android.content.ContentProvider.applyBatch(ContentProvider.java:2413)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at android.content.ContentResolver.applyBatch(ContentResolver.java:2186)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.applyPending(ModernMediaScanner.java:700)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.maybeApplyPending(ModernMediaScanner.java:690)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.visitFile(ModernMediaScanner.java:650)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.visitFile(ModernMediaScanner.java:273)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at java.nio.file.Files.walkFileTree(Files.java:2670)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at java.nio.file.Files.walkFileTree(Files.java:2742)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.walkFileTree(ModernMediaScanner.java:367)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.run(ModernMediaScanner.java:330)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner.scanDirectory(ModernMediaScanner.java:227)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.scanDirectory(MediaProvider.java:1111)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.MediaService.onScanVolume(MediaService.java:148)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.MediaService.onScanVolume(MediaService.java:117)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.MediaService.onScanVolume(MediaService.java:108)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at com.android.providers.media.MediaService.onHandleWork(MediaService.java:71)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at androidx.core.app.JobIntentService$CommandProcessor.doInBackground(JobIntentService.java:391)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at androidx.core.app.JobIntentService$CommandProcessor.doInBackground(JobIntentService.java:382)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at android.os.AsyncTask$3.call(AsyncTask.java:394)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-08 05:48:29.514  1715  2937 W ModernMediaScanner: 	at java.lang.Thread.run(Thread.java:923)
+10-08 05:48:29.557  5094  5119 D HostConnection: HostConnection::get() New Host Connection established 0x760c71ddec90, tid 5119
+10-08 05:48:29.561  5094  5119 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+10-08 05:48:29.562   166   166 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
+10-08 05:48:29.563  5094  5119 D EGL_emulation: eglCreateContext: 0x760c61e369b0: maj 3 min 0 rcv 3
+10-08 05:48:29.565  5094  5119 D EGL_emulation: eglMakeCurrent: 0x760c61e369b0: ver 3 0 (tinfo 0x760c01e31500) (first time)
+10-08 05:48:29.590  5069  5136 I Manager : DeviceManager::DeviceManager
+10-08 05:48:29.590  5069  5136 I Manager : findAvailableDevices
+10-08 05:48:29.591  5069  5136 I Manager : Found interface nnapi-sample_all
+10-08 05:48:29.595  5069  5136 I VersionedInterfaces: Capab {.relaxedFloat32toFloat16PerformanceScalar = {.execTime = 1.100000, .powerUsage = 1.100000}, .relaxedFloat32toFloat16PerformanceTensor = {.execTime = 1.100000, .powerUsage = 1.100000}, .operandPerformance = [17]{{.type = FLOAT32, .info = {.execTime = 1.100000, .powerUsage = 1.100000}}, {.type = INT32, .info = {.execTime = 1.100000, .powerUsage = 1.100000}}, {.type = UINT32, .info = {.execTime = 1.100000, .powerUsage = 1.100000}}, {.type = TENSOR_FLOAT32, .info = {.execTime = 1.100000, .powerUsage = 1.100000}}, {.type = TENSOR_INT32, .info = {.execTime = 1.100000, .powerUsage = 1.100000}}, {.type = TENSOR_QUANT8_ASYMM, .info = {.execTime = 1.100000, .powerUsage = 1.100000}}, {.type = BOOL, .info = {.execTime = 1.100000, .powerUsage = 1.100000}}, {.type = TENSOR_QUANT16_SYMM, .info = {.execTime = 1.100000, .powerUsage = 1.100000}}, {.type = TENSOR_FLOAT16, .info = {.execTime = 1.100000, .powerUsage = 1.100000}}, {.type = TENSOR_BOOL8, .info = {.execTime = 1.100000, .powerUsage = 1.100000}}, {.type = FLOAT16, .info = {.execTime = 1.100000, .powerUsage = 1.100000}}, {.type = TENSOR_QUANT8_SYMM_PER_CHANNEL, .info = {.execTime = 1.100000, .powerUsage = 1.100000}}, {.type = TENSOR_QUANT16_ASYMM, .info = {.execTime = 1.100000, .powerUsage = 1.100000}}, {.type = TENSOR_QUANT8_SYMM, .info = {.execTime = 1.100000, .powerUsage = 1.100000}}, {.type = TENSOR_QUANT8_ASYMM_SIGNED, .info = {.execTime = 1.100000, .powerUsage = 1.100000}}, {.type = OEM, .info = {.execTime = 1.100000, .powerUsage = 1.100000}}, {.type = TENSOR_OEM_BYTE, .info = {.execTime = 1.100000, .powerUsage = 1.100000}}}, .ifPerformance = {.execTime = 1.100000, .powerUsage = 1.100000}, .whilePerformance = {.execTime = 1.100000, .powerUsage = 1.100000}}
+10-08 05:48:29.596  5069  5136 I Manager : Found interface nnapi-sample_float_fast
+10-08 05:48:29.597  5069  5136 I VersionedInterfaces: Capab {.relaxedFloat32toFloat16PerformanceScalar = {.execTime = 0.700000, .powerUsage = 1.100000}, .relaxedFloat32toFloat16PerformanceTensor = {.execTime = 0.700000, .powerUsage = 1.100000}, .operandPerformance = [17]{{.type = FLOAT32, .info = {.execTime = 0.800000, .powerUsage = 1.200000}}, {.type = INT32, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = UINT32, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_FLOAT32, .info = {.execTime = 0.800000, .powerUsage = 1.200000}}, {.type = TENSOR_INT32, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_QUANT8_ASYMM, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = BOOL, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_QUANT16_SYMM, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_FLOAT16, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_BOOL8, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = FLOAT16, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_QUANT8_SYMM_PER_CHANNEL, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_QUANT16_ASYMM, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_QUANT8_SYMM, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_QUANT8_ASYMM_SIGNED, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = OEM, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_OEM_BYTE, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}}, .ifPerformance = {.execTime = 1.000000, .powerUsage = 1.000000}, .whilePerformance = {.execTime = 1.000000, .powerUsage = 1.000000}}
+10-08 05:48:29.598  5069  5136 I Manager : Found interface nnapi-sample_float_slow
+10-08 05:48:29.600  5069  5136 I VersionedInterfaces: Capab {.relaxedFloat32toFloat16PerformanceScalar = {.execTime = 1.200000, .powerUsage = 0.600000}, .relaxedFloat32toFloat16PerformanceTensor = {.execTime = 1.200000, .powerUsage = 0.600000}, .operandPerformance = [17]{{.type = FLOAT32, .info = {.execTime = 1.300000, .powerUsage = 0.700000}}, {.type = INT32, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = UINT32, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_FLOAT32, .info = {.execTime = 1.300000, .powerUsage = 0.700000}}, {.type = TENSOR_INT32, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_QUANT8_ASYMM, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = BOOL, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_QUANT16_SYMM, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_FLOAT16, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_BOOL8, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = FLOAT16, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_QUANT8_SYMM_PER_CHANNEL, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_QUANT16_ASYMM, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_QUANT8_SYMM, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_QUANT8_ASYMM_SIGNED, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = OEM, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_OEM_BYTE, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}}, .ifPerformance = {.execTime = 1.000000, .powerUsage = 1.000000}, .whilePerformance = {.execTime = 1.000000, .powerUsage = 1.000000}}
+10-08 05:48:29.601  5069  5136 I Manager : Found interface nnapi-sample_minimal
+10-08 05:48:29.602  5069  5136 I VersionedInterfaces: Capab {.relaxedFloat32toFloat16PerformanceScalar = {.execTime = 0.400000, .powerUsage = 0.500000}, .relaxedFloat32toFloat16PerformanceTensor = {.execTime = 0.400000, .powerUsage = 0.500000}, .operandPerformance = [17]{{.type = FLOAT32, .info = {.execTime = 0.400000, .powerUsage = 0.500000}}, {.type = INT32, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = UINT32, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_FLOAT32, .info = {.execTime = 0.400000, .powerUsage = 0.500000}}, {.type = TENSOR_INT32, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_QUANT8_ASYMM, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = BOOL, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_QUANT16_SYMM, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_FLOAT16, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_BOOL8, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = FLOAT16, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_QUANT8_SYMM_PER_CHANNEL, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_QUANT16_ASYMM, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_QUANT8_SYMM, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_QUANT8_ASYMM_SIGNED, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = OEM, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}, {.type = TENSOR_OEM_BYTE, .info = {.execTime = 1.000000, .powerUsage = 1.000000}}}, .ifPerformance = {.execTime = 1.000000, .powerUsage = 1.000000}, .whilePerformance = {.execTime = 1.000000, .powerUsage = 1.000000}}
+10-08 05:48:29.603  5069  5136 I Manager : Found interface nnapi-sample_quant
+10-08 05:48:29.604  5069  5136 I VersionedInterfaces: Capab {.relaxedFloat32toFloat16PerformanceScalar = {.execTime = 50.000000, .powerUsage = 1.000000}, .relaxedFloat32toFloat16PerformanceTensor = {.execTime = 50.000000, .powerUsage = 1.000000}, .operandPerformance = [17]{{.type = FLOAT32, .info = {.execTime = 50.000000, .powerUsage = 1.000000}}, {.type = INT32, .info = {.execTime = 50.000000, .powerUsage = 1.000000}}, {.type = UINT32, .info = {.execTime = 50.000000, .powerUsage = 1.000000}}, {.type = TENSOR_FLOAT32, .info = {.execTime = 50.000000, .powerUsage = 1.000000}}, {.type = TENSOR_INT32, .info = {.execTime = 50.000000, .powerUsage = 1.000000}}, {.type = TENSOR_QUANT8_ASYMM, .info = {.execTime = 50.000000, .powerUsage = 1.000000}}, {.type = BOOL, .info = {.execTime = 50.000000, .powerUsage = 1.000000}}, {.type = TENSOR_QUANT16_SYMM, .info = {.execTime = 50.000000, .powerUsage = 1.000000}}, {.type = TENSOR_FLOAT16, .info = {.execTime = 50.000000, .powerUsage = 1.000000}}, {.type = TENSOR_BOOL8, .info = {.execTime = 50.000000, .powerUsage = 1.000000}}, {.type = FLOAT16, .info = {.execTime = 50.000000, .powerUsage = 1.000000}}, {.type = TENSOR_QUANT8_SYMM_PER_CHANNEL, .info = {.execTime = 50.000000, .powerUsage = 1.000000}}, {.type = TENSOR_QUANT16_ASYMM, .info = {.execTime = 50.000000, .powerUsage = 1.000000}}, {.type = TENSOR_QUANT8_SYMM, .info = {.execTime = 50.000000, .powerUsage = 1.000000}}, {.type = TENSOR_QUANT8_ASYMM_SIGNED, .info = {.execTime = 50.000000, .powerUsage = 1.000000}}, {.type = OEM, .info = {.execTime = 50.000000, .powerUsage = 1.000000}}, {.type = TENSOR_OEM_BYTE, .info = {.execTime = 50.000000, .powerUsage = 1.000000}}}, .ifPerformance = {.execTime = 50.000000, .powerUsage = 1.000000}, .whilePerformance = {.execTime = 50.000000, .powerUsage = 1.000000}}
+10-08 05:48:29.608  5069  5140 I native  : I0000 00:00:1791438509.608289    5140 text_detector_thread_pool_context.cc:38] Compute manager max in flight region detector overwrite: 1
+10-08 05:48:29.608  5069  5140 I native  : I0000 00:00:1791438509.608432    5140 common_util.h:41] Resizing Thread Pool: ocr_det_0 to 3
+10-08 05:48:29.609  5069  5140 I tflite  : Initialized TensorFlow Lite runtime.
+10-08 05:48:29.612  5069  5141 I native  : I0000 00:00:1791438509.612250    5141 text_classifier.cc:32] Creating classifier TfliteTextClassifier
+10-08 05:48:29.612  5069  5141 I native  : I0000 00:00:1791438509.612342    5141 common_util.h:41] Resizing Thread Pool: ocr_segm to 3
+10-08 05:48:29.613  5069  5141 I native  : I0000 00:00:1791438509.613720    5141 tflite_lstm_client_base.cc:371] Resizing interpreter pool to 4
+10-08 05:48:29.615  5069  5141 I native  : I0000 00:00:1791438509.615800    5141 multi_pass_line_recognition_mutator.cc:342] Preloading recognizers.
+10-08 05:48:29.624  5069  5151 I native  : I0000 00:00:1791438509.624483    5151 tflite_model_pooled_runner.cc:625] Loading mlkit-google-ocr-models/gocr/gocr_models/line_recognition_legacy_mobile/Latn_ctc/optical/conv_model.fb
+10-08 05:48:29.624  5069  5151 I native  : I0000 00:00:1791438509.624790    5151 tflite_model_pooled_runner.cc:636] Loading mlkit-google-ocr-models/gocr/gocr_models/line_recognition_legacy_mobile/Latn_ctc/optical/lstm_model.fb
+10-08 05:48:29.634  5069  5151 I native  : I0000 00:00:1791438509.634255    5151 tflite_model_pooled_runner.cc:836] Resizing interpreter pool to 4
+10-08 05:48:29.635  5069  5151 I native  : I0000 00:00:1791438509.635362    5151 mobile_langid_v2.cc:58] MobileLangID V2 initialized.
+10-08 05:48:29.635  5069  5151 I native  : I0000 00:00:1791438509.635396    5151 multi_pass_line_recognition_mutator.cc:364] Finished preloading a recognizer for "Latn"
+10-08 05:48:29.635  5069  5141 I native  : I0000 00:00:1791438509.635431    5141 multi_pass_line_recognition_mutator.cc:398] Finished preloading recognizers.
+10-08 05:48:29.635  5069  5141 I native  : I0000 00:00:1791438509.635523    5141 tflite_model_pooled_runner.cc:625] Loading mlkit-google-ocr-models/gocr/layout/line_splitting_custom_ops/model.tflite
+10-08 05:48:29.635  5069  5141 I native  : I0000 00:00:1791438509.635670    5141 tflite_model_pooled_runner.cc:836] Resizing interpreter pool to 1
+10-08 05:48:29.636  5069  5141 I native  : I0000 00:00:1791438509.636004    5141 tflite_model_pooled_runner.cc:625] Loading mlkit-google-ocr-models/gocr/layout/line_clustering_custom_ops/model.tflite
+10-08 05:48:29.636  5069  5141 I native  : I0000 00:00:1791438509.636219    5141 tflite_model_pooled_runner.cc:836] Resizing interpreter pool to 1
+10-08 05:48:29.636  5069  5140 I tflite  : Created TensorFlow Lite XNNPACK delegate for CPU.
+10-08 05:48:29.636  5069  5140 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:29.637  5069  5140 I native  : I0000 00:00:1791438509.637358    5140 tflite_detector_client_with_shape_cache.cc:105] Caching size: 10
+10-08 05:48:29.639  5094  5118 I TetheringManager: registerTetheringEventCallback:com.google.android.apps.maps
+10-08 05:48:29.655  5069  5134 D PipelineManager: Start process bitmap
+10-08 05:48:29.655  5069  5134 I native  : I0000 00:00:1791438509.655559    5134 scheduler.cc:693] ImageMetadata: 1280x720
+10-08 05:48:29.675  1189  3795 I Herrevad: [337] abjt.a: updateListenState
+10-08 05:48:29.675  1189  3795 I NetRec  : [337] akje.a: onConfigChanged()
+10-08 05:48:29.677  1189  3795 I NetRec  : [337] akje.a: Cancelling all NetRec GCM tasks
+10-08 05:48:29.685  2050  2050 I BgTaskExecutorImpl: Starting NONEXCLUSIVE background task UPDATE_GSERVICES_CONFIG.
+10-08 05:48:29.687  2050  2930 I GservicesUpdateTask: Updating Gservices keys
+10-08 05:48:29.688  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:29.690  1422  2341 I GmsModuleFndr: Beginning GMS chimera module scan
+10-08 05:48:29.691  1189  5018 I NetRec  : [539] ClearDatabaseService.onHandleIntent: Clearing score cache
+10-08 05:48:29.692  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:29.693  1422  2341 I ModuleSetMgr: Computing pending module set with APKs: [[AdsFdrDynamite.integ:21460000000], [Cronetdynamite:201817040800], [Dynamiteloader:201817040000], [Dynamitemodulesa:201817040000], [Dynamitemodulesc:201817040000], [Googlecertificates:201817040000], [Mapsdynamite:201817040000], [Measurementdynamite:201817040000]]
+10-08 05:48:29.693  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:29.707  1422  2341 I ModuleSetMgr: Pending container module APKs: []
+10-08 05:48:29.707  1422  2341 I ModuleSetMgr: Pending non-container module APKs: []
+10-08 05:48:29.711  5069  5141 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:29.744  1189  1489 I GCoreUlr: WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction com.google.gservices.intent.action.GSERVICES_CHANGED
+10-08 05:48:29.780  1189  1189 I GeofencerStateMachine: sendQueryLocationOptIn
+10-08 05:48:29.836  1189  1189 I chatty  : uid=10121 com.google.android.gms.persistent identical 9 lines
+10-08 05:48:29.843  1189  1189 I GeofencerStateMachine: sendQueryLocationOptIn
+10-08 05:48:29.903  1189  1489 I GCoreUlr: WorldUpdater:com.google.gservices.intent.action.GSERVICES_CHANGED: Ensuring that reporting is stopped because of reasons: (no Google accounts)
+10-08 05:48:29.916  1422  4697 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.gservices.intent.action.GSERVICES_CHANGED flg=0x1000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService$PersistentInternalReceiver }.
+10-08 05:48:29.935  1422  4697 I MobileDataHub: Scheduling periodic tasks
+10-08 05:48:29.936  1422  4697 W MobileDataHub: [Service] appsupload-periodic periodic task disabled
+10-08 05:48:29.940  1189  2152 I anhw    : Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.gms.checkin.binary) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-08 05:48:29.946  1422  2837 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:29.966  1422  4697 I SystemUpdate: [Installation,ReceiverIntentOperation] Received intent: Intent { act=com.google.gservices.intent.action.GSERVICES_CHANGED flg=0x1000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService$PersistentInternalReceiver }.
+10-08 05:48:29.975  1422  2537 I GmsModuleFndr: Beginning GMS chimera module scan
+10-08 05:48:29.981  1422  3137 I SystemUpdate: [Execution,InstallationEventIntentOperation] Handling event of type 2.
+10-08 05:48:29.985  1422  2341 I SystemUpdate: [Execution,InstallationIntentOperation] Received intent: Intent { act=com.google.android.gms.update.INSTALL_UPDATE cat=[targeted_intent_op_prefix:.update.execution.InstallationIntentOperation] cmp=com.google.android.gms/.chimera.GmsIntentOperationService }.
+10-08 05:48:29.990  1422  2341 I SystemUpdate: [Execution,ExecutionManager] Action finished-execution executed for 0.00 seconds.
+10-08 05:48:29.997  5094  5167 I DynamiteLoaderV2: [71] Measurementdynamite
+10-08 05:48:29.997  5094  5167 W droid.apps.map: Unsupported class loader
+10-08 05:48:30.000  5094  5167 W droid.apps.map: Unsupported class loader
+10-08 05:48:30.000   499  1779 E system_server: Invalid class loader spec: =UnsupportedClassLoaderContext=
+10-08 05:48:30.025  1422  2537 I ModuleSetMgr: Computing pending module set with APKs: [[AdsFdrDynamite.integ:21460000000], [Cronetdynamite:201817040800], [Dynamiteloader:201817040000], [Dynamitemodulesa:201817040000], [Dynamitemodulesc:201817040000], [Googlecertificates:201817040000], [Mapsdynamite:201817040000], [Measurementdynamite:201817040000]]
+10-08 05:48:30.026  1422  2537 I ModuleSetMgr: Pending container module APKs: []
+10-08 05:48:30.026  1422  2537 I ModuleSetMgr: Pending non-container module APKs: []
+10-08 05:48:30.044  1189  1489 I GCoreUlr: Unbound from all signal providers.
+10-08 05:48:30.050   424   617 W ServiceManager: Permission failure: android.permission.SYSTEM_CAMERA from uid=10121 pid=1422
+10-08 05:48:30.051   424   617 I chatty  : uid=1047(cameraserver) Binder:424_2 identical 2 lines
+10-08 05:48:30.051   424   617 W ServiceManager: Permission failure: android.permission.SYSTEM_CAMERA from uid=10121 pid=1422
+10-08 05:48:30.051  1422  2837 I OcrModelUpStIntentOp: Updating ocr activity enabled=true (phenotypeFlag=true, lowRamDevice=false, prereqCheck=true)
+10-08 05:48:30.058  1422  2837 I OcrModelUpStIntentOp: Downloading text recognizer
+10-08 05:48:30.064  5069  5129 W xus.gravadoroc: Verification of void com.google.android.gms.internal.mlkit_vision_text_common.zzcz.<init>(java.io.OutputStream, java.util.Map, java.util.Map, com.google.firebase.encoders.ObjectEncoder) took 176.272ms (107.79 bytecodes/s) (1696B approximate peak alloc)
+10-08 05:48:30.073  5069  5128 I TetheringManager: registerTetheringEventCallback:br.dev.nexus.gravadorocr
+10-08 05:48:30.077  5069  5128 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-08 05:48:30.081  5069  5128 D TransportRuntime.JobInfoScheduler: Scheduling upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) with jobId=-170776880 in 30000ms(Backend next call timestamp 0). Attempt 1
+10-08 05:48:30.084  2050  2050 I BgTaskExecutorImpl: Starting EXCLUSIVE background task FETCH_CONFIGS_FROM_PHENOTYPE.
+10-08 05:48:30.099   288   288 D Zygote  : Forked child process 5176
+10-08 05:48:30.109  5176  5176 W ps.pixelmigrat: Unexpected CPU variant for X86 using defaults: x86_64
+10-08 05:48:30.113   399   412 I adbd    : jdwp connection from 5176
+10-08 05:48:30.143  5069  5128 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-08 05:48:30.148  5176  5176 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-08 05:48:30.149  5176  5176 I ps.pixelmigrat: The ClassLoaderContext is a special shared library.
+10-08 05:48:30.149  5176  5176 D nativeloader: classloader namespace configured for unbundled product apk. library_path=/product/priv-app/AndroidMigratePrebuilt/lib/x86_64:/product/lib64:/system/product/lib64
+10-08 05:48:30.154  5069  5128 D TransportRuntime.JobInfoScheduler: Scheduling upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) with jobId=-165796143 in 86400000ms(Backend next call timestamp 0). Attempt 1
+10-08 05:48:30.157  5176  5176 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-08 05:48:30.157  5176  5176 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-08 05:48:30.172  1189  1189 I GCoreUlr: Unbound from all signal providers.
+10-08 05:48:30.173  1189  1189 I GCoreUlr: Stopping handler for UlrDispSvcFast
+10-08 05:48:30.182  1189  1489 I GCoreUlr: DispatchingService ignoring Intent { act=android.net.wifi.WIFI_STATE_CHANGED flg=0x4000010 (has extras) } because ULR inactive
+10-08 05:48:30.255  5069  5129 W xus.gravadoroc: Verification of void com.google.android.gms.internal.mlkit_vision_common.zzhe.configure(com.google.firebase.encoders.config.EncoderConfig) took 188.723ms (5235.18 bytecodes/s) (40496B approximate peak alloc)
+10-08 05:48:30.256  5176  5198 I DynamiteModule: Considering local module com.google.android.gms.flags:3 and remote module com.google.android.gms.flags:3
+10-08 05:48:30.256  5176  5198 I DynamiteModule: Selected local version of com.google.android.gms.flags
+10-08 05:48:30.263  5176  5198 W DynamiteModule: Local module descriptor class for com.google.android.gms.crash not found.
+10-08 05:48:30.265  5176  5198 I DynamiteModule: Considering local module com.google.android.gms.crash:0 and remote module com.google.android.gms.crash:215
+10-08 05:48:30.265  5176  5198 I DynamiteModule: Selected remote version of com.google.android.gms.crash, version >= 215
+10-08 05:48:30.265  5176  5198 V DynamiteModule: Dynamite loader version >= 2, using loadModule2NoCrashUtils
+10-08 05:48:30.279  2050  2930 I BlobLobber: Handling download id 2 (blob brain_en_us_201705_arm32_release_signed)
+10-08 05:48:30.293  5176  5198 I DynamiteLoaderV2: [71] Dynamitemodulesc
+10-08 05:48:30.294  5176  5198 W ps.pixelmigrat: Unsupported class loader
+10-08 05:48:30.341  5176  5198 W ps.pixelmigrat: Unsupported class loader
+10-08 05:48:30.341   499  1779 E system_server: Invalid class loader spec: =UnsupportedClassLoaderContext=
+10-08 05:48:30.355  5094  5175 W droid.apps.map: Verification of void ey.<clinit>() took 131.301ms (60.93 bytecodes/s) (1400B approximate peak alloc)
+10-08 05:48:30.363  1189  3349 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_BY_IDS Ids=[atn_geofence_request_id], packageName=com.google.android.apps.maps]
+10-08 05:48:30.374  5176  5198 I FirebaseCrashApiImpl: FirebaseCrashApiImpl created by ClassLoader ax[DexPathList[[zip file "/data/user_de/0/com.google.android.gms/app_chimera/m/00000004/DynamiteModulesC.apk"],nativeLibraryDirectories=[/data/user_de/0/com.google.android.gms/app_chimera/m/00000004/n/x86_64, /data/user_de/0/com.google.android.gms/app_chimera/m/00000004/n/arm64-v8a, /system/lib64, /system_ext/lib64]]]
+10-08 05:48:30.375  5176  5198 I FirebaseCrash: FirebaseCrash reporting loaded - esr@d566a8b
+10-08 05:48:30.380  5176  5199 I DynamiteModule: Considering local module com.google.android.gms.flags:3 and remote module com.google.android.gms.flags:3
+10-08 05:48:30.380  5176  5199 I DynamiteModule: Selected local version of com.google.android.gms.flags
+10-08 05:48:30.382  5176  5199 W DynamiteModule: Local module descriptor class for com.google.android.gms.crash not found.
+10-08 05:48:30.392  4751  5058 W YouTube : Could not register for notifications with InnerTube:
+10-08 05:48:30.392  4751  5058 W YouTube : abwi: java.util.concurrent.ExecutionException: aacl: Precondition check failed.
+10-08 05:48:30.392  4751  5058 W YouTube : 	at abwa.b(PG:18)
+10-08 05:48:30.392  4751  5058 W YouTube : 	at aicr.f(PG:65)
+10-08 05:48:30.392  4751  5058 W YouTube : 	at aicr.g(PG:133)
+10-08 05:48:30.392  4751  5058 W YouTube : 	at aicr.b(PG:99)
+10-08 05:48:30.392  4751  5058 W YouTube : 	at ahyh.run(Unknown Source:1)
+10-08 05:48:30.392  4751  5058 W YouTube : 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+10-08 05:48:30.392  4751  5058 W YouTube : 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-08 05:48:30.392  4751  5058 W YouTube : 	at aosv.run(Unknown Source:1)
+10-08 05:48:30.392  4751  5058 W YouTube : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-08 05:48:30.392  4751  5058 W YouTube : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-08 05:48:30.392  4751  5058 W YouTube : 	at zdm.run(PG:13)
+10-08 05:48:30.392  4751  5058 W YouTube : 	at java.lang.Thread.run(Thread.java:923)
+10-08 05:48:30.392  4751  5058 W YouTube : Caused by: java.util.concurrent.ExecutionException: aacl: Precondition check failed.
+10-08 05:48:30.392  4751  5058 W YouTube : 	at apmr.a(PG:135)
+10-08 05:48:30.392  4751  5058 W YouTube : 	at apmr.get(PG:89)
+10-08 05:48:30.392  4751  5058 W YouTube : 	at abwa.b(PG:17)
+10-08 05:48:30.392  4751  5058 W YouTube : 	... 11 more
+10-08 05:48:30.392  4751  5058 W YouTube : Caused by: aacl: Precondition check failed.
+10-08 05:48:30.392  4751  5058 W YouTube : 	at abuo.c(PG:106)
+10-08 05:48:30.392  4751  5058 W YouTube : 	at znq.a(PG:62)
+10-08 05:48:30.392  4751  5058 W YouTube : 	at zmp.run(Unknown Source:18)
+10-08 05:48:30.392  4751  5058 W YouTube : 	... 4 more
+10-08 05:48:30.392  4751  5058 W YouTube : Caused by: btc
+10-08 05:48:30.392  4751  5058 W YouTube : 	at zmp.run(Unknown Source:6)
+10-08 05:48:30.392  4751  5058 W YouTube : 	... 4 more
+10-08 05:48:30.407  5176  5199 I TetheringManager: registerTetheringEventCallback:com.google.android.apps.pixelmigrate
+10-08 05:48:30.408  1189  2663 W NetworkScheduler: The Firebase Job Dispatcher and GmsTaskScheduler are deprecated for apps targeting API 30 or newer. Application com.google.android.apps.maps has targetSdkVersion 30. Please migrate to the WorkManager or JobScheduler.
+10-08 05:48:30.408  1189  2663 W NetworkScheduler: Running in whitelist mode. Ignoring task: com.google.android.apps.maps/com.google.android.apps.gmm.shared.cache.glide.GlideDiskCacheExpirationService{u=0 tag="glide.cache.periodic" trigger=window{period=86400s,flex=900s,earliest=82079s,latest=86399s} requirements=[NET_CONNECTED] attributes=[PERSISTED,RECURRING] scheduled=0s last_run=N/A jid=N/A status=UNKNOWN retries=0 client_lib=MANCHEGO_GCM-202210000}
+10-08 05:48:30.420  5176  5199 I FirebaseCrashApiImpl: FirebaseCrash reporting API initialized
+10-08 05:48:30.420  5176  5199 I FirebaseCrash: FirebaseCrash reporting initialized esr@d566a8b
+10-08 05:48:30.420  5176  5199 W FirebaseCrashAnalytics: Unable to log event, missing Google Analytics for Firebase library
+10-08 05:48:30.424  5176  5196 V Pixelmigrate: [PhenotypeSyncHelper] Waiting for task(s) to complete (timeout: 5000 ms).
+10-08 05:48:30.472  5069  5128 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-08 05:48:30.474  5069  5128 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-08 05:48:30.517  1189  3037 I NetworkScheduler: ignoring stale queue check message
+10-08 05:48:30.578   430   430 I keystore: del USRPKEY_unstable.c7202ece89390c490b1b94d5b71225e1.A-5130668052815616574 10121
+10-08 05:48:30.578   430   430 I keystore: del USRSKEY_unstable.c7202ece89390c490b1b94d5b71225e1.A-5130668052815616574 10121
+10-08 05:48:30.578   430   430 I keystore: del USRCERT_unstable.c7202ece89390c490b1b94d5b71225e1.A-5130668052815616574 10121
+10-08 05:48:30.579   430   430 I keystore: del CACERT_unstable.c7202ece89390c490b1b94d5b71225e1.A-5130668052815616574 10121
+10-08 05:48:30.596   430   430 I keystore: del USRPKEY_unstable.c7202ece89390c490b1b94d5b71225e1.A-5130668052815616574 10121
+10-08 05:48:30.596   430   430 I keystore: del USRCERT_unstable.c7202ece89390c490b1b94d5b71225e1.A-5130668052815616574 10121
+10-08 05:48:30.597   430   430 I keystore: del CACERT_unstable.c7202ece89390c490b1b94d5b71225e1.A-5130668052815616574 10121
+10-08 05:48:30.597   430   430 I keystore: del USRPKEY_unstable.c7202ece89390c490b1b94d5b71225e1.B-5130668052815616574 10121
+10-08 05:48:30.597   430   430 I keystore: del USRSKEY_unstable.c7202ece89390c490b1b94d5b71225e1.B-5130668052815616574 10121
+10-08 05:48:30.597   430   430 I keystore: del USRCERT_unstable.c7202ece89390c490b1b94d5b71225e1.B-5130668052815616574 10121
+10-08 05:48:30.597   430   430 I keystore: del CACERT_unstable.c7202ece89390c490b1b94d5b71225e1.B-5130668052815616574 10121
+10-08 05:48:30.860  2013  3841 V DownloadManager: Deleting /storage/emulated/0/Android/data/com.google.android.googlequicksearchbox/files/pending_blobs/brain_en_us_201705_arm32_release_signed via provider delete
+10-08 05:48:30.881  3092  3146 W SystemServiceRegistry: No service published for: persistent_data_block
+10-08 05:48:30.898  1715  1737 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 33ms, 0 inserts 0 updates 0 deletes
+10-08 05:48:30.932  5176  5176 I Pixelmigrate: [PhenotypeSyncHelper] Phenotype registered successfully.
+10-08 05:48:30.935  3092  3146 E libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-08 05:48:30.936  3092  3146 E libc    : Access denied finding property "service.adb.tls.port"
+10-08 05:48:30.979  3092  3146 D EGL_emulation: eglCreateContext: 0x760c61e180e0: maj 3 min 0 rcv 3
+10-08 05:48:30.982   499   626 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-08 05:48:30.983   731   731 V AvrcpMediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-08 05:48:30.983   731   731 D AvrcpMediaPlayerList: Name of package changed: com.google.android.gms
+10-08 05:48:31.002   772  1449 I PermissionControllerServiceImpl: Updating user sensitive for uid 10121
+10-08 05:48:31.010  1087  1087 D CarrierSvcBindHelper: No carrier app for: 0
+10-08 05:48:31.026  1189  1204 I .gms.persisten: Background young concurrent copying GC freed 155262(7093KB) AllocSpace objects, 23(1520KB) LOS objects, 8% free, 18MB/19MB, paused 40us total 851.662ms
+10-08 05:48:31.030  1422  1660 I Icing   : updateResources: need to parse abvr{com.google.android.gms} [CONTEXT service_id=21 ]
+10-08 05:48:31.039  1189  1189 I GeofencerStateMachine: sendQueryLocationOptIn
+10-08 05:48:31.042  1189  2941 I GeofencerStateMachine: Network location disabled.
+10-08 05:48:31.049  1189  5020 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package:com.google.android.gms flg=0x45000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-08 05:48:31.147  1189  5018 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-08 05:48:31.157  5176  5176 I Pixelmigrate: [PhenotypeSyncHelper] Phenotype flags updated successfully.
+10-08 05:48:31.165  1189  1189 I GeofencerStateMachine: sendQueryLocationOptIn
+10-08 05:48:31.167  1189  2941 I GeofencerStateMachine: Network location enabled.
+10-08 05:48:31.181  1189  5006 I GCoreUlr: WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction android.location.PROVIDERS_CHANGED
+10-08 05:48:31.182  1189  5006 I GCoreUlr: WorldUpdater:android.location.PROVIDERS_CHANGED: Ensuring that reporting is stopped because of reasons: (no Google accounts)
+10-08 05:48:31.182  1189  5006 I GCoreUlr: Unbound from all signal providers.
+10-08 05:48:31.191  1189  2384 I NearbyDiscovery: Show notifications: 0 total, no changes since last shown, no-op. [CONTEXT service_id=49 ]
+10-08 05:48:31.262  2782  2876 W BugleAction: exception getting msisdn from engine, and no default number
+10-08 05:48:31.262  2782  2876 W BugleAction: aeei: Jibe SDK Service not available. Is the Jibe SDK service running? Did you call connect() and wait for the notification before calling an API function?
+10-08 05:48:31.262  2782  2876 W BugleAction: 	at aeec.a(PG:15)
+10-08 05:48:31.262  2782  2876 W BugleAction: 	at com.google.android.rcs.client.profile.RcsProfileService.a(PG:24)
+10-08 05:48:31.262  2782  2876 W BugleAction: 	at com.google.android.rcs.client.profile.RcsProfileService.getMsisdn(PG:12)
+10-08 05:48:31.262  2782  2876 W BugleAction: 	at kfx.l(PG:330)
+10-08 05:48:31.262  2782  2876 W BugleAction: 	at fzy.call(Unknown Source:251)
+10-08 05:48:31.262  2782  2876 W BugleAction: 	at afow.call(PG:3)
+10-08 05:48:31.262  2782  2876 W BugleAction: 	at ainl.b(PG:3)
+10-08 05:48:31.262  2782  2876 W BugleAction: 	at aiox.run(PG:12)
+10-08 05:48:31.262  2782  2876 W BugleAction: 	at aeua.run(PG:2)
+10-08 05:48:31.262  2782  2876 W BugleAction: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-08 05:48:31.262  2782  2876 W BugleAction: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-08 05:48:31.262  2782  2876 W BugleAction: 	at aesr.run(Unknown Source:4)
+10-08 05:48:31.262  2782  2876 W BugleAction: 	at java.lang.Thread.run(Thread.java:923)
+10-08 05:48:31.263  2782  2969 E Bugle   : Failed to check if revocation is enabled
+10-08 05:48:31.263  2782  2969 E Bugle   : aeei: Jibe SDK Service not available. Is the Jibe SDK service running? Did you call connect() and wait for the notification before calling an API function?
+10-08 05:48:31.263  2782  2969 E Bugle   : 	at aeec.a(PG:15)
+10-08 05:48:31.263  2782  2969 E Bugle   : 	at com.google.android.rcs.client.profile.RcsProfileService.getRcsConfig(PG:15)
+10-08 05:48:31.263  2782  2969 E Bugle   : 	at kfx.o(PG:545)
+10-08 05:48:31.263  2782  2969 E Bugle   : 	at kfx.t(PG:139)
+10-08 05:48:31.263  2782  2969 E Bugle   : 	at fbq.a(Unknown Source:8)
+10-08 05:48:31.263  2782  2969 E Bugle   : 	at afoy.a(PG:3)
+10-08 05:48:31.263  2782  2969 E Bugle   : 	at ailz.a(PG:3)
+10-08 05:48:31.263  2782  2969 E Bugle   : 	at aima.run(PG:23)
+10-08 05:48:31.263  2782  2969 E Bugle   : 	at aipd.run(PG:2)
+10-08 05:48:31.263  2782  2969 E Bugle   : 	at aeua.run(PG:2)
+10-08 05:48:31.263  2782  2969 E Bugle   : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-08 05:48:31.263  2782  2969 E Bugle   : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-08 05:48:31.263  2782  2969 E Bugle   : 	at aesr.run(Unknown Source:4)
+10-08 05:48:31.263  2782  2969 E Bugle   : 	at java.lang.Thread.run(Thread.java:923)
+10-08 05:48:31.300  1189  5006 I GCoreUlr: DispatchingService ignoring Intent { act=android.net.wifi.WIFI_STATE_CHANGED flg=0x4000010 (has extras) } because ULR inactive
+10-08 05:48:31.320  2782  3017 W BugleUsageStatistics: InstallReferrerFetcher: Bad response code: 2
+10-08 05:48:31.330  1189  5006 I GCoreUlr: WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction android.location.PROVIDERS_CHANGED
+10-08 05:48:30.932  3092  3092 W Binder:3092_3: type=1400 audit(0.0:70): avc: denied { read } for name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=8595 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-08 05:48:31.372  1189  5006 I GCoreUlr: WorldUpdater:android.location.PROVIDERS_CHANGED: Ensuring that reporting is stopped because of reasons: (no Google accounts)
+10-08 05:48:31.383  1189  1204 I .gms.persisten: ThreadFlipBegin blocked for 49.597ms
+10-08 05:48:31.383  1189  1211 I .gms.persisten: IncrementDisableThreadFlip blocked for 5.277ms
+10-08 05:48:31.384  1189  2660 I .gms.persisten: IncrementDisableThreadFlip blocked for 35.687ms
+10-08 05:48:31.384  1189  2805 I .gms.persisten: IncrementDisableThreadFlip blocked for 41.915ms
+10-08 05:48:31.387  1189  2357 I .gms.persisten: IncrementDisableThreadFlip blocked for 53.061ms
+10-08 05:48:31.404  1189  5006 I .gms.persisten: IncrementDisableThreadFlip blocked for 32.215ms
+10-08 05:48:31.415  1189  5006 I GCoreUlr: Unbound from all signal providers.
+10-08 05:48:31.419  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_birthdaydoodle_jar__name to integer.
+10-08 05:48:31.419  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_call_jar__name to integer.
+10-08 05:48:31.419  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_canvas_jar__name to integer.
+10-08 05:48:31.419  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_chkpkg_jar__name to integer.
+10-08 05:48:31.419  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_crashtest_jar__name to integer.
+10-08 05:48:31.419  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_dining_jar__name to integer.
+10-08 05:48:31.419  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_doodle_notifications_jar__name to integer.
+10-08 05:48:31.419  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_imageviewer_jar__name to integer.
+10-08 05:48:31.419  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_ipa_jar__name to integer.
+10-08 05:48:31.419  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_jslocation_jar__name to integer.
+10-08 05:48:31.420  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_localintent_jar__name to integer.
+10-08 05:48:31.420  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_messaging_jar__name to integer.
+10-08 05:48:31.437  2613  2613 D CompatibilityChangeReporter: Compat change id reported: 119147584; UID 10136; state: ENABLED
+10-08 05:48:31.452  1189  1463 I BeaconBle: Client requested scan, settings=BleSettings [scanMode=LOW_LATENCY, callbackType=ALL_MATCHES, reportDelayMillis=0, 5 filters, 1 clients, callingClientName=Nearby] [CONTEXT service_id=111 ]
+10-08 05:48:31.453  1189  1463 I BeaconBle: 'L' hardware scan: 5 filters, scanMode=2, reportdelay=0, callback type=1, #clients=1, workSource=WorkSource{10121 com.google.android.gms} [CONTEXT service_id=111 ]
+10-08 05:48:31.454  1189  1463 I BeaconBle: Starting scan on OS scanner. BT state: 12 [CONTEXT service_id=111 ]
+10-08 05:48:31.454  1189  1463 D BluetoothAdapter: isLeEnabled(): ON
+10-08 05:48:31.455   731  1261 I bt_stack: [INFO:gatt_api.cc(947)] GATT_Register 94fcd0f7-ad9b-c0df-128a-1abbefcb8578
+10-08 05:48:31.455   731  1261 I bt_stack: [INFO:gatt_api.cc(967)] allocated gatt_if=5
+10-08 05:48:31.455  1189  1211 D BluetoothLeScanner: onScannerRegistered() - status=0 scannerId=5 mScannerId=0
+10-08 05:48:31.471  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_nativesrp_activity_jar__name to integer.
+10-08 05:48:31.471  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_nativesrp_presenter_jar__name to integer.
+10-08 05:48:31.471  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_nowcontent_jar__name to integer.
+10-08 05:48:31.471  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_recents_activity_jar__name to integer.
+10-08 05:48:31.471  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_save_jar__name to integer.
+10-08 05:48:31.471  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_searchresults_activity_jar__name to integer.
+10-08 05:48:31.471  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_test_jar__name to integer.
+10-08 05:48:31.471  2050  2264 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_weather_jar__name to integer.
+10-08 05:48:31.471  2050  2264 W PhenotypeToGsaConfigs: Can't format flag bindle_flags__bloblobber_blob to integer.
+10-08 05:48:31.471  2050  2264 W PhenotypeToGsaConfigs: Can't format flag bindle_flags__velour_jar to integer.
+10-08 05:48:31.473  1189  1189 I GCoreUlr: Unbound from all signal providers.
+10-08 05:48:31.473  1189  1189 I GCoreUlr: Stopping handler for UlrDispSvcFast
+10-08 05:48:31.551   288   288 I Zygote  : Process 4096 exited due to signal 9 (Killed)
+10-08 05:48:31.572   750   750 V KeyguardUpdateMonitor: onSubscriptionInfoChanged()
+10-08 05:48:31.573  1087  1087 D Telephony: isEmergencyPreferredAccount: subId=1, activeData=1
+10-08 05:48:31.573  1087  1087 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
+10-08 05:48:30.936  3092  3092 W Binder:3092_3: type=1400 audit(0.0:71): avc: denied { read } for name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=8455 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-08 05:48:31.576   750   750 V KeyguardUpdateMonitor: SubInfo:{id=1 iccId=89014103211118510720 simSlotIndex=0 carrierId=1 displayName=T-Mobile carrierName=T-Mobile nameSource=3 iconTint=-16746133 number=+15555215554 dataRoaming=0 iconBitmap=android.graphics.Bitmap@cd722e1 mcc=310 mnc=260 countryIso=us isEmbedded=false nativeAccessRules=null cardString=89014103211118510720 cardId=-1 isOpportunistic=false groupUUID=null isGroupDisabled=false profileClass=-1 ehplmns=null hplmns=null subscriptionType=0 groupOwner=null carrierConfigAccessRules=null areUiccApplicationsEnabled=true}
+10-08 05:48:31.590  1189  1204 I .gms.persisten: Background concurrent copying GC freed 256032(11MB) AllocSpace objects, 35(1964KB) LOS objects, 49% free, 10070KB/19MB, paused 49us total 554.551ms
+10-08 05:48:31.592   499   551 I libprocessgroup: Successfully killed process cgroup uid 10145 pid 4096 in 44ms
+10-08 05:48:31.594  2013  5226 D DownloadManager: [4] Starting
+10-08 05:48:31.640  4333  4554 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10132; state: ENABLED
+10-08 05:48:31.644  5069  5141 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:31.644  1189  1189 W SystemServiceRegistry: No service published for: persistent_data_block
+10-08 05:48:31.672  5176  5176 W PrimesInit: Primes instant initialization
+10-08 05:48:31.673  5176  5236 W Primes  : background initialization
+10-08 05:48:31.673  5176  5176 I Pixelmigrate: [PhenotypeSyncHelper] Phenotype flags committed successfully.
+10-08 05:48:31.676  5176  5196 V Pixelmigrate: [PhenotypeSyncHelper] Waiting for task(s) to complete (timeout: 5000 ms).
+10-08 05:48:31.749  2013  5226 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+10-08 05:48:31.788  2013  5226 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+10-08 05:48:31.949  2050  2401 I EngineIdGenerator: Refusing EXCLUSIVE task 24, it is already pending. Try again in 348 seconds.
+10-08 05:48:32.001  2050  2401 I ModelDownloadListener: Schdedule model download
+10-08 05:48:32.003  2050  2399 I FedAssExpListener: Fed-ass not supported for signed out users.
+10-08 05:48:32.003  2050  2399 I FedAssExpListener: Successfully processed experiments changed.
+10-08 05:48:32.044  2050  2401 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+10-08 05:48:32.066  5094  5175 I FA      : App measurement initialized, version: 26016
+10-08 05:48:32.067  5094  5175 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+10-08 05:48:32.067  5094  5175 I FA      : To enable faster debug mode event logging run:
+10-08 05:48:32.067  5094  5175 I FA      :   adb shell setprop debug.firebase.analytics.app com.google.android.apps.maps
+10-08 05:48:32.080  2050  2401 W CorpusConfigHelper: Invalid input from icing corpus JSON flag.
+10-08 05:48:32.080  2050  2401 W CorpusConfigHelper: android.util.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 123 column 2
+10-08 05:48:32.080  2050  2401 W CorpusConfigHelper: 	at android.util.JsonReader.syntaxError(JsonReader.java:1162)
+10-08 05:48:32.080  2050  2401 W CorpusConfigHelper: 	at android.util.JsonReader.checkLenient(JsonReader.java:840)
+10-08 05:48:32.080  2050  2401 W CorpusConfigHelper: 	at android.util.JsonReader.nextInArray(JsonReader.java:615)
+10-08 05:48:32.080  2050  2401 W CorpusConfigHelper: 	at android.util.JsonReader.peek(JsonReader.java:345)
+10-08 05:48:32.080  2050  2401 W CorpusConfigHelper: 	at android.util.JsonReader.hasNext(JsonReader.java:321)
+10-08 05:48:32.080  2050  2401 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.k.a(SourceFile:25)
+10-08 05:48:32.080  2050  2401 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.j.a(SourceFile:1)
+10-08 05:48:32.080  2050  2401 W CorpusConfigHelper: 	at com.google.android.apps.gsa.search.core.i.i.run(Unknown Source:2)
+10-08 05:48:32.080  2050  2401 W CorpusConfigHelper: 	at com.google.android.libraries.gsa.l.a.l.call(Unknown Source:2)
+10-08 05:48:32.080  2050  2401 W CorpusConfigHelper: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-08 05:48:32.080  2050  2401 W CorpusConfigHelper: 	at com.google.apps.tiktok.concurrent.aq.run(SourceFile:1)
+10-08 05:48:32.080  2050  2401 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-08 05:48:32.080  2050  2401 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-08 05:48:32.080  2050  2401 W CorpusConfigHelper: 	at com.google.apps.tiktok.concurrent.f.run(Unknown Source:3)
+10-08 05:48:32.080  2050  2401 W CorpusConfigHelper: 	at java.lang.Thread.run(Thread.java:923)
+10-08 05:48:32.085  1422  2537 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32 [CONTEXT service_id=21 ]
+10-08 05:48:32.088  1422  2505 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33 [CONTEXT service_id=21 ]
+10-08 05:48:32.088  1422  1660 W Icing   : No valid account for uploading user actions [CONTEXT service_id=21 ]
+10-08 05:48:32.116  1422  1660 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0 [CONTEXT service_id=21 ]
+10-08 05:48:32.180  1422  1660 W Icing   : No valid account for uploading user actions [CONTEXT service_id=21 ]
+10-08 05:48:32.217  1422  1660 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0 [CONTEXT service_id=21 ]
+10-08 05:48:32.340  4751  4834 W ConnectionTracker: Exception thrown while unbinding
+10-08 05:48:32.340  4751  4834 W ConnectionTracker: java.lang.IllegalArgumentException: Service not registered: tel@758faf4
+10-08 05:48:32.340  4751  4834 W ConnectionTracker: 	at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1757)
+10-08 05:48:32.340  4751  4834 W ConnectionTracker: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1874)
+10-08 05:48:32.340  4751  4834 W ConnectionTracker: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:792)
+10-08 05:48:32.340  4751  4834 W ConnectionTracker: 	at sib.b(PG:29)
+10-08 05:48:32.340  4751  4834 W ConnectionTracker: 	at sib.a(PG:25)
+10-08 05:48:32.340  4751  4834 W ConnectionTracker: 	at tem.q(PG:48)
+10-08 05:48:32.340  4751  4834 W ConnectionTracker: 	at tdx.a(PG:5)
+10-08 05:48:32.340  4751  4834 W ConnectionTracker: 	at svs.run(PG:5)
+10-08 05:48:32.340  4751  4834 W ConnectionTracker: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+10-08 05:48:32.340  4751  4834 W ConnectionTracker: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-08 05:48:32.340  4751  4834 W ConnectionTracker: 	at tbd.run(PG:36)
+10-08 05:48:32.342  2050  2050 I BgTaskExecutorImpl: Starting EXCLUSIVE background task UPDATE_HOTWORD_MODELS.
+10-08 05:48:32.344  2050  2497 I ModelDownloadController: requestHotwordModelUpdate modelType-2 modelLocale-en-US
+10-08 05:48:32.345  2050  2497 I ModelDownloadController: shouldDownloadModel: modelLocale is en-US
+10-08 05:48:32.345  2050  2497 I ModelDownloadController: We already downloaded model from given location.
+10-08 05:48:32.345  2050  2497 I ModelDownloadController: Model download not requested.
+10-08 05:48:32.473  2050  2264 I ModelDnldProcssHelpr: #handleDownloadComplete, downloadId=2
+10-08 05:48:32.473  2050  2264 E ModelDnldProcssHelpr: pending download info for pending_hotword_model_download_info is null
+10-08 05:48:32.473  2050  2264 E ModelDnldProcssHelpr: pending download info for pending_xgoogle_hotword_model_download_info is null
+10-08 05:48:32.473  2050  2050 I BgTaskExecutorImpl: Starting NONEXCLUSIVE background task ZIP_DOWNLOAD_PROCESSOR.
+10-08 05:48:32.483  1422  2424 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms [CONTEXT service_id=21 ]
+10-08 05:48:32.484  1422  2424 I Icing   : Indexing done com.google.android.gms-apps [CONTEXT service_id=21 ]
+10-08 05:48:32.492  2050  2399 W LanguagePackUpdateContr: Querying download manager failed for ID : 2
+10-08 05:48:32.492  2050  2401 E DownloadManagerWrapper: Can't find downloadId=2
+10-08 05:48:32.512  5069  5141 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:32.555   288   288 D Zygote  : Forked child process 5246
+10-08 05:48:32.563  5246  5246 W id.apps.restor: Unexpected CPU variant for X86 using defaults: x86_64
+10-08 05:48:32.576   399   412 I adbd    : jdwp connection from 5246
+10-08 05:48:32.582  5246  5246 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-08 05:48:32.583  5246  5246 I id.apps.restor: The ClassLoaderContext is a special shared library.
+10-08 05:48:32.583  5246  5246 D nativeloader: classloader namespace configured for unbundled product apk. library_path=/product/priv-app/GoogleRestorePrebuilt/lib/x86_64:/product/lib64:/system/product/lib64
+10-08 05:48:32.598  5246  5246 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-08 05:48:32.598  5246  5246 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-08 05:48:32.688  1189  3795 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:32.688  1189  3795 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:32.689  1189  3795 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:32.696  2782  2884 I BuglePhenotype: onReceive for bugle package [CONTEXT package_name="com.google.android.apps.messaging" ]
+10-08 05:48:32.698  5246  5269 I DynamiteModule: Considering local module com.google.android.gms.flags:3 and remote module com.google.android.gms.flags:3
+10-08 05:48:32.698  5246  5269 I DynamiteModule: Selected local version of com.google.android.gms.flags
+10-08 05:48:32.701  2782  2782 W ConfigurationUpdatedRec: Received update for unknown package com.google.android.apps.messaging
+10-08 05:48:32.710   288   288 D Zygote  : Forked child process 5276
+10-08 05:48:32.721  5276  5276 W d.configupdate: Unexpected CPU variant for X86 using defaults: x86_64
+10-08 05:48:32.723   399   412 I adbd    : jdwp connection from 5276
+10-08 05:48:32.724  1189  4356 I anjv    : updateFromConfigurations using legacy put method [CONTEXT service_id=204 ]
+10-08 05:48:32.730  1189  2384 I NearbyDiscovery: Show notifications: 0 total, no changes since last shown, no-op. [CONTEXT service_id=49 ]
+10-08 05:48:32.748   499   554 E libprocessgroup: AddTidToCgroup failed to write '5294'; fd=67: Invalid argument
+10-08 05:48:32.748   499   554 E libprocessgroup: Failed to add task into cgroup
+10-08 05:48:32.748   499   554 W libprocessgroup: ExecuteForTask failed for aggregate profile: Invalid argument
+10-08 05:48:32.751  5246  5267 V Pixelmigrate: [PhenotypeSyncHelper] Waiting for task(s) to complete (timeout: 5000 ms).
+10-08 05:48:32.753  5276  5276 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-08 05:48:32.753  5276  5276 I d.configupdate: The ClassLoaderContext is a special shared library.
+10-08 05:48:32.754  5276  5276 D nativeloader: classloader namespace configured for unbundled product apk. library_path=/product/priv-app/ConfigUpdater/lib/x86_64:/product/lib64:/system/product/lib64
+10-08 05:48:32.755  5246  5269 W DynamiteModule: Local module descriptor class for com.google.android.gms.crash not found.
+10-08 05:48:32.757  5246  5269 I DynamiteModule: Considering local module com.google.android.gms.crash:0 and remote module com.google.android.gms.crash:215
+10-08 05:48:32.757  5246  5269 I DynamiteModule: Selected remote version of com.google.android.gms.crash, version >= 215
+10-08 05:48:32.757  5246  5269 V DynamiteModule: Dynamite loader version >= 2, using loadModule2NoCrashUtils
+10-08 05:48:32.764  5276  5276 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-08 05:48:32.764  5276  5276 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-08 05:48:32.771  5246  5269 I DynamiteLoaderV2: [71] Dynamitemodulesc
+10-08 05:48:32.771  5246  5269 W id.apps.restor: Unsupported class loader
+10-08 05:48:32.781   288   288 I Zygote  : Process 4246 exited due to signal 9 (Killed)
+10-08 05:48:32.781   288   288 I Zygote  : Process 4188 exited due to signal 9 (Killed)
+10-08 05:48:32.808   499   551 I libprocessgroup: Successfully killed process cgroup uid 10118 pid 4188 in 133ms
+10-08 05:48:32.808   499   551 I libprocessgroup: Successfully killed process cgroup uid 10118 pid 4188 in 0ms
+10-08 05:48:32.808   499   551 I libprocessgroup: Successfully killed process cgroup uid 10131 pid 4246 in 0ms
+10-08 05:48:32.816  1189  3826 W NetworkScheduler: The Firebase Job Dispatcher and GmsTaskScheduler are deprecated for apps targeting API 30 or newer. Application com.google.android.apps.maps has targetSdkVersion 30. Please migrate to the WorkManager or JobScheduler.
+10-08 05:48:32.816  1189  3826 W NetworkScheduler: Running in whitelist mode. Ignoring task: com.google.android.apps.maps/com.google.android.apps.gmm.offline.update.OfflineAutoUpdateMaintenanceGcmService{u=0 tag="default-tag" trigger=window{period=86400s,flex=1800s,earliest=82079s,latest=86399s} requirements=[NET_ANY,CHARGING] attributes=[PERSISTED,RECURRING] scheduled=0s last_run=N/A jid=N/A status=UNKNOWN retries=0 client_lib=MANCHEGO_GCM-202210000}
+10-08 05:48:32.819   289   289 I Zygote  : Process 4362 exited due to signal 9 (Killed)
+10-08 05:48:32.820   499   551 I libprocessgroup: Successfully killed process cgroup uid 10130 pid 4362 in 0ms
+10-08 05:48:32.826  5246  5269 W id.apps.restor: Unsupported class loader
+10-08 05:48:32.827   499   594 E system_server: Invalid class loader spec: =UnsupportedClassLoaderContext=
+10-08 05:48:32.835  5246  5269 I FirebaseCrashApiImpl: FirebaseCrashApiImpl created by ClassLoader ax[DexPathList[[zip file "/data/user_de/0/com.google.android.gms/app_chimera/m/00000004/DynamiteModulesC.apk"],nativeLibraryDirectories=[/data/user_de/0/com.google.android.gms/app_chimera/m/00000004/n/x86_64, /data/user_de/0/com.google.android.gms/app_chimera/m/00000004/n/arm64-v8a, /system/lib64, /system_ext/lib64]]]
+10-08 05:48:32.835  5246  5269 I FirebaseCrash: FirebaseCrash reporting loaded - cxy@d566a8b
+10-08 05:48:32.839  5246  5270 I DynamiteModule: Considering local module com.google.android.gms.flags:3 and remote module com.google.android.gms.flags:3
+10-08 05:48:32.839  5246  5270 I DynamiteModule: Selected local version of com.google.android.gms.flags
+10-08 05:48:32.846  5246  5270 W DynamiteModule: Local module descriptor class for com.google.android.gms.crash not found.
+10-08 05:48:32.853  1422  4697 I GmsModuleFndr: Beginning GMS chimera module scan
+10-08 05:48:32.854  5246  5270 I TetheringManager: registerTetheringEventCallback:com.google.android.apps.restore
+10-08 05:48:32.855  1422  4697 I ModuleSetMgr: Computing pending module set with APKs: [[AdsFdrDynamite.integ:21460000000], [Cronetdynamite:201817040800], [Dynamiteloader:201817040000], [Dynamitemodulesa:201817040000], [Dynamitemodulesc:201817040000], [Googlecertificates:201817040000], [Mapsdynamite:201817040000], [Measurementdynamite:201817040000]]
+10-08 05:48:32.856  1422  4697 I ModuleSetMgr: Pending container module APKs: []
+10-08 05:48:32.856  1422  4697 I ModuleSetMgr: Pending non-container module APKs: []
+10-08 05:48:32.861  1189  3795 I Herrevad: [337] abjt.a: updateListenState
+10-08 05:48:32.862  1189  5019 I NetRec  : [540] akje.a: onConfigChanged()
+10-08 05:48:32.863  1189  5021 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:32.863  1189  5021 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:32.863  1189  5021 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:32.873  2050  2050 I BgTaskExecutorImpl: Starting NONEXCLUSIVE background task UPDATE_GSERVICES_CONFIG.
+10-08 05:48:32.874  2050  2497 I GservicesUpdateTask: Updating Gservices keys
+10-08 05:48:32.879  1189  5019 I NetRec  : [540] akje.a: Cancelling all NetRec GCM tasks
+10-08 05:48:32.895  5246  5270 I FirebaseCrashApiImpl: FirebaseCrash reporting API initialized
+10-08 05:48:32.895  5246  5270 I FirebaseCrash: FirebaseCrash reporting initialized cxy@d566a8b
+10-08 05:48:32.895  5246  5270 W FirebaseCrashAnalytics: Unable to log event, missing Google Analytics for Firebase library
+10-08 05:48:32.910  1422  2505 I GmsModuleFndr: Beginning GMS chimera module scan
+10-08 05:48:32.911  1422  2505 I ModuleSetMgr: Computing pending module set with APKs: [[AdsFdrDynamite.integ:21460000000], [Cronetdynamite:201817040800], [Dynamiteloader:201817040000], [Dynamitemodulesa:201817040000], [Dynamitemodulesc:201817040000], [Googlecertificates:201817040000], [Mapsdynamite:201817040000], [Measurementdynamite:201817040000]]
+10-08 05:48:32.911  1422  2505 I ModuleSetMgr: Pending container module APKs: []
+10-08 05:48:32.911  1422  2505 I ModuleSetMgr: Pending non-container module APKs: []
+10-08 05:48:32.913  1189  5019 I NetRec  : [540] ClearDatabaseService.onHandleIntent: Clearing score cache
+10-08 05:48:32.914  1189  2610 I GCoreUlr: WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction com.google.gservices.intent.action.GSERVICES_CHANGED
+10-08 05:48:32.915  1189  2610 I GCoreUlr: WorldUpdater:com.google.gservices.intent.action.GSERVICES_CHANGED: Ensuring that reporting is stopped because of reasons: (no Google accounts)
+10-08 05:48:32.945  1422  2837 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.gservices.intent.action.GSERVICES_CHANGED flg=0x1000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService$PersistentInternalReceiver }.
+10-08 05:48:32.955  1422  2341 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-08 05:48:32.955   424   617 W ServiceManager: Permission failure: android.permission.SYSTEM_CAMERA from uid=10121 pid=1422
+10-08 05:48:32.956   424   617 I chatty  : uid=1047(cameraserver) Binder:424_2 identical 2 lines
+10-08 05:48:32.956   424   617 W ServiceManager: Permission failure: android.permission.SYSTEM_CAMERA from uid=10121 pid=1422
+10-08 05:48:32.956  1422  2341 I OcrModelUpStIntentOp: Updating ocr activity enabled=true (phenotypeFlag=true, lowRamDevice=false, prereqCheck=true)
+10-08 05:48:32.957  1422  2341 I OcrModelUpStIntentOp: Downloading text recognizer
+10-08 05:48:32.957  1422  3336 I MobileDataHub: Scheduling periodic tasks
+10-08 05:48:32.957  1422  3336 W MobileDataHub: [Service] appsupload-periodic periodic task disabled
+10-08 05:48:32.961  1189  1189 I GeofencerStateMachine: sendQueryLocationOptIn
+10-08 05:48:32.969  1422  3336 I SystemUpdate: [Installation,ReceiverIntentOperation] Received intent: Intent { act=com.google.gservices.intent.action.GSERVICES_CHANGED flg=0x1000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService$PersistentInternalReceiver }.
+10-08 05:48:32.982  1422  2837 I SystemUpdate: [Execution,InstallationEventIntentOperation] Handling event of type 2.
+10-08 05:48:32.985  1422  3336 I SystemUpdate: [Execution,InstallationIntentOperation] Received intent: Intent { act=com.google.android.gms.update.INSTALL_UPDATE cat=[targeted_intent_op_prefix:.update.execution.InstallationIntentOperation] cmp=com.google.android.gms/.chimera.GmsIntentOperationService }.
+10-08 05:48:32.988  1422  3336 I SystemUpdate: [Execution,ExecutionManager] Action finished-execution executed for 0.00 seconds.
+10-08 05:48:32.989  1189  1189 I GeofencerStateMachine: sendQueryLocationOptIn
+10-08 05:48:32.996  1189  1189 I chatty  : uid=10121 com.google.android.gms.persistent identical 2 lines
+10-08 05:48:33.002  1189  1189 I GeofencerStateMachine: sendQueryLocationOptIn
+10-08 05:48:33.020  2782  2796 W .apps.messagin: Suspending all threads took: 43.958ms
+10-08 05:48:33.021  1189  2610 I GCoreUlr: Unbound from all signal providers.
+10-08 05:48:33.027  1189  1189 I GCoreUlr: Unbound from all signal providers.
+10-08 05:48:33.027  1189  1189 I GCoreUlr: Stopping handler for UlrDispSvcFast
+10-08 05:48:33.032  2013  5226 D DownloadManager: [4] Finished with status SUCCESS
+10-08 05:48:33.057  1189  1189 I GeofencerStateMachine: sendQueryLocationOptIn
+10-08 05:48:33.064  1189  1189 I chatty  : uid=10121 com.google.android.gms.persistent identical 1 line
+10-08 05:48:33.088  1189  1189 I GeofencerStateMachine: sendQueryLocationOptIn
+10-08 05:48:33.096  5246  5246 I Pixelmigrate: [PhenotypeSyncHelper] Phenotype registered successfully.
+10-08 05:48:33.104  1189  1189 I GeofencerStateMachine: sendQueryLocationOptIn
+10-08 05:48:33.110  1189  1189 I chatty  : uid=10121 com.google.android.gms.persistent identical 1 line
+10-08 05:48:33.123  1189  1189 I GeofencerStateMachine: sendQueryLocationOptIn
+10-08 05:48:33.178   288   288 D Zygote  : Forked child process 5302
+10-08 05:48:33.197  5302  5302 W s.youtube.musi: Unexpected CPU variant for X86 using defaults: x86_64
+10-08 05:48:33.201   399   412 I adbd    : jdwp connection from 5302
+10-08 05:48:33.224   499   554 E libprocessgroup: AddTidToCgroup failed to write '5319'; fd=67: Invalid argument
+10-08 05:48:33.224   499   554 E libprocessgroup: Failed to add task into cgroup
+10-08 05:48:33.224   499   554 W libprocessgroup: ExecuteForTask failed for aggregate profile: Invalid argument
+10-08 05:48:33.227  5302  5302 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-08 05:48:33.227  5302  5302 I s.youtube.musi: The ClassLoaderContext is a special shared library.
+10-08 05:48:33.228  5302  5302 I s.youtube.musi: The ClassLoaderContext is a special shared library.
+10-08 05:48:33.228  5302  5302 D nativeloader: classloader namespace configured for unbundled product apk. library_path=/product/app/YouTubeMusicPrebuilt/lib/x86_64:/product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk!/lib/x86_64:/product/lib64:/system/product/lib64
+10-08 05:48:33.237  5302  5302 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+10-08 05:48:33.238  5302  5302 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+10-08 05:48:33.260  5246  5246 I Pixelmigrate: [PhenotypeSyncHelper] Phenotype flags updated successfully.
+10-08 05:48:33.332  4751  5058 W YouTube : Could not register for notifications with InnerTube:
+10-08 05:48:33.332  4751  5058 W YouTube : abwi: java.util.concurrent.ExecutionException: aacl: Precondition check failed.
+10-08 05:48:33.332  4751  5058 W YouTube : 	at abwa.b(PG:18)
+10-08 05:48:33.332  4751  5058 W YouTube : 	at aicr.f(PG:65)
+10-08 05:48:33.332  4751  5058 W YouTube : 	at aicr.g(PG:133)
+10-08 05:48:33.332  4751  5058 W YouTube : 	at aicr.b(PG:99)
+10-08 05:48:33.332  4751  5058 W YouTube : 	at ahyh.run(Unknown Source:1)
+10-08 05:48:33.332  4751  5058 W YouTube : 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+10-08 05:48:33.332  4751  5058 W YouTube : 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-08 05:48:33.332  4751  5058 W YouTube : 	at aosv.run(Unknown Source:1)
+10-08 05:48:33.332  4751  5058 W YouTube : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-08 05:48:33.332  4751  5058 W YouTube : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-08 05:48:33.332  4751  5058 W YouTube : 	at zdm.run(PG:13)
+10-08 05:48:33.332  4751  5058 W YouTube : 	at java.lang.Thread.run(Thread.java:923)
+10-08 05:48:33.332  4751  5058 W YouTube : Caused by: java.util.concurrent.ExecutionException: aacl: Precondition check failed.
+10-08 05:48:33.332  4751  5058 W YouTube : 	at apmr.a(PG:135)
+10-08 05:48:33.332  4751  5058 W YouTube : 	at apmr.get(PG:89)
+10-08 05:48:33.332  4751  5058 W YouTube : 	at abwa.b(PG:17)
+10-08 05:48:33.332  4751  5058 W YouTube : 	... 11 more
+10-08 05:48:33.332  4751  5058 W YouTube : Caused by: aacl: Precondition check failed.
+10-08 05:48:33.332  4751  5058 W YouTube : 	at abuo.c(PG:106)
+10-08 05:48:33.332  4751  5058 W YouTube : 	at znq.a(PG:62)
+10-08 05:48:33.332  4751  5058 W YouTube : 	at zmp.run(Unknown Source:18)
+10-08 05:48:33.332  4751  5058 W YouTube : 	... 4 more
+10-08 05:48:33.332  4751  5058 W YouTube : Caused by: btc
+10-08 05:48:33.332  4751  5058 W YouTube : 	at zmp.run(Unknown Source:6)
+10-08 05:48:33.332  4751  5058 W YouTube : 	... 4 more
+10-08 05:48:33.338  5302  5302 I TetheringManager: registerTetheringEventCallback:com.google.android.apps.youtube.music
+10-08 05:48:33.352  5302  5331 W DynamiteModule: Local module descriptor class for providerinstaller not found.
+10-08 05:48:33.352  1189  2915 W ProviderHelper: Unknown dynamite feature providerinstaller
+10-08 05:48:33.363  5302  5331 W ProviderInstaller: Failed to load providerinstaller module: No acceptable module found. Local version is 0 and remote version is 0.
+10-08 05:48:33.367  5302  5331 I s.youtube.musi: The ClassLoaderContext is a special shared library.
+10-08 05:48:33.372  1189  1204 I .gms.persisten: Background young concurrent copying GC freed 157327(7693KB) AllocSpace objects, 33(1816KB) LOS objects, 48% free, 10MB/19MB, paused 27us total 125.926ms
+10-08 05:48:33.381  5302  5344 E GEL_DELAYED_EVENT_DEBUG: Failed delayed event dispatch, no dispatchers.
+10-08 05:48:33.392  5302  5334 E AwarenessClientProvider: Account associated with identity was null
+10-08 05:48:33.392  5302  5334 E AwarenessRouterSyncMgr: Exception while syncing fences
+10-08 05:48:33.392  5302  5334 E AwarenessRouterSyncMgr: java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Account associated with identity was null
+10-08 05:48:33.392  5302  5334 E AwarenessRouterSyncMgr: 	at zsp.a(PG:135)
+10-08 05:48:33.392  5302  5334 E AwarenessRouterSyncMgr: 	at zsp.get(PG:82)
+10-08 05:48:33.392  5302  5334 E AwarenessRouterSyncMgr: 	at zwj.a(PG:1)
+10-08 05:48:33.392  5302  5334 E AwarenessRouterSyncMgr: 	at zuv.a(PG:4)
+10-08 05:48:33.392  5302  5334 E AwarenessRouterSyncMgr: 	at fyf.run(Unknown Source:1)
+10-08 05:48:33.392  5302  5334 E AwarenessRouterSyncMgr: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+10-08 05:48:33.392  5302  5334 E AwarenessRouterSyncMgr: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-08 05:48:33.392  5302  5334 E AwarenessRouterSyncMgr: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+10-08 05:48:33.392  5302  5334 E AwarenessRouterSyncMgr: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-08 05:48:33.392  5302  5334 E AwarenessRouterSyncMgr: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-08 05:48:33.392  5302  5334 E AwarenessRouterSyncMgr: 	at pqt.run(PG:13)
+10-08 05:48:33.392  5302  5334 E AwarenessRouterSyncMgr: 	at java.lang.Thread.run(Thread.java:923)
+10-08 05:48:33.392  5302  5334 E AwarenessRouterSyncMgr: Caused by: java.lang.IllegalStateException: Account associated with identity was null
+10-08 05:48:33.392  5302  5334 E AwarenessRouterSyncMgr: 	at fxj.a(Unknown Source:3)
+10-08 05:48:33.392  5302  5334 E AwarenessRouterSyncMgr: 	at zsr.a(PG:3)
+10-08 05:48:33.392  5302  5334 E AwarenessRouterSyncMgr: 	at zst.run(PG:23)
+10-08 05:48:33.392  5302  5334 E AwarenessRouterSyncMgr: 	at zvn.run(PG:2)
+10-08 05:48:33.392  5302  5334 E AwarenessRouterSyncMgr: 	... 7 more
+10-08 05:48:33.426  5302  5359 W GoogleTagManager: Failed to extract the container from the resource file. Resource is a UTF-8 encoded string but doesn't contain a JSON container
+10-08 05:48:33.465  5302  5331 I s.youtube.musi: The ClassLoaderContext is a special shared library.
+10-08 05:48:33.465  5302  5331 D nativeloader: classloader namespace configured for unbundled product apk. library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64
+10-08 05:48:33.478   499   681 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=36, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10145 AdministratorUids: [] RequestorUid: 10145 RequestorPackageName: com.google.android.apps.youtube.music] ] with score 60 and providerId 3
+10-08 05:48:33.478   499   681 D WifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=36, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10145 AdministratorUids: [] RequestorUid: 10145 RequestorPackageName: com.google.android.apps.youtube.music] ] with score 60 and providerId 3
+10-08 05:48:33.478  1087  1087 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=36, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10145 AdministratorUids: [] RequestorUid: 10145 RequestorPackageName: com.google.android.apps.youtube.music] ] with score 60 and providerId 3
+10-08 05:48:33.478  5302  5302 V MediaRouter: Selecting route: RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=System types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+10-08 05:48:33.480  5302  5302 W s.youtube.musi: Accessing hidden field Ljava/util/Collections$SynchronizedCollection;->mutex:Ljava/lang/Object; (greylist-max-o, reflection, denied)
+10-08 05:48:33.480  5302  5302 W s.youtube.musi: Accessing hidden method Ljava/util/Collections$SynchronizedSet;-><init>(Ljava/util/Set;Ljava/lang/Object;)V (greylist-max-o, reflection, denied)
+10-08 05:48:33.480  5302  5302 W s.youtube.musi: Accessing hidden method Ljava/util/Collections$SynchronizedCollection;-><init>(Ljava/util/Collection;Ljava/lang/Object;)V (greylist-max-o, reflection, denied)
+10-08 05:48:33.483  5302  5302 V MediaRouter: Selecting route: RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=System types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+10-08 05:48:33.493   750   750 V KeyguardUpdateMonitor: onSubscriptionInfoChanged()
+10-08 05:48:33.493  1087  1087 D Telephony: isEmergencyPreferredAccount: subId=1, activeData=1
+10-08 05:48:33.494  1087  1087 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
+10-08 05:48:33.508   750   750 V KeyguardUpdateMonitor: SubInfo:{id=1 iccId=89014103211118510720 simSlotIndex=0 carrierId=1 displayName=T-Mobile carrierName=T-Mobile nameSource=3 iconTint=-16746133 number=+15555215554 dataRoaming=0 iconBitmap=android.graphics.Bitmap@f409806 mcc=310 mnc=260 countryIso=us isEmbedded=false nativeAccessRules=null cardString=89014103211118510720 cardId=-1 isOpportunistic=false groupUUID=null isGroupDisabled=false profileClass=-1 ehplmns=null hplmns=null subscriptionType=0 groupOwner=null carrierConfigAccessRules=null areUiccApplicationsEnabled=true}
+10-08 05:48:33.512  5302  5342 I DynamiteModule: Considering local module com.google.android.gms.ads.dynamite:0 and remote module com.google.android.gms.ads.dynamite:21400
+10-08 05:48:33.512  5302  5342 I DynamiteModule: Selected remote version of com.google.android.gms.ads.dynamite, version >= 21400
+10-08 05:48:33.557   499   554 E libprocessgroup: AddTidToCgroup failed to write '5390'; fd=67: Invalid argument
+10-08 05:48:33.557   499   554 E libprocessgroup: Failed to add task into cgroup
+10-08 05:48:33.557   499   554 W libprocessgroup: ExecuteForTask failed for aggregate profile: Invalid argument
+10-08 05:48:33.587  1422  3137 W MDM     : [184] afxi.b: Unable to set as device admin.
+10-08 05:48:33.587  1422  3137 W MDM     : java.lang.reflect.InvocationTargetException
+10-08 05:48:33.587  1422  3137 W MDM     : 	at java.lang.reflect.Method.invoke(Native Method)
+10-08 05:48:33.587  1422  3137 W MDM     : 	at afww.c(:com.google.android.gms@201817023@20.18.17 (040800-311416286):7)
+10-08 05:48:33.587  1422  3137 W MDM     : 	at afww.b(:com.google.android.gms@201817023@20.18.17 (040800-311416286):4)
+10-08 05:48:33.587  1422  3137 W MDM     : 	at com.google.android.gms.mdm.services.OneTimeInitializerIntentOperation.onHandleIntent(:com.google.android.gms@201817023@20.18.17 (040800-311416286):5)
+10-08 05:48:33.587  1422  3137 W MDM     : 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@201817023@20.18.17 (040800-311416286):2)
+10-08 05:48:33.587  1422  3137 W MDM     : 	at qgf.onHandleIntent(:com.google.android.gms@201817023@20.18.17 (040800-311416286):4)
+10-08 05:48:33.587  1422  3137 W MDM     : 	at cui.run(:com.google.android.gms@201817023@20.18.17 (040800-311416286):5)
+10-08 05:48:33.587  1422  3137 W MDM     : 	at cuh.run(:com.google.android.gms@201817023@20.18.17 (040800-311416286):9)
+10-08 05:48:33.587  1422  3137 W MDM     : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-08 05:48:33.587  1422  3137 W MDM     : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-08 05:48:33.587  1422  3137 W MDM     : 	at java.lang.Thread.run(Thread.java:923)
+10-08 05:48:33.587  1422  3137 W MDM     : Caused by: java.lang.SecurityException: Neither user 10121 nor current process has android.permission.MANAGE_DEVICE_ADMINS.
+10-08 05:48:33.587  1422  3137 W MDM     : 	at android.os.Parcel.createExceptionOrNull(Parcel.java:2373)
+10-08 05:48:33.587  1422  3137 W MDM     : 	at android.os.Parcel.createException(Parcel.java:2357)
+10-08 05:48:33.587  1422  3137 W MDM     : 	at android.os.Parcel.readException(Parcel.java:2340)
+10-08 05:48:33.587  1422  3137 W MDM     : 	at android.os.Parcel.readException(Parcel.java:2282)
+10-08 05:48:33.587  1422  3137 W MDM     : 	at android.app.admin.IDevicePolicyManager$Stub$Proxy.setActiveAdmin(IDevicePolicyManager.java:8320)
+10-08 05:48:33.587  1422  3137 W MDM     : 	at android.app.admin.DevicePolicyManager.setActiveAdmin(DevicePolicyManager.java:6329)
+10-08 05:48:33.587  1422  3137 W MDM     : 	at android.app.admin.DevicePolicyManager.setActiveAdmin(DevicePolicyManager.java:6341)
+10-08 05:48:33.587  1422  3137 W MDM     : 	... 11 more
+10-08 05:48:33.587  1422  3137 W MDM     : Caused by: android.os.RemoteException: Remote stack trace:
+10-08 05:48:33.587  1422  3137 W MDM     : 	at android.app.ContextImpl.enforce(ContextImpl.java:2018)
+10-08 05:48:33.587  1422  3137 W MDM     : 	at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java:2046)
+10-08 05:48:33.587  1422  3137 W MDM     : 	at com.android.server.devicepolicy.DevicePolicyManagerService.setActiveAdmin(DevicePolicyManagerService.java:4378)
+10-08 05:48:33.587  1422  3137 W MDM     : 	at com.android.server.devicepolicy.DevicePolicyManagerService.setActiveAdmin(DevicePolicyManagerService.java:4373)
+10-08 05:48:33.587  1422  3137 W MDM     : 	at android.app.admin.IDevicePolicyManager$Stub.onTransact(IDevicePolicyManager.java:3388)
+10-08 05:48:33.587  1422  3137 W MDM     :
+10-08 05:48:33.622  2050  2401 W CPDataMediator: Failed to get primary cards from work profile
+10-08 05:48:33.622  2050  2401 W CPDataMediator: com.google.android.enterprise.profileaware.b.c: No profile available
+10-08 05:48:33.622  2050  2401 W CPDataMediator: 	at com.google.android.enterprise.profileaware.l.g(SourceFile:63)
+10-08 05:48:33.622  2050  2401 W CPDataMediator: 	at com.google.android.enterprise.profileaware.l.e(SourceFile:53)
+10-08 05:48:33.622  2050  2401 W CPDataMediator: 	at com.google.android.enterprise.profileaware.l.c(SourceFile:12)
+10-08 05:48:33.622  2050  2401 W CPDataMediator: 	at com.google.android.enterprise.profileaware.l.a(SourceFile:26)
+10-08 05:48:33.622  2050  2401 W CPDataMediator: 	at com.google.android.apps.gsa.staticplugins.opa.smartspace.crossprofile.aa.a(SourceFile:6)
+10-08 05:48:33.622  2050  2401 W CPDataMediator: 	at com.google.android.apps.gsa.staticplugins.opa.smartspace.crossprofile.f.a(SourceFile:26)
+10-08 05:48:33.622  2050  2401 W CPDataMediator: 	at com.google.android.apps.gsa.staticplugins.opa.smartspace.crossprofile.m.a(SourceFile:26)
+10-08 05:48:33.622  2050  2401 W CPDataMediator: 	at com.google.android.apps.gsa.staticplugins.opa.smartspace.crossprofile.ae.c(SourceFile:6)
+10-08 05:48:33.622  2050  2401 W CPDataMediator: 	at com.google.android.apps.gsa.staticplugins.opa.smartspace.crossprofile.p.a(SourceFile:5)
+10-08 05:48:33.622  2050  2401 W CPDataMediator: 	at com.google.android.apps.gsa.staticplugins.opa.smartspace.k.n.a(Unknown Source:1)
+10-08 05:48:33.622  2050  2401 W CPDataMediator: 	at com.google.android.libraries.gsa.l.a.p.a(Unknown Source:2)
+10-08 05:48:33.622  2050  2401 W CPDataMediator: 	at com.google.common.v.a.f.a(SourceFile:3)
+10-08 05:48:33.622  2050  2401 W CPDataMediator: 	at com.google.common.v.a.h.run(SourceFile:21)
+10-08 05:48:33.622  2050  2401 W CPDataMediator: 	at com.google.common.v.a.co.run(SourceFile:1)
+10-08 05:48:33.622  2050  2401 W CPDataMediator: 	at com.google.apps.tiktok.concurrent.aq.run(SourceFile:1)
+10-08 05:48:33.622  2050  2401 W CPDataMediator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-08 05:48:33.622  2050  2401 W CPDataMediator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-08 05:48:33.622  2050  2401 W CPDataMediator: 	at com.google.apps.tiktok.concurrent.f.run(Unknown Source:3)
+10-08 05:48:33.622  2050  2401 W CPDataMediator: 	at java.lang.Thread.run(Thread.java:923)
+10-08 05:48:33.636   499   554 E libprocessgroup: AddTidToCgroup failed to write '5392'; fd=67: Invalid argument
+10-08 05:48:33.636   499   554 E libprocessgroup: Failed to add task into cgroup
+10-08 05:48:33.636   499   554 W libprocessgroup: ExecuteForTask failed for aggregate profile: Invalid argument
+10-08 05:48:33.651   975  2500 D ProtoStore: deleting smartspace_current
+10-08 05:48:33.651   975  2500 D ProtoStore: no cached data
+10-08 05:48:33.651   975  2500 D ProtoStore: no cached data
+10-08 05:48:33.655  1189  5021 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package:com.google.android.youtube flg=0x5000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-08 05:48:33.674  1189  5021 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-08 05:48:33.683  1189  3795 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package:com.android.vending flg=0x5000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-08 05:48:33.687  1189  3795 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-08 05:48:33.707  5302  5331 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 286 native methods...
+10-08 05:48:33.729  2050  2257 W CPDataMediator: Failed to get primary cards from work profile
+10-08 05:48:33.729  2050  2257 W CPDataMediator: com.google.android.enterprise.profileaware.b.c: No profile available
+10-08 05:48:33.729  2050  2257 W CPDataMediator: 	at com.google.android.enterprise.profileaware.l.g(SourceFile:63)
+10-08 05:48:33.729  2050  2257 W CPDataMediator: 	at com.google.android.enterprise.profileaware.l.e(SourceFile:53)
+10-08 05:48:33.729  2050  2257 W CPDataMediator: 	at com.google.android.enterprise.profileaware.l.c(SourceFile:12)
+10-08 05:48:33.729  2050  2257 W CPDataMediator: 	at com.google.android.enterprise.profileaware.l.a(SourceFile:26)
+10-08 05:48:33.729  2050  2257 W CPDataMediator: 	at com.google.android.apps.gsa.staticplugins.opa.smartspace.crossprofile.aa.a(SourceFile:6)
+10-08 05:48:33.729  2050  2257 W CPDataMediator: 	at com.google.android.apps.gsa.staticplugins.opa.smartspace.crossprofile.f.a(SourceFile:26)
+10-08 05:48:33.729  2050  2257 W CPDataMediator: 	at com.google.android.apps.gsa.staticplugins.opa.smartspace.crossprofile.m.a(SourceFile:26)
+10-08 05:48:33.729  2050  2257 W CPDataMediator: 	at com.google.android.apps.gsa.staticplugins.opa.smartspace.crossprofile.ae.c(SourceFile:6)
+10-08 05:48:33.729  2050  2257 W CPDataMediator: 	at com.google.android.apps.gsa.staticplugins.opa.smartspace.crossprofile.p.a(SourceFile:5)
+10-08 05:48:33.729  2050  2257 W CPDataMediator: 	at com.google.android.apps.gsa.staticplugins.opa.smartspace.k.n.a(Unknown Source:1)
+10-08 05:48:33.729  2050  2257 W CPDataMediator: 	at com.google.android.libraries.gsa.l.a.p.a(Unknown Source:2)
+10-08 05:48:33.729  2050  2257 W CPDataMediator: 	at com.google.common.v.a.f.a(SourceFile:3)
+10-08 05:48:33.729  2050  2257 W CPDataMediator: 	at com.google.common.v.a.h.run(SourceFile:21)
+10-08 05:48:33.729  2050  2257 W CPDataMediator: 	at com.google.common.v.a.co.run(SourceFile:1)
+10-08 05:48:33.729  2050  2257 W CPDataMediator: 	at com.google.apps.tiktok.concurrent.aq.run(SourceFile:1)
+10-08 05:48:33.729  2050  2257 W CPDataMediator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-08 05:48:33.729  2050  2257 W CPDataMediator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-08 05:48:33.729  2050  2257 W CPDataMediator: 	at com.google.apps.tiktok.concurrent.f.run(Unknown Source:3)
+10-08 05:48:33.729  2050  2257 W CPDataMediator: 	at java.lang.Thread.run(Thread.java:923)
+10-08 05:48:33.732   288   288 I Zygote  : Process 4417 exited due to signal 9 (Killed)
+10-08 05:48:33.735  1189  3795 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package:com.google.android.apps.maps flg=0x5000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-08 05:48:33.760  1189  4356 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-08 05:48:33.760   499   551 I libprocessgroup: Successfully killed process cgroup uid 10149 pid 4417 in 179ms
+10-08 05:48:33.761  1189  5021 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package:com.google.android.videos flg=0x5000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-08 05:48:33.778  1189  4356 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-08 05:48:33.796  2050  2067 I earchbox:searc: Background young concurrent copying GC freed 162667(7138KB) AllocSpace objects, 19(1068KB) LOS objects, 43% free, 10MB/18MB, paused 19us total 140.488ms
+10-08 05:48:33.832   975  2500 D ProtoStore: deleting smartspace_current
+10-08 05:48:33.832   975  2500 D ProtoStore: no cached data
+10-08 05:48:33.832   975  2500 D ProtoStore: no cached data
+10-08 05:48:33.856  5302  5342 I DynamiteLoaderV2: [71] AdsFdrDynamite.integ
+10-08 05:48:33.857  5302  5342 W s.youtube.musi: Unsupported class loader
+10-08 05:48:33.861  5246  5267 V Pixelmigrate: [PhenotypeSyncHelper] Waiting for task(s) to complete (timeout: 5000 ms).
+10-08 05:48:33.888  5246  5246 W PrimesInit: Primes instant initialization
+10-08 05:48:33.888  5246  5246 I Pixelmigrate: [PhenotypeSyncHelper] Phenotype flags committed successfully.
+10-08 05:48:33.889  5246  5404 W Primes  : background initialization
+10-08 05:48:33.914  5302  5331 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+10-08 05:48:33.967  1715  1733 I FuseDaemon: Background concurrent copying GC freed 338684(18MB) AllocSpace objects, 214(4408KB) LOS objects, 49% free, 3320KB/6640KB, paused 17us total 124.230ms
+10-08 05:48:33.971  5069  5092 I xus.gravadoroc: Waiting for a blocking GC ProfileSaver
+10-08 05:48:33.998  2552  3075 I CarrierServices: [88] eav.a: Received Provisioning Event: [Bugle information (100)]
+10-08 05:48:33.998  2552  3075 I CarrierServices: [88] eav.a: JibeService is running, passing event to provisioning engine.
+10-08 05:48:33.998  2552  3075 I CarrierServices: [88] dqc.a: Handling Provisioning Event: [Bugle information (100)]
+10-08 05:48:33.999  2552  3075 I CarrierServices: [88] dsd.a: RcsAvailabilityManager: Calculating Rcs Availability
+10-08 05:48:33.999  2552  3075 I CarrierServices: [88] dtf.b: Bugle ContentProvider is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getBugleHasRequiredPermission()
+10-08 05:48:33.999  2552  3075 I CarrierServices: [88] dtf.b: Bugle has minimum required RCS permissions: true
+10-08 05:48:33.999  2552  3075 W CarrierServices: [88] dvk.a: No config URL. RCS will be disabled!
+10-08 05:48:34.000  2552  3075 I CarrierServices: [88] chn.h: BindingManager: binding and reset P/H Flag stay same
+10-08 05:48:34.000  2552  3075 I CarrierServices: [88] dsd.a: RcsAvailabilityManager: Rcs Availability still DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+10-08 05:48:34.016  5069  5141 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:34.049  1189  1189 I GCoreUlr: GCM registration ID changed: Intent { act=com.google.android.gms.gcm.REGISTERED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/com.google.android.location.reporting.service.GcmRegistrationReceiver }
+10-08 05:48:34.076  1422  3340 E MDM     : [208] afxi.a: No Google accounts; deferring server state update.
+10-08 05:48:34.077  1422  5412 I Authzen : [AuthZenEventHandler] Handling event: com.google.android.gms.gcm.REGISTERED
+10-08 05:48:34.097  1339  1376 W UsageLimitServiceImpl: Migrating limits: delete 0 obsolete limits, add 0 new limits
+10-08 05:48:34.122  1189  1189 I GCoreUlr: Unbound from all signal providers.
+10-08 05:48:34.122  1189  1189 I GCoreUlr: Stopping handler for UlrDispSvcFast
+10-08 05:48:34.169   499   509 I system_server: Background young concurrent copying GC freed 440996(19MB) AllocSpace objects, 60(3524KB) LOS objects, 49% free, 22MB/45MB, paused 36us total 248.608ms
+10-08 05:48:34.216  1189  2611 I GCoreUlr: DispatchingService ignoring Intent { act=android.net.wifi.WIFI_STATE_CHANGED flg=0x4000010 (has extras) } because ULR inactive
+10-08 05:48:34.237  5094  5112 I droid.apps.map: Waiting for a blocking GC ProfileSaver
+10-08 05:48:34.247  5094  5112 I droid.apps.map: WaitForGcToComplete blocked ProfileSaver on ClassLinker for 10.370ms
+10-08 05:48:34.292  1189  4356 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:34.292  1189  4356 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:34.293  1189  3795 I anjv    : updateFromConfigurations using legacy put method [CONTEXT service_id=204 ]
+10-08 05:48:34.295  1189  4356 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:34.388  2782  2884 I BuglePhenotype: onReceive for bugle package [CONTEXT package_name="com.google.android.apps.messaging" ]
+10-08 05:48:34.393  2782  2782 W ConfigurationUpdatedRec: Received update for unknown package com.google.android.apps.messaging
+10-08 05:48:34.403  2782  2884 I BuglePhenotype: onReceive for cslib package [CONTEXT package_name="com.google.android.ims.library" ]
+10-08 05:48:34.406  2782  2782 W ConfigurationUpdatedRec: Received update for unknown package com.google.android.ims.library
+10-08 05:48:34.415  2782  2782 W ConfigurationUpdatedRec: Received update for unknown package com.google.android.libraries.internal.growth.growthkit#com.google.android.apps.messaging
+10-08 05:48:34.422  2050  2498 I EngineIdGenerator: Refusing EXCLUSIVE task 75, it is already pending. Try again in 655 seconds.
+10-08 05:48:34.428  2782  2782 W ConfigurationUpdatedRec: Received update for unknown package com.google.android.gms.icing.mdd#com.google.android.apps.messaging
+10-08 05:48:34.430  2050  2050 W n       : Received update for unknown package com.google.android.googlequicksearchbox
+10-08 05:48:34.433  2050  2050 I BgTaskExecutorImpl: Starting EXCLUSIVE background task FETCH_CONFIGS_FROM_PHENOTYPE.
+10-08 05:48:34.477  1189  3795 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:34.478  1189  3795 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:34.478  1189  3795 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:34.486  5069  5421 D ProfileInstaller: Installing profile for br.dev.nexus.gravadorocr
+10-08 05:48:34.488  1189  3037 W .gms.persisten: Long monitor contention with owner lowpool[3] (1489) at void apkp.a(aphr, aphr, int)(:com.google.android.gms@201817023@20.18.17 (040800-311416286):199) waiters=0 in int apkp.a(apki, aamz) for 633ms
+10-08 05:48:34.535  5302  5342 W s.youtube.musi: Unsupported class loader
+10-08 05:48:34.535   499  1963 E system_server: Invalid class loader spec: =UnsupportedClassLoaderContext=
+10-08 05:48:34.632   499   626 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-08 05:48:34.634   731   731 V AvrcpMediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-08 05:48:34.634   731   731 D AvrcpMediaPlayerList: Name of package changed: com.google.android.gms
+10-08 05:48:34.676   772   804 I PermissionControllerServiceImpl: Updating user sensitive for uid 10121
+10-08 05:48:34.677  5302  5342 D DynamitePackage: Instantiated singleton DynamitePackage.
+10-08 05:48:34.677  5302  5342 D DynamitePackage: Instantiating com.google.android.gms.ads.adshield.ChimeraAdShieldCreatorImpl
+10-08 05:48:34.682  1087  1087 D CarrierSvcBindHelper: No carrier app for: 0
+10-08 05:48:34.731  1189  5418 I anjv    : updateFromConfigurations using legacy put method [CONTEXT service_id=204 ]
+10-08 05:48:34.733  1189  1189 I GeofencerStateMachine: sendQueryLocationOptIn
+10-08 05:48:34.740  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:34.740  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:34.742  1189  5418 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:34.819  1189  4356 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:34.819  1189  4356 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:34.819  1189  4356 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:34.819  1422  1660 I Icing   : updateResources: need to parse abvr{com.google.android.gms} [CONTEXT service_id=21 ]
+10-08 05:48:34.832  1189  1189 I GeofencerStateMachine: sendQueryLocationOptIn
+10-08 05:48:34.862  5302  5342 W s.youtube.musi: Verification of void dq.a(android.view.MotionEvent) took 125.294ms (2290.60 bytecodes/s) (6392B approximate peak alloc)
+10-08 05:48:34.887  1189  5418 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package:com.google.android.gms flg=0x45000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-08 05:48:34.890  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+10-08 05:48:34.890  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-08 05:48:34.891  1189  5020 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-08 05:48:34.895  1189  5425 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-08 05:48:34.920  1189  2384 I NearbyDiscovery: Show notifications: 0 total, no changes since last shown, no-op. [CONTEXT service_id=49 ]
+10-08 05:48:34.930  1189  4887 I GCoreUlr: WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction android.location.PROVIDERS_CHANGED
+10-08 05:48:34.945  2050  2050 W n       : Received update for unknown package com.google.android.gms.icing.mdd#com.google.android.googlequicksearchbox
+10-08 05:48:34.946  2050  2050 I EngineIdGenerator: Refusing EXCLUSIVE task 21, it is already pending. Try again in 359 seconds.
+10-08 05:48:34.947  2050  2050 W n       : Received update for unknown package com.google.android.libraries.onegoogle#com.google.android.googlequicksearchbox
+10-08 05:48:34.948  2050  2050 I EngineIdGenerator: Refusing EXCLUSIVE task 21, it is already pending. Try again in 359 seconds.
+10-08 05:48:34.949  2050  2050 W n       : Received update for unknown package com.google.android.libraries.consent.flows.footprints#com.google.android.googlequicksearchbox
+10-08 05:48:34.950  2050  2050 I EngineIdGenerator: Refusing EXCLUSIVE task 21, it is already pending. Try again in 359 seconds.
+10-08 05:48:34.974  1189  4887 I GCoreUlr: WorldUpdater:android.location.PROVIDERS_CHANGED: Ensuring that reporting is stopped because of reasons: (no Google accounts)
+10-08 05:48:34.984  1189  4887 I GCoreUlr: Unbound from all signal providers.
+10-08 05:48:35.019  1189  4887 I GCoreUlr: DispatchingService ignoring Intent { act=android.net.wifi.WIFI_STATE_CHANGED flg=0x4000010 (has extras) } because ULR inactive
+10-08 05:48:35.024  1189  1204 I .gms.persisten: Background young concurrent copying GC freed 143211(7189KB) AllocSpace objects, 31(1524KB) LOS objects, 40% free, 11MB/19MB, paused 51us total 101.944ms
+10-08 05:48:35.093  1189  4887 I GCoreUlr: WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction android.location.PROVIDERS_CHANGED
+10-08 05:48:35.095  1189  4887 I GCoreUlr: WorldUpdater:android.location.PROVIDERS_CHANGED: Ensuring that reporting is stopped because of reasons: (no Google accounts)
+10-08 05:48:35.096  1189  4887 I GCoreUlr: Unbound from all signal providers.
+10-08 05:48:35.099  1422  1757 W SQLiteLog: (28) double-quoted string literal: "1791265715098"
+10-08 05:48:35.099  1422  1757 W SQLiteLog: (28) double-quoted string literal: "1"
+10-08 05:48:35.106  2782  2880 I BuglePhenotype: Notify about updates in current package [CONTEXT current_package_name="com.google.android.ims.library" ]
+10-08 05:48:35.106  2552  3075 I CarrierServices: [88] czm.b: Reinitialize CSLib Flags: com.google.android.ims.library
+10-08 05:48:35.108  2552  3051 W CarrierServices: [85] dvk.a: No config URL. RCS will be disabled!
+10-08 05:48:35.110  1189  1189 I GCoreUlr: Unbound from all signal providers.
+10-08 05:48:35.110  1189  1189 I GCoreUlr: Stopping handler for UlrDispSvcFast
+10-08 05:48:35.142  2552  3075 I CarrierServices: [88] dsd.a: RcsAvailabilityManager: Calculating Rcs Availability
+10-08 05:48:35.142  2552  3075 I CarrierServices: [88] dtf.b: Bugle ContentProvider is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getBugleHasRequiredPermission()
+10-08 05:48:35.142  2552  3075 I CarrierServices: [88] dtf.b: Bugle has minimum required RCS permissions: true
+10-08 05:48:35.153  2782  2880 I BugleRcsEngine: [72] aeec.connect: Connecting SignupService
+10-08 05:48:35.154  2552  3075 W CarrierServices: [88] dvk.a: No config URL. RCS will be disabled!
+10-08 05:48:35.154  2552  3075 I CarrierServices: [88] chn.h: BindingManager: binding and reset P/H Flag stay same
+10-08 05:48:35.154  2552  3075 I CarrierServices: [88] dsd.a: RcsAvailabilityManager: Rcs Availability still DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+10-08 05:48:35.157  2782  2880 I BugleRcsEngine: [72] aeec.connect: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-08 05:48:35.157  2782  2880 I BugleRcsEngine: [72] aeec.connect: Binding to JibeService in CarrierServices.
+10-08 05:48:35.160  2782  2782 I RcsClientLib: Service com.google.android.rcs.client.signup.SignupService connected. Will notify listeners: true
+10-08 05:48:35.180  2552  2571 I CarrierServices: [41] dsd.a: RcsAvailabilityManager: Calculating Rcs Availability
+10-08 05:48:35.180  2552  2571 I CarrierServices: [41] dtf.b: Bugle ContentProvider is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getBugleHasRequiredPermission()
+10-08 05:48:35.180  2552  2571 I CarrierServices: [41] dtf.b: Bugle has minimum required RCS permissions: true
+10-08 05:48:35.181  2552  2571 W CarrierServices: [41] dvk.a: No config URL. RCS will be disabled!
+10-08 05:48:35.181  2552  2571 I CarrierServices: [41] chn.h: BindingManager: binding and reset P/H Flag stay same
+10-08 05:48:35.181  2552  2571 I CarrierServices: [41] dsd.a: RcsAvailabilityManager: Rcs Availability still DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+10-08 05:48:35.182  2782  2880 I BugleRcs: RcsAvailabilityUtilForProvisioningEngineV2: Get Updated RcsAvailability, RcsAvailability: DISABLED_VIA_GSERVICES, SimId: Redacted-20
+10-08 05:48:35.182  2782  2782 I BugleRcsEngine: [2] aeec.disconnect: Disconnecting ChatSessionService
+10-08 05:48:35.182  2782  2782 W RcsClientLib: Unexpected error when trying to unbind com.google.android.ims.rcsservice.chatsession.IChatSession: Service not registered: aeed@96ea39b
+10-08 05:48:35.182  2782  2782 W RcsClientLib: java.lang.IllegalArgumentException: Service not registered: aeed@96ea39b
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1757)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1874)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:792)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at aeec.b(PG:43)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at aeec.disconnect(PG:41)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at koc.b(PG:36)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at kof.a(PG:38)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at riw.a(PG:43)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at rif.run(Unknown Source:1)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at afou.run(PG:3)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.os.Handler.handleCallback(Handler.java:938)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.os.Looper.loop(Looper.java:223)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at java.lang.reflect.Method.invoke(Native Method)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+10-08 05:48:35.182  2782  2782 I BugleRcsEngine: [2] aeec.disconnect: Disconnecting EventService
+10-08 05:48:35.182  2782  2782 W RcsClientLib: Unexpected error when trying to unbind com.google.android.ims.rcsservice.events.IEvent: Service not registered: aeed@512a876
+10-08 05:48:35.182  2782  2782 W RcsClientLib: java.lang.IllegalArgumentException: Service not registered: aeed@512a876
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1757)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1874)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:792)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at aeec.b(PG:43)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at aeec.disconnect(PG:41)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at com.google.android.rcs.client.events.EventService.disconnect(PG:7)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at koc.b(PG:37)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at kof.a(PG:38)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at riw.a(PG:43)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at rif.run(Unknown Source:1)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at afou.run(PG:3)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.os.Handler.handleCallback(Handler.java:938)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.os.Looper.loop(Looper.java:223)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at java.lang.reflect.Method.invoke(Native Method)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+10-08 05:48:35.182  2782  2782 I BugleRcsEngine: [2] aeec.disconnect: Disconnecting ContactsService
+10-08 05:48:35.182  2782  2782 W RcsClientLib: Unexpected error when trying to unbind com.google.android.ims.rcsservice.contacts.IContactsManagement: Service not registered: aeed@8862ae4
+10-08 05:48:35.182  2782  2782 W RcsClientLib: java.lang.IllegalArgumentException: Service not registered: aeed@8862ae4
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1757)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1874)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:792)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at aeec.b(PG:43)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at aeec.disconnect(PG:41)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at koc.b(PG:38)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at kof.a(PG:38)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at riw.a(PG:43)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at rif.run(Unknown Source:1)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at afou.run(PG:3)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.os.Handler.handleCallback(Handler.java:938)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.os.Looper.loop(Looper.java:223)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at java.lang.reflect.Method.invoke(Native Method)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+10-08 05:48:35.182  2782  2782 I BugleRcsEngine: [2] aeec.disconnect: Disconnecting FileTransferService
+10-08 05:48:35.182  2782  2782 W RcsClientLib: Unexpected error when trying to unbind com.google.android.ims.rcsservice.filetransfer.IFileTransfer: Service not registered: aeed@4f8d602
+10-08 05:48:35.182  2782  2782 W RcsClientLib: java.lang.IllegalArgumentException: Service not registered: aeed@4f8d602
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1757)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1874)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:792)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at aeec.b(PG:43)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at aeec.disconnect(PG:41)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at koc.b(PG:39)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at kof.a(PG:38)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at riw.a(PG:43)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at rif.run(Unknown Source:1)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at afou.run(PG:3)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.os.Handler.handleCallback(Handler.java:938)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.os.Looper.loop(Looper.java:223)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at java.lang.reflect.Method.invoke(Native Method)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+10-08 05:48:35.182  2782  2782 I BugleRcsEngine: [2] aeec.disconnect: Disconnecting LocationSharingService
+10-08 05:48:35.182  2782  2782 W RcsClientLib: Unexpected error when trying to unbind com.google.android.ims.rcsservice.locationsharing.ILocationSharing: Service not registered: aeed@fed1150
+10-08 05:48:35.182  2782  2782 W RcsClientLib: java.lang.IllegalArgumentException: Service not registered: aeed@fed1150
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1757)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1874)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:792)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at aeec.b(PG:43)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at aeec.disconnect(PG:41)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at koc.b(PG:40)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at kof.a(PG:38)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at riw.a(PG:43)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at rif.run(Unknown Source:1)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at afou.run(PG:3)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.os.Handler.handleCallback(Handler.java:938)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.os.Looper.loop(Looper.java:223)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at java.lang.reflect.Method.invoke(Native Method)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+10-08 05:48:35.182  2782  2782 I BugleRcsEngine: [2] aeec.disconnect: Disconnecting ImsConnectionTrackerService
+10-08 05:48:35.182  2782  2782 W RcsClientLib: Unexpected error when trying to unbind com.google.android.ims.rcsservice.ims.IImsConnectionTracker: Service not registered: aeed@d22504e
+10-08 05:48:35.182  2782  2782 W RcsClientLib: java.lang.IllegalArgumentException: Service not registered: aeed@d22504e
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1757)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1874)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:792)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at aeec.b(PG:43)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at aeec.disconnect(PG:41)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at koc.b(PG:41)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at kof.a(PG:38)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at riw.a(PG:43)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at rif.run(Unknown Source:1)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at afou.run(PG:3)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.os.Handler.handleCallback(Handler.java:938)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.os.Looper.loop(Looper.java:223)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at java.lang.reflect.Method.invoke(Native Method)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+10-08 05:48:35.182  2782  2782 W RcsClientLib: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+10-08 05:48:35.183  2782  2782 I BugleRcsEngine: [2] aeec.disconnect: Disconnecting RcsProfileService
+10-08 05:48:35.183  2782  2782 W RcsClientLib: Unexpected error when trying to unbind com.google.android.ims.rcsservice.profile.IRcsProfile: Service not registered: aeed@899f27c
+10-08 05:48:35.183  2782  2782 W RcsClientLib: java.lang.IllegalArgumentException: Service not registered: aeed@899f27c
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1757)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1874)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:792)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at aeec.b(PG:43)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at aeec.disconnect(PG:41)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at koc.b(PG:42)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at kof.a(PG:38)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at riw.a(PG:43)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at rif.run(Unknown Source:1)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at afou.run(PG:3)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.os.Handler.handleCallback(Handler.java:938)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.os.Looper.loop(Looper.java:223)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at java.lang.reflect.Method.invoke(Native Method)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+10-08 05:48:35.183  2782  2782 I BugleRcsEngine: [2] aeec.disconnect: Disconnecting BusinessInfoService
+10-08 05:48:35.183  2782  2782 W RcsClientLib: Unexpected error when trying to unbind com.google.android.ims.rcsservice.businessinfo.IBusinessInfo: Service not registered: aeed@157235a
+10-08 05:48:35.183  2782  2782 W RcsClientLib: java.lang.IllegalArgumentException: Service not registered: aeed@157235a
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1757)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1874)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:792)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at aeec.b(PG:43)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at aeec.disconnect(PG:41)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at koc.b(PG:43)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at kof.a(PG:38)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at riw.a(PG:43)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at rif.run(Unknown Source:1)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at afou.run(PG:3)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.os.Handler.handleCallback(Handler.java:938)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.os.Looper.loop(Looper.java:223)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at java.lang.reflect.Method.invoke(Native Method)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+10-08 05:48:35.183  2782  2782 I BugleRcsEngine: [2] aeec.disconnect: Disconnecting RcsMessagingService
+10-08 05:48:35.183  2782  2782 W RcsClientLib: Unexpected error when trying to unbind com.google.android.rcs.client.messaging.IMessaging: Service not registered: aeed@ed1ba68
+10-08 05:48:35.183  2782  2782 W RcsClientLib: java.lang.IllegalArgumentException: Service not registered: aeed@ed1ba68
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1757)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1874)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:792)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at aeec.b(PG:43)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at aeec.disconnect(PG:41)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at koc.b(PG:44)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at kof.a(PG:38)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at riw.a(PG:43)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at rif.run(Unknown Source:1)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at afou.run(PG:3)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.os.Handler.handleCallback(Handler.java:938)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.os.Looper.loop(Looper.java:223)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at java.lang.reflect.Method.invoke(Native Method)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+10-08 05:48:35.183  2782  2782 I BugleRcsEngine: [2] aeec.disconnect: Disconnecting TransportControlService
+10-08 05:48:35.183  2782  2782 W RcsClientLib: Unexpected error when trying to unbind com.google.android.ims.rcsservice.transportcontrol.ITransportControl: Service not registered: aeed@7d41b26
+10-08 05:48:35.183  2782  2782 W RcsClientLib: java.lang.IllegalArgumentException: Service not registered: aeed@7d41b26
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1757)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1874)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:792)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at aeec.b(PG:43)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at aeec.disconnect(PG:41)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at koc.b(PG:45)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at kof.a(PG:38)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at riw.a(PG:43)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at rif.run(Unknown Source:1)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at afou.run(PG:3)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.os.Handler.handleCallback(Handler.java:938)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.os.Looper.loop(Looper.java:223)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at java.lang.reflect.Method.invoke(Native Method)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+10-08 05:48:35.183  2782  2782 W RcsClientLib: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+10-08 05:48:35.183  2782  2782 W BugleRcs: disconnecting from all Rcs Services
+10-08 05:48:35.183  2782  2880 I BugleRcsEngine: [72] aeec.disconnect: Disconnecting SignupService
+10-08 05:48:35.185  2782  2880 I BugleRcs: RcsAvailabilityUtilForProvisioningEngineV2: success updating RCS availability async
+10-08 05:48:35.214  1422  1660 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms [CONTEXT service_id=21 ]
+10-08 05:48:35.256  2552  3075 I CarrierServices: [88] eav.a: Received Provisioning Event: [Bugle information (100)]
+10-08 05:48:35.256  2552  3075 I CarrierServices: [88] eav.a: JibeService is running, passing event to provisioning engine.
+10-08 05:48:35.256  2552  3075 I CarrierServices: [88] dqc.a: Handling Provisioning Event: [Bugle information (100)]
+10-08 05:48:35.257  2552  3075 I CarrierServices: [88] dsd.a: RcsAvailabilityManager: Calculating Rcs Availability
+10-08 05:48:35.257  2552  3075 I CarrierServices: [88] dtf.b: Bugle ContentProvider is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getBugleHasRequiredPermission()
+10-08 05:48:35.257  2552  3075 I CarrierServices: [88] dtf.b: Bugle has minimum required RCS permissions: true
+10-08 05:48:35.276  2552  3075 W CarrierServices: [88] dvk.a: No config URL. RCS will be disabled!
+10-08 05:48:35.276  2552  3075 I CarrierServices: [88] chn.h: BindingManager: binding and reset P/H Flag stay same
+10-08 05:48:35.276  2552  3075 I CarrierServices: [88] dsd.a: RcsAvailabilityManager: Rcs Availability still DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+10-08 05:48:35.292  5069  5141 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:35.319  2050  2050 I EngineIdGenerator: Refusing EXCLUSIVE task 21, it is already pending. Try again in 359 seconds.
+10-08 05:48:35.482  2050  2050 I EngineIdGenerator: Refusing EXCLUSIVE task 21, it is already pending. Try again in 359 seconds.
+10-08 05:48:35.494  5176  5196 V Pixelmigrate: [PhenotypeSyncHelper] Waiting for task(s) to complete (timeout: 5000 ms).
+10-08 05:48:35.503  1422  1660 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms [CONTEXT service_id=21 ]
+10-08 05:48:35.522   288   288 D Zygote  : Forked child process 5458
+10-08 05:48:35.539  5458  5458 W droid.apps.doc: Unexpected CPU variant for X86 using defaults: x86_64
+10-08 05:48:35.545   399   412 I adbd    : jdwp connection from 5458
+10-08 05:48:35.564  5458  5458 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-08 05:48:35.566  5458  5458 I droid.apps.doc: The ClassLoaderContext is a special shared library.
+10-08 05:48:35.567  5458  5458 I droid.apps.doc: The ClassLoaderContext is a special shared library.
+10-08 05:48:35.567  5458  5458 D nativeloader: classloader namespace configured for unbundled product apk. library_path=/product/app/Drive/lib/x86_64:/product/app/Drive/Drive.apk!/lib/x86_64:/product/lib64:/system/product/lib64
+10-08 05:48:35.580  5458  5458 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+10-08 05:48:35.581  5458  5458 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+10-08 05:48:35.618  5302  5337 I FA      : App measurement disabled by setAnalyticsCollectionEnabled(false)
+10-08 05:48:35.620  5302  5337 I FA      : App measurement initialized, version: 28015
+10-08 05:48:35.620  5302  5337 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+10-08 05:48:35.620  5302  5337 I FA      : To enable faster debug mode event logging run:
+10-08 05:48:35.620  5302  5337 I FA      :   adb shell setprop debug.firebase.analytics.app com.google.android.apps.youtube.music
+10-08 05:48:35.637  5458  5482 W droid.apps.doc: Accessing hidden field Ljava/util/Collections$SynchronizedCollection;->mutex:Ljava/lang/Object; (greylist-max-o, reflection, denied)
+10-08 05:48:35.637  5458  5482 W droid.apps.doc: Accessing hidden method Ljava/util/Collections$SynchronizedSet;-><init>(Ljava/util/Set;Ljava/lang/Object;)V (greylist-max-o, reflection, denied)
+10-08 05:48:35.637  5458  5482 W droid.apps.doc: Accessing hidden method Ljava/util/Collections$SynchronizedCollection;-><init>(Ljava/util/Collection;Ljava/lang/Object;)V (greylist-max-o, reflection, denied)
+10-08 05:48:35.653  1422  1660 I Icing   : Indexing done com.google.android.gms-apps [CONTEXT service_id=21 ]
+10-08 05:48:35.654  1422  1660 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication [CONTEXT service_id=21 ]
+10-08 05:48:35.743  5458  5487 I GAv4    : Google Analytics 202.3.00 is starting up. To enable debug logging on a device run:
+10-08 05:48:35.743  5458  5487 I GAv4    :   adb shell setprop log.tag.GAv4 DEBUG
+10-08 05:48:35.743  5458  5487 I GAv4    :   adb logcat -s GAv4
+10-08 05:48:35.744  5458  5498 W FieldDefinition: [RxCachedThreadScheduler-8] Ignoring isIndexed constraint as field also has uniqueness constraint (on just this field, and therefore SQLite will have to create an index on that. For field: bok$a@36009b8
+10-08 05:48:35.760  5458  5506 I TetheringManager: registerTetheringEventCallback:com.google.android.apps.docs
+10-08 05:48:35.776  5458  5510 W GAv4    : CampaignTrackingReceiver is not registered, not exported or is disabled. Installation campaign tracking is not possible. See http://goo.gl/8Rd3yj for instructions.
+10-08 05:48:35.825  5458  5524 W LibraryVersion: Failed to get app version for libraryName: firebase-iid
+10-08 05:48:35.936  1422  3505 I PeopleChimeraService: onService. callbacks = zup@bcfdd09, request = com.google.android.gms.common.internal.GetServiceRequest@ad00b0e
+10-08 05:48:36.004  5176  5176 I Pixelmigrate: [PhenotypeSyncHelper] Phenotype flags updated successfully.
+10-08 05:48:36.068  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_birthdaydoodle_jar__name to integer.
+10-08 05:48:36.068  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_call_jar__name to integer.
+10-08 05:48:36.068  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_canvas_jar__name to integer.
+10-08 05:48:36.068  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_chkpkg_jar__name to integer.
+10-08 05:48:36.068  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_crashtest_jar__name to integer.
+10-08 05:48:36.068  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_dining_jar__name to integer.
+10-08 05:48:36.069  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_doodle_notifications_jar__name to integer.
+10-08 05:48:36.069  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_imageviewer_jar__name to integer.
+10-08 05:48:36.069  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_ipa_jar__name to integer.
+10-08 05:48:36.069  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_jslocation_jar__name to integer.
+10-08 05:48:36.069  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_localintent_jar__name to integer.
+10-08 05:48:36.069  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_messaging_jar__name to integer.
+10-08 05:48:36.069  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_nativesrp_activity_jar__name to integer.
+10-08 05:48:36.069  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_nativesrp_presenter_jar__name to integer.
+10-08 05:48:36.069  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_nowcontent_jar__name to integer.
+10-08 05:48:36.069  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_recents_activity_jar__name to integer.
+10-08 05:48:36.069  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_save_jar__name to integer.
+10-08 05:48:36.069  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_searchresults_activity_jar__name to integer.
+10-08 05:48:36.069  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_test_jar__name to integer.
+10-08 05:48:36.069  2050  2257 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_weather_jar__name to integer.
+10-08 05:48:36.069  2050  2257 W PhenotypeToGsaConfigs: Can't format flag bindle_flags__bloblobber_blob to integer.
+10-08 05:48:36.069  2050  2257 W PhenotypeToGsaConfigs: Can't format flag bindle_flags__velour_jar to integer.
+10-08 05:48:36.084  1189  2357 I anhw    : Scheduling Phenotype for a PhenotypeSyncImmediately(16, com.google.apps.drive.android#com.google.android.apps.docs) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-08 05:48:36.113  5458  5458 D CompatibilityChangeReporter: Compat change id reported: 119147584; UID 10138; state: DISABLED
+10-08 05:48:36.114  1189  1204 I .gms.persisten: Background young concurrent copying GC freed 141372(6654KB) AllocSpace objects, 22(1516KB) LOS objects, 30% free, 13MB/19MB, paused 27.807ms total 277.696ms
+10-08 05:48:36.144  1422  2943 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms [CONTEXT service_id=21 ]
+10-08 05:48:36.145  1422  2943 I Icing   : Indexing done com.google.android.gms-apps [CONTEXT service_id=21 ]
+10-08 05:48:36.259  1422  1660 I GCM-GMS : Registering GMS 745476177629
+10-08 05:48:36.259  1422  1660 I GCM-GMS : Got GMS registration
+10-08 05:48:36.326  4576  4576 I GH.CAR  : onCreate
+10-08 05:48:36.327  4530  4530 I CAR.TOKEN: Connecting com.google.android.gms.car.api.impl.GearheadCarClientToken@57f1b10 using class com.google.android.gms.car.api.impl.CarClientImpl@67437523 (cx attempt 1).
+10-08 05:48:36.327  4530  4530 I GH.SharedService: Shared Service created
+10-08 05:48:36.367  5302  5359 E GoogleTagManager: Invalid macro: _gtm.loadEventEnabled
+10-08 05:48:36.378  4576  4576 I GH.CAR  : Using Car Chimera Service for projection services. 🌍
+10-08 05:48:36.378  4576  4576 I GH.DelegateICarSupplier: Android is R+, so connecting to Gearhead car chimera service.
+10-08 05:48:36.393  4576  4576 I GH.DelegateICarSupplier: Acquisition start recorded at 124901.[Generation: 1]
+10-08 05:48:36.394  4576  4576 I GH.CAR  : GearheadCarStartupService.onBind
+10-08 05:48:36.413  4576  5539 W CAR.SERVICE: Could not get primary display CarUiInfo - no primary display
+10-08 05:48:36.417  4576  5539 W DynamiteModule: Local module descriptor class for com.google.android.gms.googlecertificates not found.
+10-08 05:48:36.421  2050  2264 I EngineIdGenerator: Refusing EXCLUSIVE task 24, it is already pending. Try again in 344 seconds.
+10-08 05:48:36.424  4576  5539 I on.gearhead:ca: Waiting for a blocking GC ClassLinker
+10-08 05:48:36.429  4576  5539 I DynamiteModule: Considering local module com.google.android.gms.googlecertificates:0 and remote module com.google.android.gms.googlecertificates:4
+10-08 05:48:36.430  4576  5539 I DynamiteModule: Selected remote version of com.google.android.gms.googlecertificates, version >= 4
+10-08 05:48:36.430  4576  5539 V DynamiteModule: Dynamite loader version >= 2, using loadModule2NoCrashUtils
+10-08 05:48:36.448  2050  2264 I ModelDownloadListener: Schdedule model download
+10-08 05:48:36.448  2050  2401 I FedAssExpListener: Fed-ass not supported for signed out users.
+10-08 05:48:36.448  2050  2401 I FedAssExpListener: Successfully processed experiments changed.
+10-08 05:48:36.453  2050  2050 I BgTaskExecutorImpl: Starting EXCLUSIVE background task UPDATE_HOTWORD_MODELS.
+10-08 05:48:36.457  5246  5267 V Pixelmigrate: [PhenotypeSyncHelper] Waiting for task(s) to complete (timeout: 5000 ms).
+10-08 05:48:36.462  2050  2498 I ModelDownloadController: requestHotwordModelUpdate modelType-2 modelLocale-en-US
+10-08 05:48:36.464  2050  2498 I ModelDownloadController: shouldDownloadModel: modelLocale is en-US
+10-08 05:48:36.464  2050  2498 I ModelDownloadController: We already downloaded model from given location.
+10-08 05:48:36.464  2050  2498 I ModelDownloadController: Model download not requested.
+10-08 05:48:36.468  1189  2384 I NearbyDiscovery: Show notifications: 0 total, no changes since last shown, no-op. [CONTEXT service_id=49 ]
+10-08 05:48:36.470  4576  5539 I DynamiteLoaderV2: [71] Googlecertificates
+10-08 05:48:36.471  4576  5539 W on.gearhead:ca: Unsupported class loader
+10-08 05:48:36.474  4576  5539 W on.gearhead:ca: Unsupported class loader
+10-08 05:48:36.474   499  2699 E system_server: Invalid class loader spec: =UnsupportedClassLoaderContext=
+10-08 05:48:36.493  2050  2264 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+10-08 05:48:36.496  4576  5549 I GH.DelegateICarSupplier: Supplied ICar: com.google.android.gms.car.DelegatingCarServiceBinder@ce2395f
+10-08 05:48:36.496  4576  5549 I GH.DelegateICarSupplier: Successful acquisition recorded at 125004.[Generation: 1]
+10-08 05:48:36.496  4576  5549 I GH.DelegateMngCarSvc: Successfully acquired new delegate: com.google.android.gms.car.DelegatingCarServiceBinder@ce2395f
+10-08 05:48:36.498  4576  5549 I GH.CarService: Setting delegate: bgf@8478fac
+10-08 05:48:36.498  4576  5549 I GH.CAR  : ICar delegate chain:
+10-08 05:48:36.498  4576  5549 I GH.CAR  : 	biw@f46c475
+10-08 05:48:36.498  4576  5549 I GH.CAR  : 	-> bgf@8478fac
+10-08 05:48:36.498  4576  5549 I GH.DelegateICarSupplier: Opening acquisitionComplete latch.
+10-08 05:48:36.501  4530  5545 I GH.GhCarClientCtor: Bound to startup service, got Car Service: com.google.android.gms.car.ICar$Stub$Proxy@704fd41
+10-08 05:48:36.504  4530  4530 I CAR.TOKEN: Successfully connected com.google.android.gms.car.api.impl.GearheadCarClientToken@57f1b10 using class com.google.android.gms.car.api.impl.CarClientImpl@67437523 (cx attempt 1).
+10-08 05:48:36.505  4530  4530 W CAR.TOKEN: Not allowing logging client connection event
+10-08 05:48:36.505  4530  4530 I GH.CarClientManager: CarClientToken connected.
+10-08 05:48:36.513  2050  2264 W CorpusConfigHelper: Invalid input from icing corpus JSON flag.
+10-08 05:48:36.513  2050  2264 W CorpusConfigHelper: android.util.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 123 column 2
+10-08 05:48:36.513  2050  2264 W CorpusConfigHelper: 	at android.util.JsonReader.syntaxError(JsonReader.java:1162)
+10-08 05:48:36.513  2050  2264 W CorpusConfigHelper: 	at android.util.JsonReader.checkLenient(JsonReader.java:840)
+10-08 05:48:36.513  2050  2264 W CorpusConfigHelper: 	at android.util.JsonReader.nextInArray(JsonReader.java:615)
+10-08 05:48:36.513  2050  2264 W CorpusConfigHelper: 	at android.util.JsonReader.peek(JsonReader.java:345)
+10-08 05:48:36.513  2050  2264 W CorpusConfigHelper: 	at android.util.JsonReader.hasNext(JsonReader.java:321)
+10-08 05:48:36.513  2050  2264 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.k.a(SourceFile:25)
+10-08 05:48:36.513  2050  2264 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.j.a(SourceFile:1)
+10-08 05:48:36.513  2050  2264 W CorpusConfigHelper: 	at com.google.android.apps.gsa.search.core.i.i.run(Unknown Source:2)
+10-08 05:48:36.513  2050  2264 W CorpusConfigHelper: 	at com.google.android.libraries.gsa.l.a.l.call(Unknown Source:2)
+10-08 05:48:36.513  2050  2264 W CorpusConfigHelper: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-08 05:48:36.513  2050  2264 W CorpusConfigHelper: 	at com.google.apps.tiktok.concurrent.aq.run(SourceFile:1)
+10-08 05:48:36.513  2050  2264 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-08 05:48:36.513  2050  2264 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-08 05:48:36.513  2050  2264 W CorpusConfigHelper: 	at com.google.apps.tiktok.concurrent.f.run(Unknown Source:3)
+10-08 05:48:36.513  2050  2264 W CorpusConfigHelper: 	at java.lang.Thread.run(Thread.java:923)
+10-08 05:48:36.523  4530  4530 D GH.CarClientManager: unregistered listener iwv@99384b0
+10-08 05:48:36.523  4530  4530 D GH.CarClientManager: calling onConnected on fep@afa60d
+10-08 05:48:36.523  4530  4530 D GH.CarClientManager: unregistered listener fep@afa60d
+10-08 05:48:36.523  4530  4530 D GH.FeedbackNotifManager: Starting FeedbackNotificationManager.
+10-08 05:48:36.527  1422  2505 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32 [CONTEXT service_id=21 ]
+10-08 05:48:36.527  4530  4530 D GH.HatsManager: Starting HatsManager.
+10-08 05:48:36.528  4530  4530 D GH.RatingPromptManager: Starting RatingPromptManager.
+10-08 05:48:36.528  4530  4530 D GH.AutoLaunchPromptMgr: Starting AutoLaunchPromptManager.
+10-08 05:48:36.528  4530  4530 D GH.CarClientManager: notifying listener that the client was already connected
+10-08 05:48:36.528  4530  4530 D GH.CarClientManager: registered listener cfr@96f2c3b
+10-08 05:48:36.530  1422  1692 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33 [CONTEXT service_id=21 ]
+10-08 05:48:36.540  4530  4606 D GH.PhenotypeCommitter: Updated Car Policy experiment tokens
+10-08 05:48:36.544  1422  2943 W Icing   : No valid account for uploading user actions [CONTEXT service_id=21 ]
+10-08 05:48:36.558  1422  2943 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0 [CONTEXT service_id=21 ]
+10-08 05:48:36.576  1422  2943 W Icing   : No valid account for uploading user actions [CONTEXT service_id=21 ]
+10-08 05:48:36.600  1422  2943 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0 [CONTEXT service_id=21 ]
+10-08 05:48:36.616  5246  5246 I Pixelmigrate: [PhenotypeSyncHelper] Phenotype flags updated successfully.
+10-08 05:48:36.640  3092  4955 E libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-08 05:48:36.640  3092  4955 E libc    : Access denied finding property "service.adb.tls.port"
+10-08 05:48:36.698  5302  5543 E GoogleTagManager: Invalid macro: _gtm.loadEventEnabled
+10-08 05:48:36.640  3092  3092 W Binder:3092_9: type=1400 audit(0.0:72): avc: denied { read } for name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=8595 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-08 05:48:36.777  5069  5134 D PipelineManager: OCR process succeeded via visionkit pipeline.
+10-08 05:48:36.785  5069  5128 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-08 05:48:36.787  5069  5125 I GravadorOcrTest: OCR leu: COMPRA DE BOTIJÃO|DE GÁS COMPLETO
+10-08 05:48:36.788  5069  5128 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-08 05:48:36.806  5069  5125 I TestRunner: finished: phraseSplitAcrossTwoLines(br.dev.nexus.gravadorocr.OcrRecognitionTest)

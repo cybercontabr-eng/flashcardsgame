@@ -1,0 +1,12 @@
+GRAVADOR OCR — relatório da gravação
+Início: 08/10/2026 05:48:55
+Palavras-chave: botijão de gás
+
+Partes do vídeo (pasta Movies/GravadorOCR):
+  1. GravadorOCR_20261008_054855_p01 — 01:17
+
+Eventos (1 detecção(ões)):
+  05:49:15  [parte 1 @ 00:14]  AVISO: A leitura de texto (OCR) parou de receber imagens
+  05:49:39  [parte 1 @ 00:38]  AVISO: A leitura de texto (OCR) parou de receber imagens
+  05:50:06  [parte 1 @ 01:05]  AVISO: A leitura de texto (OCR) parou de receber imagens
+  05:50:14  [parte 1 @ 00:53]  ENCONTRADO: botijão de gás  — lido: "BOTIJĀO DE GÁS"
