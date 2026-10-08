@@ -1,0 +1,29 @@
+EXECUTING: /usr/local/lib/android/sdk/build-tools/34.0.0/aapt dump badging /home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
+CURRENT_WORKING_DIRECTORY: /home/runner/work/flashcardsgame/flashcardsgame
+START_TIME: 2026-10-08 05:50:17.210
+START_TIME-NANOS: 2026-10-08 05:50:17.210456554
+ENVIRONMENT:
+
+*****************************************
+STDOUT/STDERR BELOW
+===================
+package: name='br.dev.nexus.gravadorocr.test' versionCode='' versionName='' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'
+sdkVersion:'29'
+targetSdkVersion:'35'
+uses-permission: name='android.permission.REORDER_TASKS'
+application: label='' icon=''
+application-debuggable
+uses-library:'android.test.runner'
+feature-group: label=''
+  uses-feature: name='android.hardware.faketouch'
+  uses-implied-feature: name='android.hardware.faketouch' reason='default feature for all apps'
+other-activities
+supports-screens: 'small' 'normal' 'large' 'xlarge'
+supports-any-density: 'true'
+locales: '--_--'
+densities: '160'
+===================
+END_TIME: 2026-10-08 05:50:17.219
+END_TIME-NANOS: 2026-10-08 05:50:17.219475631
+DURATION: 9ms
+EXIT CODE: 0

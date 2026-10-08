@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="br.dev.nexus.gravadorocr.OcrRecognitionTest" tests="11" failures="0" errors="0" skipped="0" time="124.188" timestamp="2026-10-08T05:50:17" hostname="localhost">
+  <properties>
+    <property name="device" value="emulator-5554 - 14" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="phraseSplitAcrossTwoLines" classname="br.dev.nexus.gravadorocr.OcrRecognitionTest" time="3.197" />
+  <testcase name="doesNotFindWhatIsNotThere" classname="br.dev.nexus.gravadorocr.OcrRecognitionTest" time="3.23" />
+  <testcase name="findsBotijaoDeGasInDocument" classname="br.dev.nexus.gravadorocr.OcrRecognitionTest" time="3.619" />
+  <testcase name="rotatedCameraFrameIsStraightenedBeforeOcr" classname="br.dev.nexus.gravadorocr.OcrRecognitionTest" time="3.448" />
+  <testcase name="findsCpfAndPlaca" classname="br.dev.nexus.gravadorocr.OcrRecognitionTest" time="3.712" />
+  <testcase name="detectsKeywordWhileRecordingAndSavesPhoto" classname="br.dev.nexus.gravadorocr.RecordingFlowTest" time="36.735" />
+  <testcase name="alarmWhenRecordingStopsAndAutoResumeIsOff" classname="br.dev.nexus.gravadorocr.RecordingFlowTest" time="14.734" />
+  <testcase name="addKeywordFromScreen" classname="br.dev.nexus.gravadorocr.RecordingFlowTest" time="3.339" />
+  <testcase name="splitsIntoSegmentsWithoutLosingVideo" classname="br.dev.nexus.gravadorocr.RecordingFlowTest" time="16.323" />
+  <testcase name="resumesAutomaticallyWhenRecordingStopsUnexpectedly" classname="br.dev.nexus.gravadorocr.RecordingFlowTest" time="15.826" />
+  <testcase name="recordsAValidMp4" classname="br.dev.nexus.gravadorocr.RecordingFlowTest" time="18.075" />
+</testsuite>

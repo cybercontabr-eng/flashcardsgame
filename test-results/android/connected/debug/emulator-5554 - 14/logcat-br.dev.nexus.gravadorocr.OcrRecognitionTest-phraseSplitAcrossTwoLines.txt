@@ -1,0 +1,181 @@
+10-08 05:48:13.133  4832  4861 I TestRunner: started: phraseSplitAcrossTwoLines(br.dev.nexus.gravadorocr.OcrRecognitionTest)
+10-08 05:48:13.134  1058  1075 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/media_volume
+10-08 05:48:13.134  1058  1058 D SettingsSliceProvider: Stopping background worker for: content://com.android.settings.slices/action/media_volume
+10-08 05:48:13.158  1058  1075 D SliceBuilder: Creating slice for: com.android.settings.notification.CallVolumePreferenceController
+10-08 05:48:13.165  1058  4580 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-08 05:48:13.183  1058  1074 D SliceBuilder: Creating slice for: com.android.settings.notification.CallVolumePreferenceController
+10-08 05:48:13.191  1058  1074 D SliceBuilder: Creating slice for: com.android.settings.notification.SeparateRingVolumePreferenceController
+10-08 05:48:13.194  1058  4107 D SettingsSliceProvider: content://com.android.settings.slices/action/call_volume loaded from cache
+10-08 05:48:13.203  1058  1075 D SliceBuilder: Creating slice for: com.android.settings.notification.NotificationVolumePreferenceController
+10-08 05:48:13.209  1058  4580 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/call_volume
+10-08 05:48:13.233  1058  1074 D SliceBuilder: Creating slice for: com.android.settings.notification.AlarmVolumePreferenceController
+10-08 05:48:13.239  4177  4177 I BugleDataModel: ActionExecutorImpl: Timestamp for ACTION_EXECUTE_QUEUED_GenericWorkerQueueAction elapsedRealTime: 91528 currentTimeMillis: 1791438493239
+10-08 05:48:13.240  4177  4315 I BugleDataModel: ActionExecutorImpl: Timestamp for ACTION_BACKGROUND_QUEUED_GenericWorkerQueueAction elapsedRealTime: 91528 currentTimeMillis: 1791438493240
+10-08 05:48:13.245  4177  4617 I BugleJobs: GenericWorkerQueueAction: Work found
+10-08 05:48:13.248  1058  1074 D SliceBuilder: Creating slice for: com.android.settings.notification.SeparateRingVolumePreferenceController
+10-08 05:48:13.255  1058  1074 D SliceBuilder: Creating slice for: com.android.settings.gestures.DoubleTapPowerPreferenceController
+10-08 05:48:13.266  1058  1074 D SliceBuilder: Creating slice for: com.android.settings.notification.AlarmVolumePreferenceController
+10-08 05:48:13.270  1058  1075 D SliceBuilder: Creating slice for: com.android.settings.gestures.DoubleTapPowerPreferenceController
+10-08 05:48:13.273  1058  1075 D SliceBuilder: Creating slice for: com.android.settings.notification.NotificationVolumePreferenceController
+10-08 05:48:13.278  1058  4580 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-08 05:48:13.280  1058  2805 D SettingsSliceProvider: content://com.android.settings.slices/action/separate_ring_volume loaded from cache
+10-08 05:48:13.280  1058  4580 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-08 05:48:13.281  1058  4107 D SettingsSliceProvider: content://com.android.settings.slices/action/notification_volume loaded from cache
+10-08 05:48:13.282  1058  4580 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/separate_ring_volume
+10-08 05:48:13.282  1058  4580 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-08 05:48:13.283  1058  2805 D SettingsSliceProvider: content://com.android.settings.slices/action/alarm_volume loaded from cache
+10-08 05:48:13.283  1058  4580 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/notification_volume
+10-08 05:48:13.297  1058  1074 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/alarm_volume
+10-08 05:48:13.304  1058  1074 D SliceBroadcastRelay: Unregistering uri broadcast relay: content://com.android.settings.slices/action/volume_slices
+10-08 05:48:13.308  4832  4868 D DecoupledTextDelegate: Start loading thick OCR module.
+10-08 05:48:13.313  4832  4868 I DynamiteModule: Considering local module com.google.mlkit.dynamite.text.latin:10000 and remote module com.google.mlkit.dynamite.text.latin:0
+10-08 05:48:13.314  4832  4868 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.text.latin
+10-08 05:48:13.316  1503  2681 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-08 05:48:13.318  4177  4315 I BugleJobs: GenericWorkerQueueAction: Rescheduling immediately to continue processing since we didn't yet reach the end.
+10-08 05:48:13.320  4177  4617 I BugleDataModel: ActionExecutorImpl: Timestamp for ACTION_RESPONSE_QUEUED_GenericWorkerQueueAction elapsedRealTime: 91608 currentTimeMillis: 1791438493320
+10-08 05:48:13.328  4177  4177 I BugleDataModel: ActionExecutorImpl: Timestamp for ACTION_EXECUTE_QUEUED_GenericWorkerQueueAction elapsedRealTime: 91616 currentTimeMillis: 1791438493328
+10-08 05:48:13.328  4177  4315 I BugleDataModel: ActionExecutorImpl: Timestamp for ACTION_BACKGROUND_QUEUED_GenericWorkerQueueAction elapsedRealTime: 91617 currentTimeMillis: 1791438493328
+10-08 05:48:13.335  4177  4617 I BugleJobs: GenericWorkerQueueAction: Bailing early, no work found, no failed work found
+10-08 05:48:13.335  4177  4617 I BugleDataModel: ActionExecutorImpl: Timestamp for ACTION_RESPONSE_QUEUED_GenericWorkerQueueAction elapsedRealTime: 91624 currentTimeMillis: 1791438493335
+10-08 05:48:13.345  1058  1074 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-08 05:48:13.349  1058  4107 D SlicesIndexer: Slices already indexed - returning.
+10-08 05:48:13.352  1058  4107 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/separate_ring_volume
+10-08 05:48:13.352  1058  4107 D SliceBroadcastRelay: Registering Uri for broadcast relay: content://com.android.settings.slices/action/volume_slices
+10-08 05:48:13.358  1058  4107 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/separate_ring_volume) in: 9
+10-08 05:48:13.362  1503  4481 I Authzen : [DeviceStateSyncManager] Device state updated successfully.
+10-08 05:48:13.384  1058  1074 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-08 05:48:13.391  1058  2805 D SettingsSliceProvider: content://com.android.settings.slices/action/gesture_double_tap_power loaded from cache
+10-08 05:48:13.391  1058  4580 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-08 05:48:13.392  1058  4107 D SlicesIndexer: Slices already indexed - returning.
+10-08 05:48:13.393  1058  4107 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/alarm_volume
+10-08 05:48:13.394  1058  4107 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/alarm_volume) in: 2
+10-08 05:48:13.394  1058  4580 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-08 05:48:13.395  1058  2805 D SlicesIndexer: Slices already indexed - returning.
+10-08 05:48:13.396  1058  2805 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/gesture_double_tap_power) in: 1
+10-08 05:48:13.396  1058  4580 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-08 05:48:13.398  1058  4107 D SlicesIndexer: Slices already indexed - returning.
+10-08 05:48:13.399  1058  4107 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/notification_volume
+10-08 05:48:13.399  1058  4107 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/notification_volume) in: 1
+10-08 05:48:13.400  4832  4868 I native  : I0000 00:00:1791438493.400424    4868 asset_manager_util.cc:61] Created global reference to asset manager.
+10-08 05:48:13.410  1417  1417 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.presencemanager.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-08 05:48:13.433  1417  1417 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-08 05:48:13.433  1417  1417 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-08 05:48:13.435  1503  2681 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-08 05:48:13.442  1058  4580 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-08 05:48:13.442  4832  4868 I Manager : DeviceManager::DeviceManager
+10-08 05:48:13.442  4832  4868 I Manager : findAvailableDevices
+10-08 05:48:13.443  1058  1074 D SliceBuilder: Creating slice for: com.android.settings.network.AirplaneModePreferenceController
+10-08 05:48:13.447  1058  1074 D SliceBuilder: Creating slice for: com.android.settings.network.AirplaneModePreferenceController
+10-08 05:48:13.448  4832  4868 I Manager : Found interface nnapi-sample_all (version = JUST_AN_EXAMPLE)
+10-08 05:48:13.448  4832  4868 I Manager : Found interface nnapi-sample_quant (version = JUST_AN_EXAMPLE)
+10-08 05:48:13.448  4832  4868 I Manager : Found interface nnapi-sample_sl_shim (version = JUST_AN_EXAMPLE)
+10-08 05:48:13.452  1058  2805 D SettingsSliceProvider: content://android.settings.slices/action/airplane_mode loaded from cache
+10-08 05:48:13.465  1503  2681 I Icing   : Indexing done com.google.android.gms-apps
+10-08 05:48:13.466  4832  4874 I native  : I0000 00:00:1791438493.466039    4874 text_detector_thread_pool_context.cc:38] Compute manager max in flight region detector overwrite: 1
+10-08 05:48:13.466  1503  2681 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-08 05:48:13.467  1058  1074 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-08 05:48:13.469  1058  4580 D SliceBuilder: Creating slice for: com.android.settings.fuelgauge.batterysaver.BatterySaverButtonPreferenceController
+10-08 05:48:13.471  1058  4580 D SliceBuilder: Creating slice for: com.android.settings.fuelgauge.batterysaver.BatterySaverButtonPreferenceController
+10-08 05:48:13.472  4832  4874 I native  : I0000 00:00:1791438493.472542    4874 common_util.h:41] Resizing Thread Pool: ocr_det_0 to 3
+10-08 05:48:13.472  1058  4107 D SettingsSliceProvider: content://android.settings.slices/action/battery_saver loaded from cache
+10-08 05:48:13.473  4832  4874 I tflite  : Initialized TensorFlow Lite runtime.
+10-08 05:48:13.477  4832  4873 I native  : I0000 00:00:1791438493.474018    4873 text_classifier.cc:32] Creating classifier TfliteTextClassifier
+10-08 05:48:13.478  4832  4873 I native  : I0000 00:00:1791438493.478593    4873 common_util.h:41] Resizing Thread Pool: ocr_segm to 3
+10-08 05:48:13.488  4832  4873 I native  : I0000 00:00:1791438493.488384    4873 tflite_lstm_client_base.cc:371] Resizing interpreter pool to 4
+10-08 05:48:13.492  4832  4873 I native  : I0000 00:00:1791438493.492429    4873 multi_pass_line_recognition_mutator.cc:342] Preloading recognizers.
+10-08 05:48:13.500  4832  4884 I native  : I0000 00:00:1791438493.500846    4884 tflite_model_pooled_runner.cc:625] Loading mlkit-google-ocr-models/gocr/gocr_models/line_recognition_legacy_mobile/Latn_ctc/optical/conv_model.fb
+10-08 05:48:13.503  4832  4884 I native  : I0000 00:00:1791438493.503403    4884 tflite_model_pooled_runner.cc:636] Loading mlkit-google-ocr-models/gocr/gocr_models/line_recognition_legacy_mobile/Latn_ctc/optical/lstm_model.fb
+10-08 05:48:13.507  4832  4884 I native  : I0000 00:00:1791438493.507705    4884 tflite_model_pooled_runner.cc:836] Resizing interpreter pool to 4
+10-08 05:48:13.509  4832  4884 I native  : I0000 00:00:1791438493.509689    4884 mobile_langid_v2.cc:58] MobileLangID V2 initialized.
+10-08 05:48:13.510  4832  4884 I native  : I0000 00:00:1791438493.510026    4884 multi_pass_line_recognition_mutator.cc:364] Finished preloading a recognizer for "Latn"
+10-08 05:48:13.516  4832  4873 I native  : I0000 00:00:1791438493.516464    4873 multi_pass_line_recognition_mutator.cc:398] Finished preloading recognizers.
+10-08 05:48:13.517  4832  4873 I native  : I0000 00:00:1791438493.517363    4873 tflite_model_pooled_runner.cc:625] Loading mlkit-google-ocr-models/gocr/layout/line_splitting_custom_ops/model.tflite
+10-08 05:48:13.517  4832  4873 I native  : I0000 00:00:1791438493.517932    4873 tflite_model_pooled_runner.cc:836] Resizing interpreter pool to 1
+10-08 05:48:13.518  4832  4873 I native  : I0000 00:00:1791438493.518689    4873 tflite_model_pooled_runner.cc:625] Loading mlkit-google-ocr-models/gocr/layout/line_clustering_custom_ops/model.tflite
+10-08 05:48:13.519  4832  4873 I native  : I0000 00:00:1791438493.519599    4873 tflite_model_pooled_runner.cc:836] Resizing interpreter pool to 1
+10-08 05:48:13.529  4832  4874 I tflite  : Created TensorFlow Lite XNNPACK delegate for CPU.
+10-08 05:48:13.529  4832  4874 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:13.533  4832  4874 I native  : I0000 00:00:1791438493.533538    4874 tflite_detector_client_with_shape_cache.cc:105] Caching size: 10
+10-08 05:48:13.538  4832  4868 D PipelineManager: Start process bitmap
+10-08 05:48:13.539  4832  4868 I native  : I0000 00:00:1791438493.539267    4868 scheduler.cc:693] ImageMetadata: 1280x720
+10-08 05:48:13.548  1417  1417 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.presencemanager.service.INTERNAL_IDENTITY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-08 05:48:13.563  4832  4866 W xus.gravadorocr: Verification of void com.google.android.gms.internal.mlkit_vision_text_common.zzmq.configure(com.google.firebase.encoders.config.EncoderConfig) took 117.041ms (11970.10 bytecodes/s) (54520B approximate peak alloc)
+10-08 05:48:13.567  4832  4874 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:13.575  4004  4012 W gs.intelligence: Cleared Reference was only reachable from finalizer (only reported once)
+10-08 05:48:13.599  4004  4012 I gs.intelligence: Background concurrent copying GC freed 55524(2819KB) AllocSpace objects, 2(448KB) LOS objects, 49% free, 4834KB/9669KB, paused 13us,11us total 124.623ms
+10-08 05:48:13.752  4832  4865 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-08 05:48:13.762  4832  4865 D TransportRuntime.JobInfoScheduler: Scheduling upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) with jobId=-170776880 in 30000ms(Backend next call timestamp 0). Attempt 1
+10-08 05:48:13.766  4832  4865 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 10192; state: ENABLED
+10-08 05:48:13.767  4832  4865 D CompatibilityChangeReporter: Compat change id reported: 253665015; UID 10192; state: ENABLED
+10-08 05:48:13.769   524   537 D ConnectivityService: requestNetwork for uid/pid:1000/524 asUid: 10192 activeRequest: null callbackRequest: 121 [NetworkRequest [ REQUEST id=122, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10192 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+10-08 05:48:13.770   524   771 D ConnectivityService: NetReassign [122 : null → 100] [c 1] [a 0] [i 1]
+10-08 05:48:13.771   524   764 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=122, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10192 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-08 05:48:13.771   524   764 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=122, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10192 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-08 05:48:13.771   524   764 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=122, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10192 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-08 05:48:13.771   524   764 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=122, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10192 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-08 05:48:13.863   334   334 I netd    : tetherGetStats() -> {[]} <0.64ms>
+10-08 05:48:13.867   334   334 I netd    : bandwidthSetGlobalAlert(2097152) <0.09ms>
+10-08 05:48:13.869   334   334 I netd    : bandwidthRemoveInterfaceQuota(eth0) <0.44ms>
+10-08 05:48:13.869   334   334 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.33ms>
+10-08 05:48:13.966   842   912 D EGL_emulation: app_time_stats: avg=3803.90ms min=3803.90ms max=3803.90ms count=1
+10-08 05:48:14.171  4832  4865 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-08 05:48:14.182  4832  4865 D TransportRuntime.JobInfoScheduler: Scheduling upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) with jobId=-165796143 in 86400000ms(Backend next call timestamp 0). Attempt 1
+10-08 05:48:14.192   524   533 I system_server: Background young concurrent copying GC freed 848318(26MB) AllocSpace objects, 19(2904KB) LOS objects, 46% free, 27MB/51MB, paused 29us,53us total 127.353ms
+10-08 05:48:14.216  4832  4865 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-08 05:48:14.222  4832  4865 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-08 05:48:14.235  4832  4874 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:14.562  1417  1425 I .gms.persistent: Background young concurrent copying GC freed 171792(10MB) AllocSpace objects, 2(40KB) LOS objects, 31% free, 21MB/31MB, paused 17us,24us total 121.625ms
+10-08 05:48:14.679  1417  1417 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.auth.account.workaccount.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-08 05:48:14.750  4832  4874 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:15.188  4832  4874 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:15.218  1503  1503 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.checkin.START pkg=com.google.android.gms }
+10-08 05:48:15.285   855   869 I PermissionControllerServiceImpl: Updating user sensitive for uid 10155
+10-08 05:48:15.287   524   624 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS
+10-08 05:48:15.290  1057  1057 D CarrierSvcBindHelper: onPackageModified: com.google.android.contacts
+10-08 05:48:15.291  1033  1033 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-08 05:48:15.291  1057  1057 D CarrierSvcBindHelper: No carrier app for: 0
+10-08 05:48:15.291  1033  1033 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-08 05:48:15.292   842   911 D StylusManager: Stylus InputDevice changed: 13 virtio_input_multi_touch_10
+10-08 05:48:15.294   842   842 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-08 05:48:15.300   842   911 D StylusManager: Stylus InputDevice changed: 11 virtio_input_multi_touch_8
+10-08 05:48:15.301   842   911 D StylusManager: Stylus InputDevice changed: 8 virtio_input_multi_touch_5
+10-08 05:48:15.301   842   911 D StylusManager: Stylus InputDevice changed: 12 virtio_input_multi_touch_9
+10-08 05:48:15.302   842   911 D StylusManager: Stylus InputDevice changed: 7 virtio_input_multi_touch_4
+10-08 05:48:15.303  1057  1339 D ImsResolver: maybeAddedImsService, packageName: com.google.android.contacts
+10-08 05:48:15.305   842   911 D StylusManager: Stylus InputDevice changed: 5 virtio_input_multi_touch_2
+10-08 05:48:15.310   842   911 D StylusManager: Stylus InputDevice changed: 14 virtio_input_multi_touch_11
+10-08 05:48:15.311   842   911 D StylusManager: Stylus InputDevice changed: 6 virtio_input_multi_touch_3
+10-08 05:48:15.312   842   911 D StylusManager: Stylus InputDevice changed: 10 virtio_input_multi_touch_7
+10-08 05:48:15.316   842   911 D StylusManager: Stylus InputDevice changed: 9 virtio_input_multi_touch_6
+10-08 05:48:15.316   842   911 D StylusManager: Stylus InputDevice changed: 4 virtio_input_multi_touch_1
+10-08 05:48:15.322   524   550 E system_server: No package ID 7f found for resource ID 0x7f080107.
+10-08 05:48:15.322   524   550 E system_server: No package ID 7f found for resource ID 0x7f150560.
+10-08 05:48:15.408  1676  1676 I AiAiEcho: AppFetcherImpl onPackageChanged com.google.android.contacts.
+10-08 05:48:15.409  1676  3498 I AiAiEcho: AppIndexer Package:[com.google.android.contacts] UserProfile:[0] Enabled:[true].
+10-08 05:48:15.409  1676  3498 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.google.android.contacts], userId:[0], reason:[package is updated.].
+10-08 05:48:15.426  1105  1931 D EGL_emulation: app_time_stats: avg=1959.33ms min=422.41ms max=3496.26ms count=2
+10-08 05:48:15.585  1417  3280 I LockboxIntentOp: Completed task: true [CONTEXT service_id=26 ]
+10-08 05:48:15.619  4832  4874 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:15.782  4177  4334 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of bdxy@7231c2
+10-08 05:48:15.788  1417  4786 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-08 05:48:15.789  1417  4799 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-08 05:48:16.039  1417  1417 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.auth.proximity.devicesyncservice.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+10-08 05:48:16.091   334   334 I netd    : tetherGetStats() -> {[]} <0.32ms>
+10-08 05:48:16.094   334   334 I netd    : bandwidthSetGlobalAlert(2097152) <0.07ms>
+10-08 05:48:16.135  2080  3188 I HttpGrpcBindableService: [pfd-write] DOWNLOAD COMPLETE: Downloaded 38498810 bytes from URL [https://storage.googleapis.com/captions/aiai-en-US-v3003.zip].
+10-08 05:48:16.136  1676  2354 I AstreaHttpConnection: Download completed for url [https://storage.googleapis.com/captions/aiai-en-US-v3003.zip].
+10-08 05:48:16.137  1676  2064 I SP.AiAi : Download stopped: captions_i18n_v0_en-US:asr_en-US_v3003, succeeded, size: 38498810
+10-08 05:48:16.147  2080  2394 I HttpGrpcBindableService: Downloading requested for URL 'https://storage.googleapis.com/captions/sound_recognition_v1.zip'
+10-08 05:48:16.158  2080  2394 I HttpGrpcBindableService: Responding with header information for URL 'https://storage.googleapis.com/captions/sound_recognition_v1.zip'
+10-08 05:48:16.162  1676  2354 I AstreaHttpConnection: Started download from url='https://storage.googleapis.com/captions/sound_recognition_v1.zip'
+10-08 05:48:16.172   334   334 I netd    : setProcSysNet(4, 2, wlan0, retrans_time_ms, 750) <0.03ms>
+10-08 05:48:16.172   334   334 I netd    : setProcSysNet(4, 2, wlan0, ucast_solicit, 10) <0.02ms>
+10-08 05:48:16.173   334   334 I netd    : setProcSysNet(6, 2, wlan0, retrans_time_ms, 750) <0.03ms>
+10-08 05:48:16.173   334   334 I netd    : setProcSysNet(6, 2, wlan0, ucast_solicit, 10) <0.01ms>
+10-08 05:48:16.183  1676  2064 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 4 pending: manifests:spelling_correction-22110320 {W:b:I:l, bg}, text-classifier-langid:tc_model_436dc3fd14049b93d75788a8c0cc8eea {W:b:u:l, bg}, captions_i18n_v0_mandatory:sound_recognition_v1 @ {W:b:u:l, bg}, manifests:text-classifier-actions-1238844047 {W:b:u:l, bg}
+10-08 05:48:16.384  4832  4868 D PipelineManager: OCR process succeeded via visionkit pipeline.
+10-08 05:48:16.397  4832  4865 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-08 05:48:16.405  4832  4861 I GravadorOcrTest: OCR leu: COMPRA DE BOTIJÃO|DE GÁS COMPLETO
+10-08 05:48:16.405  4832  4865 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-08 05:48:16.409  4832  4861 D CompatibilityChangeReporter: Compat change id reported: 247079863; UID 10192; state: ENABLED
+10-08 05:48:16.416  4832  4861 I TestRunner: finished: phraseSplitAcrossTwoLines(br.dev.nexus.gravadorocr.OcrRecognitionTest)

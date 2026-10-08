@@ -1,0 +1,24 @@
+/sdcard/Download/GravadorOCR:
+total 48
+-rwxrwx--- 1 u0_a180 media_rw  79 2026-10-08 05:49 GravadorOCR_20261008_054832_p01.srt
+-rwxrwx--- 1 u0_a180 media_rw 317 2026-10-08 05:49 GravadorOCR_20261008_054832_relatorio.txt
+-rwxrwx--- 1 u0_a180 media_rw 359 2026-10-08 05:49 GravadorOCR_20261008_054908_relatorio.txt
+-rwxrwx--- 1 u0_a180 media_rw 333 2026-10-08 05:49 GravadorOCR_20261008_054926_relatorio.txt
+-rwxrwx--- 1 u0_a180 media_rw 390 2026-10-08 05:49 GravadorOCR_20261008_054943_relatorio.txt
+-rwxrwx--- 1 u0_a180 media_rw 239 2026-10-08 05:50 GravadorOCR_20261008_054959_relatorio.txt
+
+/sdcard/Movies/GravadorOCR:
+total 2240
+-rwxrwx--- 1 u0_a180 media_rw 733628 2026-10-08 05:48 GravadorOCR_20261008_054832_p01.mp4
+-rwxrwx--- 1 u0_a180 media_rw 151923 2026-10-08 05:49 GravadorOCR_20261008_054908_p01.mp4
+-rwxrwx--- 1 u0_a180 media_rw 193469 2026-10-08 05:49 GravadorOCR_20261008_054908_p02.mp4
+-rwxrwx--- 1 u0_a180 media_rw 141628 2026-10-08 05:49 GravadorOCR_20261008_054926_p01.mp4
+-rwxrwx--- 1 u0_a180 media_rw 137597 2026-10-08 05:49 GravadorOCR_20261008_054926_p02.mp4
+-rwxrwx--- 1 u0_a180 media_rw  62357 2026-10-08 05:49 GravadorOCR_20261008_054926_p03.mp4
+-rwxrwx--- 1 u0_a180 media_rw 160721 2026-10-08 05:49 GravadorOCR_20261008_054943_p01.mp4
+-rwxrwx--- 1 u0_a180 media_rw 193147 2026-10-08 05:49 GravadorOCR_20261008_054943_p02.mp4
+-rwxrwx--- 1 u0_a180 media_rw 419584 2026-10-08 05:50 GravadorOCR_20261008_054959_p01.mp4
+
+/sdcard/Pictures/GravadorOCR:
+total 60
+-rwxrwx--- 1 u0_a180 media_rw 55402 2026-10-08 05:48 OCR_20261008_054832_1_botijao-de-gas.jpg

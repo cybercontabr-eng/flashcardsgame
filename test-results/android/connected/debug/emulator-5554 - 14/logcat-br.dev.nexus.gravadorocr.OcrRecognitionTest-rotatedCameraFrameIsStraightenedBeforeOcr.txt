@@ -1,0 +1,63 @@
+10-08 05:48:23.313  4832  4861 I TestRunner: started: rotatedCameraFrameIsStraightenedBeforeOcr(br.dev.nexus.gravadorocr.OcrRecognitionTest)
+10-08 05:48:23.353  4832  4865 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-08 05:48:23.363  4832  4909 D DecoupledTextDelegate: Start loading thick OCR module.
+10-08 05:48:23.364  4832  4909 I DynamiteModule: Considering local module com.google.mlkit.dynamite.text.latin:10000 and remote module com.google.mlkit.dynamite.text.latin:0
+10-08 05:48:23.364  4832  4909 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.text.latin
+10-08 05:48:23.366  4832  4865 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-08 05:48:23.370  4832  4868 I native  : I0000 00:00:1791438503.370044    4868 asset_manager_util.cc:61] Created global reference to asset manager.
+10-08 05:48:23.379  4832  4994 I native  : I0000 00:00:1791438503.379366    4994 text_detector_thread_pool_context.cc:38] Compute manager max in flight region detector overwrite: 1
+10-08 05:48:23.380  4832  4995 I native  : I0000 00:00:1791438503.380492    4995 text_classifier.cc:32] Creating classifier TfliteTextClassifier
+10-08 05:48:23.381  4832  4994 I native  : I0000 00:00:1791438503.381080    4994 common_util.h:41] Resizing Thread Pool: ocr_det_0 to 3
+10-08 05:48:23.382  4832  4995 I native  : I0000 00:00:1791438503.382582    4995 common_util.h:41] Resizing Thread Pool: ocr_segm to 3
+10-08 05:48:23.394  4832  4995 I native  : I0000 00:00:1791438503.394934    4995 tflite_lstm_client_base.cc:371] Resizing interpreter pool to 4
+10-08 05:48:23.396  4832  4995 I native  : I0000 00:00:1791438503.396562    4995 multi_pass_line_recognition_mutator.cc:342] Preloading recognizers.
+10-08 05:48:23.396  4832  4908 I native  : I0000 00:00:1791438503.396797    4908 tflite_model_pooled_runner.cc:625] Loading mlkit-google-ocr-models/gocr/gocr_models/line_recognition_legacy_mobile/Latn_ctc/optical/conv_model.fb
+10-08 05:48:23.397  4832  4908 I native  : I0000 00:00:1791438503.397468    4908 tflite_model_pooled_runner.cc:636] Loading mlkit-google-ocr-models/gocr/gocr_models/line_recognition_legacy_mobile/Latn_ctc/optical/lstm_model.fb
+10-08 05:48:23.399  4832  4908 I native  : I0000 00:00:1791438503.399672    4908 tflite_model_pooled_runner.cc:836] Resizing interpreter pool to 4
+10-08 05:48:23.401  4832  4908 I native  : I0000 00:00:1791438503.401450    4908 mobile_langid_v2.cc:58] MobileLangID V2 initialized.
+10-08 05:48:23.401  4832  4908 I native  : I0000 00:00:1791438503.401700    4908 multi_pass_line_recognition_mutator.cc:364] Finished preloading a recognizer for "Latn"
+10-08 05:48:23.402  4832  4995 I native  : I0000 00:00:1791438503.402012    4995 multi_pass_line_recognition_mutator.cc:398] Finished preloading recognizers.
+10-08 05:48:23.402  4832  4995 I native  : I0000 00:00:1791438503.402355    4995 tflite_model_pooled_runner.cc:625] Loading mlkit-google-ocr-models/gocr/layout/line_splitting_custom_ops/model.tflite
+10-08 05:48:23.402  4832  4995 I native  : I0000 00:00:1791438503.402915    4995 tflite_model_pooled_runner.cc:836] Resizing interpreter pool to 1
+10-08 05:48:23.403  4832  4995 I native  : I0000 00:00:1791438503.403468    4995 tflite_model_pooled_runner.cc:625] Loading mlkit-google-ocr-models/gocr/layout/line_clustering_custom_ops/model.tflite
+10-08 05:48:23.404  4832  4995 I native  : I0000 00:00:1791438503.404040    4995 tflite_model_pooled_runner.cc:836] Resizing interpreter pool to 1
+10-08 05:48:23.423  4832  4994 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:23.424  4832  4994 I native  : I0000 00:00:1791438503.424328    4994 tflite_detector_client_with_shape_cache.cc:105] Caching size: 10
+10-08 05:48:23.425  4832  4868 D PipelineManager: Start process bitmap
+10-08 05:48:23.457  4832  4995 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:23.491  2080  3188 I HttpGrpcBindableService: [pfd-write] DOWNLOAD COMPLETE: Downloaded 2452263 bytes from URL [https://gstatic.com/matchmaker/tclib_models/actions/v104/en/tc_model_e1df2712fc5cf9d5c2ae9d6193638533.zip].
+10-08 05:48:23.492  1676  2354 I AstreaHttpConnection: Download completed for url [https://gstatic.com/matchmaker/tclib_models/actions/v104/en/tc_model_e1df2712fc5cf9d5c2ae9d6193638533.zip].
+10-08 05:48:23.500  1676  2064 I SP.AiAi : <==== Finishing job {W:b:u:l, bg}, 679 ms. elapsed since start
+10-08 05:48:23.517  4192  4246 W System  : A resource failed to call AbstractCursor.close.
+10-08 05:48:23.517  1676  2064 I SP.AiAi : Download stopped: text-classifier-actions:tc_model_e1df2712fc5cf9d5c2ae9d6193638533, succeeded, size: 2452263
+10-08 05:48:23.568  1676  2064 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+10-08 05:48:23.629  1503  4482 E WorkSourceUtil: Could not find package: com.google.android.gms.westworld
+10-08 05:48:23.708  1676  2064 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 1 scheduled, 1 pending: manifests:spelling_correction-22110320 * {W:b:I:l, bg}
+10-08 05:48:23.771   524  1737 D ConnectivityService: requestNetwork for uid/pid:10139/1763 activeRequest: null callbackRequest: 125 [NetworkRequest [ REQUEST id=126, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+10-08 05:48:23.772   524   771 D ConnectivityService: NetReassign [126 : null → 100] [c 0] [a 0] [i 1]
+10-08 05:48:23.773   524   764 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=126, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
+10-08 05:48:23.773   524   764 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=126, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
+10-08 05:48:23.774   524   764 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=126, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
+10-08 05:48:23.774   524   764 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=126, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10139 RequestorUid: 10139 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
+10-08 05:48:24.192  4832  4995 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:24.299   334   334 I netd    : tetherGetStats() -> {[]} <0.28ms>
+10-08 05:48:24.302   334   334 I netd    : bandwidthSetGlobalAlert(2097152) <0.07ms>
+10-08 05:48:24.303   334   334 I netd    : bandwidthRemoveInterfaceQuota(eth0) <0.31ms>
+10-08 05:48:24.304   334   334 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.38ms>
+10-08 05:48:24.307   524   841 D NetworkStatsObservers: Unregistering RequestInfo from pid/uid:524/1000(android) for DataUsageRequest [ requestId=10, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=3431460 ] accessLevel:3
+10-08 05:48:24.308   524   762 D NetworkStatsObservers: Registering observer for RequestInfo from pid/uid:524/1000(android) for DataUsageRequest [ requestId=11, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=3428229 ] accessLevel:3
+10-08 05:48:24.323   334   334 I netd    : tetherGetStats() -> {[]} <0.21ms>
+10-08 05:48:24.361  1676  1995 I SP.AiAi : Sync for text-classifier-actions succeeded in 1563 ms: {added: [tc_model_e1df2712fc5cf9d5c2ae9d6193638533], metadata: false
+10-08 05:48:24.368  1676  1995 I SP.AiAi : GC for 'text-classifier-actions' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-08 05:48:24.368  1676  1995 I AiAiNowPlaying: Superpacks changed. Refreshing FA controller
+10-08 05:48:24.369  1676  4210 I AiAiTextClassifier: [ResourceDownloaderImpl]: downloadResource(): Successfully downloaded superpack 'text-classifier-actions', download version 1238844047.
+10-08 05:48:24.370  1676  2065 I AiAiTextClassifier: [TcLibModelManagerImpl]: downloadNewModelRecursively: packSet downloaded successfully: https://gstatic.com/matchmaker/tclib_models/actions/v104/en/superpacks_manifest.zip
+10-08 05:48:24.492  1503  1503 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.chimera.container.moduleinstall.ModuleInstallService.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+10-08 05:48:24.688  1676  2065 I AiAiTextClassifier: [TcLibModelManagerImpl]: updateModelsInTextClassifierLib: Done executing updateModels() from path: /data/user/0/com.google.android.as/files/superpacks/text-classifier-actions/tc_model_e1df2712fc5cf9d5c2ae9d6193638533/en.model.
+10-08 05:48:24.739  4832  4995 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:25.429  4832  4995 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:26.086  4832  4995 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:26.169  4177  4285 W Bugle   : TextClassifierLibManagerImpl: Reclaiming memory at level: 40
+10-08 05:48:26.747  4832  4868 D PipelineManager: OCR process succeeded via visionkit pipeline.
+10-08 05:48:26.749  4832  4861 I GravadorOcrTest: OCR leu: BOTIJÃO DE GÁS
+10-08 05:48:26.751  4832  4861 I TestRunner: finished: rotatedCameraFrameIsStraightenedBeforeOcr(br.dev.nexus.gravadorocr.OcrRecognitionTest)

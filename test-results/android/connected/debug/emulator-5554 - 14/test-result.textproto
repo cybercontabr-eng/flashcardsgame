@@ -1,0 +1,588 @@
+# 2026-10-08T05:50:17.692012008Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 11
+}
+test_status: PASSED
+test_result {
+  test_case {
+    test_class: "OcrRecognitionTest"
+    test_package: "br.dev.nexus.gravadorocr"
+    test_method: "phraseSplitAcrossTwoLines"
+    start_time {
+      seconds: 1791438493
+      nanos: 354000000
+    }
+    end_time {
+      seconds: 1791438496
+      nanos: 622000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/logcat-br.dev.nexus.gravadorocr.OcrRecognitionTest-phraseSplitAcrossTwoLines.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "OcrRecognitionTest"
+    test_package: "br.dev.nexus.gravadorocr"
+    test_method: "doesNotFindWhatIsNotThere"
+    start_time {
+      seconds: 1791438496
+      nanos: 645000000
+    }
+    end_time {
+      seconds: 1791438499
+      nanos: 884000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/logcat-br.dev.nexus.gravadorocr.OcrRecognitionTest-doesNotFindWhatIsNotThere.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "OcrRecognitionTest"
+    test_package: "br.dev.nexus.gravadorocr"
+    test_method: "findsBotijaoDeGasInDocument"
+    start_time {
+      seconds: 1791438499
+      nanos: 889000000
+    }
+    end_time {
+      seconds: 1791438503
+      nanos: 506000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/logcat-br.dev.nexus.gravadorocr.OcrRecognitionTest-findsBotijaoDeGasInDocument.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "OcrRecognitionTest"
+    test_package: "br.dev.nexus.gravadorocr"
+    test_method: "rotatedCameraFrameIsStraightenedBeforeOcr"
+    start_time {
+      seconds: 1791438503
+      nanos: 509000000
+    }
+    end_time {
+      seconds: 1791438506
+      nanos: 947000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/logcat-br.dev.nexus.gravadorocr.OcrRecognitionTest-rotatedCameraFrameIsStraightenedBeforeOcr.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "OcrRecognitionTest"
+    test_package: "br.dev.nexus.gravadorocr"
+    test_method: "findsCpfAndPlaca"
+    start_time {
+      seconds: 1791438506
+      nanos: 955000000
+    }
+    end_time {
+      seconds: 1791438510
+      nanos: 668000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/logcat-br.dev.nexus.gravadorocr.OcrRecognitionTest-findsCpfAndPlaca.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RecordingFlowTest"
+    test_package: "br.dev.nexus.gravadorocr"
+    test_method: "detectsKeywordWhileRecordingAndSavesPhoto"
+    start_time {
+      seconds: 1791438510
+      nanos: 671000000
+    }
+    end_time {
+      seconds: 1791438547
+      nanos: 399000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/logcat-br.dev.nexus.gravadorocr.RecordingFlowTest-detectsKeywordWhileRecordingAndSavesPhoto.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RecordingFlowTest"
+    test_package: "br.dev.nexus.gravadorocr"
+    test_method: "alarmWhenRecordingStopsAndAutoResumeIsOff"
+    start_time {
+      seconds: 1791438547
+      nanos: 477000000
+    }
+    end_time {
+      seconds: 1791438562
+      nanos: 198000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/logcat-br.dev.nexus.gravadorocr.RecordingFlowTest-alarmWhenRecordingStopsAndAutoResumeIsOff.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RecordingFlowTest"
+    test_package: "br.dev.nexus.gravadorocr"
+    test_method: "addKeywordFromScreen"
+    start_time {
+      seconds: 1791438562
+      nanos: 280000000
+    }
+    end_time {
+      seconds: 1791438565
+      nanos: 605000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/logcat-br.dev.nexus.gravadorocr.RecordingFlowTest-addKeywordFromScreen.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RecordingFlowTest"
+    test_package: "br.dev.nexus.gravadorocr"
+    test_method: "splitsIntoSegmentsWithoutLosingVideo"
+    start_time {
+      seconds: 1791438565
+      nanos: 616000000
+    }
+    end_time {
+      seconds: 1791438581
+      nanos: 937000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/logcat-br.dev.nexus.gravadorocr.RecordingFlowTest-splitsIntoSegmentsWithoutLosingVideo.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RecordingFlowTest"
+    test_package: "br.dev.nexus.gravadorocr"
+    test_method: "resumesAutomaticallyWhenRecordingStopsUnexpectedly"
+    start_time {
+      seconds: 1791438581
+      nanos: 970000000
+    }
+    end_time {
+      seconds: 1791438597
+      nanos: 788000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/logcat-br.dev.nexus.gravadorocr.RecordingFlowTest-resumesAutomaticallyWhenRecordingStopsUnexpectedly.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "RecordingFlowTest"
+    test_package: "br.dev.nexus.gravadorocr"
+    test_method: "recordsAValidMp4"
+    start_time {
+      seconds: 1791438597
+      nanos: 797000000
+    }
+    end_time {
+      seconds: 1791438615
+      nanos: 868000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/logcat-br.dev.nexus.gravadorocr.RecordingFlowTest-recordsAValidMp4.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "/home/runner/work/flashcardsgame/flashcardsgame/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 14/testlog/test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}

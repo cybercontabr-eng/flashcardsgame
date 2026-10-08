@@ -1,0 +1,113 @@
+10-08 05:48:16.427  4832  4861 I TestRunner: started: doesNotFindWhatIsNotThere(br.dev.nexus.gravadorocr.OcrRecognitionTest)
+10-08 05:48:16.430  4832  4868 D DecoupledTextDelegate: Start loading thick OCR module.
+10-08 05:48:16.430  4832  4868 I DynamiteModule: Considering local module com.google.mlkit.dynamite.text.latin:10000 and remote module com.google.mlkit.dynamite.text.latin:0
+10-08 05:48:16.430  4832  4868 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.text.latin
+10-08 05:48:16.433  4832  4909 I native  : I0000 00:00:1791438496.433129    4909 asset_manager_util.cc:61] Created global reference to asset manager.
+10-08 05:48:16.443  4832  4865 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-08 05:48:16.445  4832  4910 I native  : I0000 00:00:1791438496.445678    4910 text_detector_thread_pool_context.cc:38] Compute manager max in flight region detector overwrite: 1
+10-08 05:48:16.446  4832  4910 I native  : I0000 00:00:1791438496.446927    4910 common_util.h:41] Resizing Thread Pool: ocr_det_0 to 3
+10-08 05:48:16.451  4832  4911 I native  : I0000 00:00:1791438496.451093    4911 text_classifier.cc:32] Creating classifier TfliteTextClassifier
+10-08 05:48:16.451  4832  4911 I native  : I0000 00:00:1791438496.451214    4911 common_util.h:41] Resizing Thread Pool: ocr_segm to 3
+10-08 05:48:16.452  4832  4911 I native  : I0000 00:00:1791438496.452924    4911 tflite_lstm_client_base.cc:371] Resizing interpreter pool to 4
+10-08 05:48:16.455  4832  4911 I native  : I0000 00:00:1791438496.455776    4911 multi_pass_line_recognition_mutator.cc:342] Preloading recognizers.
+10-08 05:48:16.455  4832  4908 I native  : I0000 00:00:1791438496.455878    4908 tflite_model_pooled_runner.cc:625] Loading mlkit-google-ocr-models/gocr/gocr_models/line_recognition_legacy_mobile/Latn_ctc/optical/conv_model.fb
+10-08 05:48:16.456  4832  4908 I native  : I0000 00:00:1791438496.456718    4908 tflite_model_pooled_runner.cc:636] Loading mlkit-google-ocr-models/gocr/gocr_models/line_recognition_legacy_mobile/Latn_ctc/optical/lstm_model.fb
+10-08 05:48:16.459  4832  4908 I native  : I0000 00:00:1791438496.459895    4908 tflite_model_pooled_runner.cc:836] Resizing interpreter pool to 4
+10-08 05:48:16.461  4832  4908 I native  : I0000 00:00:1791438496.461641    4908 mobile_langid_v2.cc:58] MobileLangID V2 initialized.
+10-08 05:48:16.461  4832  4908 I native  : I0000 00:00:1791438496.461895    4908 multi_pass_line_recognition_mutator.cc:364] Finished preloading a recognizer for "Latn"
+10-08 05:48:16.462  4832  4911 I native  : I0000 00:00:1791438496.462217    4911 multi_pass_line_recognition_mutator.cc:398] Finished preloading recognizers.
+10-08 05:48:16.463  4832  4911 I native  : I0000 00:00:1791438496.463884    4911 tflite_model_pooled_runner.cc:625] Loading mlkit-google-ocr-models/gocr/layout/line_splitting_custom_ops/model.tflite
+10-08 05:48:16.465  4832  4911 I native  : I0000 00:00:1791438496.465776    4911 tflite_model_pooled_runner.cc:836] Resizing interpreter pool to 1
+10-08 05:48:16.467  4832  4911 I native  : I0000 00:00:1791438496.467183    4911 tflite_model_pooled_runner.cc:625] Loading mlkit-google-ocr-models/gocr/layout/line_clustering_custom_ops/model.tflite
+10-08 05:48:16.469  4832  4911 I native  : I0000 00:00:1791438496.469396    4911 tflite_model_pooled_runner.cc:836] Resizing interpreter pool to 1
+10-08 05:48:16.475  4832  4865 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-08 05:48:16.476  4832  4910 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:16.479  4832  4910 I native  : I0000 00:00:1791438496.479701    4910 tflite_detector_client_with_shape_cache.cc:105] Caching size: 10
+10-08 05:48:16.496  4832  4909 D PipelineManager: Start process bitmap
+10-08 05:48:16.511  4832  4865 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-08 05:48:16.523  4832  4910 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:16.527  4832  4865 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-08 05:48:16.785  4177  4334 E MendelPackageState: Failed to fetch after encountering old config
+10-08 05:48:16.785  4177  4334 E MendelPackageState: ctft: Timed out: ctef@df1aca2[status=PENDING, info=[delegate=[ctaz@9cc0d33[status=PENDING, info=[inputFuture=[byrl@5958f0[status=PENDING, info=[bphe@8c42e69]]], exceptionType=[class bnmn], fallback=[chaj@fe1f0ee]]]]]]
+10-08 05:48:16.785  4177  4334 E MendelPackageState: 	at tk_trace.PhenotypeApi.getConfigurationSnapshot(Unknown Source:0)
+10-08 05:48:16.785  4177  4334 E MendelPackageState: 	at tk_trace.Fetching experiments for device(Unknown Source:0)
+10-08 05:48:16.785  4177  4334 E MendelPackageState: 	at tk_trace.Application.onCreate(Unknown Source:0)
+10-08 05:48:16.785  4177  4334 E MendelPackageState: 	at tk_trace.Application creation(Unknown Source:0)
+10-08 05:48:16.785  4177  4334 E MendelPackageState: 	at tk_trace.BuglePhoneApplicationBase#attatchBaseContext(Unknown Source:0)
+10-08 05:48:16.785  4177  4334 E MendelPackageState: 	Suppressed: cnqp:
+10-08 05:48:16.785  4177  4334 E MendelPackageState: 		at tk_trace.PhenotypeApi.getConfigurationSnapshot(unfinished)(Unknown Source:0)
+10-08 05:48:16.842  4177  4309 E AndroidFutures: Failed to obtain initial snapshot
+10-08 05:48:16.842  4177  4309 E AndroidFutures: ctft: Timed out: ctef@4802dfa[status=PENDING, info=[delegate=[ctaz@1f1efab[status=PENDING, info=[inputFuture=[byrl@44b5608[status=PENDING, info=[bphe@a7a41a1]]], exceptionType=[class bnmn], fallback=[chaj@fe1f0ee]]]]]]
+10-08 05:48:16.842  4177  4309 E AndroidFutures: 	at tk_trace.PhenotypeApi.getConfigurationSnapshot(Unknown Source:0)
+10-08 05:48:16.842  4177  4309 E AndroidFutures: 	at tk_trace.Fetching experiments for device(Unknown Source:0)
+10-08 05:48:16.842  4177  4309 E AndroidFutures: 	at tk_trace.StartupAfterPackageReplaced(Unknown Source:0)
+10-08 05:48:16.842  4177  4309 E AndroidFutures: 	at tk_trace.AfterPackageReplaced(Unknown Source:0)
+10-08 05:48:16.842  4177  4309 E AndroidFutures: 	at tk_trace.Startup Listeners(Unknown Source:0)
+10-08 05:48:16.842  4177  4309 E AndroidFutures: 	at tk_trace.Application.onCreate(Unknown Source:0)
+10-08 05:48:16.842  4177  4309 E AndroidFutures: 	at tk_trace.Application creation(Unknown Source:0)
+10-08 05:48:16.842  4177  4309 E AndroidFutures: 	at tk_trace.BuglePhoneApplicationBase#attatchBaseContext(Unknown Source:0)
+10-08 05:48:16.842  4177  4309 E AndroidFutures: 	Suppressed: cnqp:
+10-08 05:48:16.842  4177  4309 E AndroidFutures: 		at tk_trace.PhenotypeApi.getConfigurationSnapshot(unfinished)(Unknown Source:0)
+10-08 05:48:16.846  4177  4290 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.libraries.consentverifier#com.google.android.apps.messaging, using defaults.
+10-08 05:48:17.079  4832  4910 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:17.169  2080  3188 I HttpGrpcBindableService: [pfd-write] DOWNLOAD COMPLETE: Downloaded 2565038 bytes from URL [https://storage.googleapis.com/captions/sound_recognition_v1.zip].
+10-08 05:48:17.170  1676  2354 I AstreaHttpConnection: Download completed for url [https://storage.googleapis.com/captions/sound_recognition_v1.zip].
+10-08 05:48:17.543   334   334 I netd    : tetherGetStats() -> {[]} <0.27ms>
+10-08 05:48:17.546   334   334 I netd    : bandwidthSetGlobalAlert(2097152) <0.07ms>
+10-08 05:48:17.548   334   334 I netd    : bandwidthRemoveInterfaceQuota(eth0) <0.44ms>
+10-08 05:48:17.549   334   334 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.36ms>
+10-08 05:48:17.630  1503  1503 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.mdd.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+10-08 05:48:17.683  4832  4910 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:18.223  4832  4930 D ProfileInstaller: Installing profile for br.dev.nexus.gravadorocr
+10-08 05:48:18.366  4832  4910 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:18.483  1417  1417 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-08 05:48:18.779  3719  4937 I ConfigUpdater: Update started
+10-08 05:48:18.789   524  1188 D ConnectivityService: requestNetwork for uid/pid:1000/524 asUid: 10129 activeRequest: null callbackRequest: 123 [NetworkRequest [ REQUEST id=124, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10129 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+10-08 05:48:18.790   524   771 D ConnectivityService: NetReassign [124 : null → 100] [c 0] [a 0] [i 1]
+10-08 05:48:18.791   524   764 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=124, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10129 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-08 05:48:18.791   524   764 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=124, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10129 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-08 05:48:18.791   524   764 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=124, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10129 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-08 05:48:18.791   524   764 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=124, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10129 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-08 05:48:18.797  2043  4938 D DownloadManager: [1] Starting
+10-08 05:48:18.802  3719  4937 I ConfigUpdater: Update started
+10-08 05:48:18.809   334  4939 I resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 10086 0}
+10-08 05:48:18.814   334  4940 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-08 05:48:18.814   334  4940 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x70c6cce58850
+10-08 05:48:18.814   334  4941 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-08 05:48:18.814   334  4940 I resolv  : doQuery: rcode=0, ancount=1, return value=61
+10-08 05:48:18.815   334  4941 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x70c6cce59450
+10-08 05:48:18.815   334  4941 I resolv  : doQuery: rcode=0, ancount=1, return value=49
+10-08 05:48:18.823  2043  4938 D TrafficStats: tagSocket(77) with statsTag=0xffffff01, statsUid=10129
+10-08 05:48:18.827  2043  4943 D DownloadManager: [2] Starting
+10-08 05:48:18.834  2043  4943 D TrafficStats: tagSocket(80) with statsTag=0xffffff01, statsUid=10129
+10-08 05:48:18.889  2043  4938 D DownloadManager: [1] Finished with status SUCCESS
+10-08 05:48:18.891  2043  4943 D DownloadManager: [2] Finished with status SUCCESS
+10-08 05:48:18.924  2043  4947 D DownloadManager: [3] Starting
+10-08 05:48:18.945  1503  1503 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.ocr.service.internal.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalApiService }
+10-08 05:48:18.946  2043  4947 D TrafficStats: tagSocket(80) with statsTag=0xffffff01, statsUid=10129
+10-08 05:48:18.971  2043  4949 D DownloadManager: [4] Starting
+10-08 05:48:18.979  2043  4949 D TrafficStats: tagSocket(82) with statsTag=0xffffff01, statsUid=10129
+10-08 05:48:19.014  4832  4910 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:19.017  2043  4947 D DownloadManager: [3] Finished with status SUCCESS
+10-08 05:48:19.040  3719  4937 I ConfigUpdater: Update downloaded, starting installation
+10-08 05:48:19.065  2043  4949 D DownloadManager: [4] Finished with status SUCCESS
+10-08 05:48:19.140  3719  4937 I ConfigUpdater: doneInstall
+10-08 05:48:19.143  2043  2380 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/08202014-metadata.txt via provider delete
+10-08 05:48:19.144  1674  1724 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/08202014-metadata.txt: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/08202014-metadata.txt
+10-08 05:48:19.145  1674  1724 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+10-08 05:48:19.179  2043  2380 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/08202014-pins.txt via provider delete
+10-08 05:48:19.183  1674  1724 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/08202014-pins.txt: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/08202014-pins.txt
+10-08 05:48:19.183  1674  1724 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+10-08 05:48:19.250  3719  4937 I ConfigUpdater: Update downloaded, starting installation
+10-08 05:48:19.255  3719  4937 I ConfigUpdater: doneInstall
+10-08 05:48:19.263  2043  2380 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/05132026-sms-denylist-metadata.txt via provider delete
+10-08 05:48:19.264  1674  1724 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/05132026-sms-denylist-metadata.txt: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/05132026-sms-denylist-metadata.txt
+10-08 05:48:19.265  1674  1724 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+10-08 05:48:19.272  2043  2380 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/05132026-sms-denylist.txt via provider delete
+10-08 05:48:19.276  1674  1724 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/05132026-sms-denylist.txt: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/05132026-sms-denylist.txt
+10-08 05:48:19.295  1674  1724 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 19ms, 0 inserts 0 updates 0 deletes
+10-08 05:48:19.629  1676  2064 I SP.AiAi : <==== Finishing job {W:b:u:l, bg}, 22305 ms. elapsed since start
+10-08 05:48:19.649  1676  2064 I SP.AiAi : Download stopped: captions_i18n_v0_mandatory:sound_recognition_v1, succeeded, size: 2565038
+10-08 05:48:19.689  4832  4909 D PipelineManager: OCR process succeeded via visionkit pipeline.
+10-08 05:48:19.692  4832  4861 I GravadorOcrTest: OCR leu: GASOLINA COMUM|POSTO CENTRAL
+10-08 05:48:19.695  4832  4861 I TestRunner: finished: doesNotFindWhatIsNotThere(br.dev.nexus.gravadorocr.OcrRecognitionTest)

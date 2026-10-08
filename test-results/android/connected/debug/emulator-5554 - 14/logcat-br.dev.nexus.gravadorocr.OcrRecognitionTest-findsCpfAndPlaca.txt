@@ -1,0 +1,40 @@
+10-08 05:48:26.752  4832  4861 I TestRunner: started: findsCpfAndPlaca(br.dev.nexus.gravadorocr.OcrRecognitionTest)
+10-08 05:48:26.755  4832  4865 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-08 05:48:26.760  4832  4865 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-08 05:48:26.763  1503  4057 D TrafficStats: tagSocket(136) with statsTag=0x30001803, statsUid=-1
+10-08 05:48:26.765  4832  4909 D DecoupledTextDelegate: Start loading thick OCR module.
+10-08 05:48:26.765  4832  4909 I DynamiteModule: Considering local module com.google.mlkit.dynamite.text.latin:10000 and remote module com.google.mlkit.dynamite.text.latin:0
+10-08 05:48:26.766  4832  4909 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.text.latin
+10-08 05:48:26.767  4832  4909 I native  : I0000 00:00:1791438506.767542    4909 asset_manager_util.cc:61] Created global reference to asset manager.
+10-08 05:48:26.776  4832  5021 I native  : I0000 00:00:1791438506.776385    5021 text_detector_thread_pool_context.cc:38] Compute manager max in flight region detector overwrite: 1
+10-08 05:48:26.777  4832  5022 I native  : I0000 00:00:1791438506.776477    5022 text_classifier.cc:32] Creating classifier TfliteTextClassifier
+10-08 05:48:26.778  4832  5022 I native  : I0000 00:00:1791438506.778047    5022 common_util.h:41] Resizing Thread Pool: ocr_segm to 3
+10-08 05:48:26.780  4832  5021 I native  : I0000 00:00:1791438506.780608    5021 common_util.h:41] Resizing Thread Pool: ocr_det_0 to 3
+10-08 05:48:26.781  4832  5022 I native  : I0000 00:00:1791438506.781176    5022 tflite_lstm_client_base.cc:371] Resizing interpreter pool to 4
+10-08 05:48:26.782  4832  5022 I native  : I0000 00:00:1791438506.782776    5022 multi_pass_line_recognition_mutator.cc:342] Preloading recognizers.
+10-08 05:48:26.783  4832  4906 I native  : I0000 00:00:1791438506.783398    4906 tflite_model_pooled_runner.cc:625] Loading mlkit-google-ocr-models/gocr/gocr_models/line_recognition_legacy_mobile/Latn_ctc/optical/conv_model.fb
+10-08 05:48:26.783  4832  4906 I native  : I0000 00:00:1791438506.783746    4906 tflite_model_pooled_runner.cc:636] Loading mlkit-google-ocr-models/gocr/gocr_models/line_recognition_legacy_mobile/Latn_ctc/optical/lstm_model.fb
+10-08 05:48:26.789  4832  4906 I native  : I0000 00:00:1791438506.789972    4906 tflite_model_pooled_runner.cc:836] Resizing interpreter pool to 4
+10-08 05:48:26.791  4832  4906 I native  : I0000 00:00:1791438506.791360    4906 mobile_langid_v2.cc:58] MobileLangID V2 initialized.
+10-08 05:48:26.791  4832  4906 I native  : I0000 00:00:1791438506.791402    4906 multi_pass_line_recognition_mutator.cc:364] Finished preloading a recognizer for "Latn"
+10-08 05:48:26.791  4832  5021 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:26.791  4832  5022 I native  : I0000 00:00:1791438506.791920    5022 multi_pass_line_recognition_mutator.cc:398] Finished preloading recognizers.
+10-08 05:48:26.792  4832  5021 I native  : I0000 00:00:1791438506.792492    5021 tflite_detector_client_with_shape_cache.cc:105] Caching size: 10
+10-08 05:48:26.792  4832  5022 I native  : I0000 00:00:1791438506.792524    5022 tflite_model_pooled_runner.cc:625] Loading mlkit-google-ocr-models/gocr/layout/line_splitting_custom_ops/model.tflite
+10-08 05:48:26.793  4832  5022 I native  : I0000 00:00:1791438506.793481    5022 tflite_model_pooled_runner.cc:836] Resizing interpreter pool to 1
+10-08 05:48:26.793  4832  5022 I native  : I0000 00:00:1791438506.793937    5022 tflite_model_pooled_runner.cc:625] Loading mlkit-google-ocr-models/gocr/layout/line_clustering_custom_ops/model.tflite
+10-08 05:48:26.794  4832  5022 I native  : I0000 00:00:1791438506.794453    5022 tflite_model_pooled_runner.cc:836] Resizing interpreter pool to 1
+10-08 05:48:26.796  4832  4909 D PipelineManager: Start process bitmap
+10-08 05:48:26.818  4832  5022 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:26.871  1417  1417 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.nearby.exposurenotification.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiServiceNoInstantApps }
+10-08 05:48:27.335  1417  1417 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.icing.LIGHTWEIGHT_INDEX_SERVICE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-08 05:48:27.488  1417  1417 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.pseudonymous.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-08 05:48:27.498  4832  5022 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:28.180  4832  5022 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:28.443  1417  1417 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.gmscompliance.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+10-08 05:48:28.818  4832  5022 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:29.522  4832  5022 I tflite  : Replacing 44 out of 46 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-08 05:48:30.154   842   842 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+10-08 05:48:30.470  4832  4909 D PipelineManager: OCR process succeeded via visionkit pipeline.
+10-08 05:48:30.474  4832  4861 I GravadorOcrTest: OCR leu: CPF 529.982.247-25|PLACA ABC1D23
+10-08 05:48:30.477  4832  4861 I TestRunner: finished: findsCpfAndPlaca(br.dev.nexus.gravadorocr.OcrRecognitionTest)

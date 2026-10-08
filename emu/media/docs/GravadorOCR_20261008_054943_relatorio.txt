@@ -1,0 +1,10 @@
+GRAVADOR OCR — relatório da gravação
+Início: 08/10/2026 05:49:43
+Palavras-chave: botijão de gás
+
+Partes do vídeo (pasta Movies/GravadorOCR):
+  1. GravadorOCR_20261008_054943_p01 — 00:04
+  2. GravadorOCR_20261008_054943_p02 — 00:02
+
+Eventos (0 detecção(ões)):
+  05:49:49  [parte 1 @ 00:04]  AVISO: A gravação parou (parou sem motivo aparente). Retomando automaticamente…
