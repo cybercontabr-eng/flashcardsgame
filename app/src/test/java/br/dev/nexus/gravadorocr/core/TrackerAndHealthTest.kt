@@ -37,8 +37,18 @@ class DetectionTrackerTest {
     fun fuzzyTooFarApartIsNotConfirmed() {
         val t = DetectionTracker()
         t.update(listOf(full(1)), 0)
+        t.update(emptyList(), 2_000)
+        t.update(emptyList(), 4_000)
         val ev = t.update(listOf(full(1)), 5_000)
         assertTrue(ev.none { it is TrackerEvent.Found })
+    }
+
+    @Test
+    fun slowPhoneConfirmsOnConsecutiveFrames() {
+        // celular lento: um quadro a cada 6 s; a palavra aparece em dois quadros seguidos
+        val t = DetectionTracker()
+        assertTrue(t.update(listOf(full(1)), 0).single() is TrackerEvent.HoldSteady)
+        assertTrue(t.update(listOf(full(1)), 6_000).single() is TrackerEvent.Found)
     }
 
     @Test

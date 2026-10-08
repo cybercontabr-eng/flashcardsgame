@@ -88,7 +88,11 @@ class RecordingFlowTest {
         assertTrue("ainda deveria estar gravando: $st", st.recording)
         assertNull("não deveria ter alarme: ${st.alarm}", st.alarm)
         assertTrue("tempo gravado deveria avançar: ${st.recordedMs}", st.recordedMs >= 4_000)
-        assertTrue("o OCR deveria estar rodando junto com o vídeo (ocrFps=${st.ocrFps}, aviso=${st.warning})", st.ocrFps > 0f)
+        // o OCR roda junto com a gravação (no emulador ele é bem mais lento que num celular)
+        TestUtils.waitUntil(60_000, "OCR analisar quadros da câmera durante a gravação") {
+            Live.status.value.framesAnalyzed >= 2
+        }
+        assertTrue("continua gravando enquanto o OCR roda", Live.status.value.recording)
         stopAndWait()
         val segs = Live.status.value.savedSegments
         Log.i(TestUtils.TAG, "Partes: $segs")
@@ -115,6 +119,8 @@ class RecordingFlowTest {
 
     @Test
     fun detectsKeywordWhileRecordingAndSavesPhoto() {
+        // a câmera do emulador não mostra texto; usamos uma imagem gerada e pausamos os quadros da câmera
+        TestHooks.ignoreCameraFrames = true
         startAndWaitRecording()
         Thread.sleep(2_000)
         val svc = RecordingService.current
@@ -125,7 +131,7 @@ class RecordingFlowTest {
             svc!!.debugProcessFrame(page)
             Thread.sleep(700)
         }
-        TestUtils.waitUntil(30_000, "detecção de 'botijão de gás'") {
+        TestUtils.waitUntil(90_000, "detecção de 'botijão de gás'") {
             Live.detections.value.any { it.kind == Detection.Kind.FOUND && it.label == "botijão de gás" }
         }
         TestUtils.waitUntil(20_000, "foto da detecção salva") {

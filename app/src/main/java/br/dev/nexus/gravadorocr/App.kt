@@ -144,6 +144,7 @@ data class LiveStatus(
     val audioOn: Boolean = false,
     val savedSegments: List<SavedSegment> = emptyList(),
     val ocrFps: Float = 0f,
+    val framesAnalyzed: Long = 0,
     val batteryPct: Int = -1,
     val freeBytes: Long = -1,
 )
@@ -165,8 +166,12 @@ object TestHooks {
     /** null = usa a configuração; 0 = não divide; >0 = divide a cada N ms. */
     @Volatile var segmentMsOverride: Long? = null
 
+    /** Ignora os quadros da câmera (só processa imagens injetadas pelo teste). */
+    @Volatile var ignoreCameraFrames: Boolean = false
+
     fun reset() {
         segmentMsOverride = null
+        ignoreCameraFrames = false
     }
 }
 

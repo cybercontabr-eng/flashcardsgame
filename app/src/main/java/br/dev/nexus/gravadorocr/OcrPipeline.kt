@@ -9,8 +9,10 @@ import br.dev.nexus.gravadorocr.core.KeywordMatcher
 import br.dev.nexus.gravadorocr.core.MatchResult
 import br.dev.nexus.gravadorocr.core.Tolerance
 import br.dev.nexus.gravadorocr.core.TrackerEvent
+import com.google.android.gms.tasks.Task
 import com.google.android.gms.tasks.Tasks
 import com.google.mlkit.vision.common.InputImage
+import com.google.mlkit.vision.text.Text
 import com.google.mlkit.vision.text.TextRecognition
 import com.google.mlkit.vision.text.latin.TextRecognizerOptions
 import java.util.concurrent.TimeUnit
@@ -32,6 +34,7 @@ class OcrPipeline(private val prefs: Prefs, private val callback: Callback) {
     private var matcher: KeywordMatcher? = null
     private var matcherTolerance: Tolerance? = null
 
+    private var inFlight: Task<Text>? = null
     private var fpsWindowStart = 0L
     private var fpsFrames = 0
 
@@ -41,15 +44,20 @@ class OcrPipeline(private val prefs: Prefs, private val callback: Callback) {
     @WorkerThread
     fun process(upright: Bitmap, now: Long = SystemClock.elapsedRealtime()) {
         if (closed) return
+        // Se o quadro anterior ainda está sendo lido (celular lento), pula este para não acumular fila.
+        inFlight?.let { if (!it.isComplete) return }
         val luma = FrameUtils.meanLuma(upright)
         callback.onFrameAnalyzed(now, luma)
 
+        val task = recognizer.process(InputImage.fromBitmap(upright, 0))
+        inFlight = task
         val text = try {
-            Tasks.await(recognizer.process(InputImage.fromBitmap(upright, 0)), 8, TimeUnit.SECONDS)
+            Tasks.await(task, 20, TimeUnit.SECONDS)
         } catch (e: Exception) {
             if (!closed) Log.w(TAG, "OCR falhou neste quadro: ${e.message}")
             null
         }
+        Live.update { it.copy(framesAnalyzed = it.framesAnalyzed + 1) }
         if (closed) return
         val tokens = text?.let { OcrText.tokens(it) } ?: emptyList()
         if (tokens.isNotEmpty() && Log.isLoggable(TAG, Log.DEBUG)) Log.d(TAG, "Lido: ${text?.text?.replace('\n', '|')}")

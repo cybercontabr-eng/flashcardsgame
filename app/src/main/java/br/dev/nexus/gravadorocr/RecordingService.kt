@@ -399,7 +399,7 @@ class RecordingService : LifecycleService(), OcrPipeline.Callback {
         override fun analyze(image: ImageProxy) {
             val now = SystemClock.elapsedRealtime()
             val p = pipeline
-            if (p == null || now - last < prefs.ocrIntervalMs) {
+            if (p == null || TestHooks.ignoreCameraFrames || now - last < prefs.ocrIntervalMs) {
                 image.close()
                 return
             }
