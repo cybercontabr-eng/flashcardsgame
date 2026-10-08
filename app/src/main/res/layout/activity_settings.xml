@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ajustes"
+            android:textColor="@color/text"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Leitura -->
+        <TextView style="@style/SectionTitle" android:text="Leitura das palavras" />
+
+        <RadioGroup
+            android:id="@+id/rgTolerance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/tolExact" style="@style/Opt" android:text="Exata — só a palavra certinha (menos alarme falso)" />
+            <RadioButton android:id="@+id/tolNormal" style="@style/Opt" android:text="Normal — aceita 1 letra lida errado (recomendado)" />
+            <RadioButton android:id="@+id/tolLoose" style="@style/Opt" android:text="Tolerante — acha mais, mas pode errar" />
+        </RadioGroup>
+
+        <TextView style="@style/SectionSub" android:text="Velocidade da leitura (gasta mais bateria quanto mais rápido)" />
+        <RadioGroup
+            android:id="@+id/rgOcrSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/ocrEco" style="@style/Opt" android:text="Economia — 1 leitura por segundo" />
+            <RadioButton android:id="@+id/ocrNormal" style="@style/Opt" android:text="Normal — ~3 leituras por segundo" />
+            <RadioButton android:id="@+id/ocrMax" style="@style/Opt" android:text="Máxima — o mais rápido possível" />
+        </RadioGroup>
+
+        <TextView style="@style/SectionSub" android:text="Repetir o aviso da mesma palavra" />
+        <RadioGroup
+            android:id="@+id/rgCooldown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/cd5" style="@style/Opt" android:text="Se sumir e voltar depois de 5 s" />
+            <RadioButton android:id="@+id/cd10" style="@style/Opt" android:text="Se sumir e voltar depois de 10 s" />
+            <RadioButton android:id="@+id/cd30" style="@style/Opt" android:text="Se sumir e voltar depois de 30 s" />
+        </RadioGroup>
+
+        <!-- Avisos -->
+        <TextView style="@style/SectionTitle" android:text="Como avisar" />
+        <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/swBeep" style="@style/Sw" android:text="Apito (sai no fone, se conectado)" />
+        <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/swVibrate" style="@style/Sw" android:text="Vibração" />
+        <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/swVoice" style="@style/Sw" android:text="Voz falando a palavra encontrada" />
+        <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/swHold" style="@style/Sw" android:text="Vibração curta “segure firme” quando quase leu" />
+        <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/swSnap" style="@style/Sw" android:text="Salvar foto do momento da detecção" />
+
+        <Button
+            android:id="@+id/btnTest"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Testar aviso" />
+
+        <!-- Segurança -->
+        <TextView style="@style/SectionTitle" android:text="Segurança da gravação" />
+        <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/swAutoRestart" style="@style/Sw" android:text="Se a gravação parar, tentar retomar sozinho (e avisar)" />
+        <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/swDark" style="@style/Sw" android:text="Avisar se a câmera ficar tapada/escura" />
+
+        <TextView style="@style/SectionSub" android:text="Dividir o vídeo em partes (se algo der errado, só a última parte corre risco)" />
+        <RadioGroup
+            android:id="@+id/rgSegment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/seg5" style="@style/Opt" android:text="A cada 5 minutos" />
+            <RadioButton android:id="@+id/seg10" style="@style/Opt" android:text="A cada 10 minutos (recomendado)" />
+            <RadioButton android:id="@+id/seg30" style="@style/Opt" android:text="A cada 30 minutos" />
+            <RadioButton android:id="@+id/segOff" style="@style/Opt" android:text="Não dividir" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnBattery"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Tirar o app da economia de bateria" />
+
+        <TextView style="@style/SectionSub" android:text="Recomendado: alguns celulares (Xiaomi, Samsung, Motorola) fecham apps em segundo plano. Escolha “Sem restrições” para o Gravador OCR." />
+
+        <!-- Vídeo -->
+        <TextView style="@style/SectionTitle" android:text="Vídeo (vale para a próxima gravação)" />
+        <RadioGroup
+            android:id="@+id/rgQuality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/qSd" style="@style/Opt" android:text="480p — ocupa pouco (~11 MB/min)" />
+            <RadioButton android:id="@+id/qHd" style="@style/Opt" android:text="720p — equilíbrio (~30 MB/min)" />
+            <RadioButton android:id="@+id/qFhd" style="@style/Opt" android:text="1080p — melhor imagem (~60 MB/min)" />
+        </RadioGroup>
+        <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/swAudio" style="@style/Sw" android:text="Gravar áudio" />
+        <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/swFront" style="@style/Sw" android:text="Usar câmera frontal (selfie)" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Arquivos: vídeos em Movies/GravadorOCR, fotos em Pictures/GravadorOCR, relatório .txt e legendas .srt em Download/GravadorOCR.\nO OCR funciona sem internet."
+            android:textColor="@color/muted"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/muted"
+            android:textSize="11sp" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
